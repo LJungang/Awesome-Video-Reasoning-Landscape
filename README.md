@@ -281,7 +281,7 @@ x ✗
 ## ✈ Related Survey
 
 In addition, several recent and concurrent surveys have discussed multimodal or video reasoning. The works listed below offer complementary perspectives to ours, reflecting the field’s rapid and parallel development:
-- [Awesome-Video-Reasoning](https://github.com/Video-Reaso`N/A`wesome-Video-Reasoning)
+- [Awesome-Video-Reasoning](https://github.com/Video-Reason/Awesome-Video-Reasoning)
 - [Awesome-LLMs-for-Video-Understanding](https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding)
 - [Awesome-Multimodal-Spatial-Reasoning](https://github.com/zhengxuJosh/Awesome-Multimodal-Spatial-Reasoning)
 - [Awesome-Streaming-Video-Understanding](https://github.com/sotayang/Awesome-Streaming-Video-Understanding)
