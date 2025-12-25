@@ -25,7 +25,7 @@ This repository aims to provide a structured, up-to-date, and open-source overvi
     - [🕹️ CoF-based Video Reasoning](#️-cof-based-video-reasoning)
     - [🌈 Interleaved Video Reasoning](#-interleaved-video-reasoning)
     - [🔁 Streaming Video Reasoning](#-streaming-video-reasoning)
-  - [✨️ Benchmarks](#-benchmarks)
+  - [✨️ Benchmarks](#%EF%B8%8F-benchmarks)
   - [✈ Related Surveys](#-related-survey)
   - [🌟 Star History](#-star-history)
   - [♥️ Contributors](#️-contributors)
