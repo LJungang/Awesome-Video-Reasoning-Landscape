@@ -312,6 +312,7 @@ In addition, several recent and concurrent surveys have discussed multimodal or 
 - [Awesome-MCoT](https://github.com/yaotingwangofficial/Awesome-MCoT)
 - [Awesome-Latent-CoT](https://github.com/EIT-NLP/Awesome-Latent-CoT)
 - [Awesome-Latent-Space](https://github.com/YU-deep/Awesome-Latent-Space)
+- [Awesome-Latent-Refinement](https://github.com/matinaghaei/awesome-latent-refinement)
 
 ## 🌟 Star History
 
