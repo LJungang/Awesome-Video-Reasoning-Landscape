@@ -1,0 +1,78 @@
+{
+  "window": {
+    "start": "2025-12-18",
+    "end": "2026-09-17"
+  },
+  "primary_query_unique": 2476,
+  "primary_metadata_records": 4462,
+  "window_records": 1195,
+  "existing_window_records": 42,
+  "new_arxiv_records": 1153,
+  "proceedings_supplement": 16,
+  "branches": {
+    "benchmarks": 344,
+    "worlds": 214,
+    "agents": 111,
+    "structured": 82,
+    "language": 137,
+    "streaming": 74,
+    "executable": 28,
+    "surveys": 36,
+    "perception": 119,
+    "visual": 8
+  },
+  "months": {
+    "2025-12": {
+      "existing": 0,
+      "added": 33
+    },
+    "2026-01": {
+      "existing": 4,
+      "added": 85
+    },
+    "2026-02": {
+      "existing": 3,
+      "added": 109
+    },
+    "2026-03": {
+      "existing": 5,
+      "added": 155
+    },
+    "2026-04": {
+      "existing": 1,
+      "added": 116
+    },
+    "2026-05": {
+      "existing": 3,
+      "added": 177
+    },
+    "2026-06": {
+      "existing": 7,
+      "added": 142
+    },
+    "2026-07": {
+      "existing": 3,
+      "added": 136
+    },
+    "2026-08": {
+      "existing": 6,
+      "added": 142
+    },
+    "2026-09": {
+      "existing": 10,
+      "added": 58
+    }
+  },
+  "screening": {
+    "outside-window": 326,
+    "not-retained": 2940,
+    "included": 1195,
+    "excluded": 1
+  },
+  "resource_checks": {
+    "attempted": 455,
+    "http_200": 443,
+    "not_http_200": 12
+  },
+  "official_venue_matches": 133
+}

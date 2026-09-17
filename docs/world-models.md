@@ -24,12 +24,19 @@ These are conceptual connections, not claims of direct technical ancestry.
 | [WorldCoder](https://arxiv.org/abs/2402.12275) | Python world models revised through interaction and used for planning | Gridworld/task-planning foundation |
 | [GIF-MCTS](https://arxiv.org/abs/2405.15383) | Search-guided generation and repair of transition programs | Textual descriptions and curated traces |
 | [Spatial Code](https://arxiv.org/abs/2603.05591) | Explicit spatial variables from video for reasoning | Video QA; no complete dynamics program implied |
+| [SWoMo](https://arxiv.org/abs/2605.16530) | Rule-based surgical simulator paired with a learned video renderer | Tool–tissue interactions; domain-specific rules |
 | [VisualPatchWorld](https://arxiv.org/abs/2607.25236) | Probe dynamics, fit program parameters, and plan | Visual state can enter at replanning time |
+| [VideoCoCo](https://arxiv.org/abs/2607.27380) | Executable Blender drafts followed by generative video editing | Text-to-video process control; not video-to-rule identification |
+| [PhysMind](https://arxiv.org/abs/2608.04575) | Recover a video scene and fit reusable analytic dynamics | Physical and counterfactual QA; not a time-stepped simulator |
 | [Code World Model](https://arxiv.org/abs/2608.25927) | Executable state → proxy video → learned rendering | Direct video-world interface |
+| [Code as Worlds](https://arxiv.org/abs/2608.27549) | Propose, execute, render, and verify physical world hypotheses | Executable representations provide physical-reasoning supervision |
 | [StateAgent](https://arxiv.org/abs/2609.03673) | Update entity state and condition video continuation | State consistency across segments |
+| [Programmable World Model](https://arxiv.org/abs/2609.10540) | Persistent programs, off-screen state, and state-augmented 3D boxes | Engine-maintained state compiled into video conditioning |
 | [Recursive Code World Models](https://arxiv.org/abs/2609.11499) | Recursive executable scene construction from an image | Reconstruction, not demonstrated temporal dynamics |
 
 *WorldCoder* is a planning method; *WorldCoder-Bench* evaluates generated 3D programs. Models that predict software execution traces form another line: sharing the “code world model” name does not make their interfaces equivalent.
+
+The [expanded executable-world index](review-2026/executable.md) covers direct video systems, visual bridges, and planning foundations. The neighboring [world-model chapter](review-2026/worlds.md) covers neural prediction and control. The key comparison is **where state comes from, which rules are supplied or inferred, what executes them, and how outputs are checked**.
 
 ## Inside Code World Model
 
@@ -79,6 +86,8 @@ The contribution is the **persistent executable transition mechanism** coupled t
 **Example: an off-screen door.** Start from the same state; unlock it in one trial and leave it untouched in another. Move away, introduce intervening events, then return. Check the stored lock state, allowed action, and rendered response. Separately vary appearance and mechanics to isolate memory, dynamics, and rendering.
 
 Future work should test **video-to-rule induction**, **active probes**, **state/render conflict resolution**, and **program repair**. Use matched priors and action access; evaluate on the planner's own query distribution, where small model errors may be exploited. The [Next Frontiers](../README.md#research-agenda) table connects these questions to existing methods.
+
+Recent diagnostics sharpen this agenda. The [play-adequacy study](https://arxiv.org/abs/2607.14169) shows how rare, decision-critical rule errors can survive high transition accuracy. The [Compute-Value Audit](https://arxiv.org/abs/2609.13257) separates better candidate pools from useful selection after full compute costs. [CaliBench](https://arxiv.org/abs/2608.16829) separates scoreability from physical calibration. [Twin Rollouts](https://arxiv.org/abs/2608.08982) proposes shared-noise counterfactual branches; its experiments are forthcoming. These address different failure modes and should not be reduced to one fidelity score.
 
 ## Sources & Review Scope
 

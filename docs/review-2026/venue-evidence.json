@@ -1,0 +1,800 @@
+{
+  "2606.09641": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.1094/",
+    "title": "MAVIS: Multi-Agent Video Retrieval via Structured Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2605.26483": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Gao_Clinically-Grounded_Counterfactual_Reasoning_for_Medical_Video_Diagnosis_CVPR_2026_paper.html",
+    "title": "Clinically-Grounded Counterfactual Reasoning for Medical Video Diagnosis",
+    "basis": "official proceedings"
+  },
+  "2605.23216": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_CaST-Bench_Benchmarking_Causal_Chain-Grounded_Spatio-Temporal_Reasoning_for_Video_Question_Answering_CVPR_2026_paper.html",
+    "title": "CaST-Bench: Benchmarking Causal Chain-Grounded Spatio-Temporal Reasoning for Video Question Answering",
+    "basis": "official proceedings"
+  },
+  "2605.22269": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xiao_MuKV_Multi-Grained_KV_Cache_Compression_for_Long_Streaming_Video_Question-Answering_CVPR_2026_paper.html",
+    "title": "MuKV: Multi-Grained KV Cache Compression for Long Streaming Video Question-Answering",
+    "basis": "official proceedings"
+  },
+  "2605.15342": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Nagrani_Minerva-Ego_Spatiotemporal_Hints_for_Egocentric_Video_Understanding_CVPR_2026_paper.html",
+    "title": "Minerva-Ego: Spatiotemporal Hints for Egocentric Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2605.01657": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Q._Act2See_Emergent_Active_Visual_Perception_for_Video_Reasoning_CVPR_2026_paper.html",
+    "title": "Act2See: Emergent Active Visual Perception for Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2605.01324": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_Beyond_Perceptual_Shortcuts_Causal-Inspired_Debiasing_Optimization_for_Generalizable_Video_Reasoning_CVPR_2026_paper.html",
+    "title": "Beyond Perceptual Shortcuts: Causal-Inspired Debiasing Optimization for Generalizable Video Reasoning in Lightweight MLLMs",
+    "basis": "official proceedings"
+  },
+  "2604.25276": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zheng_OmniVTG_A_Large-Scale_Dataset_and_Training_Paradigm_for_Open-World_Video_CVPR_2026_paper.html",
+    "title": "OmniVTG: A Large-Scale Dataset and Training Paradigm for Open-World Video Temporal Grounding",
+    "basis": "official proceedings"
+  },
+  "2604.20319": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_SurgCoT_Advancing_Spatiotemporal_Reasoning_in_Surgical_Videos_through_a_Chain-of-Thought_CVPR_2026_paper.html",
+    "title": "SurgCoT: Advancing Spatiotemporal Reasoning in Surgical Videos through a Chain-of-Thought Benchmark",
+    "basis": "official proceedings"
+  },
+  "2604.18260": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Geometry-Guided_3D_Visual_Token_Pruning_for_Video-Language_Models_CVPR_2026_paper.html",
+    "title": "Geometry-Guided 3D Visual Token Pruning for Video-Language Models",
+    "basis": "official proceedings"
+  },
+  "2604.17873": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.729/",
+    "title": "Spatiotemporal Sycophancy: Negation-Based Gaslighting in Video Large Language Models",
+    "basis": "official proceedings"
+  },
+  "2604.17749": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Ge_Ego-InBetween_Generating_Object_State_Transitions_in_Ego-Centric_Videos_CVPR_2026_paper.html",
+    "title": "Ego-InBetween: Generating Object State Transitions in Ego-Centric Videos",
+    "basis": "official proceedings"
+  },
+  "2604.17052": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Liang_OASIS_On-Demand_Hierarchical_Event_Memory_for_Streaming_Video_Reasoning_CVPR_2026_paper.html",
+    "title": "OASIS: On-Demand Hierarchical Event Memory for Streaming Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2604.09000": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.647/",
+    "title": "StreamMeCo: Long-Term Agent Memory Compression for Efficient Streaming Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2604.07966": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Cai_Lighting-grounded_Video_Generation_with_Renderer-based_Agent_Reasoning_CVPR_2026_paper.html",
+    "title": "Lighting-grounded Video Generation with Renderer-based Agent Reasoning",
+    "basis": "official proceedings"
+  },
+  "2604.05418": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.1656/",
+    "title": "VideoStir: Understanding Long Videos via Spatio-Temporally Structured and Intent-Aware RAG",
+    "basis": "official proceedings"
+  },
+  "2604.05079": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_SVAgent_Storyline-guided_Long_Video_Understanding_via_Cross-Modal_Multi-Agent_Collaboration_CVPR_2026_paper.html",
+    "title": "SVAgent: Storyline-guided Long Video Understanding via Cross-Modal Multi-Agent Collaboration",
+    "basis": "official proceedings"
+  },
+  "2604.04379": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Reinforce_to_Learn_Elect_to_Reason_A_Dual_Paradigm_for_CVPR_2026_paper.html",
+    "title": "Reinforce to Learn, Elect to Reason: A Dual Paradigm for Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2604.04372": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Graph-to-Frame_RAG_Visual-Space_Knowledge_Fusion_for_Training-Free_and_Auditable_Video_CVPR_2026_paper.html",
+    "title": "Graph-to-Frame RAG: Visual-Space Knowledge Fusion for Training-Free and Auditable Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2604.01966": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xiao_Ego-Grounding_for_Personalized_Question-Answering_in_Egocentric_Videos_CVPR_2026_paper.html",
+    "title": "Ego-Grounding for Personalized Question-Answering in Egocentric Videos",
+    "basis": "official proceedings"
+  },
+  "2603.27259": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Seeing_the_Scene_Matters_Revealing_Forgetting_in_Video_Understanding_Models_CVPR_2026_paper.html",
+    "title": "Seeing the Scene Matters: Revealing Forgetting in Video Understanding Models with a Scene-Aware Long-Video Benchmark",
+    "basis": "official proceedings"
+  },
+  "2603.27060": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Hong_VIRST_Video-Instructed_Reasoning_Assistant_for_SpatioTemporal_Segmentation_CVPR_2026_paper.html",
+    "title": "VIRST: Video-Instructed Reasoning Assistant for SpatioTemporal Segmentation",
+    "basis": "official proceedings"
+  },
+  "2603.25942": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Reinforcing_Structured_Chain-of-Thought_for_Video_Understanding_CVPR_2026_paper.html",
+    "title": "Reinforcing Structured Chain-of-Thought for Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2603.24558": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_LensWalk_Agentic_Video_Understanding_by_Planning_How_You_See_in_CVPR_2026_paper.html",
+    "title": "LensWalk: Agentic Video Understanding by Planning How You See in Videos",
+    "basis": "official proceedings"
+  },
+  "2603.24484": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_Video-Only_ToM_Enhancing_Theory_of_Mind_in_Multimodal_Large_Language_CVPR_2026_paper.html",
+    "title": "Video-Only ToM: Enhancing Theory of Mind in Multimodal Large Language Models",
+    "basis": "official proceedings"
+  },
+  "2603.24329": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.1585/",
+    "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
+    "basis": "official proceedings"
+  },
+  "2603.23186": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Lee_ViKey_Enhancing_Temporal_Understanding_in_Videos_via_Visual_Prompting_CVPR_2026_paper.html",
+    "title": "ViKey: Enhancing Temporal Understanding in Videos via Visual Prompting",
+    "basis": "official proceedings"
+  },
+  "2603.22918": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_EVA_Efficient_Reinforcement_Learning_for_End-to-End_Video_Agent_CVPR_2026_paper.html",
+    "title": "EVA: Efficient Reinforcement Learning for End-to-End Video Agent",
+    "basis": "official proceedings"
+  },
+  "2603.22529": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yu_Ego2Web_A_Web_Agent_Benchmark_Grounded_in_Egocentric_Videos_CVPR_2026_paper.html",
+    "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
+    "basis": "official proceedings"
+  },
+  "2603.20185": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Lin_VideoSeek_Long-Horizon_Video_Agent_with_Tool-Guided_Seeking_CVPR_2026_paper.html",
+    "title": "VideoSeek: Long-Horizon Video Agent with Tool-Guided Seeking",
+    "basis": "official proceedings"
+  },
+  "2603.17693": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiang_Learning_Transferable_Temporal_Primitives_for_Video_Reasoning_via_Synthetic_Videos_CVPR_2026_paper.html",
+    "title": "Learning Transferable Temporal Primitives for Video Reasoning via Synthetic Videos",
+    "basis": "official proceedings"
+  },
+  "2603.17307": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yan_Symphony_A_Cognitively-Inspired_Multi-Agent_System_for_Long-Video_Understanding_CVPR_2026_paper.html",
+    "title": "Symphony: A Cognitively-Inspired Multi-Agent System for Long-Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2603.14935": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Su_Video-CoE_Reinforcing_Video_Event_Prediction_via_Chain_of_Events_CVPR_2026_paper.html",
+    "title": "Video-CoE: Reinforcing Video Event Prediction via Chain of Events",
+    "basis": "official proceedings"
+  },
+  "2603.14052": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_A_Multi-Agent_Perception-Action_Alliance_for_Efficient_Long_Video_Reasoning_CVPR_2026_paper.html",
+    "title": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2603.12533": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Choi_Do_You_See_What_I_Am_Pointing_At_Gesture-Based_Egocentric_CVPR_2026_paper.html",
+    "title": "Do You See What I Am Pointing At? Gesture-Based Egocentric Video Question Answering",
+    "basis": "official proceedings"
+  },
+  "2603.12382": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Alansari_SPARROW_Learning_Spatial_Precision_and_Temporal_Referential_Consistency_in_Pixel-Grounded_CVPR_2026_paper.html",
+    "title": "SPARROW: Learning Spatial Precision and Temporal Referential Consistency in Pixel-Grounded Video MLLMs",
+    "basis": "official proceedings"
+  },
+  "2603.09094": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Chain_of_Event-Centric_Causal_Thought_for_Physically_Plausible_Video_Generation_CVPR_2026_paper.html",
+    "title": "Chain of Event-Centric Causal Thought for Physically Plausible Video Generation",
+    "basis": "official proceedings"
+  },
+  "2603.08620": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Azad_StreamReady_Learning_What_to_Answer_and_When_in_Long_Streaming_CVPR_2026_paper.html",
+    "title": "StreamReady: Learning What to Answer and When in Long Streaming Videos",
+    "basis": "official proceedings"
+  },
+  "2603.04977": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Think_Then_Verify_A_Hypothesis-Verification_Multi-Agent_Framework_for_Long_Video_CVPR_2026_paper.html",
+    "title": "Think, Then Verify: A Hypothesis-Verification Multi-Agent Framework for Long Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2603.04265": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Seminara_ViterbiPlanNet_Injecting_Procedural_Knowledge_via_Differentiable_Viterbi_for_Planning_in_CVPR_2026_paper.html",
+    "title": "ViterbiPlanNet: Injecting Procedural Knowledge via Differentiable Viterbi for Planning in Instructional Videos",
+    "basis": "official proceedings"
+  },
+  "2603.01455": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.533/",
+    "title": "From Verbatim to Gist: Distilling Pyramidal Multimodal Memory via Semantic Information Bottleneck for Long-Horizon Video Agents",
+    "basis": "official proceedings"
+  },
+  "2603.00550": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Weakly_Supervised_Video_Anomaly_Detection_with_Anomaly-Connected_Components_and_Intention_CVPR_2026_paper.html",
+    "title": "Weakly Supervised Video Anomaly Detection with Anomaly-Connected Components and Intention Reasoning",
+    "basis": "official proceedings"
+  },
+  "2602.23823": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Du_APPO_Attention-guided_Perception_Policy_Optimization_for_Video_Reasoning_CVPR_2026_paper.html",
+    "title": "APPO: Attention-guided Perception Policy Optimization for Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2602.22932": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Tan_MSJoE_Jointly_Evolving_MLLM_and_Sampler_for_Efficient_Long-Form_Video_CVPR_2026_paper.html",
+    "title": "MSJoE: Jointly Evolving MLLM and Sampler for Efficient Long-Form Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2602.21835": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wei_UniVBench_Towards_Unified_Evaluation_for_Video_Foundation_Models_CVPR_2026_paper.html",
+    "title": "UniVBench: Towards Unified Evaluation for Video Foundation Models",
+    "basis": "official proceedings"
+  },
+  "2602.20913": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Qiu_LongVideo-R1_Smart_Navigation_for_Low-cost_Long_Video_Understanding_CVPR_2026_paper.html",
+    "title": "LongVideo-R1: Smart Navigation for Low-cost Long Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2602.14122": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_EgoSound_Benchmarking_Sound_Understanding_in_Egocentric_Videos_CVPR_2026_paper.html",
+    "title": "EgoSound: Benchmarking Sound Understanding in Egocentric Videos",
+    "basis": "official proceedings"
+  },
+  "2602.13602": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_Towards_Sparse_Video_Understanding_and_Reasoning_CVPR_2026_paper.html",
+    "title": "Towards Sparse Video Understanding and Reasoning",
+    "basis": "official proceedings"
+  },
+  "2602.10102": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Ren_VideoWorld_2_Learning_Transferable_Knowledge_from_Real-world_Videos_CVPR_2026_paper.html",
+    "title": "VideoWorld 2: Learning Transferable Knowledge from Real-world Videos",
+    "basis": "official proceedings"
+  },
+  "2602.10095": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Bai_Causality_in_Video_Diffusers_is_Separable_from_Denoising_CVPR_2026_paper.html",
+    "title": "Causality in Video Diffusers is Separable from Denoising",
+    "basis": "official proceedings"
+  },
+  "2602.03595": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Jiang_Refer-Agent_A_Collaborative_Multi-Agent_System_with_Reasoning_and_Reflection_for_CVPR_2026_paper.html",
+    "title": "Refer-Agent: A Collaborative Multi-Agent System with Reasoning and Reflection for Referring Video Object Segmentation",
+    "basis": "official proceedings"
+  },
+  "2601.18157": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.2161/",
+    "title": "Agentic Very Long Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2601.13719": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yin_Hierarchical_Long_Video_Understanding_with_Audiovisual_Entity_Cohesion_and_Agentic_CVPR_2026_paper.html",
+    "title": "Hierarchical Long Video Understanding with Audiovisual Entity Cohesion and Agentic Search",
+    "basis": "official proceedings"
+  },
+  "2601.06559": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.1730/",
+    "title": "ArrowGEV: Grounding Events in Video via Learning the Arrow of Time",
+    "basis": "official proceedings"
+  },
+  "2601.05175": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_VideoAuto-R1_Video_Auto_Reasoning_via_Thinking_Once_Answering_Twice_CVPR_2026_paper.html",
+    "title": "VideoAuto-R1: Video Auto Reasoning via Thinking Once, Answering Twice",
+    "basis": "official proceedings"
+  },
+  "2601.02536": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Shaar_MovieRecapsQA_A_Multimodal_Open-Ended_Video_Question-Answering_Benchmark_CVPR_2026_paper.html",
+    "title": "MovieRecapsQA: A Multimodal Open-Ended Video Question-Answering Benchmark",
+    "basis": "official proceedings"
+  },
+  "2601.01513": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.38/",
+    "title": "FastV-RAG: Towards Fast and Fine-Grained Video QA with Retrieval-Augmented Generation",
+    "basis": "official proceedings"
+  },
+  "2512.24952": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.934/",
+    "title": "Beyond the Last Frame: Process-aware Evaluation for Generative Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2601.00887": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.953/",
+    "title": "VideoCuRL: Video Curriculum Reinforcement Learning with Orthogonal Difficulty Decomposition",
+    "basis": "official proceedings"
+  },
+  "2512.21507": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Peng_SVBench_Evaluation_of_Video_Generation_Models_on_Social_Reasoning_CVPR_2026_paper.html",
+    "title": "SVBench: Evaluation of Video Generation Models on Social Reasoning",
+    "basis": "official proceedings"
+  },
+  "2512.21334": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xia_Streaming_Video_Instruction_Tuning_CVPR_2026_paper.html",
+    "title": "Streaming Video Instruction Tuning",
+    "basis": "official proceedings"
+  },
+  "2512.20618": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.1876/",
+    "title": "LongVideoAgent: Multi-Agent Reasoning with Long Videos",
+    "basis": "official proceedings"
+  },
+  "2512.16918": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.898/",
+    "title": "AdaTooler-V: Adaptive Tool-Use for Images and Videos",
+    "basis": "official proceedings"
+  },
+  "2605.07575": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.2042/",
+    "title": "Response-G1: Explicit Scene Graph Modeling for Proactive Streaming Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2604.08077": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_AdaSpark_Adaptive_Sparsity_for_Efficient_Long-Video_Understanding_CVPR_2026_paper.html",
+    "title": "AdaSpark: Adaptive Sparsity for Efficient Long-Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2604.02093": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Fan_GroundVTS_Visual_Token_Sampling_in_Multimodal_Large_Language_Models_for_CVPR_2026_paper.html",
+    "title": "GroundVTS: Visual Token Sampling in Multimodal Large Language Models for Video Temporal Grounding",
+    "basis": "official proceedings"
+  },
+  "2603.29252": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Scaling_the_Long_Video_Understanding_of_Multimodal_Large_Language_Models_CVPR_2026_paper.html",
+    "title": "Scaling the Long Video Understanding of Multimodal Large Language Models via Visual Memory Mechanism",
+    "basis": "official proceedings"
+  },
+  "2603.29186": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Matsuda_SLVMEval_Synthetic_Meta_Evaluation_Benchmark_for_Text-to-Long_Video_Generation_CVPR_2026_paper.html",
+    "title": "SLVMEval: Synthetic Meta Evaluation Benchmark for Text-to-Long Video Generation",
+    "basis": "official proceedings"
+  },
+  "2603.24934": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Moon_CVA_Context-aware_Video-text_Alignment_for_Video_Temporal_Grounding_CVPR_2026_paper.html",
+    "title": "CVA: Context-aware Video-text Alignment for Video Temporal Grounding",
+    "basis": "official proceedings"
+  },
+  "2603.15167": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yamao_Question-guided_Visual_Compression_with_Memory_Feedback_for_Long-Term_Video_Understanding_CVPR_2026_paper.html",
+    "title": "Question-guided Visual Compression with Memory Feedback for Long-Term Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2603.07758": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yan_AR2-4FV_Anchored_Referring_and_Re-identification_for_Long-Term_Grounding_in_Fixed-View_CVPR_2026_paper.html",
+    "title": "AR2-4FV: Anchored Referring and Re-identification for Long-Term Grounding in Fixed-View Videos",
+    "basis": "official proceedings"
+  },
+  "2603.07071": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yu_VirtueBench_Evaluating_Trustworthiness_under_Uncertainty_in_Long_Video_Understanding_CVPR_2026_paper.html",
+    "title": "VirtueBench: Evaluating Trustworthiness under Uncertainty in Long Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2603.06973": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Guo_T2SGrid_Temporal-to-Spatial_Gridification_for_Video_Temporal_Grounding_CVPR_2026_paper.html",
+    "title": "T2SGrid: Temporal-to-Spatial Gridification for Video Temporal Grounding",
+    "basis": "official proceedings"
+  },
+  "2603.06732": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Han_HERO_Hierarchical_Embedding-Refinement_for_Open-Vocabulary_Temporal_Sentence_Grounding_in_Videos_CVPR_2026_paper.html",
+    "title": "HERO: Hierarchical Embedding-Refinement for Open-Vocabulary Temporal Sentence Grounding in Videos",
+    "basis": "official proceedings"
+  },
+  "2603.02096": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xie_FluxMem_Adaptive_Hierarchical_Memory_for_Streaming_Video_Understanding_CVPR_2026_paper.html",
+    "title": "FluxMem: Adaptive Hierarchical Memory for Streaming Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2602.16412": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yashima_ReMoRa_Multimodal_Large_Language_Model_based_on_Refined_Motion_Representation_CVPR_2026_paper.html",
+    "title": "ReMoRa: Multimodal Large Language Model based on Refined Motion Representation for Long-Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2601.14724": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.381/",
+    "title": "HERMES: KV Cache as Hierarchical Memory for Efficient Streaming Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2601.10611": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Clark_Molmo2_Open_Weights_and_Data_for_Vision-Language_Models_with_Video_CVPR_2026_paper.html",
+    "title": "Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding",
+    "basis": "official proceedings"
+  },
+  "2606.00439": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Venkatesh_Physical_Object_Understanding_with_a_Physically_Controllable_World_Model_CVPR_2026_paper.html",
+    "title": "Physical Object Understanding with a Physically Controllable World Model",
+    "basis": "official proceedings"
+  },
+  "2601.10553": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yuan_Inference-time_Physics_Alignment_of_Video_Generative_Models_with_Latent_World_CVPR_2026_paper.html",
+    "title": "Inference-time Physics Alignment of Video Generative Models with Latent World Models",
+    "basis": "official proceedings"
+  },
+  "2601.03905": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.623/",
+    "title": "Current Agents Fail to Leverage World Model as Tool for Foresight",
+    "basis": "official proceedings"
+  },
+  "2604.08503": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Shen_PHANTOM_Physics-Infused_Video_Generation_via_Joint_Modeling_of_Visual_and_CVPR_2026_paper.html",
+    "title": "PHANTOM: Physics-Infused Video Generation via Joint Modeling of Visual and Latent Physical Dynamics",
+    "basis": "official proceedings"
+  },
+  "2605.21625": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Chetan_Flat-Pack_Bench_Evaluating_Spatio-Temporal_Understanding_in_Large_Vision-Language_Models_through_CVPR_2026_paper.html",
+    "title": "Flat-Pack Bench: Evaluating Spatio-Temporal Understanding in Large Vision-Language Models through Furniture Assembly",
+    "basis": "official proceedings"
+  },
+  "2603.23404": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.620/",
+    "title": "Unleashing Spatial Reasoning in Multimodal Large Language Models via Textual Representation Guided Reasoning",
+    "basis": "official proceedings"
+  },
+  "2603.21957": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Du_Unified_Spatiotemporal_Token_Compression_for_Video-LLMs_at_Ultra-Low_Retention_CVPR_2026_paper.html",
+    "title": "Unified Spatiotemporal Token Compression for Video-LLMs at Ultra-Low Retention",
+    "basis": "official proceedings"
+  },
+  "2603.17312": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Recurrent_Reasoning_with_Vision-Language_Models_for_Estimating_Long-Horizon_Embodied_Task_CVPR_2026_paper.html",
+    "title": "Recurrent Reasoning with Vision-Language Models for Estimating Long-Horizon Embodied Task Progress",
+    "basis": "official proceedings"
+  },
+  "2603.12746": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Thinking_in_Dynamics_How_Multimodal_Large_Language_Models_Perceive_Track_CVPR_2026_paper.html",
+    "title": "Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World",
+    "basis": "official proceedings"
+  },
+  "2603.02872": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Think-as-You-See_Streaming_Chain-of-Thought_Reasoning_for_Large_Vision-Language_Models_CVPR_2026_paper.html",
+    "title": "Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models",
+    "basis": "official proceedings"
+  },
+  "2512.20557": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Learning_to_Reason_in_4D_Dynamic_Spatial_Understanding_for_Vision_CVPR_2026_paper.html",
+    "title": "Learning to Reason in 4D: Dynamic Spatial Understanding for Vision Language Models",
+    "basis": "official proceedings"
+  },
+  "2512.19683": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_From_Indoor_to_Open_World_Revealing_the_Spatial_Reasoning_Gap_CVPR_2026_paper.html",
+    "title": "From Indoor to Open World: Revealing the Spatial Reasoning Gap in MLLMs",
+    "basis": "official proceedings"
+  },
+  "2512.19526": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Puyin_QUANTIPHY_A_Quantitative_Benchmark_Evaluating_Physical_Reasoning_Abilities_of_Vision-Language_CVPR_2026_paper.html",
+    "title": "QUANTIPHY: A Quantitative Benchmark Evaluating Physical Reasoning Abilities of Vision-Language Models",
+    "basis": "official proceedings"
+  },
+  "2606.02642": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_SVHalluc_Benchmarking_Speech-Vision_Hallucination_in_Audio-Visual_Large_Language_Models_CVPR_2026_paper.html",
+    "title": "SVHalluc: Benchmarking Speech-Vision Hallucination in Audio-Visual Large Language Models",
+    "basis": "official proceedings"
+  },
+  "2604.10695": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.961/",
+    "title": "Retrieving to Recover: Towards Incomplete Audio-Visual Question Answering via Semantic-consistent Purification",
+    "basis": "official proceedings"
+  },
+  "2602.06139": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Seth_EgoAVU_Egocentric_Audio-Visual_Understanding_CVPR_2026_paper.html",
+    "title": "EgoAVU: Egocentric Audio-Visual Understanding",
+    "basis": "official proceedings"
+  },
+  "2512.07469": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_VideoCoF_Unified_Video_Editing_with_Temporal_Reasoner_CVPR_2026_paper.html",
+    "title": "VideoCoF: Unified Video Editing with Temporal Reasoner",
+    "basis": "official proceedings"
+  },
+  "2512.19949": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_How_Much_3D_Do_Video_Foundation_Models_Encode_CVPR_2026_paper.html",
+    "title": "How Much 3D Do Video Foundation Models Encode?",
+    "basis": "official proceedings"
+  },
+  "2512.17012": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_4D-RGPT_Toward_Region-level_4D_Understanding_via_Perceptual_Distillation_CVPR_2026_paper.html",
+    "title": "4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation",
+    "basis": "official proceedings"
+  },
+  "2601.16210": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Susladkar_PyraTok_Language-Aligned_Pyramidal_Tokenizer_for_Video_Understanding_and_Generation_CVPR_2026_paper.html",
+    "title": "PyraTok: Language-Aligned Pyramidal Tokenizer for Video Understanding and Generation",
+    "basis": "official proceedings"
+  },
+  "2601.10323": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.1153/",
+    "title": "ROMA: Real-time Omni-Multimodal Assistant with Interactive Streaming Understanding",
+    "basis": "official proceedings"
+  },
+  "2601.05848": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Gillman_Goal_Force_Teaching_Video_Models_To_Accomplish_Physics-Conditioned_Goals_CVPR_2026_paper.html",
+    "title": "Goal Force: Teaching Video Models To Accomplish Physics-Conditioned Goals",
+    "basis": "official proceedings"
+  },
+  "2602.18977": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Ponbagavathi_Frame2Freq_Spectral_Adapters_for_Fine-Grained_Video_Understanding_CVPR_2026_paper.html",
+    "title": "Frame2Freq: Spectral Adapters for Fine-Grained Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2602.19117": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Jang_Keep_it_SymPL_Symbolic_Projective_Layout_for_Allocentric_Spatial_Reasoning_CVPR_2026_paper.html",
+    "title": "Keep it SymPL: Symbolic Projective Layout for Allocentric Spatial Reasoning in Vision-Language Models",
+    "basis": "official proceedings"
+  },
+  "2602.22142": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_WeaveTime_Streaming_from_Earlier_Frames_into_Emergent_Memory_in_VideoLLMs_CVPR_2026_paper.html",
+    "title": "WeaveTime: Streaming from Earlier Frames into Emergent Memory in VideoLLMs",
+    "basis": "official proceedings"
+  },
+  "2602.20901": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xie_SpatiaLQA_A_Benchmark_for_Evaluating_Spatial_Logical_Reasoning_in_Vision-Language_CVPR_2026_paper.html",
+    "title": "SpatiaLQA: A Benchmark for Evaluating Spatial Logical Reasoning in Vision-Language Models",
+    "basis": "official proceedings"
+  },
+  "2603.02133": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Xia_SimRecon_SimReady_Compositional_Scene_Reconstruction_from_Real_Videos_CVPR_2026_paper.html",
+    "title": "SimRecon: SimReady Compositional Scene Reconstruction from Real Videos",
+    "basis": "official proceedings"
+  },
+  "2603.01400": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Token_Reduction_via_Local_and_Global_Contexts_Optimization_for_Efficient_CVPR_2026_paper.html",
+    "title": "Token Reduction via Local and Global Contexts Optimization for Efficient Video Large Language Models",
+    "basis": "official proceedings"
+  },
+  "2603.05438": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Kim_Planning_in_8_Tokens_A_Compact_Discrete_Tokenizer_for_Latent_CVPR_2026_paper.html",
+    "title": "Planning in 8 Tokens: A Compact Discrete Tokenizer for Latent World Model",
+    "basis": "official proceedings"
+  },
+  "2603.06408": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Foo_Physical_Simulator_In-the-Loop_Video_Generation_CVPR_2026_paper.html",
+    "title": "Physical Simulator In-the-Loop Video Generation",
+    "basis": "official proceedings"
+  },
+  "2603.13912": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Tan_Towards_Stable_Self-Supervised_Object_Representations_in_Unconstrained_Egocentric_Video_CVPR_2026_paper.html",
+    "title": "Towards Stable Self-Supervised Object Representations in Unconstrained Egocentric Video",
+    "basis": "official proceedings"
+  },
+  "2603.12254": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Shi_Attend_Before_Attention_Efficient_and_Scalable_Video_Understanding_via_Autoregressive_CVPR_2026_paper.html",
+    "title": "Attend Before Attention: Efficient and Scalable Video Understanding via Autoregressive Gazing",
+    "basis": "official proceedings"
+  },
+  "2603.13741": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Lee_Ego-1K_-_A_Large-Scale_Multiview_Video_Dataset_for_Egocentric_Vision_CVPR_2026_paper.html",
+    "title": "Ego-1K - A Large-Scale Multiview Video Dataset for Egocentric Vision",
+    "basis": "official proceedings"
+  },
+  "2603.19610": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Kong_ParallelVLM_Lossless_Video-LLM_Acceleration_with_Visual_Alignment_Aware_Parallel_Speculative_CVPR_2026_paper.html",
+    "title": "ParallelVLM: Lossless Video-LLM Acceleration with Visual Alignment Aware Parallel Speculative Decoding",
+    "basis": "official proceedings"
+  },
+  "2603.22758": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Moon_Reconstruction-Guided_Slot_Curriculum_Addressing_Object_Over-Fragmentation_in_Video_Object-Centric_Learning_CVPR_2026_paper.html",
+    "title": "Reconstruction-Guided Slot Curriculum: Addressing Object Over-Fragmentation in Video Object-Centric Learning",
+    "basis": "official proceedings"
+  },
+  "2603.25072": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Ma_GIFT_Global_Irreplaceability_Frame_Targeting_for_Efficient_Video_Understanding_CVPR_2026_paper.html",
+    "title": "GIFT: Global Irreplaceability Frame Targeting for Efficient Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2603.27437": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_SpatialStack_Layered_Geometry-Language_Fusion_for_3D_VLM_Spatial_Reasoning_CVPR_2026_paper.html",
+    "title": "SpatialStack: Layered Geometry-Language Fusion for 3D VLM Spatial Reasoning",
+    "basis": "official proceedings"
+  },
+  "2603.27967": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Jeong_Learning_Multi-View_Spatial_Reasoning_from_Cross-View_Relations_CVPR_2026_paper.html",
+    "title": "Learning Multi-View Spatial Reasoning from Cross-View Relations",
+    "basis": "official proceedings"
+  },
+  "2604.07990": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_SceneScribe-1M_A_Large-Scale_Video_Dataset_with_Comprehensive_Geometric_and_Semantic_CVPR_2026_paper.html",
+    "title": "SceneScribe-1M: A Large-Scale Video Dataset with Comprehensive Geometric and Semantic Annotations",
+    "basis": "official proceedings"
+  },
+  "2604.03819": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Bao_ActivityForensics_A_Comprehensive_Benchmark_for_Localizing_Manipulated_Activity_in_Videos_CVPR_2026_paper.html",
+    "title": "ActivityForensics: A Comprehensive Benchmark for Localizing Manipulated Activity in Videos",
+    "basis": "official proceedings"
+  },
+  "2605.16899": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Tang_LASAR_Towards_Spatio-temporal_Reasoning_with_Latent_Cognitive_Map_CVPR_2026_paper.html",
+    "title": "LASAR: Towards Spatio-temporal Reasoning with Latent Cognitive Map",
+    "basis": "official proceedings"
+  },
+  "2605.18018": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Sun_See_What_I_Mean_Aligning_Vision_and_Language_Representations_for_CVPR_2026_paper.html",
+    "title": "See What I Mean: Aligning Vision and Language Representations for Video Fine-grained Object Understanding",
+    "basis": "official proceedings"
+  },
+  "2512.00805": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Hu_Thinking_with_Drafts_Speculative_Temporal_Reasoning_for_Efficient_Long_Video_CVPR_2026_paper.html",
+    "title": "Thinking with Drafts: Speculative Temporal Reasoning for Efficient Long Video Understanding",
+    "basis": "official proceedings"
+  },
+  "2512.03963": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_TempR1_Improving_Temporal_Understanding_of_MLLMs_via_Temporal-Aware_Multi-Task_Reinforcement_CVPR_2026_paper.html",
+    "title": "TempR1: Improving Temporal Understanding of MLLMs via Temporal-Aware Multi-Task Reinforcement Learning",
+    "basis": "official proceedings"
+  },
+  "2512.02425": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Yeo_WorldMM_Dynamic_Multimodal_Memory_Agent_for_Long_Video_Reasoning_CVPR_2026_paper.html",
+    "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+    "basis": "official proceedings"
+  },
+  "2512.03043": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Feng_OneThinker_All-in-one_Reasoning_Model_for_Image_and_Video_CVPR_2026_paper.html",
+    "title": "OneThinker: All-in-one Reasoning Model for Image and Video",
+    "basis": "official proceedings"
+  },
+  "2512.01989": {
+    "venue": "CVPR 2026",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_PAI-Bench_A_Comprehensive_Benchmark_For_Physical_AI_CVPR_2026_paper.html",
+    "title": "PAI-Bench: A Comprehensive Benchmark For Physical AI",
+    "basis": "official proceedings"
+  },
+  "2606.02111": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.1186/",
+    "title": "Jailbreaking Multimodal Large Language Models using Multi-Clip Video",
+    "basis": "official proceedings"
+  },
+  "2603.11698": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.1425/",
+    "title": "OSCBench: Benchmarking Object State Change in Text-to-Video Generation",
+    "basis": "official proceedings"
+  },
+  "2604.12148": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.2003/",
+    "title": "ViLL-E: Video LLM Embeddings for Retrieval",
+    "basis": "official proceedings"
+  },
+  "2603.11481": {
+    "venue": "ACL 2026",
+    "source": "https://aclanthology.org/2026.acl-long.2062/",
+    "title": "INFACT: A Diagnostic Benchmark for Induced Faithfulness and Factuality Hallucinations in Video-LLMs",
+    "basis": "official proceedings"
+  },
+  "2510.05094": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.12/",
+    "title": "VChain: Chain-of-Visual-Thought for Reasoning in Video Generation",
+    "basis": "official proceedings"
+  },
+  "2604.20460": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.1089/",
+    "title": "CCTVBench: Contrastive Consistency Traffic VideoQA Benchmark for Multimodal LLMs",
+    "basis": "official proceedings"
+  },
+  "2604.12944": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.1325/",
+    "title": "Distorted or Fabricated? A Survey on Hallucination in Video LLMs",
+    "basis": "official proceedings"
+  },
+  "2603.21493": {
+    "venue": "ACL 2026 (Findings)",
+    "source": "https://aclanthology.org/2026.findings-acl.295/",
+    "title": "StreamingEval: A Unified Evaluation Framework towards Realistic Streaming Video Understanding",
+    "basis": "matching abstract and named system"
+  }
+}

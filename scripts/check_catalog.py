@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Offline structural and metadata checks for the survey; standard library only."""
 import datetime
+from collections import Counter, defaultdict
 import html
 import json
 from pathlib import Path
@@ -14,6 +15,7 @@ LINK = re.compile(r'(?<!!)\[[^\]\n]+\]\(([^\s)]+)\)')
 DATE = re.compile(r'^\d{4}-(0[1-9]|1[0-2])$')
 errors = []
 records = {}
+locations = defaultdict(list)
 metadata = json.loads((ROOT / 'docs/bibliography.json').read_text())['papers']
 counts = {'tables': 0, 'rows': 0}
 
@@ -31,7 +33,7 @@ def visible_title(cell):
     return ' '.join(html.unescape(match[1]).split()) if match else ''
 
 
-for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', *sorted((ROOT / 'docs').glob('*.md'))]:
+for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', *sorted((ROOT / 'docs').rglob('*.md'))]:
     source = path.read_text()
     # GitHub's math-renderer macro restrictions, checked 2026-09-17.
     # Parse math before removing fenced examples from the Markdown checks below.
@@ -124,6 +126,105 @@ for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', *sorted((ROOT / 'docs
             if identity in records and records[identity] != record:
                 fail(path, number, f'inconsistent cross-list title/date/venue: {identity}')
             records[identity] = record
+            locations[identity].append(path)
+
+# The dated expansion must be traceable to its primary metadata and screening log.
+review = ROOT / 'docs/review-2026'
+manifest_path = review / 'catalog.json'
+manifest = json.loads(manifest_path.read_text())
+catalog = manifest['papers']
+coverage = json.loads((review / 'coverage.json').read_text())
+screened_rows = [json.loads(line) for line in (review / 'screening.jsonl').read_text().splitlines()]
+screened = {row['id']: row for row in screened_rows}
+resources = json.loads((review / 'resource-checks.json').read_text())
+supplement = json.loads((review / 'proceedings.json').read_text())['papers']
+months = defaultdict(lambda: {'existing': 0, 'added': 0})
+
+
+def review_fail(message):
+    fail(manifest_path, 1, message)
+
+
+if len(screened) != len(screened_rows):
+    review_fail('duplicate screening identity')
+if {key for key, row in screened.items() if row['decision'] == 'included'} != set(catalog):
+    review_fail('screening inclusion set disagrees with catalog')
+for identity, entry in catalog.items():
+    if identity not in metadata:
+        review_fail(f'missing primary metadata: {identity}')
+        continue
+    paper = metadata[identity]
+    date = paper['first_public'][:10]
+    if not manifest['window']['start'] <= date <= manifest['window']['end']:
+        review_fail(f'outside review window: {identity}')
+    location, branch = entry['location'], entry['branch']
+    if location not in {'README', 'review'} or (branch not in manifest['branches'] and not (location == 'README' and branch == 'existing')):
+        review_fail(f'invalid chapter or location: {identity}')
+        continue
+    expected = ROOT / 'README.md' if location == 'README' else review / f'{branch}.md'
+    if expected not in locations[identity]:
+        review_fail(f'paper missing from its primary catalog: {identity}')
+    if any(path.parent == review and path != expected for path in locations[identity]):
+        review_fail(f'paper appears in an unexpected review chapter: {identity}')
+    expected_title = ' '.join(entry.get('display_title', paper['title']).split())
+    if identity in records and records[identity] != (expected_title, date[:7], f'`{entry["venue"]}`'):
+        review_fail(f'title/date/venue differs from manifest: {identity}')
+    row = screened.get(identity, {})
+    if any(row.get(field) != value for field, value in {
+        'title': paper['title'], 'first_public': date, 'branch': branch,
+        'location': location, 'review_level': entry['review_level'],
+    }.items()):
+        review_fail(f'screening metadata differs: {identity}')
+    if entry['review_level'] not in {'abstract', 'abstract-excerpt', 'previous-review'}:
+        review_fail(f'unreviewed catalog entry: {identity}')
+    if not entry['focus'].strip():
+        review_fail(f'missing contribution/scope: {identity}')
+    for link in entry['resources']:
+        if resources.get(link['url'], {}).get('status') != 200:
+            review_fail(f'resource lacks a successful recorded check: {identity}: {link["url"]}')
+    months[date[:7]]['existing' if location == 'README' else 'added'] += 1
+
+branch_counts = dict(Counter(entry['branch'] for entry in catalog.values() if entry['location'] == 'review'))
+expected_counts = {
+    'window': manifest['window'], 'window_records': len(catalog),
+    'existing_window_records': sum(entry['location'] == 'README' for entry in catalog.values()),
+    'new_arxiv_records': sum(branch_counts.values()), 'branches': branch_counts,
+    'months': dict(months), 'primary_metadata_records': len(screened),
+    'screening': dict(Counter(row['decision'] for row in screened_rows)),
+    'proceedings_supplement': len(supplement),
+}
+for field, value in expected_counts.items():
+    if coverage.get(field) != value:
+        review_fail(f'stale coverage field: {field}')
+sources = [paper['source'] for paper in supplement]
+if len(sources) != len(set(sources)):
+    review_fail('duplicate proceedings supplement source')
+for paper in supplement:
+    if paper['branch'] not in manifest['branches'] or paper['review_level'] != 'abstract':
+        review_fail(f'invalid proceedings placement/review: {paper["title"]}')
+    if not DATE.fullmatch(paper['publication']) or not paper['date_basis'].startswith('first located proceedings'):
+        review_fail(f'proceedings date basis missing: {paper["title"]}')
+
+# Exhausted pagination is a checkable property, not an inferred coverage claim.
+searches = json.loads((review / 'searches.json').read_text())
+query_pages = defaultdict(list)
+for page in searches['arxiv_pages']:
+    query_pages[page['query']].append(page)
+for query, pages in query_pages.items():
+    cursor = 0
+    for page in sorted(pages, key=lambda page: page['start']):
+        if page['start'] != cursor or page['total'] != pages[0]['total']:
+            review_fail(f'incomplete/inconsistent pagination: {query}')
+        cursor += page['returned']
+    if cursor != pages[0]['total']:
+        review_fail(f'unexhausted query: {query}')
+if coverage['primary_query_unique'] != sum(bool(set(row['queries']) & set(query_pages)) for row in screened_rows):
+    review_fail('stale unique query count')
+
+from build_review import render
+for path, content in render().items():
+    if not path.exists() or path.read_text() != content:
+        fail(path, 1, 'generated page is stale; run scripts/build_review.py')
 
 if errors:
     print('\n'.join(errors))
