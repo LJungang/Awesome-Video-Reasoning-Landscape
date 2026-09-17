@@ -1,16 +1,16 @@
-# Research update — 2026-09-17
+# Research Log — 2026-09-17
 
-## Scope and evidence
+## Review Scope
 
-This update retains the repository's English tables and reverse chronological ordering, adds 36 distinct papers (37 new catalog rows because VBVR contributes a method/resource and a benchmark), and completes the task, modeling, and evaluation narrative. It is a selective literature update, not an exhaustive or systematic review, and does not reproduce experimental results.
+The first update added **36 papers / 37 rows** (VBVR appears as both a resource and benchmark), retaining English tables and date order. Coverage is selective; experiments were not reproduced.
 
-Discovery used the arXiv Atom API (`https://export.arxiv.org/api/query`) on 2026-09-17. Queries covered the exact phrase `video reasoning`, January–June 2026, January–April 2026, streaming/online/proactive video titles, and world-model/video-generation/visual-reasoning titles. Retrieval was capped at 30–45 results per query; the January–April query used relevance ordering, while the others used submission-date ordering. This balances recent discoveries with earlier 2026 work but can miss relevant papers and terminology. Candidate selection favored distinct modeling or evaluation contributions and direct video relevance; inclusion is not a quality ranking.
+Discovery used the arXiv Atom API (`https://export.arxiv.org/api/query`) on 2026-09-17: `video reasoning`; January–June and January–April 2026; streaming/online/proactive video titles; world-model/video-generation/visual-reasoning titles. Queries returned 30–45 results each. January–April used relevance order; the rest used submission date. Selection favored distinct mechanisms and evaluation contributions, not a quality ranking.
 
-All 177 distinct arXiv IDs already linked in the original README were resolved through the primary API. The 36 new papers were checked against their primary titles, first-public dates, and abstracts. The initial [bibliography snapshot](bibliography.json) comprised 213 checked primary records, including version URLs and author comments when fetched for existing entries. This is metadata and abstract-level verification, not a claim of full-paper review, code execution, dataset inspection, or independent venue confirmation. Existing non-arXiv citations and every historical resource link were not comprehensively revalidated.
+All **177 existing arXiv IDs** were resolved. The 36 additions received title/date/abstract review, producing an initial **213-record** [bibliography](bibliography.json). This did not include full-paper review, code execution, independent venue confirmation, or comprehensive revalidation of historical links and non-arXiv sources.
 
-New claims about mechanisms below are paraphrases of the authors' abstracts. No author-reported leaderboard result is promoted to a cross-paper ranking. New papers remain labeled `arXiv` where venue acceptance was not separately checked. The README's modeling equations and cross-axis taxonomy are editorial synthesis, not a formulation attributed to all cited papers.
+Mechanism summaries paraphrase abstracts. Unverified venues remain `arXiv`; the taxonomy and equations are survey synthesis. Scores from different protocols are not ranked together.
 
-## New literature and placement
+## Literature Additions
 
 | Primary paper | First public | Placement | Contribution / scope decision |
 | :--- | :--- | :--- | :--- |
@@ -51,9 +51,9 @@ New claims about mechanisms below are paraphrases of the authors' abstracts. No 
 | [MINERVA-Cultural: A Benchmark for Cultural and Multilingual Long Video Reasoning](https://arxiv.org/abs/2601.10649) | 2026-01-15 | Benchmark | MINERVA-Cultural: culturally situated, native-language long-video reasoning beyond English-centric evaluation. |
 | [Watching, Reasoning, and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning](https://arxiv.org/abs/2601.06943) | 2026-01-11 | Benchmark | VideoDR: joint video and open-web evidence; retrieval tools and search state are part of the evaluation setting. |
 
-## Corrections and retained scope
+## Corrections
 
-The following first-public months were corrected from primary `published` metadata, not inferred from arXiv identifier prefixes. A paper's identifier month can differ from its first public date.
+Dates below use primary `published` metadata, which can differ from the arXiv identifier month.
 
 | Primary source | Previous month | Corrected month |
 | :--- | :--- | :--- |
@@ -69,7 +69,7 @@ The following first-public months were corrected from primary `published` metada
 | [2512.08228](https://arxiv.org/abs/2512.08228) | 2015-12 | 2025-12 |
 | [ViTCoT](https://arxiv.org/abs/2507.09876) | 2025-10 in the interleaved table | 2025-07; matches the original preprint and CoT entry |
 
-[TOMATO's official ICLR proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/16ba99f25a235f1100a4014d71d34ad8-Abstract-Conference.html) identify **ICLR 2025**, correcting the original CVPR label. `Findinds` and `Spotlighht` spelling errors were fixed. Other venue changes below use explicit author comments/journal references from the primary metadata snapshot; acceptance announcements are distinguished from independent proceedings verification.
+[TOMATO's official proceedings](https://proceedings.iclr.cc/paper_files/paper/2025/hash/16ba99f25a235f1100a4014d71d34ad8-Abstract-Conference.html) confirm **ICLR 2025**, correcting CVPR. `Findinds` and `Spotlighht` typos were fixed. Other venue updates use explicit author comments/journal references, not independent proceedings verification.
 
 | Paper | Previous venue | Updated venue | Evidence |
 | :--- | :--- | :--- | :--- |
@@ -94,11 +94,11 @@ The following first-public months were corrected from primary `published` metada
 | [2506.21742](https://arxiv.org/abs/2506.21742) | `Arxiv` | `CVPR 2026` | Accepted at CVPR 2026 |
 | [2505.24867](https://arxiv.org/abs/2505.24867) | `Arxiv` | `CVPR 2026` | Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026 Project page at https://timeblindness.github.io |
 
-Ambiguous statements were not promoted: “ICCV format” is not acceptance; the AV-SpeakerBench “Findings of CVPR” wording needs clarification; StreamGaze's author comment describes acceptance followed by desk rejection, so it remains `arXiv`. A later venue name alone is not treated as evidence that proceedings have already appeared.
+Unresolved venue claims remain unchanged: “ICCV format” is not acceptance; AV-SpeakerBench's “Findings of CVPR” is ambiguous; StreamGaze reports acceptance followed by desk rejection. Announced venues do not establish published proceedings.
 
-Significant title changes were reconciled with the current primary records: **TimeZero → Time-R1**, **CoT-Vid → VISTA**, **VideoMind**'s temporal-grounded title, **TAR-TVG → TAR**, **MECD → MECD+** for the 2025 follow-up, **ImplicitQA → VRR-QA**, and the expanded **MMGR**, **COVER**, and **VideoCoF** titles. Older aliases remain here for searchability; MECD's separate 2024 paper remains a separate entry. ImplicitQA's historical benchmark label is retained alongside its updated paper title rather than asserting that a dataset was renamed.
+Title updates: **TimeZero → Time-R1**, **CoT-Vid → VISTA**, **TAR-TVG → TAR**, **MECD → MECD+** for the 2025 follow-up, **ImplicitQA → VRR-QA**, and revised VideoMind, MMGR, COVER, and VideoCoF titles. MECD's 2024 paper remains separate. ImplicitQA's dataset label is retained; a paper rename does not establish a dataset rename.
 
-Classification/resource repairs:
+Catalog repairs:
 
 - [Chain-of-Frames](https://arxiv.org/abs/2506.00318) produces text traces referring to observed frames. Its duplicate in the generated-trajectory CoF table was removed, while its CoT entry and weight link were retained.
 - Unified VILA-U and JavisGPT architectures now have an explicitly labeled foundations subsection inside Interleaved; unified understanding/generation alone is not evidence of iterative reasoning.
@@ -107,18 +107,18 @@ Classification/resource repairs:
 - Dataset/project links were moved out of Checkpoint cells into the neighboring resources cells, preserving the links. Long-RL's actual [LongVILA-R1-7B weights](https://huggingface.co/Efficient-Large-Model/LongVILA-R1-7B) replace a training-dataset link, following the paper's author comment. The Eagle collection in the R1-Zero-VSI row was removed from Checkpoint because this review did not verify that association; no nonexistence claim is made.
 - HAVEN's JSON file is now labeled Data rather than Hugging Face. StreamingCoT's copied `#minerva` fragment, the wrong Star History destination, malformed contributor URL, orphan `</h2>`, broken TOC anchors, and literal backticked HTML breaks were repaired. Stable explicit anchors now support the expanded contents.
 
-## Resource verification and limitations
+## Resource Checks
 
-Author-linked resources were checked with unauthenticated HTTPS GET requests. Sixteen of 17 checked resources resolved successfully, including official project pages, GitHub repositories, VWG-Bench data, and LongVILA-R1 weights. This is a reachability check, not proof that code, data, and checkpoints are complete or runnable. The ThinkStream repository redirects from `johncaged/ThinkStream` to `CASIA-IVA-Lab/ThinkStream`; the catalog uses the resolved destination.
+Unauthenticated HTTPS checks resolved **16 of 17** selected author resources. ThinkStream redirects to `CASIA-IVA-Lab/ThinkStream`, now used in the catalog. Reachability does not establish release completeness or reproducibility.
 
-The Video-MOPD abstract advertises `https://huggingface.co/LandH/Video-MOPD-8B`, but the endpoint returned **HTTP 401** during this review. The catalog therefore records `N/A` for its checkpoint rather than presenting an accessible verified release. HTTP 401 cannot distinguish private, restricted, removed, or otherwise inaccessible resources. Other new rows without author-linked verified resources also use `N/A`; availability should be revisited in later updates.
+Video-MOPD's advertised `https://huggingface.co/LandH/Video-MOPD-8B` returned **HTTP 401**. Its checkpoint is recorded as `N/A`; the response does not identify whether the resource is private, restricted, or removed. Revisit availability in later updates.
 
-The static validator checks all catalog tables, local references, ordering, first-public dates, and repeated-paper metadata. It does not check network availability or scientific correctness. Bibliographic snapshots are checked evidence from this update, not an automatically maintained database. Future changes should update both the visible catalog and relevant snapshot records.
+The validator checks local structure and metadata, not live links or scientific accuracy. Keep catalog entries and bibliography snapshots consistent.
 
 
-## Executable-world extension — 2026-09-17
+## World-Model Extension — 2026-09-17
 
-The subsequent extension adds six distinct primary sources and reorganizes the existing catalogs at two levels: **reasoning representations/mechanisms** and **orchestration/interaction**. All earlier references and stable catalog anchors are preserved. The new executable/hybrid table distinguishes direct video-world systems from visual bridges and planning foundations; WorldCoder-Bench is in a separately labeled bridge-evaluation table. The bibliography now contains **219** primary records.
+The extension added **six papers**, bringing the bibliography to **219 records**. The catalog separates reasoning engines from interaction loops and labels direct video systems, visual bridges, and planning foundations. WorldCoder-Bench remains a separate bridge evaluation. Existing references and anchors were preserved.
 
 | Primary source | Placement | Evidence reviewed |
 | :--- | :--- | :--- |
@@ -129,10 +129,10 @@ The subsequent extension adds six distinct primary sources and reorganizes the e
 | [WorldCoder](https://arxiv.org/abs/2402.12275) | Executable/hybrid; program-based planning foundation | Primary metadata and abstract; also discussed in Code World Model Section 2.3 |
 | [WorldCoder-Bench](https://arxiv.org/abs/2606.01869) | Related executable-world evaluation; not video QA | Primary metadata and abstract; runtime behavior as an evaluation bridge |
 
-Discovery used the arXiv Atom query `ti:"worldcoder" OR ti:"code world model" OR ti:"world models in code" OR ti:"world models with code" OR ti:"world models as programs"` with relevance sorting and 25 results. Primary abstract pages were also read for supporting sources. The terminology returned unrelated software-execution and code-generation papers; these were not automatically included. Selection follows the state/dynamics/perception/rendering connections in [world-models.md](world-models.md), rather than name matching or an exhaustive coverage claim.
+Discovery query: `ti:"worldcoder" OR ti:"code world model" OR ti:"world models in code" OR ti:"world models with code" OR ti:"world models as programs"`, relevance order, 25 results. Supporting abstract pages were also read. Inclusion follows the state/dynamics/perception/rendering connections in [Worlds as Programs](world-models.md), not name matching.
 
-The new [perspective](../README.md#world-model-perspective), case study, and research agenda are editorial synthesis. Code World Model's proxy-following evidence is qualitative, excludes latency in its comparison, and uses recorded proxy sequences and existing engine templates. Its limitations explicitly exclude demonstrated autonomous complete-world construction and autoregressive real-time generation. Those distinctions are preserved in both the README and extended discussion. Suggested benchmarks, interventions, and hybrid combinations are proposals, not reported experimental findings.
+The [perspective](../README.md#world-model-perspective) and agenda are survey synthesis. Code World Model demonstrates qualitative proxy-following using recorded sequences and engine templates, with latency excluded from comparisons. Complete autonomous world construction and autoregressive real-time generation remain undemonstrated. Proposed experiments are labeled accordingly.
 
-The CWM author repository links a LoRA adapter and compact inference examples; the catalog distinguishes weights from data and does not claim a standalone base model or release of all training data. The CWM GitHub repository, LoRA endpoint, inference-example dataset, and VisualPatchWorld repository returned HTTP 200 during this review; reachability does not establish that the releases are complete or runnable. No new model was executed and no experiment was independently reproduced. New venues remain `arXiv` where acceptance was not separately checked. The older metadata/abstract audit is not retroactively presented as a full-paper review.
+CWM's repository, LoRA adapter, inference-example dataset, and VisualPatchWorld's repository returned **HTTP 200**. The adapter is not a standalone base model; inference examples are not the complete training set. No model was run. New venues remain `arXiv` unless separately verified.
 
-Following the earlier formula repair, the validator now scans all survey Markdown documents and rejects known GitHub-blocked math macros, including `\operatorname`. This is a compatibility guard, not a substitute for rendering: new formulas use fenced `math` blocks and supported `\mathrm` labels.
+The validator scans all survey Markdown for known GitHub-blocked macros, including `\operatorname`. Formulas use fenced `math` and supported `\mathrm` labels; rendering still requires separate verification.
