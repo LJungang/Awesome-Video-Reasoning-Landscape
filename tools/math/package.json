@@ -1,0 +1,15 @@
+{
+  "name": "video-survey-math",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "render": "node render.cjs",
+    "check": "node render.cjs --check"
+  },
+  "dependencies": {
+    "mathjax-full": "3.2.2"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.9.12"
+  }
+}
