@@ -158,6 +158,7 @@ Evaluate three things separately: **rule implementation, agreement with the envi
 
 ### Reasoning Engines
 
+
 <a id="cot-based-video-reasoning"></a>
 
 #### Grounded Reasoning
@@ -408,6 +409,7 @@ Language-led inference, evidence-linked training, distillation, and reliability.
 | [VideoINSTA: Zero-shot Long Video Understanding via Informative Spatial-Temporal Reasoning with LLMs](https://arxiv.org/abs/2409.20365) <!-- paper:2409.20365 --> | [code: GitHub](https://github.com/mayhugotong/VideoINSTA) ![](https://img.shields.io/github/stars/mayhugotong/VideoINSTA?style=flat-square&color=E0E0E0&label=Stars) | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2024-09 | EMNLP 2024 (Findings) |
 | [MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning](https://arxiv.org/abs/2409.17647) <!-- paper:2409.17647 --> | [code: GitHub](https://github.com/tychen-SJTU/MECD-Benchmark) ![](https://img.shields.io/github/stars/tychen-SJTU/MECD-Benchmark?style=flat-square&color=E0E0E0&label=Stars)<br>[weights: Hugging Face](https://github.com/tychen-SJTU/MECD-Benchmark) | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2024-09 | NeurIPS 2024 (Spotlight) |
 | [Video-of-Thought: Step-by-Step Video Reasoning from Perception to Cognition](https://arxiv.org/abs/2501.03230) <!-- paper:2501.03230 --> | [code: GitHub](https://github.com/scofield7419/Video-of-Thought) ![](https://img.shields.io/github/stars/scofield7419/Video-of-Thought?style=flat-square&color=E0E0E0&label=Stars) | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2024-05 | ICML 2024 |
+
 <a id="cof-based-video-reasoning"></a>
 
 #### Thinking in Visual Futures
@@ -440,6 +442,7 @@ Generated frames, denoising trajectories, and visual updates as intermediate com
 | [Video Models Start to Solve Chess, Maze, Sudoku, Mental Rotation, and Raven’ Matrices](https://arxiv.org/abs/2512.05969) <!-- paper:2512.05969 --> | [code: GitHub](https://github.com/Video-Reason/VMEvalKit) ![](https://img.shields.io/github/stars/Video-Reason/VMEvalKit?style=flat-square&color=E0E0E0&label=Stars) | `N/A` | 2025-11 | arXiv |
 | [Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark](https://arxiv.org/abs/2510.26802) <!-- paper:2510.26802 --> | [code: GitHub](https://github.com/ZiyuGuo99/MME-CoF) ![](https://img.shields.io/github/stars/ZiyuGuo99/MME-CoF?style=flat-square&color=E0E0E0&label=Stars)<br>[data: Data](https://huggingface.co/datasets/ZiyuG/MME-CoF) | `N/A` | 2025-10 | arXiv |
 | [VChain: Chain-of-Visual-Thought for Reasoning in Video Generation](https://arxiv.org/abs/2510.05094) <!-- paper:2510.05094 --> | [code: GitHub](https://github.com/Eyeline-Labs/VChain) ![](https://img.shields.io/github/stars/Eyeline-Labs/VChain?style=flat-square&color=E0E0E0&label=Stars) | `N/A` | 2025-10 | ACL 2026 (Findings) |
+
 <a id="structured-and-latent-video-reasoning"></a>
 
 #### Stateful Intelligence
@@ -536,6 +539,7 @@ Graphs, object tracks, spatial maps, and continuous reasoning states. These repr
 | [Semantic Event Graphs for Long-Form Video Question Answering](https://arxiv.org/abs/2601.06097) <!-- paper:2601.06097 --> | `N/A` | Long video | 2026-01 | arXiv |
 | [Learning to Reason in 4D: Dynamic Spatial Understanding for Vision Language Models](https://arxiv.org/abs/2512.20557) <!-- paper:2512.20557 --> | `N/A` | Spatial | 2025-12 | CVPR 2026 |
 | [4D-RGPT: Toward Region-level 4D Understanding via Perceptual Distillation](https://arxiv.org/abs/2512.17012) <!-- paper:2512.17012 --> | [code: GitHub](https://github.com/NVlabs/4D-RGPT)<br>[data: Data](https://huggingface.co/datasets/nvidia/R4D-Bench) | Spatial | 2025-12 | CVPR 2026 |
+
 <a id="executable-world-models"></a>
 
 #### Executable Worlds
@@ -582,6 +586,7 @@ Programs and simulators connect inferred state, transitions, execution, and rend
 <a id="orchestration-and-interaction"></a>
 
 ### Interaction Loops
+
 
 <a id="interleaved-video-reasoning"></a>
 
@@ -715,6 +720,7 @@ Tool use, evidence search, reflection, and multi-agent coordination. Track what 
 | [FrameMind: Frame-Interleaved Video Reasoning via Reinforcement Learning](https://arxiv.org/abs/2509.24008) <!-- paper:2509.24008 --> | `N/A` | `N/A` | 2025-09 | arXiv |
 | [Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning](https://arxiv.org/abs/2508.04416) <!-- paper:2508.04416 --> | [code: GitHub](https://github.com/zhang9302002/ThinkingWithVideos) ![](https://img.shields.io/github/stars/zhang9302002/ThinkingWithVideos?style=flat-square&color=E0E0E0&label=Stars)<br>[data: Data](https://huggingface.co/datasets/zhang9302002/MultiTaskVideoReasoning) | `N/A` | 2025-08 | arXiv |
 | [ViTCoT: Video-Text Interleaved Chain-of-Thought for Boosting Video Understanding in Large Language Models](https://arxiv.org/abs/2507.09876) <!-- paper:2507.09876 --> | [code: GitHub](https://github.com/BRZ911/ViTCoT) ![](https://img.shields.io/github/stars/BRZ911/ViTCoT?style=flat-square&color=E0E0E0&label=Stars)<br>[data: Data](https://huggingface.co/datasets/BRZ911/ViTCoT) | `N/A` | 2025-07 | ACM-MM 2025 |
+
 <a id="unified-understanding-generation"></a>
 
 #### Unified Understanding & Generation
@@ -726,6 +732,7 @@ Supporting architectures; unified generation and understanding alone do not esta
 | :--- | :--- | :--- | :--- | :--- |
 | [JavisGPT: A Unified Multi-modal LLM for Sounding-Video Comprehension and Generation](https://javisverse.github.io/JavisGPT-page/) <!-- paper:paper:javisgpt --> | [code: GitHub](https://github.com/JavisVerse/JavisGPT) ![](https://img.shields.io/github/stars/JavisVerse/JavisGPT?style=flat-square&color=E0E0E0&label=Stars) | `N/A` | 2025-11 | NeurIPS 2025 (Spotlight) |
 | [VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation](https://arxiv.org/abs/2409.04429) <!-- paper:2409.04429 --> | [code: GitHub](https://github.com/mit-han-lab/vila-u) ![](https://img.shields.io/github/stars/mit-han-lab/vila-u?style=flat-square&color=E0E0E0&label=Stars)<br>[weights: Hugging Face](https://huggingface.co/collections/mit-han-lab/vila-u-7b) | `N/A` | 2024-09 | ICLR 2025 |
+
 <a id="streaming-video-reasoning"></a>
 
 #### Always-On Intelligence
@@ -838,6 +845,7 @@ Observed-prefix reasoning, memory updates, response timing, and proactive intera
 <a id="evidence-and-action"></a>
 
 ### Evidence & Action
+
 
 <a id="evidence-at-scale"></a>
 
@@ -967,6 +975,7 @@ Supporting methods for frame selection, token compression, temporal grounding, a
 | [QMAVIS: Long Video-Audio Understanding using Fusion of Large Multimodal Models](https://arxiv.org/abs/2601.06573) <!-- paper:2601.06573 --> | `N/A` | Long video | 2026-01 | arXiv |
 | [ArrowGEV: Grounding Events in Video via Learning the Arrow of Time](https://arxiv.org/abs/2601.06559) <!-- paper:2601.06559 --> | `N/A` | Grounding | 2026-01 | ACL 2026 (Findings) |
 | [Generative Semantic Multi-Object Tracking: A Large-Scale Benchmark and an MLLM-Driven Reasoning Framework](https://arxiv.org/abs/2601.06550) <!-- paper:2601.06550 --> | [code: GitHub](https://github.com/liaopan-lp/LLMTrack-GrandSMOT) | Video representation | 2026-01 | arXiv |
+
 <a id="world-models-for-action"></a>
 
 #### World Models for Action
@@ -1194,6 +1203,7 @@ Visual prediction, latent dynamics, physical priors, and planning or policy lear
 <a id="benchmarks"></a>
 
 ### Benchmark Hub
+
 
 <a id="benchmark-atlas"></a>
 
@@ -1613,6 +1623,7 @@ Benchmarks, training resources, and diagnostic studies covering evidence, time, 
 | **VideoVista** · [VideoVista: A Versatile Benchmark for Video Understanding and Reasoning](https://arxiv.org/abs/2406.11303) <!-- paper:2406.11303 --> | [code: Github](https://github.com/HITsz-TMG/Uni-MoE/tree/master/VideoVista) ![](https://img.shields.io/github/stars/HITsz-TMG/Uni-MoE?style=flat-square&color=E0E0E0&label=Stars) | ![Language](https://img.shields.io/badge/Language-AEC6DF?style=flat-square) | 2024-06 | arXiv |
 | **SOK-Bench** · [SOK-Bench: A Situated Video Reasoning Benchmark with Aligned Open-World Knowledge](https://arxiv.org/abs/2405.09713) <!-- paper:2405.09713 --> | [code: GitHub](https://github.com/csbobby/SOK-Bench) ![](https://img.shields.io/github/stars/csbobby/SOK-Bench?style=flat-square&color=E0E0E0&label=Stars) | ![Language](https://img.shields.io/badge/Language-AEC6DF?style=flat-square) | 2024-05 | CVPR 2024 |
 | **CVRR-ES** · [How Good is my Video LMM? Complex Video Reasoning and Robustness Evaluation Suite for Video-LMMs](https://arxiv.org/abs/2405.03690) <!-- paper:2405.03690 --> | [code: GitHub](https://github.com/mbzuai-oryx/CVRR-Evaluation-Suite/) ![](https://img.shields.io/github/stars/mbzuai-oryx/CVRR-Evaluation-Suite?style=flat-square&color=E0E0E0&label=Stars) | ![Language](https://img.shields.io/badge/Language-AEC6DF?style=flat-square) | 2024-05 | arXiv |
+
 <a id="beyond-video-qa"></a>
 
 #### Beyond Video QA
@@ -1623,6 +1634,7 @@ Executable-world and visual bridge evaluations, separate from video-QA protocols
 | **Paper** | **Resources** | **Focus / scope** | **Time** | **Venue** |
 | :--- | :--- | :--- | :--- | :--- |
 | **WorldCoder-Bench** · [WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869) <!-- paper:2606.01869 --> | `N/A` | Bridge: generated 3D programs; runtime state and behavioral contracts | 2026-06 | arXiv |
+
 <a id="proceedings-supplement"></a>
 
 #### Proceedings Supplement
@@ -1653,6 +1665,7 @@ Proceedings publication dates are marked `(proc.)`; earlier preprint dates remai
 
 ### Foundations & Bridges
 
+
 <a id="adjacent-foundations"></a>
 
 #### Adjacent Foundations
@@ -1668,6 +1681,7 @@ Related work with distinct inputs and evaluation settings; these scope boundarie
 <a id="survey-roadmaps"></a>
 
 ### Perspectives & Roadmaps
+
 
 <a id="survey-perspectives"></a>
 
