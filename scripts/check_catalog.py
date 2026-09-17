@@ -86,6 +86,8 @@ for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', ROOT / 'AGENTS.md',
         start = i
         while i < len(lines) and lines[i].startswith('|'):
             i += 1
+        if i < len(lines) and lines[i].strip():
+            fail(path, i + 1, 'blank line required after table; GitHub can consume the next anchor as a row')
         table = [cells(line) for line in lines[start:i]]
         width = len(table[0])
         for offset, row in enumerate(table):

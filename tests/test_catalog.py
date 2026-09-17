@@ -58,6 +58,13 @@ class CatalogTests(unittest.TestCase):
         self.assertLess(visual.index('paper:2602.00002'), visual.index('paper:2601.00001'))
         self.assertEqual(catalog.import_readme(after, data), data)
 
+    def test_section_anchors_cannot_be_consumed_as_gfm_table_rows(self):
+        data = fixture()
+        source = readme(data)
+        for section in data['sections'].values():
+            before, _ = source.split(f'<a id="{section["anchor"]}"></a>')
+            self.assertTrue(before.endswith('\n\n'), 'GFM needs a blank line between a table and the next anchor')
+
     def test_readme_edits_update_shared_fields_and_preserve_evidence(self):
         data = fixture()
         source = readme(data).replace(catalog.text_cell(data['papers']['2601.00001']['title']), 'New title')

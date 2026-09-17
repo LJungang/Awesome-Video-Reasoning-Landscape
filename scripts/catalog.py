@@ -192,7 +192,7 @@ def render_block(data):
         for section, config in data['sections'].items():
             if config['group'] != group:
                 continue
-            lines += [f'<a id="{config["anchor"]}"></a>', '', f'#### {config["title"]}', '', config['description'], '',
+            lines += ['', f'<a id="{config["anchor"]}"></a>', '', f'#### {config["title"]}', '', config['description'], '',
                       f'<!-- section:{section} -->', HEADER, '| :--- | :--- | :--- | :--- | :--- |']
             items = [(identity, paper, place) for identity, paper in data['papers'].items()
                      for place in paper['placements'] if place['section'] == section]
