@@ -44,6 +44,63 @@ def readme(data):
 
 
 class CatalogTests(unittest.TestCase):
+    def test_historical_benchmark_columns_and_task_round_trip(self):
+        data = fixture()
+        data['sections']['benchmarks'] = {'group': 'engines', 'title': 'Benchmarks',
+                                         'anchor': 'benchmarks', 'description': 'Evaluation.', 'table': 'benchmark'}
+        paper = data['papers']['2601.00001']
+        paper['placements'].append({'section': 'benchmarks', 'name': 'Suite [A] | B',
+                                    'tasks': ['language', 'vision'], 'task_evidence': {'source': 'abstract'}})
+        source = readme(data)
+        self.assertEqual(catalog.BENCHMARK_HEADER, '| **Name** | **Paper** | **Link** | **Task** | **Time** | **Venue** |')
+        self.assertEqual(catalog.import_readme(source, data), data)
+        tail = source.split('<!-- section:benchmarks -->')[1]
+        self.assertIn('![language][task-language] ![vision][task-vision]', tail)
+        self.assertNotIn('![Video][mod-video]', tail)
+        edited = source.replace('![language][task-language] ![vision][task-vision]', '![vision][task-vision]')
+        result = catalog.import_readme(edited, data)['papers']['2601.00001']
+        self.assertEqual(result['placements'][-1]['tasks'], ['vision'])
+        self.assertEqual(result['input_modalities'], ['text', 'video'])
+        self.assertEqual(result['placements'][-1]['task_evidence'], {'source': 'abstract'})
+        with self.assertRaisesRegex(catalog.CatalogError, 'Task accepts only'):
+            catalog.import_readme(source.replace('![vision][task-vision]', '![Video][mod-video]'), data)
+
+    def test_benchmark_only_import_preserves_hidden_inputs_and_new_rows(self):
+        data = fixture()
+        data['sections']['language']['table'] = 'benchmark'
+        paper = data['papers']['2601.00001']
+        paper['placements'] = [{'section': 'language', 'name': 'Benchmark', 'tasks': ['language']}]
+        source = readme(data)
+        self.assertEqual(catalog.import_readme(source, data), data)
+        changed = copy.deepcopy(data)
+        new = copy.deepcopy(paper)
+        new.update(title='New benchmark', url='https://example.org/benchmark')
+        changed['papers']['paper:new'] = new
+        imported = catalog.import_readme(readme(changed), data)['papers']['paper:new']
+        self.assertEqual(imported['placements'][0]['tasks'], ['language'])
+        self.assertEqual(imported['input_modalities'], [])
+
+    def test_github_stars_are_linked_once_and_project_has_home_badge(self):
+        data = fixture()
+        paper = data['papers']['2601.00001']
+        paper['placements'] = paper['placements'][:1]
+        paper['resources'] = [
+            {'kind': 'code', 'label': 'Original label', 'url': 'https://github.com/hkust-nlp/deita.git'},
+            {'kind': 'project', 'label': 'Homepage', 'url': 'https://example.org/project'},
+        ]
+        source = readme(data)
+        self.assertIn('[![resource:code][res-github-code]](https://github.com/hkust-nlp/deita.git)', source)
+        self.assertIn('[![Stars](https://img.shields.io/github/stars/hkust-nlp/deita?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/hkust-nlp/deita/stargazers)', source)
+        self.assertEqual(source.count('[![Stars]'), 1)
+        self.assertIn('[![resource:project][res-project]](https://example.org/project)', source)
+        self.assertIn('%F0%9F%8F%A0-Project_Page', source)
+        self.assertIn('/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white', source)
+        self.assertEqual(catalog.import_readme(source, data), data)
+        with self.assertRaisesRegex(catalog.CatalogError, 'stargazers'):
+            catalog.import_readme(source.replace('/deita/stargazers', '/wrong/stargazers'), data)
+        self.assertEqual(catalog.github_repo('https://github.com/owner/repo/tree/main/code'), 'owner/repo')
+        self.assertIsNone(catalog.github_repo('https://example.org/owner/repo'))
+
     def test_round_trip_preserves_precision_provenance_badges_and_special_text(self):
         data = fixture()
         self.assertEqual(catalog.import_readme(readme(data), data), data)
@@ -57,7 +114,8 @@ class CatalogTests(unittest.TestCase):
         data['papers']['2602.00002'] = new
         after = catalog.render_readme(data, before)
         self.assertEqual(catalog.split_readme(before)[::2], catalog.split_readme(after)[::2])
-        self.assertIn('2 papers · 3 catalog rows', after)
+        self.assertNotIn('catalog rows', after)
+        self.assertNotIn('2 papers', after)
         visual = after.split('<!-- section:visual -->')[1]
         self.assertLess(visual.index('paper:2602.00002'), visual.index('paper:2601.00001'))
         self.assertEqual(catalog.import_readme(after, data), data)
@@ -136,8 +194,10 @@ class CatalogTests(unittest.TestCase):
         data = fixture()
         data['papers']['2601.00001']['venue'] = 'CVPR 2026 (Workshop)'
         source = readme(data)
-        self.assertEqual(source.count('<details>'), len(data['sections']) + 1)
-        self.assertEqual(source.count('<details>'), source.count('</details>'))
+        self.assertEqual(source.count('<details open>'), len(data['sections']) + 1)
+        self.assertEqual(source.count('<details open>'), source.count('</details>'))
+        self.assertNotIn('<details>', source)
+        self.assertNotRegex(source, r'\d[\d,]* papers|catalog rows')
         self.assertIn('| `CVPR 2026 (Workshop)` |', source)
         self.assertNotIn('**Grounding**', source)
         self.assertEqual(catalog.import_readme(source, data), data)

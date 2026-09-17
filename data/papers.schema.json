@@ -117,6 +117,19 @@
         },
         "name": {
           "type": "string"
+        },
+        "tasks": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "language",
+              "vision"
+            ]
+          }
+        },
+        "task_evidence": {
+          "type": "object"
         }
       },
       "required": [
@@ -221,6 +234,12 @@
         },
         "description": {
           "type": "string"
+        },
+        "table": {
+          "enum": [
+            "papers",
+            "benchmark"
+          ]
         }
       },
       "required": [
