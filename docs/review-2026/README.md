@@ -1,5 +1,7 @@
 # Video Reasoning: The 2026 Research Map
 
+This page records the historical review. **All papers now appear in the [main README tables](../../README.md#paradigms)**, generated from [data/papers.json](../../data/papers.json). The JSON files below are frozen review evidence, not additional editing targets.
+
 **Window: 2025-12-18–2026-09-17 · snapshot: 2026-09-17.** This update adds **1,153 arXiv papers** to the existing **42** in-window references, plus **16 proceedings papers** with a separate date basis. [Main survey](../../README.md#paradigms) · [Machine-readable coverage](coverage.json).
 
 The chapters are navigation facets, not ten mutually exclusive reasoning mechanisms. Each new paper has one primary home; the [Reasoning Stack](../../README.md#taxonomy-and-modeling) separates representations, learning, evidence, and interaction. Supporting perception methods, visual bridges, and planning foundations remain distinguishable from direct video reasoning.
@@ -82,4 +84,4 @@ Counts are unique arXiv papers, not table rows or estimates of the field's total
 | [resource-checks.json](resource-checks.json) | Link status and redirects at the snapshot date |
 | [bibliography.json](../bibliography.json) | Primary title, first-public date, revision date, and source |
 
-Edit the metadata, then run `python3 scripts/build_review.py` from the repository root. `python3 scripts/build_review.py --check` and `python3 scripts/check_catalog.py` validate generated pages and catalog consistency. Update coverage and screening records when membership changes; follow [CONTRIBUTING](../../CONTRIBUTING.md).
+For current contributions, edit only [data/papers.json](../../data/papers.json), then run `python3 scripts/catalog.py render` and `python3 scripts/catalog.py check`. The [contributor workflow](../../CONTRIBUTING.md) covers JSON editing, README imports, and agent-assisted BibTeX intake.

@@ -1,5 +1,9 @@
 # Research Log — 2026-09-17
 
+## Structured Catalog Migration
+
+The live catalog is now [data/papers.json](../data/papers.json): **1,394 unique papers / 1,405 README rows**, including all reviewed additions and historical foundations. `scripts/catalog.py` renders the main README and imports intentional table edits while preserving undisplayed metadata. Cross-lists reference the same paper record. The earlier bibliography and review JSON files below are historical evidence; contributors edit only the live catalog. See the [workflow](../CONTRIBUTING.md) and [agent skill](../.agents/skills/update-video-survey/SKILL.md).
+
 ## Nine-Month Expansion
 
 The [2026 research map](review-2026/README.md) supersedes the selective scope below for **2025-12-18–2026-09-17**. It adds **1,153 arXiv papers** across ten chapters, bringing first-public coverage in that window to **1,195 papers**, plus **16 separately dated ACL proceedings entries**. Video-MMMU was also added as a historical benchmark: its first preprint is January 2025, despite its ACL 2026 publication. The bibliography now holds **1,373 arXiv records**.
