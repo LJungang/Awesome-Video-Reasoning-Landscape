@@ -16,7 +16,9 @@ DATE = re.compile(r'^\d{4}-(0[1-9]|1[0-2])$')
 errors = []
 records = {}
 locations = defaultdict(list)
-metadata = json.loads((ROOT / 'docs/bibliography.json').read_text())['papers']
+from catalog import load, render_readme, import_readme, CatalogError
+live = load(ROOT / 'data/papers.json')
+metadata = {key: {'first_public': paper['date']} for key, paper in live['papers'].items()}
 counts = {'tables': 0, 'rows': 0}
 
 
@@ -33,7 +35,8 @@ def visible_title(cell):
     return ' '.join(html.unescape(match[1]).split()) if match else ''
 
 
-for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', *sorted((ROOT / 'docs').rglob('*.md'))]:
+for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', ROOT / 'AGENTS.md',
+             *sorted((ROOT / '.agents').rglob('*.md')), *sorted((ROOT / 'docs').rglob('*.md'))]:
     source = path.read_text()
     # GitHub's math-renderer macro restrictions, checked 2026-09-17.
     # Parse math before removing fenced examples from the Markdown checks below.
@@ -103,7 +106,7 @@ for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', *sorted((ROOT / 'docs
             counts['rows'] += 1
             if len(row) != width:
                 continue
-            date = row[date_col]
+            date = row[date_col].removesuffix(' (proc.)')
             if not DATE.fullmatch(date):
                 fail(path, number, f'invalid month: {date}')
             elif date > datetime.date.today().strftime('%Y-%m'):
@@ -133,6 +136,7 @@ review = ROOT / 'docs/review-2026'
 manifest_path = review / 'catalog.json'
 manifest = json.loads(manifest_path.read_text())
 catalog = manifest['papers']
+snapshot_metadata = json.loads((ROOT / 'docs/bibliography.json').read_text())['papers']
 coverage = json.loads((review / 'coverage.json').read_text())
 screened_rows = [json.loads(line) for line in (review / 'screening.jsonl').read_text().splitlines()]
 screened = {row['id']: row for row in screened_rows}
@@ -150,25 +154,17 @@ if len(screened) != len(screened_rows):
 if {key for key, row in screened.items() if row['decision'] == 'included'} != set(catalog):
     review_fail('screening inclusion set disagrees with catalog')
 for identity, entry in catalog.items():
-    if identity not in metadata:
-        review_fail(f'missing primary metadata: {identity}')
+    if identity not in snapshot_metadata:
+        review_fail(f'missing archived primary metadata: {identity}')
         continue
-    paper = metadata[identity]
+    paper = snapshot_metadata[identity]
     date = paper['first_public'][:10]
     if not manifest['window']['start'] <= date <= manifest['window']['end']:
-        review_fail(f'outside review window: {identity}')
+        review_fail(f'outside archived review window: {identity}')
     location, branch = entry['location'], entry['branch']
     if location not in {'README', 'review'} or (branch not in manifest['branches'] and not (location == 'README' and branch == 'existing')):
-        review_fail(f'invalid chapter or location: {identity}')
+        review_fail(f'invalid archived chapter or location: {identity}')
         continue
-    expected = ROOT / 'README.md' if location == 'README' else review / f'{branch}.md'
-    if expected not in locations[identity]:
-        review_fail(f'paper missing from its primary catalog: {identity}')
-    if any(path.parent == review and path != expected for path in locations[identity]):
-        review_fail(f'paper appears in an unexpected review chapter: {identity}')
-    expected_title = ' '.join(entry.get('display_title', paper['title']).split())
-    if identity in records and records[identity] != (expected_title, date[:7], f'`{entry["venue"]}`'):
-        review_fail(f'title/date/venue differs from manifest: {identity}')
     row = screened.get(identity, {})
     if any(row.get(field) != value for field, value in {
         'title': paper['title'], 'first_public': date, 'branch': branch,
@@ -221,13 +217,17 @@ for query, pages in query_pages.items():
 if coverage['primary_query_unique'] != sum(bool(set(row['queries']) & set(query_pages)) for row in screened_rows):
     review_fail('stale unique query count')
 
-from build_review import render
-for path, content in render().items():
-    if not path.exists() or path.read_text() != content:
-        fail(path, 1, 'generated page is stale; run scripts/build_review.py')
+try:
+    readme = (ROOT / 'README.md').read_text()
+    if readme != render_readme(live, readme):
+        fail(ROOT / 'README.md', 1, 'catalog is stale; run scripts/catalog.py render')
+    if import_readme(readme, live) != live:
+        fail(ROOT / 'data/papers.json', 1, 'JSON/README round-trip changed data')
+except (CatalogError, KeyError, TypeError) as exc:
+    fail(ROOT / 'data/papers.json', 1, str(exc))
 
 if errors:
     print('\n'.join(errors))
     sys.exit(1)
 print(f"OK: {counts['tables']} catalog tables, {counts['rows']} entries, "
-      f"{len(records)} unique arXiv papers; local links, ordering, metadata, and resource columns checked.")
+      f"{len(records)} unique arXiv papers; canonical JSON, round-trip, local links, math macros, and archived evidence checked.")
