@@ -1,0 +1,1390 @@
+{
+  "checked_on": "2026-09-17",
+  "source": "arXiv Atom API; author statements are not independent venue verification",
+  "papers": {
+    "2405.03690": {
+      "title": "How Good is my Video LMM? Complex Video Reasoning and Robustness Evaluation Suite for Video-LMMs",
+      "first_public": "2024-05-06T17:59:45Z",
+      "updated": "2024-05-08T19:46:35Z",
+      "source": "https://arxiv.org/abs/2405.03690v2",
+      "author_comment": "Technical report"
+    },
+    "2405.09713": {
+      "title": "SOK-Bench: A Situated Video Reasoning Benchmark with Aligned Open-World Knowledge",
+      "first_public": "2024-05-15T21:55:31Z",
+      "updated": "2024-05-17T02:18:16Z",
+      "source": "https://arxiv.org/abs/2405.09713v2",
+      "author_comment": "CVPR"
+    },
+    "2406.11303": {
+      "title": "VideoVista: A Versatile Benchmark for Video Understanding and Reasoning",
+      "first_public": "2024-06-17T08:09:00Z",
+      "updated": "2024-06-17T08:09:00Z",
+      "source": "https://arxiv.org/abs/2406.11303v1",
+      "author_comment": "38 pages, 44 figures"
+    },
+    "2409.04429": {
+      "title": "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+      "first_public": "2024-09-06T17:49:56Z",
+      "updated": "2025-03-04T16:31:57Z",
+      "source": "https://arxiv.org/abs/2409.04429v3",
+      "author_comment": "Code: https://github.com/mit-han-lab/vila-u. The first two authors contributed equally to this work"
+    },
+    "2409.17647": {
+      "title": "MECD: Unlocking Multi-Event Causal Discovery in Video Reasoning",
+      "first_public": "2024-09-26T08:51:29Z",
+      "updated": "2024-12-27T02:20:36Z",
+      "source": "https://arxiv.org/abs/2409.17647v4",
+      "author_comment": "Accepted at NeurIPS 2024 as a spotlight paper"
+    },
+    "2409.20365": {
+      "title": "VideoINSTA: Zero-shot Long Video Understanding via Informative Spatial-Temporal Reasoning with LLMs",
+      "first_public": "2024-09-30T15:04:14Z",
+      "updated": "2024-10-04T21:57:23Z",
+      "source": "https://arxiv.org/abs/2409.20365v2",
+      "author_comment": "EMNLP 2024 Findings; 22 pages; Code: https://github.com/mayhugotong/VideoINSTA"
+    },
+    "2410.20252": {
+      "title": "Adaptive Video Understanding Agent: Enhancing efficiency with dynamic frame sampling and feedback-driven reasoning",
+      "first_public": "2024-10-26T19:01:06Z",
+      "updated": "2024-10-26T19:01:06Z",
+      "source": "https://arxiv.org/abs/2410.20252v1"
+    },
+    "2412.00161": {
+      "title": "STEP: Enhancing Video-LLMs' Compositional Reasoning by Spatio-Temporal Graph-guided Self-Training",
+      "first_public": "2024-11-29T11:54:55Z",
+      "updated": "2025-03-30T14:31:41Z",
+      "source": "https://arxiv.org/abs/2412.00161v2"
+    },
+    "2412.05271": {
+      "title": "Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling",
+      "first_public": "2024-12-06T18:57:08Z",
+      "updated": "2025-09-26T12:52:41Z",
+      "source": "https://arxiv.org/abs/2412.05271v5",
+      "author_comment": "Technical Report"
+    },
+    "2412.05725": {
+      "title": "Black Swan: Abductive and Defeasible Video Reasoning in Unpredictable Events",
+      "first_public": "2024-12-07T19:19:03Z",
+      "updated": "2025-04-07T20:26:05Z",
+      "source": "https://arxiv.org/abs/2412.05725v2",
+      "author_comment": "CVPR 2025. For data, visit https://blackswan.cs.ubc.ca"
+    },
+    "2412.07825": {
+      "title": "3DSRBench: A Comprehensive 3D Spatial Reasoning Benchmark",
+      "first_public": "2024-12-10T18:55:23Z",
+      "updated": "2025-09-15T21:12:49Z",
+      "source": "https://arxiv.org/abs/2412.07825v4",
+      "author_comment": "ICCV 2025. Project page: https://3dsrbench.github.io"
+    },
+    "2412.08646": {
+      "title": "StreamChat: Chatting with Streaming Video",
+      "first_public": "2024-12-11T18:59:54Z",
+      "updated": "2025-03-30T05:25:58Z",
+      "source": "https://arxiv.org/abs/2412.08646v2"
+    },
+    "2412.14171": {
+      "title": "Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces",
+      "first_public": "2024-12-18T18:59:54Z",
+      "updated": "2025-07-02T21:00:36Z",
+      "source": "https://arxiv.org/abs/2412.14171v2",
+      "author_comment": "Project page: https://vision-x-nyu.github.io/thinking-in-space.github.io/"
+    },
+    "2501.00584": {
+      "title": "Online Video Understanding: OVBench and VideoChat-Online",
+      "first_public": "2024-12-31T18:17:05Z",
+      "updated": "2025-04-17T10:10:16Z",
+      "source": "https://arxiv.org/abs/2501.00584v2",
+      "author_comment": "CVPR 2025 Camera Ready Version. Project Page: https://videochat-online.github.io"
+    },
+    "2501.01645": {
+      "title": "HLV-1K: A Large-scale Hour-Long Video Benchmark for Time-Specific Long Video Understanding",
+      "first_public": "2025-01-03T05:32:37Z",
+      "updated": "2025-05-13T06:38:44Z",
+      "source": "https://arxiv.org/abs/2501.01645v3",
+      "author_comment": "Accepted to ICME 2025"
+    },
+    "2501.03218": {
+      "title": "Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction",
+      "first_public": "2025-01-06T18:55:10Z",
+      "updated": "2025-01-06T18:55:10Z",
+      "source": "https://arxiv.org/abs/2501.03218v1"
+    },
+    "2501.03230": {
+      "title": "Video-of-Thought: Step-by-Step Video Reasoning from Perception to Cognition",
+      "first_public": "2024-05-07T11:55:10Z",
+      "updated": "2024-05-07T11:55:10Z",
+      "source": "https://arxiv.org/abs/2501.03230v1",
+      "author_comment": "Accepted by ICML 2024"
+    },
+    "2501.04336": {
+      "title": "Building a Mind Palace: Structuring Environment-Grounded Semantic Graphs for Effective Long Video Analysis with LLMs",
+      "first_public": "2025-01-08T08:15:29Z",
+      "updated": "2026-03-04T13:07:07Z",
+      "source": "https://arxiv.org/abs/2501.04336v2"
+    },
+    "2501.05510": {
+      "title": "OVO-Bench: How Far is Your Video-LLMs from Real-World Online Video Understanding?",
+      "first_public": "2025-01-09T19:00:01Z",
+      "updated": "2025-03-27T17:40:09Z",
+      "source": "https://arxiv.org/abs/2501.05510v2",
+      "author_comment": "CVPR 2025"
+    },
+    "2501.07227": {
+      "title": "MECD+: Unlocking Event-Level Causal Graph Discovery for Video Reasoning",
+      "first_public": "2025-01-13T11:28:49Z",
+      "updated": "2025-10-26T04:45:17Z",
+      "source": "https://arxiv.org/abs/2501.07227v4",
+      "author_comment": "Accepted by IEEE TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence). arXiv admin note: substantial text overlap with arXiv:2409.17647"
+    },
+    "2501.12368": {
+      "title": "InternLM-XComposer2.5-Reward: A Simple Yet Effective Multi-Modal Reward Model",
+      "first_public": "2025-01-21T18:47:32Z",
+      "updated": "2025-05-20T11:36:34Z",
+      "source": "https://arxiv.org/abs/2501.12368v2",
+      "author_comment": "ACL 2025 Findings"
+    },
+    "2501.12380": {
+      "title": "MMVU: Measuring Expert-Level Multi-Discipline Video Understanding",
+      "first_public": "2025-01-21T18:56:18Z",
+      "updated": "2025-01-21T18:56:18Z",
+      "source": "https://arxiv.org/abs/2501.12380v1"
+    },
+    "2501.13468": {
+      "title": "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+      "first_public": "2025-01-23T08:33:10Z",
+      "updated": "2025-01-23T08:33:10Z",
+      "source": "https://arxiv.org/abs/2501.13468v1",
+      "author_comment": "Accepted to ICLR 2025. Code is available at https://github.com/hmxiong/StreamChat"
+    },
+    "2501.13919": {
+      "title": "Temporal Preference Optimization for Long-Form Video Understanding",
+      "first_public": "2025-01-23T18:58:03Z",
+      "updated": "2025-09-01T07:50:58Z",
+      "source": "https://arxiv.org/abs/2501.13919v3"
+    },
+    "2502.06428": {
+      "title": "CoS: Chain-of-Shot Prompting for Long Video Understanding",
+      "first_public": "2025-02-10T13:03:05Z",
+      "updated": "2025-02-11T14:59:25Z",
+      "source": "https://arxiv.org/abs/2502.06428v2",
+      "author_comment": "A training-free test-time optimisation approach for long video understanding"
+    },
+    "2502.10810": {
+      "title": "SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding",
+      "first_public": "2025-02-15T14:29:44Z",
+      "updated": "2025-11-15T18:13:36Z",
+      "source": "https://arxiv.org/abs/2502.10810v2",
+      "author_comment": "ICLR 2025 Accepted (Spotlight)"
+    },
+    "2502.11775": {
+      "title": "video-SALMONN-o1: Reasoning-enhanced Audio-visual Large Language Model",
+      "first_public": "2025-02-17T13:07:40Z",
+      "updated": "2025-02-17T13:07:40Z",
+      "source": "https://arxiv.org/abs/2502.11775v1"
+    },
+    "2502.19400": {
+      "title": "TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM Theorem Understanding",
+      "first_public": "2025-02-26T18:50:09Z",
+      "updated": "2025-05-25T18:34:47Z",
+      "source": "https://arxiv.org/abs/2502.19400v2",
+      "author_comment": "accepted to ACL 2025 main, camera ready"
+    },
+    "2503.00540": {
+      "title": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "first_public": "2025-03-01T15:53:33Z",
+      "updated": "2025-03-01T15:53:33Z",
+      "source": "https://arxiv.org/abs/2503.00540v1",
+      "author_comment": "Accepted to ICLR 2025. Code: https://github.com/Becomebright/ReKV"
+    },
+    "2503.06220": {
+      "title": "StreamMind: Unlocking Full Frame Rate Streaming Video Dialogue through Event-Gated Cognition",
+      "first_public": "2025-03-08T13:44:38Z",
+      "updated": "2025-09-07T10:23:25Z",
+      "source": "https://arxiv.org/abs/2503.06220v3"
+    },
+    "2503.06820": {
+      "title": "Towards Fine-Grained Video Question Answering",
+      "first_public": "2025-03-10T01:02:01Z",
+      "updated": "2025-03-10T01:02:01Z",
+      "source": "https://arxiv.org/abs/2503.06820v1"
+    },
+    "2503.10691": {
+      "title": "Reasoning is All You Need for Video Generalization: A Counterfactual Benchmark with Sub-question Evaluation",
+      "first_public": "2025-03-12T03:25:51Z",
+      "updated": "2025-06-04T05:57:18Z",
+      "source": "https://arxiv.org/abs/2503.10691v2",
+      "author_comment": "It has been accepted to the ACL-2025 Findings"
+    },
+    "2503.11495": {
+      "title": "V-STaR: Benchmarking Video-LLMs on Video Spatio-Temporal Reasoning",
+      "first_public": "2025-03-14T15:21:44Z",
+      "updated": "2025-03-14T15:21:44Z",
+      "source": "https://arxiv.org/abs/2503.11495v1",
+      "author_comment": "A benchmark for Video Spatio-Temporal Reasoning"
+    },
+    "2503.12542": {
+      "title": "ST-Think: How Multimodal Large Language Models Reason About 4D Worlds from Ego-Centric Videos",
+      "first_public": "2025-03-16T15:24:11Z",
+      "updated": "2025-04-23T03:44:01Z",
+      "source": "https://arxiv.org/abs/2503.12542v2"
+    },
+    "2503.12769": {
+      "title": "ViSpeak: Visual Instruction Feedback in Streaming Videos",
+      "first_public": "2025-03-17T03:05:31Z",
+      "updated": "2025-03-17T03:05:31Z",
+      "source": "https://arxiv.org/abs/2503.12769v1"
+    },
+    "2503.13377": {
+      "title": "Time-R1: Post-Training Large Vision Language Model for Temporal Video Grounding",
+      "first_public": "2025-03-17T17:04:20Z",
+      "updated": "2025-06-29T08:11:35Z",
+      "source": "https://arxiv.org/abs/2503.13377v3",
+      "author_comment": "Project Page: https://xuboshen.github.io/Time-R1/"
+    },
+    "2503.13444": {
+      "title": "VideoMind: A Chain-of-LoRA Agent for Temporal-Grounded Video Reasoning",
+      "first_public": "2025-03-17T17:59:33Z",
+      "updated": "2026-02-21T02:08:40Z",
+      "source": "https://arxiv.org/abs/2503.13444v3",
+      "author_comment": "ICLR 2026 Camera Ready"
+    },
+    "2503.19622": {
+      "title": "Exploring Hallucination of Large Multimodal Models in Video Understanding: Benchmark, Analysis and Mitigation",
+      "first_public": "2025-03-25T13:12:17Z",
+      "updated": "2025-03-25T13:12:17Z",
+      "source": "https://arxiv.org/abs/2503.19622v1"
+    },
+    "2503.21776": {
+      "title": "Video-R1: Reinforcing Video Reasoning in MLLMs",
+      "first_public": "2025-03-27T17:59:51Z",
+      "updated": "2025-10-22T16:42:24Z",
+      "source": "https://arxiv.org/abs/2503.21776v4",
+      "author_comment": "NeurIPS 2025, Project page: https://github.com/tulerfeng/Video-R1"
+    },
+    "2503.22952": {
+      "title": "OmniMMI: A Comprehensive Multi-modal Interaction Benchmark in Streaming Video Contexts",
+      "first_public": "2025-03-29T02:46:58Z",
+      "updated": "2025-03-29T02:46:58Z",
+      "source": "https://arxiv.org/abs/2503.22952v1",
+      "author_comment": "To appear at CVPR 2025"
+    },
+    "2503.23219": {
+      "title": "Aurelia: Test-time Reasoning Distillation in Audio-Visual LLMs",
+      "first_public": "2025-03-29T20:42:29Z",
+      "updated": "2025-03-29T20:42:29Z",
+      "source": "https://arxiv.org/abs/2503.23219v1"
+    },
+    "2503.24008": {
+      "title": "H2VU-Benchmark: A Comprehensive Benchmark for Hierarchical Holistic Video Understanding",
+      "first_public": "2025-03-31T12:32:51Z",
+      "updated": "2025-05-27T02:04:52Z",
+      "source": "https://arxiv.org/abs/2503.24008v2"
+    },
+    "2503.24376": {
+      "title": "Exploring the Effect of Reinforcement Learning on Video Understanding: Insights from SEED-Bench-R1",
+      "first_public": "2025-03-31T17:55:23Z",
+      "updated": "2025-03-31T17:55:23Z",
+      "source": "https://arxiv.org/abs/2503.24376v1",
+      "author_comment": "Technical Report (In Progress); Code released at: https://github.com/TencentARC/SEED-Bench-R1"
+    },
+    "2504.00883": {
+      "title": "Improved Visual-Spatial Reasoning via R1-Zero-Like Training",
+      "first_public": "2025-04-01T15:11:11Z",
+      "updated": "2025-04-14T20:12:57Z",
+      "source": "https://arxiv.org/abs/2504.00883v2"
+    },
+    "2504.00939": {
+      "title": "WikiVideo: Article Generation from Multiple Videos",
+      "first_public": "2025-04-01T16:22:15Z",
+      "updated": "2025-10-22T16:17:16Z",
+      "source": "https://arxiv.org/abs/2504.00939v2",
+      "author_comment": "Repo can be found here: https://github.com/alexmartin1722/wikivideo"
+    },
+    "2504.01805": {
+      "title": "SpaceR: Reinforcing MLLMs in Video Spatial Reasoning",
+      "first_public": "2025-04-02T15:12:17Z",
+      "updated": "2025-05-21T09:38:44Z",
+      "source": "https://arxiv.org/abs/2504.01805v2"
+    },
+    "2504.06214": {
+      "title": "From 128K to 4M: Efficient Training of Ultra-Long Context Large Language Models",
+      "first_public": "2025-04-08T16:58:58Z",
+      "updated": "2025-04-08T16:58:58Z",
+      "source": "https://arxiv.org/abs/2504.06214v1"
+    },
+    "2504.06835": {
+      "title": "LVC: A Lightweight Compression Framework for Enhancing VLMs in Long Video Understanding",
+      "first_public": "2025-04-09T12:51:10Z",
+      "updated": "2025-04-09T12:51:10Z",
+      "source": "https://arxiv.org/abs/2504.06835v1"
+    },
+    "2504.06958": {
+      "title": "VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning",
+      "first_public": "2025-04-09T15:09:27Z",
+      "updated": "2025-11-11T08:30:00Z",
+      "source": "https://arxiv.org/abs/2504.06958v5"
+    },
+    "2504.07956": {
+      "title": "VCR-Bench: A Comprehensive Evaluation Framework for Video Chain-of-Thought Reasoning",
+      "first_public": "2025-04-10T17:59:03Z",
+      "updated": "2025-04-10T17:59:03Z",
+      "source": "https://arxiv.org/abs/2504.07956v1"
+    },
+    "2504.09641": {
+      "title": "TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning",
+      "first_public": "2025-04-13T16:32:49Z",
+      "updated": "2025-04-13T16:32:49Z",
+      "source": "https://arxiv.org/abs/2504.09641v1"
+    },
+    "2504.10443": {
+      "title": "Multimodal Long Video Modeling Based on Temporal Dynamic Context",
+      "first_public": "2025-04-14T17:34:06Z",
+      "updated": "2025-04-14T17:34:06Z",
+      "source": "https://arxiv.org/abs/2504.10443v1"
+    },
+    "2504.15271": {
+      "title": "Eagle 2.5: Boosting Long-Context Post-Training for Frontier Vision-Language Models",
+      "first_public": "2025-04-21T17:57:28Z",
+      "updated": "2025-04-21T17:57:28Z",
+      "source": "https://arxiv.org/abs/2504.15271v1"
+    },
+    "2504.16030": {
+      "title": "LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale",
+      "first_public": "2025-04-22T16:52:09Z",
+      "updated": "2025-04-22T16:52:09Z",
+      "source": "https://arxiv.org/abs/2504.16030v1",
+      "author_comment": "CVPR 2025. If any references are missing, please contact joyachen@u.nus.edu"
+    },
+    "2504.16082": {
+      "title": "MR. Video: \"MapReduce\" is the Principle for Long Video Understanding",
+      "first_public": "2025-04-22T17:59:41Z",
+      "updated": "2025-04-22T17:59:41Z",
+      "source": "https://arxiv.org/abs/2504.16082v1",
+      "author_comment": "Preprint"
+    },
+    "2504.17343": {
+      "title": "TimeChat-Online: 80% Visual Tokens are Naturally Redundant in Streaming Videos",
+      "first_public": "2025-04-24T07:59:46Z",
+      "updated": "2025-04-24T07:59:46Z",
+      "source": "https://arxiv.org/abs/2504.17343v1"
+    },
+    "2505.00254": {
+      "title": "AVA: Towards Agentic Video Analytics with Vision Language Models",
+      "first_public": "2025-05-01T02:40:23Z",
+      "updated": "2025-10-31T01:25:26Z",
+      "source": "https://arxiv.org/abs/2505.00254v5",
+      "author_comment": "Accepted to NDSI 2026, 19pages, 12 figures, complementary evaluations and appendix"
+    },
+    "2505.00681": {
+      "title": "MINERVA: Evaluating Complex Video Reasoning",
+      "first_public": "2025-05-01T17:41:49Z",
+      "updated": "2025-05-01T17:41:49Z",
+      "source": "https://arxiv.org/abs/2505.00681v1"
+    },
+    "2505.01583": {
+      "title": "TEMPURA: Temporal Event Masked Prediction and Understanding for Reasoning in Action",
+      "first_public": "2025-05-02T21:00:17Z",
+      "updated": "2025-05-02T21:00:17Z",
+      "source": "https://arxiv.org/abs/2505.01583v1"
+    },
+    "2505.02064": {
+      "title": "RTV-Bench: Benchmarking MLLM Continuous Perception, Understanding and Reasoning through Real-Time Video",
+      "first_public": "2025-05-04T10:55:21Z",
+      "updated": "2026-01-15T10:29:27Z",
+      "source": "https://arxiv.org/abs/2505.02064v4",
+      "author_comment": "Accepted by NeurIPS 2025 Datasets and Benchmarks Track;"
+    },
+    "2505.05467": {
+      "title": "StreamBridge: Turning Your Offline Video Large Language Model into a Proactive Streaming Assistant",
+      "first_public": "2025-05-08T17:57:40Z",
+      "updated": "2025-09-18T21:56:09Z",
+      "source": "https://arxiv.org/abs/2505.05467v2",
+      "author_comment": "Accepted by NeurIPS 2025"
+    },
+    "2505.07062": {
+      "title": "Seed1.5-VL Technical Report",
+      "first_public": "2025-05-11T17:28:30Z",
+      "updated": "2025-05-11T17:28:30Z",
+      "source": "https://arxiv.org/abs/2505.07062v1"
+    },
+    "2505.08455": {
+      "title": "VCRBench: Exploring Long-form Causal Reasoning Capabilities of Large Video Language Models",
+      "first_public": "2025-05-13T11:35:58Z",
+      "updated": "2025-05-13T11:35:58Z",
+      "source": "https://arxiv.org/abs/2505.08455v1"
+    },
+    "2505.11830": {
+      "title": "VISTA: Mitigating Semantic Inertia in Video-LLMs via Training-Free Dynamic Chain-of-Thought Routing",
+      "first_public": "2025-05-17T04:34:32Z",
+      "updated": "2026-01-07T14:58:44Z",
+      "source": "https://arxiv.org/abs/2505.11830v3",
+      "author_comment": "19 pages, 7 figures"
+    },
+    "2505.11838": {
+      "title": "RVTBench: A Benchmark for Visual Reasoning Tasks",
+      "first_public": "2025-05-17T04:58:09Z",
+      "updated": "2025-05-17T04:58:09Z",
+      "source": "https://arxiv.org/abs/2505.11838v1"
+    },
+    "2505.12434": {
+      "title": "VideoRFT: Incentivizing Video Reasoning Capability in MLLMs via Reinforced Fine-Tuning",
+      "first_public": "2025-05-18T14:14:35Z",
+      "updated": "2025-10-14T13:13:18Z",
+      "source": "https://arxiv.org/abs/2505.12434v4",
+      "author_comment": "Accepted by NeurIPS 2025. Code: https://github.com/QiWang98/VideoRFT"
+    },
+    "2505.14231": {
+      "title": "UniVG-R1: Reasoning Guided Universal Visual Grounding with Reinforcement Learning",
+      "first_public": "2025-05-20T11:40:43Z",
+      "updated": "2025-05-20T11:40:43Z",
+      "source": "https://arxiv.org/abs/2505.14231v1"
+    },
+    "2505.14321": {
+      "title": "Breaking Down Video LLM Benchmarks: Knowledge, Spatial Perception, or True Temporal Understanding?",
+      "first_public": "2025-05-20T13:07:55Z",
+      "updated": "2025-05-20T13:07:55Z",
+      "source": "https://arxiv.org/abs/2505.14321v1"
+    },
+    "2505.14640": {
+      "title": "VideoEval-Pro: Robust and Realistic Long Video Understanding Evaluation",
+      "first_public": "2025-05-20T17:26:32Z",
+      "updated": "2025-05-20T17:26:32Z",
+      "source": "https://arxiv.org/abs/2505.14640v1",
+      "author_comment": "Dataset: https://huggingface.co/datasets/TIGER-Lab/VideoEval-Pro, Project Webpage: https://tiger-ai-lab.github.io/VideoEval-Pro"
+    },
+    "2505.15269": {
+      "title": "LiveVLM: Efficient Online Video Understanding via Streaming-Oriented KV Cache and Retrieval",
+      "first_public": "2025-05-21T08:47:15Z",
+      "updated": "2026-04-23T12:54:38Z",
+      "source": "https://arxiv.org/abs/2505.15269v2",
+      "author_comment": "Accepted by DAC'26",
+      "journal_ref": "63rd ACM/IEEE Design Automation Conference (DAC '26), July 2026"
+    },
+    "2505.15966": {
+      "title": "Pixel Reasoner: Incentivizing Pixel-Space Reasoning with Curiosity-Driven Reinforcement Learning",
+      "first_public": "2025-05-21T19:35:08Z",
+      "updated": "2025-10-24T09:35:22Z",
+      "source": "https://arxiv.org/abs/2505.15966v3",
+      "author_comment": "Project Page: https://tiger-ai-lab.github.io/Pixel-Reasoner/, Hands-on Demo: https://huggingface.co/spaces/TIGER-Lab/Pixel-Reasoner"
+    },
+    "2505.16836": {
+      "title": "Fact-R1: Towards Explainable Video Misinformation Detection with Deep Reasoning",
+      "first_public": "2025-05-22T16:05:06Z",
+      "updated": "2025-10-15T15:50:39Z",
+      "source": "https://arxiv.org/abs/2505.16836v3",
+      "author_comment": "34 pages, 25 figures"
+    },
+    "2505.19000": {
+      "title": "VerIPO: Cultivating Long Reasoning in Video-LLMs via Verifier-Gudied Iterative Policy Optimization",
+      "first_public": "2025-05-25T06:41:28Z",
+      "updated": "2025-05-25T06:41:28Z",
+      "source": "https://arxiv.org/abs/2505.19000v1",
+      "author_comment": "19 pages, 9 figures, Project Link: https://github.com/HITsz-TMG/VerIPO"
+    },
+    "2505.19877": {
+      "title": "Vad-R1: Towards Video Anomaly Reasoning via Perception-to-Cognition Chain-of-Thought",
+      "first_public": "2025-05-26T12:05:16Z",
+      "updated": "2025-05-26T12:05:16Z",
+      "source": "https://arxiv.org/abs/2505.19877v1",
+      "author_comment": "9 pages, 4 figures"
+    },
+    "2505.20256": {
+      "title": "Omni-R1: Reinforcement Learning for Omnimodal Reasoning via Two-System Collaboration",
+      "first_public": "2025-05-26T17:34:06Z",
+      "updated": "2025-05-26T17:34:06Z",
+      "source": "https://arxiv.org/abs/2505.20256v1",
+      "author_comment": "Project page: https://aim-uofa.github.io/OmniR1"
+    },
+    "2505.21374": {
+      "title": "Video-Holmes: Can MLLM Think Like Holmes for Complex Video Reasoning?",
+      "first_public": "2025-05-27T16:05:01Z",
+      "updated": "2025-05-27T16:05:01Z",
+      "source": "https://arxiv.org/abs/2505.21374v1",
+      "author_comment": "Homepage: https://github.com/TencentARC/Video-Holmes"
+    },
+    "2505.21962": {
+      "title": "A2Seek: Towards Reasoning-Centric Benchmark for Aerial Anomaly Understanding",
+      "first_public": "2025-05-28T04:28:13Z",
+      "updated": "2025-11-25T09:38:02Z",
+      "source": "https://arxiv.org/abs/2505.21962v2"
+    },
+    "2505.22457": {
+      "title": "Fostering Video Reasoning via Next-Event Prediction",
+      "first_public": "2025-05-28T15:13:34Z",
+      "updated": "2025-05-28T15:13:34Z",
+      "source": "https://arxiv.org/abs/2505.22457v1"
+    },
+    "2505.23359": {
+      "title": "VideoReasonBench: Can MLLMs Perform Vision-Centric Complex Video Reasoning?",
+      "first_public": "2025-05-29T11:33:43Z",
+      "updated": "2026-03-17T15:24:58Z",
+      "source": "https://arxiv.org/abs/2505.23359v2",
+      "author_comment": "Project Page: https://llyx97.github.io/video_reason_bench/"
+    },
+    "2505.24718": {
+      "title": "Reinforcing Video Reasoning with Focused Thinking",
+      "first_public": "2025-05-30T15:42:19Z",
+      "updated": "2025-06-08T14:43:47Z",
+      "source": "https://arxiv.org/abs/2505.24718v3"
+    },
+    "2505.24867": {
+      "title": "Time Blindness: Why Video-Language Models Can't See What Humans Can?",
+      "first_public": "2025-05-30T17:59:12Z",
+      "updated": "2026-04-28T21:51:08Z",
+      "source": "https://arxiv.org/abs/2505.24867v2",
+      "author_comment": "Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026 Project page at https://timeblindness.github.io"
+    },
+    "2505.24869": {
+      "title": "SiLVR: A Simple Language-based Video Reasoning Framework",
+      "first_public": "2025-05-30T17:59:19Z",
+      "updated": "2026-04-15T15:09:43Z",
+      "source": "https://arxiv.org/abs/2505.24869v3",
+      "author_comment": "Accepted by TMLR (01/2026)"
+    },
+    "2506.00318": {
+      "title": "Chain-of-Frames: Advancing Video Understanding in Multimodal LLMs via Frame-Aware Reasoning",
+      "first_public": "2025-05-31T00:08:21Z",
+      "updated": "2026-04-04T04:38:43Z",
+      "source": "https://arxiv.org/abs/2506.00318v2",
+      "author_comment": "Accepted to the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026"
+    },
+    "2506.01274": {
+      "title": "ReFoCUS: Reinforcement-guided Frame Optimization for Contextual Understanding",
+      "first_public": "2025-06-02T03:08:07Z",
+      "updated": "2026-06-11T17:06:50Z",
+      "source": "https://arxiv.org/abs/2506.01274v2",
+      "author_comment": "Project page: https://interlive-team.github.io/ReFoCUS/"
+    },
+    "2506.01300": {
+      "title": "ReAgent-V: A Reward-Driven Multi-Agent Framework for Video Understanding",
+      "first_public": "2025-06-02T04:23:21Z",
+      "updated": "2025-06-02T04:23:21Z",
+      "source": "https://arxiv.org/abs/2506.01300v1",
+      "author_comment": "31 pages, 18 figures"
+    },
+    "2506.01725": {
+      "title": "VideoCap-R1: Enhancing MLLMs for Video Captioning via Structured Thinking",
+      "first_public": "2025-06-02T14:30:09Z",
+      "updated": "2025-06-02T14:30:09Z",
+      "source": "https://arxiv.org/abs/2506.01725v1"
+    },
+    "2506.01908": {
+      "title": "Reinforcement Learning Tuning for VideoLLMs: Reward Design and Data Efficiency",
+      "first_public": "2025-06-02T17:28:26Z",
+      "updated": "2025-06-02T17:28:26Z",
+      "source": "https://arxiv.org/abs/2506.01908v1"
+    },
+    "2506.03097": {
+      "title": "EgoVLM: Policy Optimization for Egocentric Video Understanding",
+      "first_public": "2025-06-03T17:28:00Z",
+      "updated": "2025-06-03T17:28:00Z",
+      "source": "https://arxiv.org/abs/2506.03097v1",
+      "author_comment": "Our Code can be found at https://github.com/adityavavre/VidEgoVLM"
+    },
+    "2506.03525": {
+      "title": "Video-Skill-CoT: Skill-based Chain-of-Thoughts for Domain-Adaptive Video Reasoning",
+      "first_public": "2025-06-04T03:18:01Z",
+      "updated": "2025-10-24T15:17:29Z",
+      "source": "https://arxiv.org/abs/2506.03525v2",
+      "author_comment": "Project website: https://video-skill-cot.github.io/"
+    },
+    "2506.03569": {
+      "title": "MiMo-VL Technical Report",
+      "first_public": "2025-06-04T04:32:54Z",
+      "updated": "2025-06-04T04:32:54Z",
+      "source": "https://arxiv.org/abs/2506.03569v1",
+      "author_comment": "32 pages"
+    },
+    "2506.05523": {
+      "title": "MORSE-500: A Programmatically Controllable Video Benchmark to Stress-Test Multimodal Reasoning",
+      "first_public": "2025-06-05T19:12:45Z",
+      "updated": "2025-06-05T19:12:45Z",
+      "source": "https://arxiv.org/abs/2506.05523v1"
+    },
+    "2506.06097": {
+      "title": "VideoChat-A1: Thinking with Long Videos by Chain-of-Shot Reasoning",
+      "first_public": "2025-06-06T13:58:31Z",
+      "updated": "2026-03-16T06:43:28Z",
+      "source": "https://arxiv.org/abs/2506.06097v3"
+    },
+    "2506.07464": {
+      "title": "DeepVideo-R1: Video Reinforcement Fine-Tuning via Difficulty-aware Regressive GRPO",
+      "first_public": "2025-06-09T06:15:54Z",
+      "updated": "2026-02-04T06:45:15Z",
+      "source": "https://arxiv.org/abs/2506.07464v5",
+      "author_comment": "NeurIPS 2025"
+    },
+    "2506.07811": {
+      "title": "Looking Beyond Visible Cues: Implicit Video Question Answering via Dual-Clue Reasoning",
+      "first_public": "2025-06-09T14:38:14Z",
+      "updated": "2025-12-11T07:35:16Z",
+      "source": "https://arxiv.org/abs/2506.07811v2",
+      "author_comment": "Preprint"
+    },
+    "2506.08343": {
+      "title": "Wait, We Don't Need to \"Wait\"! Removing Thinking Tokens Improves Reasoning Efficiency",
+      "first_public": "2025-06-10T01:54:04Z",
+      "updated": "2025-06-18T14:43:36Z",
+      "source": "https://arxiv.org/abs/2506.08343v2"
+    },
+    "2506.08817": {
+      "title": "Video-CoT: A Comprehensive Dataset for Spatiotemporal Understanding of Videos Based on Chain-of-Thought",
+      "first_public": "2025-06-10T14:08:56Z",
+      "updated": "2025-06-12T15:51:33Z",
+      "source": "https://arxiv.org/abs/2506.08817v3"
+    },
+    "2506.09079": {
+      "title": "VidBridge-R1: Bridging QA and Captioning for RL-based Video Understanding Models with Intermediate Proxy Tasks",
+      "first_public": "2025-06-10T03:57:53Z",
+      "updated": "2025-09-26T06:33:17Z",
+      "source": "https://arxiv.org/abs/2506.09079v2"
+    },
+    "2506.10821": {
+      "title": "VideoExplorer: Think With Videos For Agentic Long-Video Understanding",
+      "first_public": "2025-06-12T15:39:10Z",
+      "updated": "2025-11-01T09:37:25Z",
+      "source": "https://arxiv.org/abs/2506.10821v6"
+    },
+    "2506.13654": {
+      "title": "Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning",
+      "first_public": "2025-06-16T16:17:08Z",
+      "updated": "2025-06-16T16:17:08Z",
+      "source": "https://arxiv.org/abs/2506.13654v1",
+      "author_comment": "Project page: https://egolife-ai.github.io/Ego-R1/"
+    },
+    "2506.14827": {
+      "title": "DAVID-XR1: Detecting AI-Generated Videos with Explainable Reasoning",
+      "first_public": "2025-06-13T13:39:53Z",
+      "updated": "2025-06-13T13:39:53Z",
+      "source": "https://arxiv.org/abs/2506.14827v1"
+    },
+    "2506.17221": {
+      "title": "VLN-R1: Vision-Language Navigation via Reinforcement Fine-Tuning",
+      "first_public": "2025-06-20T17:59:59Z",
+      "updated": "2025-06-25T06:03:22Z",
+      "source": "https://arxiv.org/abs/2506.17221v2",
+      "author_comment": "project page: vlnr1.github.io"
+    },
+    "2506.21277": {
+      "title": "HumanOmniV2: From Understanding to Omni-Modal Reasoning with Context",
+      "first_public": "2025-06-26T14:01:03Z",
+      "updated": "2025-06-26T14:01:03Z",
+      "source": "https://arxiv.org/abs/2506.21277v1"
+    },
+    "2506.21742": {
+      "title": "VRR-QA: Visual Relational Reasoning in Videos Beyond Explicit Cues",
+      "first_public": "2025-06-26T19:53:54Z",
+      "updated": "2026-03-29T20:30:11Z",
+      "source": "https://arxiv.org/abs/2506.21742v3",
+      "author_comment": "Accepted at CVPR 2026"
+    },
+    "2506.21891": {
+      "title": "DIVE: Deep-search Iterative Video Exploration A Technical Report for the CVRR Challenge at CVPR 2025",
+      "first_public": "2025-06-27T04:05:12Z",
+      "updated": "2025-06-27T04:05:12Z",
+      "source": "https://arxiv.org/abs/2506.21891v1"
+    },
+    "2506.23825": {
+      "title": "Flash-VStream: Efficient Real-Time Understanding for Long Video Streams",
+      "first_public": "2025-06-30T13:17:49Z",
+      "updated": "2025-07-24T07:25:10Z",
+      "source": "https://arxiv.org/abs/2506.23825v2",
+      "author_comment": "Accepted by ICCV 2025"
+    },
+    "2507.01949": {
+      "title": "Kwai Keye-VL Technical Report",
+      "first_public": "2025-07-02T17:57:28Z",
+      "updated": "2025-07-02T17:57:28Z",
+      "source": "https://arxiv.org/abs/2507.01949v1",
+      "author_comment": "Technical Report: https://github.com/Kwai-Keye/Keye"
+    },
+    "2507.02001": {
+      "title": "Temporal Chain of Thought: Long-Video Understanding by Thinking in Frames",
+      "first_public": "2025-07-01T18:39:26Z",
+      "updated": "2025-07-01T18:39:26Z",
+      "source": "https://arxiv.org/abs/2507.02001v1"
+    },
+    "2507.05240": {
+      "title": "StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling",
+      "first_public": "2025-07-07T17:49:41Z",
+      "updated": "2026-07-09T06:53:43Z",
+      "source": "https://arxiv.org/abs/2507.05240v2",
+      "author_comment": "Accepted to ICRA 2026"
+    },
+    "2507.06485": {
+      "title": "Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning",
+      "first_public": "2025-07-09T02:06:13Z",
+      "updated": "2025-10-24T16:19:27Z",
+      "source": "https://arxiv.org/abs/2507.06485v2",
+      "author_comment": "EMNLP 2025. The first two authors contributed equally. Project page: https://sites.google.com/cs.unc.edu/videorts2025/"
+    },
+    "2507.07966": {
+      "title": "Scaling RL to Long Videos",
+      "first_public": "2025-07-10T17:47:40Z",
+      "updated": "2025-09-30T14:13:20Z",
+      "source": "https://arxiv.org/abs/2507.07966v4",
+      "author_comment": "Accepted by NeurIPS 2025. Code at https://github.com/NVlabs/Long-RL and model at https://huggingface.co/Efficient-Large-Model/LongVILA-R1-7B"
+    },
+    "2507.09876": {
+      "title": "ViTCoT: Video-Text Interleaved Chain-of-Thought for Boosting Video Understanding in Large Language Models",
+      "first_public": "2025-07-14T03:21:13Z",
+      "updated": "2025-07-14T03:21:13Z",
+      "source": "https://arxiv.org/abs/2507.09876v1",
+      "author_comment": "Accepted by ACM MM 2025"
+    },
+    "2507.10548": {
+      "title": "EmbRACE-3K: Embodied Reasoning and Action in Complex Environments",
+      "first_public": "2025-07-14T17:59:46Z",
+      "updated": "2025-07-14T17:59:46Z",
+      "source": "https://arxiv.org/abs/2507.10548v1",
+      "author_comment": "Project page: https://mxllc.github.io/EmbRACE-3K/"
+    },
+    "2507.13609": {
+      "title": "CoTasks: Chain-of-Thought based Video Instruction Tuning Tasks",
+      "first_public": "2025-07-18T02:29:19Z",
+      "updated": "2025-07-18T02:29:19Z",
+      "source": "https://arxiv.org/abs/2507.13609v1"
+    },
+    "2507.15028": {
+      "title": "Towards Video Thinking Test: A Holistic Benchmark for Advanced Video Reasoning and Understanding",
+      "first_public": "2025-07-20T16:30:33Z",
+      "updated": "2025-07-20T16:30:33Z",
+      "source": "https://arxiv.org/abs/2507.15028v1",
+      "author_comment": "ICCV 2025; Project page: https://zhangyuanhan-ai.github.io/video-tt/"
+    },
+    "2507.16206": {
+      "title": "METER: Multi-modal Evidence-based Thinking and Explainable Reasoning -- Algorithm and Benchmark",
+      "first_public": "2025-07-22T03:42:51Z",
+      "updated": "2025-07-22T03:42:51Z",
+      "source": "https://arxiv.org/abs/2507.16206v1",
+      "author_comment": "9 pages,3 figures ICCV format"
+    },
+    "2507.20939": {
+      "title": "ARC-Hunyuan-Video-7B: Structured Video Comprehension of Real-World Shorts",
+      "first_public": "2025-07-28T15:52:36Z",
+      "updated": "2025-07-28T15:52:36Z",
+      "source": "https://arxiv.org/abs/2507.20939v1",
+      "author_comment": "Project Page: https://tencentarc.github.io/posts/arc-video-announcement/"
+    },
+    "2508.01533": {
+      "title": "ReasonAct: Progressive Training for Fine-Grained Video Reasoning in Small Models",
+      "first_public": "2025-08-03T01:25:13Z",
+      "updated": "2025-11-26T01:05:32Z",
+      "source": "https://arxiv.org/abs/2508.01533v2"
+    },
+    "2508.01875": {
+      "title": "StreamAgent: Towards Anticipatory Agents for Streaming Video Understanding",
+      "first_public": "2025-08-03T18:15:42Z",
+      "updated": "2026-04-29T13:44:54Z",
+      "source": "https://arxiv.org/abs/2508.01875v4"
+    },
+    "2508.03039": {
+      "title": "VideoForest: Person-Anchored Hierarchical Reasoning for Cross-Video Question Answering",
+      "first_public": "2025-08-05T03:33:24Z",
+      "updated": "2025-08-05T03:33:24Z",
+      "source": "https://arxiv.org/abs/2508.03039v1"
+    },
+    "2508.03100": {
+      "title": "AVATAR: Reinforcement Learning to See, Hear, and Reason Over Video",
+      "first_public": "2025-08-05T05:25:17Z",
+      "updated": "2026-03-29T04:54:47Z",
+      "source": "https://arxiv.org/abs/2508.03100v4",
+      "author_comment": "CVPR 2026"
+    },
+    "2508.04416": {
+      "title": "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
+      "first_public": "2025-08-06T13:03:21Z",
+      "updated": "2025-09-03T07:11:03Z",
+      "source": "https://arxiv.org/abs/2508.04416v2"
+    },
+    "2508.05221": {
+      "title": "ReasoningTrack: Chain-of-Thought Reasoning for Long-term Vision-Language Tracking",
+      "first_public": "2025-08-07T10:02:07Z",
+      "updated": "2025-08-07T10:02:07Z",
+      "source": "https://arxiv.org/abs/2508.05221v1"
+    },
+    "2508.07683": {
+      "title": "TAR: Temporal Anchor-Constrained Reasoning for Video Temporal Grounding",
+      "first_public": "2025-08-11T06:59:32Z",
+      "updated": "2026-06-29T02:15:03Z",
+      "source": "https://arxiv.org/abs/2508.07683v2",
+      "author_comment": "Accepted by ECCV2026"
+    },
+    "2508.11538": {
+      "title": "Reinforcing Video Reasoning Segmentation to Think Before It Segments",
+      "first_public": "2025-08-15T15:34:56Z",
+      "updated": "2025-08-15T15:34:56Z",
+      "source": "https://arxiv.org/abs/2508.11538v1",
+      "author_comment": "12 pages",
+      "journal_ref": "CVPR 2026"
+    },
+    "2508.11737": {
+      "title": "Ovis2.5 Technical Report",
+      "first_public": "2025-08-15T17:01:08Z",
+      "updated": "2025-08-15T17:01:08Z",
+      "source": "https://arxiv.org/abs/2508.11737v1"
+    },
+    "2508.20478": {
+      "title": "Video-MTR: Reinforced Multi-Turn Reasoning for Long Video Understanding",
+      "first_public": "2025-08-28T06:55:08Z",
+      "updated": "2026-05-29T09:48:44Z",
+      "source": "https://arxiv.org/abs/2508.20478v2",
+      "author_comment": "Accepted by ICML 2026. Camera-ready version"
+    },
+    "2509.01563": {
+      "title": "Kwai Keye-VL 1.5 Technical Report",
+      "first_public": "2025-09-01T15:46:58Z",
+      "updated": "2025-09-07T13:40:44Z",
+      "source": "https://arxiv.org/abs/2509.01563v3",
+      "author_comment": "Github page: https://github.com/Kwai-Keye/Keye"
+    },
+    "2509.03501": {
+      "title": "Strefer: Empowering Video LLMs with Space-Time Referring and Reasoning via Synthetic Instruction Data",
+      "first_public": "2025-09-03T17:33:20Z",
+      "updated": "2025-09-03T17:33:20Z",
+      "source": "https://arxiv.org/abs/2509.03501v1",
+      "author_comment": "This technical report serves as the archival version of our paper accepted at the ICCV 2025 Workshop. For more information, please visit our project website: https://strefer.github.io/"
+    },
+    "2509.21100": {
+      "title": "VideoChat-R1.5: Visual Test-Time Scaling to Reinforce Multimodal Reasoning by Iterative Perception",
+      "first_public": "2025-09-25T12:46:46Z",
+      "updated": "2025-09-25T12:46:46Z",
+      "source": "https://arxiv.org/abs/2509.21100v1"
+    },
+    "2509.21113": {
+      "title": "MOSS-ChatV: Reinforcement Learning with Process Reasoning Reward for Video Temporal Reasoning",
+      "first_public": "2025-09-25T12:59:13Z",
+      "updated": "2025-09-26T04:41:48Z",
+      "source": "https://arxiv.org/abs/2509.21113v2"
+    },
+    "2509.24008": {
+      "title": "FrameMind: Frame-Interleaved Video Reasoning via Reinforcement Learning",
+      "first_public": "2025-09-28T17:59:43Z",
+      "updated": "2025-10-05T15:20:25Z",
+      "source": "https://arxiv.org/abs/2509.24008v3",
+      "author_comment": "Underreview"
+    },
+    "2509.24871": {
+      "title": "StreamForest: Efficient Online Video Understanding with Persistent Event Memory",
+      "first_public": "2025-09-29T14:53:57Z",
+      "updated": "2025-09-29T14:53:57Z",
+      "source": "https://arxiv.org/abs/2509.24871v1",
+      "author_comment": "Accepted as a Spotlight at NeurIPS 2025"
+    },
+    "2510.04022": {
+      "title": "Video-in-the-Loop: Span-Grounded Long Video QA with Interleaved Reasoning",
+      "first_public": "2025-10-05T04:03:31Z",
+      "updated": "2025-10-08T04:05:20Z",
+      "source": "https://arxiv.org/abs/2510.04022v3"
+    },
+    "2510.05094": {
+      "title": "VChain: Chain-of-Visual-Thought for Reasoning in Video Generation",
+      "first_public": "2025-10-06T17:57:59Z",
+      "updated": "2026-05-21T08:23:12Z",
+      "source": "https://arxiv.org/abs/2510.05094v2",
+      "author_comment": "ACL 2026 (Findings Paper), ICCV 2025 Workshop Outstanding Paper Award, Project page: https://eyeline-labs.github.io/VChain"
+    },
+    "2510.08559": {
+      "title": "SciVideoBench: Benchmarking Scientific Video Reasoning in Large Multimodal Models",
+      "first_public": "2025-10-09T17:59:23Z",
+      "updated": "2025-10-09T17:59:23Z",
+      "source": "https://arxiv.org/abs/2510.08559v1"
+    },
+    "2510.09608": {
+      "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams",
+      "first_public": "2025-10-10T17:59:58Z",
+      "updated": "2026-05-31T03:09:59Z",
+      "source": "https://arxiv.org/abs/2510.09608v2",
+      "author_comment": "Published as a conference paper at ICLR 2026. The first two authors contributed equally to this work"
+    },
+    "2510.20579": {
+      "title": "Open-o3-Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence",
+      "first_public": "2025-10-23T14:05:56Z",
+      "updated": "2026-03-18T16:54:37Z",
+      "source": "https://arxiv.org/abs/2510.20579v2"
+    },
+    "2510.23473": {
+      "title": "Video-Thinker: Sparking \"Thinking with Videos\" via Reinforcement Learning",
+      "first_public": "2025-10-27T16:10:45Z",
+      "updated": "2025-10-27T16:10:45Z",
+      "source": "https://arxiv.org/abs/2510.23473v1"
+    },
+    "2510.25332": {
+      "title": "StreamingCoT: A Dataset for Temporal Dynamics and Multimodal Chain-of-Thought Reasoning in Streaming VideoQA",
+      "first_public": "2025-10-29T09:47:38Z",
+      "updated": "2025-10-29T09:47:38Z",
+      "source": "https://arxiv.org/abs/2510.25332v1"
+    },
+    "2510.26802": {
+      "title": "Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark",
+      "first_public": "2025-10-30T17:59:55Z",
+      "updated": "2025-10-30T17:59:55Z",
+      "source": "https://arxiv.org/abs/2510.26802v1",
+      "author_comment": "Project Page: https://video-cof.github.io"
+    },
+    "2511.04570": {
+      "title": "Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm",
+      "first_public": "2025-11-06T17:25:23Z",
+      "updated": "2026-04-07T09:55:11Z",
+      "source": "https://arxiv.org/abs/2511.04570v2",
+      "author_comment": "34 pages, 17 figures"
+    },
+    "2511.05299": {
+      "title": "LiveStar: Live Streaming Assistant for Real-World Online Video Understanding",
+      "first_public": "2025-11-07T15:00:37Z",
+      "updated": "2025-11-07T15:00:37Z",
+      "source": "https://arxiv.org/abs/2511.05299v1",
+      "author_comment": "NeurIPS 2025 Accepted"
+    },
+    "2511.13054": {
+      "title": "ViSS-R1: Self-Supervised Reinforcement Video Reasoning",
+      "first_public": "2025-11-17T07:00:42Z",
+      "updated": "2025-11-17T07:00:42Z",
+      "source": "https://arxiv.org/abs/2511.13054v1",
+      "author_comment": "Our paper was initially titled \"Video-SSR1: Self-Supervised Reinforcement Video Reasoning.\" Upon noticing its close resemblance to the title of a recently released paper, we have decided to rename our work as \"ViSS-R1.\""
+    },
+    "2511.13190": {
+      "title": "Video Spatial Reasoning with Object-Centric 3D Rollout",
+      "first_public": "2025-11-17T09:53:41Z",
+      "updated": "2025-11-17T09:53:41Z",
+      "source": "https://arxiv.org/abs/2511.13190v1"
+    },
+    "2511.13704": {
+      "title": "TiViBench: Benchmarking Think-in-Video Reasoning for Video Generative Models",
+      "first_public": "2025-11-17T18:52:44Z",
+      "updated": "2025-12-20T05:22:48Z",
+      "source": "https://arxiv.org/abs/2511.13704v2",
+      "author_comment": "Project: https://haroldchen19.github.io/TiViBench-Page/"
+    },
+    "2511.13853": {
+      "title": "Can World Simulators Reason? Gen-ViRe: A Generative Visual Reasoning Benchmark",
+      "first_public": "2025-11-17T19:11:39Z",
+      "updated": "2026-02-12T15:21:16Z",
+      "source": "https://arxiv.org/abs/2511.13853v3",
+      "author_comment": "10 pages"
+    },
+    "2511.14210": {
+      "title": "Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution",
+      "first_public": "2025-11-18T07:41:02Z",
+      "updated": "2025-11-19T20:07:34Z",
+      "source": "https://arxiv.org/abs/2511.14210v2"
+    },
+    "2511.14446": {
+      "title": "Agentic Video Intelligence: A Flexible Framework for Advanced Video Exploration and Understanding",
+      "first_public": "2025-11-18T12:43:15Z",
+      "updated": "2025-11-18T12:43:15Z",
+      "source": "https://arxiv.org/abs/2511.14446v1"
+    },
+    "2511.15065": {
+      "title": "Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks",
+      "first_public": "2025-11-19T03:18:29Z",
+      "updated": "2025-11-24T07:46:09Z",
+      "source": "https://arxiv.org/abs/2511.15065v2"
+    },
+    "2511.15578": {
+      "title": "AVATAAR: Agentic Video Answering via Temporal Adaptive Alignment and Reasoning",
+      "first_public": "2025-11-19T16:09:38Z",
+      "updated": "2025-11-19T16:09:38Z",
+      "source": "https://arxiv.org/abs/2511.15578v1",
+      "author_comment": "Accepted in the 5th IEEE Big Data Workshop on Multimodal AI (MMAI 2025), Dec 8-11, Macau, China, 2025 (Preprint Copy)",
+      "journal_ref": "2025 IEEE International Conference on Big Data (BigData), Macau, China"
+    },
+    "2511.16077": {
+      "title": "VideoSeg-R1:Reasoning Video Object Segmentation via Reinforcement Learning",
+      "first_public": "2025-11-20T06:12:25Z",
+      "updated": "2025-11-20T06:12:25Z",
+      "source": "https://arxiv.org/abs/2511.16077v1"
+    },
+    "2511.16668": {
+      "title": "V-ReasonBench: Toward Unified Reasoning Benchmark Suite for Video Generation Models",
+      "first_public": "2025-11-20T18:59:42Z",
+      "updated": "2025-11-20T18:59:42Z",
+      "source": "https://arxiv.org/abs/2511.16668v1",
+      "author_comment": "Project Page: https://oahzxl.github.io/VReasonBench"
+    },
+    "2511.16669": {
+      "title": "Video-as-Answer: Predict and Generate Next Video Event with Joint-GRPO",
+      "first_public": "2025-11-20T18:59:44Z",
+      "updated": "2025-11-23T15:27:38Z",
+      "source": "https://arxiv.org/abs/2511.16669v2",
+      "author_comment": "Project page: https://video-as-answer.github.io/"
+    },
+    "2511.17490": {
+      "title": "Video-R4: Reinforcing Text-Rich Video Reasoning with Visual Rumination",
+      "first_public": "2025-11-21T18:47:09Z",
+      "updated": "2025-11-26T04:06:28Z",
+      "source": "https://arxiv.org/abs/2511.17490v3"
+    },
+    "2511.19401": {
+      "title": "In-Video Instructions: Visual Signals as Generative Control",
+      "first_public": "2025-11-24T18:38:45Z",
+      "updated": "2025-11-24T18:38:45Z",
+      "source": "https://arxiv.org/abs/2511.19401v1"
+    },
+    "2511.20785": {
+      "title": "LongVT: Incentivizing \"Thinking with Long Videos\" via Native Tool Calling",
+      "first_public": "2025-11-25T19:22:48Z",
+      "updated": "2026-05-21T10:39:51Z",
+      "source": "https://arxiv.org/abs/2511.20785v3",
+      "author_comment": "CVPR 2026"
+    },
+    "2511.22974": {
+      "title": "McSc: Motion-Corrective Preference Alignment for Video Generation with Self-Critic Hierarchical Reasoning",
+      "first_public": "2025-11-28T08:27:53Z",
+      "updated": "2025-11-28T08:27:53Z",
+      "source": "https://arxiv.org/abs/2511.22974v1"
+    },
+    "2511.23477": {
+      "title": "Video-CoM: Interactive Video Reasoning via Chain of Manipulations",
+      "first_public": "2025-11-28T18:59:57Z",
+      "updated": "2025-11-28T18:59:57Z",
+      "source": "https://arxiv.org/abs/2511.23477v1",
+      "author_comment": "Technical Report"
+    },
+    "2511.23478": {
+      "title": "Video-R2: Reinforcing Consistent and Grounded Reasoning in Multimodal Language Models",
+      "first_public": "2025-11-28T18:59:58Z",
+      "updated": "2025-12-08T07:53:58Z",
+      "source": "https://arxiv.org/abs/2511.23478v2",
+      "author_comment": "Video-R2 Technical Report"
+    },
+    "2512.00805": {
+      "title": "Thinking with Drafts: Speculative Temporal Reasoning for Efficient Long Video Understanding",
+      "first_public": "2025-11-30T09:27:59Z",
+      "updated": "2026-02-26T19:33:48Z",
+      "source": "https://arxiv.org/abs/2512.00805v2",
+      "author_comment": "Accepted by CVPR 26"
+    },
+    "2512.01707": {
+      "title": "StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos",
+      "first_public": "2025-12-01T14:15:44Z",
+      "updated": "2026-05-13T04:12:19Z",
+      "source": "https://arxiv.org/abs/2512.01707v3",
+      "author_comment": "Accepted to CVPR 2026 with strong scores (5/5/5) but desk-rejected after the camera-ready due to not completing all reviewing duties"
+    },
+    "2512.01816": {
+      "title": "Envision: Benchmarking Unified Understanding & Generation for Causal World Process Insights",
+      "first_public": "2025-12-01T15:52:31Z",
+      "updated": "2025-12-01T15:52:31Z",
+      "source": "https://arxiv.org/abs/2512.01816v1",
+      "author_comment": "35 pages, 12 figures, 10 tables"
+    },
+    "2512.01989": {
+      "title": "PAI-Bench: A Comprehensive Benchmark For Physical AI",
+      "first_public": "2025-12-01T18:47:39Z",
+      "updated": "2025-12-01T18:47:39Z",
+      "source": "https://arxiv.org/abs/2512.01989v1"
+    },
+    "2512.02231": {
+      "title": "See, Hear, and Understand: Benchmarking Audiovisual Human Speech Understanding in Multimodal Large Language Models",
+      "first_public": "2025-12-01T21:57:26Z",
+      "updated": "2026-04-10T02:23:14Z",
+      "source": "https://arxiv.org/abs/2512.02231v2",
+      "author_comment": "Findings of CVPR 2026"
+    },
+    "2512.02425": {
+      "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+      "first_public": "2025-12-02T05:14:52Z",
+      "updated": "2026-03-27T08:56:29Z",
+      "source": "https://arxiv.org/abs/2512.02425v2",
+      "author_comment": "CVPR 2026. Project page : https://worldmm.github.io"
+    },
+    "2512.02622": {
+      "title": "RULER-Bench: Probing Rule-based Reasoning Abilities of Next-level Video Generation Models for Vision Foundation Intelligence",
+      "first_public": "2025-12-02T10:29:51Z",
+      "updated": "2025-12-02T10:29:51Z",
+      "source": "https://arxiv.org/abs/2512.02622v1"
+    },
+    "2512.03043": {
+      "title": "OneThinker: All-in-one Reasoning Model for Image and Video",
+      "first_public": "2025-12-02T18:59:52Z",
+      "updated": "2026-04-28T12:07:36Z",
+      "source": "https://arxiv.org/abs/2512.03043v3",
+      "author_comment": "CVPR 2026, Project page: https://github.com/tulerfeng/OneThinker"
+    },
+    "2512.03963": {
+      "title": "TempR1: Improving Temporal Understanding of MLLMs via Temporal-Aware Multi-Task Reinforcement Learning",
+      "first_public": "2025-12-03T16:57:00Z",
+      "updated": "2026-04-14T11:28:58Z",
+      "source": "https://arxiv.org/abs/2512.03963v3"
+    },
+    "2512.05969": {
+      "title": "Video Models Start to Solve Chess, Maze, Sudoku, Mental Rotation, and Raven' Matrices",
+      "first_public": "2025-11-02T01:22:29Z",
+      "updated": "2025-11-02T01:22:29Z",
+      "source": "https://arxiv.org/abs/2512.05969v1",
+      "author_comment": "See $\\href{https://grow-ai-like-a-child.com/video-reason/}{results}$ and $\\href{https://github.com/hokindeng/VMEvalKit}{code}$"
+    },
+    "2512.06673": {
+      "title": "Detector-Empowered Video Large Language Model for Efficient Spatio-Temporal Grounding",
+      "first_public": "2025-12-07T06:11:15Z",
+      "updated": "2026-05-09T07:46:05Z",
+      "source": "https://arxiv.org/abs/2512.06673v2"
+    },
+    "2512.07469": {
+      "title": "VideoCoF: Unified Video Editing with Temporal Reasoner",
+      "first_public": "2025-12-08T11:50:18Z",
+      "updated": "2026-04-05T12:30:52Z",
+      "source": "https://arxiv.org/abs/2512.07469v2",
+      "author_comment": "Accepted by CVPR 2026, Project Page: https://videocof.github.io/"
+    },
+    "2512.08228": {
+      "title": "MM-CoT:A Benchmark for Probing Visual Chain-of-Thought Reasoning in Multimodal Models",
+      "first_public": "2025-12-09T04:13:31Z",
+      "updated": "2025-12-09T04:13:31Z",
+      "source": "https://arxiv.org/abs/2512.08228v1"
+    },
+    "2512.09616": {
+      "title": "Rethinking Chain-of-Thought Reasoning for Videos",
+      "first_public": "2025-12-10T13:05:55Z",
+      "updated": "2025-12-10T13:05:55Z",
+      "source": "https://arxiv.org/abs/2512.09616v1",
+      "author_comment": "Technical report"
+    },
+    "2512.14691": {
+      "title": "MMGR: Multi-Modal Generative Reasoning Benchmark and Evaluation",
+      "first_public": "2025-12-16T18:58:04Z",
+      "updated": "2026-09-10T22:01:41Z",
+      "source": "https://arxiv.org/abs/2512.14691v3",
+      "author_comment": "EMNLP 2026"
+    },
+    "2601.06943": {
+      "title": "Watching, Reasoning, and Searching: A Video Deep Research Benchmark on Open Web for Agentic Video Reasoning",
+      "first_public": "2026-01-11T15:07:37Z",
+      "updated": "2026-05-18T06:58:21Z",
+      "source": "https://arxiv.org/abs/2601.06943v2"
+    },
+    "2601.10061": {
+      "title": "CoF-T2I: Video Models as Pure Visual Reasoners for Text-to-Image Generation",
+      "first_public": "2026-01-15T04:33:06Z",
+      "updated": "2026-01-15T04:33:06Z",
+      "source": "https://arxiv.org/abs/2601.10061v1",
+      "author_comment": "16 pages, 8 figures"
+    },
+    "2601.10649": {
+      "title": "MINERVA-Cultural: A Benchmark for Cultural and Multilingual Long Video Reasoning",
+      "first_public": "2026-01-15T18:15:06Z",
+      "updated": "2026-04-07T10:36:27Z",
+      "source": "https://arxiv.org/abs/2601.10649v2"
+    },
+    "2601.22959": {
+      "title": "Triage: Hierarchical Visual Budgeting for Efficient Video Reasoning in Vision-Language Models",
+      "first_public": "2026-01-30T13:20:04Z",
+      "updated": "2026-01-30T13:20:04Z",
+      "source": "https://arxiv.org/abs/2601.22959v1"
+    },
+    "2602.05829": {
+      "title": "Weaver: End-to-End Agentic System Training for Video Interleaved Reasoning",
+      "first_public": "2026-02-05T16:19:41Z",
+      "updated": "2026-02-05T16:19:41Z",
+      "source": "https://arxiv.org/abs/2602.05829v1"
+    },
+    "2602.17555": {
+      "title": "GraphThinker: Reinforcing Temporally Grounded Video Reasoning with Event Graph Thinking",
+      "first_public": "2026-02-19T17:09:30Z",
+      "updated": "2026-05-13T14:09:57Z",
+      "source": "https://arxiv.org/abs/2602.17555v3"
+    },
+    "2602.20159": {
+      "title": "A Very Big Video Reasoning Suite",
+      "first_public": "2026-02-23T18:59:41Z",
+      "updated": "2026-08-27T06:06:42Z",
+      "source": "https://arxiv.org/abs/2602.20159v3"
+    },
+    "2603.05591": {
+      "title": "Thinking with Spatial Code for Physical-World Video Reasoning",
+      "first_public": "2026-03-05T19:00:02Z",
+      "updated": "2026-03-05T19:00:02Z",
+      "source": "https://arxiv.org/abs/2603.05591v1"
+    },
+    "2603.12262": {
+      "title": "Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously",
+      "first_public": "2026-03-12T17:59:51Z",
+      "updated": "2026-07-17T07:23:56Z",
+      "source": "https://arxiv.org/abs/2603.12262v2",
+      "author_comment": "Accepted by ECCV 2026, project page https://1ranguan.github.io/VST/"
+    },
+    "2603.12938": {
+      "title": "Thinking in Streaming Video",
+      "first_public": "2026-03-13T12:33:36Z",
+      "updated": "2026-03-13T12:33:36Z",
+      "source": "https://arxiv.org/abs/2603.12938v1"
+    },
+    "2603.20194": {
+      "title": "MME-CoF-Pro: Evaluating Reasoning Coherence in Video Generative Models with Text and Visual Hints",
+      "first_public": "2026-03-20T17:59:56Z",
+      "updated": "2026-03-20T17:59:56Z",
+      "source": "https://arxiv.org/abs/2603.20194v1"
+    },
+    "2603.24329": {
+      "title": "GameplayQA: A Benchmarking Framework for Decision-Dense POV-Synced Multi-Video Understanding of 3D Virtual Agents",
+      "first_public": "2026-03-25T14:10:45Z",
+      "updated": "2026-04-12T23:43:39Z",
+      "source": "https://arxiv.org/abs/2603.24329v2",
+      "author_comment": "Accepted to the Annual Meeting of the Association for Computational Linguistics (ACL 2026)"
+    },
+    "2604.17052": {
+      "title": "OASIS: On-Demand Hierarchical Event Memory for Streaming Video Reasoning",
+      "first_public": "2026-04-18T16:22:05Z",
+      "updated": "2026-04-18T16:22:05Z",
+      "source": "https://arxiv.org/abs/2604.17052v1"
+    },
+    "2605.08735": {
+      "title": "CollabVR: Collaborative Video Reasoning with Vision-Language and Video Generation Models",
+      "first_public": "2026-05-09T06:39:17Z",
+      "updated": "2026-05-09T06:39:17Z",
+      "source": "https://arxiv.org/abs/2605.08735v1"
+    },
+    "2605.15458": {
+      "title": "Video Models Can Reason with Verifiable Rewards",
+      "first_public": "2026-05-14T22:40:56Z",
+      "updated": "2026-05-14T22:40:56Z",
+      "source": "https://arxiv.org/abs/2605.15458v1"
+    },
+    "2605.23216": {
+      "title": "CaST-Bench: Benchmarking Causal Chain-Grounded Spatio-Temporal Reasoning for Video Question Answering",
+      "first_public": "2026-05-22T04:19:29Z",
+      "updated": "2026-07-02T06:54:56Z",
+      "source": "https://arxiv.org/abs/2605.23216v2"
+    },
+    "2606.03301": {
+      "title": "SagaQA: A Multi-hop Reasoning Benchmark for Long-form Narrative Understanding in TV Series",
+      "first_public": "2026-06-02T08:14:01Z",
+      "updated": "2026-06-02T08:14:01Z",
+      "source": "https://arxiv.org/abs/2606.03301v1"
+    },
+    "2606.05769": {
+      "title": "Imagine Before You Predict: Interleaved Latent Visual Reasoning for Video Event Prediction",
+      "first_public": "2026-06-04T06:53:19Z",
+      "updated": "2026-06-04T06:53:19Z",
+      "source": "https://arxiv.org/abs/2606.05769v1"
+    },
+    "2606.13861": {
+      "title": "Temporal Backtracking Search for Test-time Generative Video Reasoning",
+      "first_public": "2026-06-11T19:41:18Z",
+      "updated": "2026-06-11T19:41:18Z",
+      "source": "https://arxiv.org/abs/2606.13861v1"
+    },
+    "2606.22870": {
+      "title": "VideoLatent: Video-Language Learning via Latent Self-Forcing",
+      "first_public": "2026-06-22T05:29:30Z",
+      "updated": "2026-06-22T05:29:30Z",
+      "source": "https://arxiv.org/abs/2606.22870v1"
+    },
+    "2606.24422": {
+      "title": "EgoSAT: A Comprehensive Benchmark of Egocentric Streaming Interaction Understanding",
+      "first_public": "2026-06-23T10:59:25Z",
+      "updated": "2026-06-23T10:59:25Z",
+      "source": "https://arxiv.org/abs/2606.24422v1"
+    },
+    "2606.24726": {
+      "title": "SER: Learning to Ground Video Reasoning with Semantic Evidence Rewards",
+      "first_public": "2026-06-23T15:50:33Z",
+      "updated": "2026-06-23T15:50:33Z",
+      "source": "https://arxiv.org/abs/2606.24726v1"
+    },
+    "2606.25842": {
+      "title": "Graph it first! Enabling Reasoning on Long-form Egocentric Videos through Scene Graphs",
+      "first_public": "2026-06-24T13:55:45Z",
+      "updated": "2026-07-02T12:05:36Z",
+      "source": "https://arxiv.org/abs/2606.25842v2"
+    },
+    "2607.15278": {
+      "title": "Hierarchical Denoising For Multi-Step Visual Reasoning",
+      "first_public": "2026-07-16T17:59:57Z",
+      "updated": "2026-07-16T17:59:57Z",
+      "source": "https://arxiv.org/abs/2607.15278v1"
+    },
+    "2607.19339": {
+      "title": "OmniReasoner: Thinking with Long Audio-Video via Native Tool Use",
+      "first_public": "2026-07-21T17:57:50Z",
+      "updated": "2026-07-21T17:57:50Z",
+      "source": "https://arxiv.org/abs/2607.19339v1"
+    },
+    "2608.02392": {
+      "title": "GROVE: Growing and Reasoning over Temporally Stratified Memory from Streaming Video Experience",
+      "first_public": "2026-08-03T15:35:28Z",
+      "updated": "2026-08-05T05:29:45Z",
+      "source": "https://arxiv.org/abs/2608.02392v2"
+    },
+    "2608.05703": {
+      "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
+      "first_public": "2026-08-06T07:46:37Z",
+      "updated": "2026-08-06T07:46:37Z",
+      "source": "https://arxiv.org/abs/2608.05703v1"
+    },
+    "2608.22279": {
+      "title": "OVIBench: Benchmarking Online Video Question Answering under Interruption",
+      "first_public": "2026-08-23T08:12:08Z",
+      "updated": "2026-08-23T08:12:08Z",
+      "source": "https://arxiv.org/abs/2608.22279v1"
+    },
+    "2608.26105": {
+      "title": "VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning",
+      "first_public": "2026-08-26T17:59:51Z",
+      "updated": "2026-09-10T18:03:40Z",
+      "source": "https://arxiv.org/abs/2608.26105v2"
+    },
+    "2608.27065": {
+      "title": "Video-OPSD: Exploiting Privileged Visual Evidence for On-Policy Self-Distillation in Video Large Language Models",
+      "first_public": "2026-08-27T12:51:32Z",
+      "updated": "2026-08-27T12:51:32Z",
+      "source": "https://arxiv.org/abs/2608.27065v1"
+    },
+    "2609.03673": {
+      "title": "Do Video Generators Track the World Across Segments? A Benchmark and Method for World-State Reasoning in Video Continuation",
+      "first_public": "2026-09-03T11:09:46Z",
+      "updated": "2026-09-03T11:09:46Z",
+      "source": "https://arxiv.org/abs/2609.03673v1"
+    },
+    "2609.04131": {
+      "title": "Beyond Retrieval: Progressive Latent Memory Evolution for Streaming Video Understanding",
+      "first_public": "2026-09-03T17:28:14Z",
+      "updated": "2026-09-03T17:28:14Z",
+      "source": "https://arxiv.org/abs/2609.04131v1"
+    },
+    "2609.09300": {
+      "title": "Video-MOPD: Multi-Teacher On-Policy Distillation for Video Understanding",
+      "first_public": "2026-09-08T18:00:22Z",
+      "updated": "2026-09-08T18:00:22Z",
+      "source": "https://arxiv.org/abs/2609.09300v1"
+    },
+    "2609.09985": {
+      "title": "VLX-VR: An Agentic-Aware Video Reasoning Model",
+      "first_public": "2026-09-09T10:13:30Z",
+      "updated": "2026-09-09T10:13:30Z",
+      "source": "https://arxiv.org/abs/2609.09985v1"
+    },
+    "2609.11242": {
+      "title": "From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models",
+      "first_public": "2026-09-10T08:40:58Z",
+      "updated": "2026-09-10T08:40:58Z",
+      "source": "https://arxiv.org/abs/2609.11242v1"
+    },
+    "2609.12658": {
+      "title": "ProactiveBench: Can Streaming Video Models Really Interact Like Humans?",
+      "first_public": "2026-09-11T10:05:42Z",
+      "updated": "2026-09-11T10:05:42Z",
+      "source": "https://arxiv.org/abs/2609.12658v1"
+    },
+    "2609.12818": {
+      "title": "Online Video Agent Harness for Long Video Understanding",
+      "first_public": "2026-09-11T13:13:03Z",
+      "updated": "2026-09-11T13:13:03Z",
+      "source": "https://arxiv.org/abs/2609.12818v1"
+    },
+    "2609.15224": {
+      "title": "Long-to-Short Video Evidence Reasoning for Grounded Question Answering",
+      "first_public": "2026-09-14T08:43:27Z",
+      "updated": "2026-09-14T08:43:27Z",
+      "source": "https://arxiv.org/abs/2609.15224v1"
+    },
+    "2609.18540": {
+      "title": "SVMemAgent: A Streaming Video Memory Agent for Query-Agnostic Online Frame Selection",
+      "first_public": "2026-09-16T12:04:53Z",
+      "updated": "2026-09-16T12:04:53Z",
+      "source": "https://arxiv.org/abs/2609.18540v1"
+    }
+  }
+}
