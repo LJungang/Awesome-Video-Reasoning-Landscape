@@ -69,15 +69,17 @@ The [benchmark index](#benchmark-selection-guide) links these families to the ch
 
 ## 🧭 Taxonomy and Modeling
 
-A useful abstraction is a partially observed, budget-constrained inference loop. Let $x_t$ be a timestamped audiovisual observation, $q$ a query or standing instruction, $m_k$ the retained inference state, and $B$ the compute/memory budget:
+A useful abstraction is a partially observed, budget-constrained inference loop. Let $`x_t`$ be a timestamped audiovisual observation, $`q`$ a query or standing instruction, $`m_k`$ the retained inference state, and $`B`$ the compute/memory budget:
 
-$$
-e_k = \operatorname{Acquire}(x_{\leq t}, q, m_k, a_k), \qquad
-m_{k+1} = U_\theta(m_k, e_k, q), \qquad
-(a_{k+1}, y_k) \sim \pi_\theta(\cdot \mid q, m_{k+1}, B).
-$$
+```math
+\begin{aligned}
+e_k &= \mathrm{Acquire}(x_{\leq t}, q, m_k, a_k), \\
+m_{k+1} &= U_{\theta}(m_k, e_k, q), \\
+(a_{k+1}, y_k) &\sim \pi_{\theta}(\cdot \mid q, m_{k+1}, B).
+\end{aligned}
+```
 
-Here $k$ indexes inference steps, while $t$ indexes observed stream time. An acquisition action may select frames, crop a region, retrieve memory, invoke audio/OCR tools, or run a simulator. The output may be an answer, a predicted trajectory, or a decision to wait. Offline methods may access the complete recording; a causal streaming method must use only the observed prefix. Generated or retrieved hypotheses must remain distinguishable from observed evidence.
+Here $`k`$ indexes inference steps, while $`t`$ indexes observed stream time. An acquisition action may select frames, crop a region, retrieve memory, invoke audio/OCR tools, or run a simulator. The output may be an answer, a predicted trajectory, or a decision to wait. Offline methods may access the complete recording; a causal streaming method must use only the observed prefix. Generated or retrieved hypotheses must remain distinguishable from observed evidence.
 
 | Axis | Modeling choices | What to record when comparing methods |
 | :--- | :--- | :--- |
