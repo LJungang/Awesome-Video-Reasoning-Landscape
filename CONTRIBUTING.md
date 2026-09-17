@@ -31,6 +31,16 @@ Benchmark:
 
 Retain existing badges. Use `<br>` between resources and escape cell-internal pipes as `\|`.
 
+The dated review uses a compact five-column index:
+
+```markdown
+| [Paper title](https://arxiv.org/abs/YYMM.NNNNN) | [GitHub](https://github.com/author/repo) | Contribution / scope | YYYY-MM | `arXiv` |
+```
+
+Edit [catalog.json](docs/review-2026/catalog.json) and [bibliography.json](docs/bibliography.json), then run `python3 scripts/build_review.py`; do not edit generated chapter tables directly. Each new paper has one primary chapter. Chapter counts cover additions, while previously cataloged in-window papers remain in the main survey. Preserve source-backed scope labels and distinguish proposed frameworks from evaluated systems.
+
+For proceedings papers with unresolved preprint dates, use [proceedings.json](docs/review-2026/proceedings.json) and its separate publication-date table. Do not count conference publication as a new first-public date. Update coverage, screening decisions, and the review map when adding or reclassifying papers.
+
 ## Source Rules
 
 - **Paper:** primary abstract, proceedings, or official report; prefer unversioned arXiv `/abs/` URLs.
@@ -45,10 +55,11 @@ Record review scope and sources in [research notes](docs/research-notes.md); upd
 ## Validation
 
 ```sh
+python3 scripts/build_review.py --check
 python3 scripts/check_catalog.py
 git diff --check
 ```
 
-The script checks tables, dates, local links, cross-list consistency, resource columns, and known blocked math macros. Verify sources and external links separately.
+The scripts check generated pages, recursive Markdown links, tables, dates, cross-list consistency, review membership and counts, resource columns, and known blocked math macros. Verify sources and external links separately.
 
 Use fenced `math` blocks and GitHub-supported macros (`\mathrm` rather than the currently blocked `\operatorname`). Check MathJax, Mermaid, and published output when changing formulas or diagrams.

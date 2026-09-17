@@ -1,0 +1,256 @@
+{
+  "checked_on": "2026-09-17",
+  "window": {
+    "start": "2025-12-18",
+    "end": "2026-09-17"
+  },
+  "arxiv_pages": [
+    {
+      "query": "reasoning",
+      "search_query": "(ti:video AND (all:reasoning OR all:\"chain of thought\" OR all:agentic)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 200,
+      "total": 931,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28all%3Areasoning+OR+all%3A%22chain+of+thought%22+OR+all%3Aagentic%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning",
+      "search_query": "(ti:video AND (all:reasoning OR all:\"chain of thought\" OR all:agentic)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 200,
+      "returned": 200,
+      "total": 931,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28all%3Areasoning+OR+all%3A%22chain+of+thought%22+OR+all%3Aagentic%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=200&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning",
+      "search_query": "(ti:video AND (all:reasoning OR all:\"chain of thought\" OR all:agentic)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 400,
+      "returned": 200,
+      "total": 931,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28all%3Areasoning+OR+all%3A%22chain+of+thought%22+OR+all%3Aagentic%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=400&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning",
+      "search_query": "(ti:video AND (all:reasoning OR all:\"chain of thought\" OR all:agentic)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 600,
+      "returned": 200,
+      "total": 931,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28all%3Areasoning+OR+all%3A%22chain+of+thought%22+OR+all%3Aagentic%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=600&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning",
+      "search_query": "(ti:video AND (all:reasoning OR all:\"chain of thought\" OR all:agentic)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 800,
+      "returned": 131,
+      "total": 931,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28all%3Areasoning+OR+all%3A%22chain+of+thought%22+OR+all%3Aagentic%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=800&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "online_long",
+      "search_query": "(ti:video AND (ti:streaming OR ti:online OR ti:memory OR ti:long OR ti:grounding OR ti:prediction)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 200,
+      "total": 735,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28ti%3Astreaming+OR+ti%3Aonline+OR+ti%3Amemory+OR+ti%3Along+OR+ti%3Agrounding+OR+ti%3Aprediction%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "online_long",
+      "search_query": "(ti:video AND (ti:streaming OR ti:online OR ti:memory OR ti:long OR ti:grounding OR ti:prediction)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 200,
+      "returned": 200,
+      "total": 735,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28ti%3Astreaming+OR+ti%3Aonline+OR+ti%3Amemory+OR+ti%3Along+OR+ti%3Agrounding+OR+ti%3Aprediction%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=200&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "online_long",
+      "search_query": "(ti:video AND (ti:streaming OR ti:online OR ti:memory OR ti:long OR ti:grounding OR ti:prediction)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 400,
+      "returned": 200,
+      "total": 735,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28ti%3Astreaming+OR+ti%3Aonline+OR+ti%3Amemory+OR+ti%3Along+OR+ti%3Agrounding+OR+ti%3Aprediction%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=400&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "online_long",
+      "search_query": "(ti:video AND (ti:streaming OR ti:online OR ti:memory OR ti:long OR ti:grounding OR ti:prediction)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 600,
+      "returned": 135,
+      "total": 735,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avideo+AND+%28ti%3Astreaming+OR+ti%3Aonline+OR+ti%3Amemory+OR+ti%3Along+OR+ti%3Agrounding+OR+ti%3Aprediction%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=600&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "world_models",
+      "search_query": "((ti:\"world model\" OR ti:\"world models\") AND (all:video OR all:visual OR all:code OR all:embodied)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 200,
+      "total": 668,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3A%22world+model%22+OR+ti%3A%22world+models%22%29+AND+%28all%3Avideo+OR+all%3Avisual+OR+all%3Acode+OR+all%3Aembodied%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "world_models",
+      "search_query": "((ti:\"world model\" OR ti:\"world models\") AND (all:video OR all:visual OR all:code OR all:embodied)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 200,
+      "returned": 200,
+      "total": 668,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3A%22world+model%22+OR+ti%3A%22world+models%22%29+AND+%28all%3Avideo+OR+all%3Avisual+OR+all%3Acode+OR+all%3Aembodied%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=200&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "world_models",
+      "search_query": "((ti:\"world model\" OR ti:\"world models\") AND (all:video OR all:visual OR all:code OR all:embodied)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 400,
+      "returned": 200,
+      "total": 668,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3A%22world+model%22+OR+ti%3A%22world+models%22%29+AND+%28all%3Avideo+OR+all%3Avisual+OR+all%3Acode+OR+all%3Aembodied%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=400&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "world_models",
+      "search_query": "((ti:\"world model\" OR ti:\"world models\") AND (all:video OR all:visual OR all:code OR all:embodied)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 600,
+      "returned": 68,
+      "total": 668,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3A%22world+model%22+OR+ti%3A%22world+models%22%29+AND+%28all%3Avideo+OR+all%3Avisual+OR+all%3Acode+OR+all%3Aembodied%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=600&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "visual_reasoning",
+      "search_query": "(ti:visual AND (ti:reasoning OR ti:latent OR ti:thinking) AND (all:video OR all:temporal)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 94,
+      "total": 94,
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Avisual+AND+%28ti%3Areasoning+OR+ti%3Alatent+OR+ti%3Athinking%29+AND+%28all%3Avideo+OR+all%3Atemporal%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "benchmark",
+      "search_query": "((all:\"video reasoning\" OR all:\"video understanding\") AND (ti:benchmark OR ti:bench OR ti:evaluation OR ti:survey)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 103,
+      "total": 103,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28all%3A%22video+reasoning%22+OR+all%3A%22video+understanding%22%29+AND+%28ti%3Abenchmark+OR+ti%3Abench+OR+ti%3Aevaluation+OR+ti%3Asurvey%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "phrase",
+      "search_query": "all:\"video reasoning\" AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 149,
+      "total": 149,
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22video+reasoning%22+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning_extra",
+      "search_query": "((ti:reasoning OR ti:thinking OR ti:causal OR ti:spatiotemporal) AND (all:video OR all:videos)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 200,
+      "total": 605,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3Areasoning+OR+ti%3Athinking+OR+ti%3Acausal+OR+ti%3Aspatiotemporal%29+AND+%28all%3Avideo+OR+all%3Avideos%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning_extra",
+      "search_query": "((ti:reasoning OR ti:thinking OR ti:causal OR ti:spatiotemporal) AND (all:video OR all:videos)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 200,
+      "returned": 200,
+      "total": 605,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3Areasoning+OR+ti%3Athinking+OR+ti%3Acausal+OR+ti%3Aspatiotemporal%29+AND+%28all%3Avideo+OR+all%3Avideos%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=200&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning_extra",
+      "search_query": "((ti:reasoning OR ti:thinking OR ti:causal OR ti:spatiotemporal) AND (all:video OR all:videos)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 400,
+      "returned": 200,
+      "total": 605,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3Areasoning+OR+ti%3Athinking+OR+ti%3Acausal+OR+ti%3Aspatiotemporal%29+AND+%28all%3Avideo+OR+all%3Avideos%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=400&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "reasoning_extra",
+      "search_query": "((ti:reasoning OR ti:thinking OR ti:causal OR ti:spatiotemporal) AND (all:video OR all:videos)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 600,
+      "returned": 5,
+      "total": 605,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3Areasoning+OR+ti%3Athinking+OR+ti%3Acausal+OR+ti%3Aspatiotemporal%29+AND+%28all%3Avideo+OR+all%3Avideos%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=600&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "query": "av",
+      "search_query": "((ti:\"audio-visual\" OR ti:audiovisual OR ti:omnimodal) AND (all:reasoning OR all:benchmark OR all:understanding)) AND submittedDate:[202512180000 TO 202609172359]",
+      "start": 0,
+      "returned": 132,
+      "total": 132,
+      "url": "https://export.arxiv.org/api/query?search_query=%28%28ti%3A%22audio-visual%22+OR+ti%3Aaudiovisual+OR+ti%3Aomnimodal%29+AND+%28all%3Areasoning+OR+all%3Abenchmark+OR+all%3Aunderstanding%29%29+AND+submittedDate%3A%5B202512180000+TO+202609172359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending"
+    }
+  ],
+  "secondary_sources": [
+    {
+      "name": "cvpr2026",
+      "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "status": 200,
+      "bytes": 12117139,
+      "arxiv_id_count": 2657,
+      "use": "Proceedings index plus relevant primary metadata; not a full-paper review"
+    },
+    {
+      "name": "acl2026",
+      "url": "https://aclanthology.org/events/acl-2026/",
+      "status": 200,
+      "bytes": 18928791,
+      "arxiv_id_count": 0,
+      "use": "Proceedings titles/abstracts plus targeted identity searches"
+    },
+    {
+      "name": "pmlr2026",
+      "url": "https://proceedings.mlr.press/year/2026.html",
+      "error": "HTTP Error 404: Not Found",
+      "arxiv_id_count": 0,
+      "use": "Discovery only; inclusion checked against primary metadata"
+    },
+    {
+      "name": "video_reason",
+      "url": "https://raw.githubusercontent.com/Video-Reason/Awesome-Video-Reasoning/main/README.md",
+      "status": 200,
+      "bytes": 18974,
+      "arxiv_id_count": 60,
+      "use": "Discovery only; inclusion checked against primary metadata"
+    },
+    {
+      "name": "streaming",
+      "url": "https://raw.githubusercontent.com/sotayang/Awesome-Streaming-Video-Understanding/main/README.md",
+      "status": 200,
+      "bytes": 103321,
+      "arxiv_id_count": 85,
+      "use": "Discovery only; inclusion checked against primary metadata"
+    },
+    {
+      "name": "posttraining",
+      "url": "https://raw.githubusercontent.com/yunlong10/Awesome-Video-LMM-Post-Training/main/README.md",
+      "status": 200,
+      "bytes": 52073,
+      "arxiv_id_count": 181,
+      "use": "Discovery only; inclusion checked against primary metadata"
+    },
+    {
+      "name": "worldmodels",
+      "url": "https://raw.githubusercontent.com/knightnemo/Awesome-World-Models/main/README.md",
+      "status": 200,
+      "bytes": 242435,
+      "arxiv_id_count": 568,
+      "use": "Discovery only; inclusion checked against primary metadata"
+    },
+    {
+      "name": "spatial",
+      "url": "https://raw.githubusercontent.com/zhengxuJosh/Awesome-Multimodal-Spatial-Reasoning/main/README.md",
+      "status": 200,
+      "bytes": 3763,
+      "arxiv_id_count": 1,
+      "use": "Discovery only; inclusion checked against primary metadata"
+    },
+    {
+      "name": "pmlr-index",
+      "url": "https://proceedings.mlr.press/",
+      "status": 200,
+      "use": "Index inspected after year URL failed; no exhaustive ICML proceedings review"
+    }
+  ],
+  "identity_followup": {
+    "query": "all:\"Video-MMMU\"",
+    "max_results": 8,
+    "returned": 6,
+    "url": "https://export.arxiv.org/api/query?search_query=all%3A%22Video-MMMU%22&max_results=8",
+    "purpose": "Resolve earlier Video-MMMU preprint; also recovered the MiMo-VL-Miloco report"
+  },
+  "screening_note": "Broad title/scope triage followed by targeted abstract excerpts for shortlisted papers. Not every retrieved abstract was manually reviewed. No exhaustive ICML/ICLR/ECCV proceedings or citation snowballing pass."
+}

@@ -1,0 +1,2265 @@
+{
+  "https://github.com/zywang0104/Video-KTR": {
+    "status": 200,
+    "resolved_url": "https://github.com/zywang0104/Video-KTR",
+    "checked_on": "2026-09-17"
+  },
+  "https://ivul-kaust.github.io/projects/videoauto-r1": {
+    "status": 200,
+    "resolved_url": "https://ivul-kaust.github.io/projects/videoauto-r1/",
+    "checked_on": "2026-09-17"
+  },
+  "https://aimagelab.github.io/CounterVid": {
+    "status": 200,
+    "resolved_url": "https://aimagelab.github.io/CounterVid/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/nusnlp/d2vlm": {
+    "status": 200,
+    "resolved_url": "https://github.com/nusnlp/d2vlm",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/facebookresearch/egagent": {
+    "status": 200,
+    "resolved_url": "https://github.com/facebookresearch/egagent",
+    "checked_on": "2026-09-17"
+  },
+  "https://kd-tao.github.io/OmniAgent": {
+    "status": 200,
+    "resolved_url": "https://kd-tao.github.io/OmniAgent/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/chrisx599/Video-Browser": {
+    "status": 200,
+    "resolved_url": "https://github.com/chrisx599/Video-Browser",
+    "checked_on": "2026-09-17"
+  },
+  "https://longvideoagent.github.io": {
+    "status": 200,
+    "resolved_url": "https://longvideoagent.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/CYWang735/AdaTooler-V": {
+    "status": 200,
+    "resolved_url": "https://github.com/CYWang735/AdaTooler-V",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/ChangPtR/AbdMLLM": {
+    "status": 200,
+    "resolved_url": "https://github.com/ChangPtR/AbdMLLM",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zheng980629/VideoScaffold": {
+    "status": 200,
+    "resolved_url": "https://github.com/zheng980629/VideoScaffold",
+    "checked_on": "2026-09-17"
+  },
+  "https://thuml.github.io/Reasoning-Visual-World": {
+    "status": 200,
+    "resolved_url": "https://thuml.github.io/Reasoning-Visual-World/",
+    "checked_on": "2026-09-17"
+  },
+  "https://baiqi-li.github.io/timeblind_project": {
+    "status": 200,
+    "resolved_url": "https://baiqi-li.github.io/timeblind_project/",
+    "checked_on": "2026-09-17"
+  },
+  "https://vectorinstitute.github.io/sonic-o1": {
+    "status": 200,
+    "resolved_url": "https://vectorinstitute.github.io/sonic-o1/",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/vector-institute/sonic-o1": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/vector-institute/sonic-o1",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/vectorinstitute/sonic-o1": {
+    "status": 200,
+    "resolved_url": "https://github.com/vectorinstitute/sonic-o1",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/ruiz-nju/Video-MSR": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://drivinggen-bench.github.io": {
+    "status": 200,
+    "resolved_url": "https://drivinggen-bench.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/RUCAIBox/VIPER": {
+    "status": 200,
+    "resolved_url": "https://github.com/RUCAIBox/VIPER",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Gloria2tt/SVBench-Evaluation": {
+    "status": 200,
+    "resolved_url": "https://github.com/Gloria2tt/SVBench-Evaluation",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/imxtx/PhyAVBench": {
+    "status": 200,
+    "resolved_url": "https://github.com/imxtx/PhyAVBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://world-bench.github.io": {
+    "status": 200,
+    "resolved_url": "https://world-bench.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/liaopan-lp/LLMTrack-GrandSMOT": {
+    "status": 200,
+    "resolved_url": "https://github.com/liaopan-lp/LLMTrack-GrandSMOT",
+    "checked_on": "2026-09-17"
+  },
+  "https://dream2flow.github.io": {
+    "status": 200,
+    "resolved_url": "https://dream2flow.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://envision-paper.github.io": {
+    "status": 200,
+    "resolved_url": "https://envision-paper.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/facebookresearch/jepa-wms": {
+    "status": 200,
+    "resolved_url": "https://github.com/facebookresearch/jepa-wms",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/robbyant/lingbot-va": {
+    "status": 200,
+    "resolved_url": "https://github.com/robbyant/lingbot-va",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MarquisDarwin/EAWM": {
+    "status": 200,
+    "resolved_url": "https://github.com/MarquisDarwin/EAWM",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/loyiv/ITP": {
+    "status": 200,
+    "resolved_url": "https://github.com/loyiv/ITP",
+    "checked_on": "2026-09-17"
+  },
+  "https://flowequivariantworldmodels.github.io": {
+    "status": 200,
+    "resolved_url": "https://flowequivariantworldmodels.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://action-sketcher.github.io": {
+    "status": 200,
+    "resolved_url": "https://action-sketcher.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://agent2world.github.io": {
+    "status": 200,
+    "resolved_url": "https://agent2world.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/DAGroup-PKU/ReVidgen": {
+    "status": 200,
+    "resolved_url": "https://github.com/DAGroup-PKU/ReVidgen",
+    "checked_on": "2026-09-17"
+  },
+  "https://dagroup-pku.github.io/ReVidgen.github.io": {
+    "status": 200,
+    "resolved_url": "https://dagroup-pku.github.io/ReVidgen.github.io/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HengLan/ART-STVG": {
+    "status": 200,
+    "resolved_url": "https://github.com/HengLan/ART-STVG",
+    "checked_on": "2026-09-17"
+  },
+  "https://wovr-corl.github.io": {
+    "status": 200,
+    "resolved_url": "https://wovr-corl.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://gigabrain05m.github.io": {
+    "status": 200,
+    "resolved_url": "https://gigabrain05m.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/galilai-group/cjepa": {
+    "status": 200,
+    "resolved_url": "https://github.com/galilai-group/cjepa",
+    "checked_on": "2026-09-17"
+  },
+  "https://hazel-heejeong-nam.github.io/cjepa": {
+    "status": 200,
+    "resolved_url": "https://hazel-heejeong-nam.github.io/cjepa/",
+    "checked_on": "2026-09-17"
+  },
+  "https://showlab.github.io/Olaf-World": {
+    "status": 200,
+    "resolved_url": "https://showlab.github.io/Olaf-World/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/showlab/Olaf-World": {
+    "status": 200,
+    "resolved_url": "https://github.com/showlab/Olaf-World",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/leor-c/horizon-imagination": {
+    "status": 200,
+    "resolved_url": "https://github.com/leor-c/horizon-imagination",
+    "checked_on": "2026-09-17"
+  },
+  "https://world-gymnast.github.io": {
+    "status": 200,
+    "resolved_url": "https://world-gymnast.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://adaptive-visual-tts.github.io": {
+    "status": 200,
+    "resolved_url": "https://adaptive-visual-tts.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/tianyi-lab/NeSyS": {
+    "status": 200,
+    "resolved_url": "https://github.com/tianyi-lab/NeSyS",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/AMAP-ML/Code2World": {
+    "status": 200,
+    "resolved_url": "https://github.com/AMAP-ML/Code2World",
+    "checked_on": "2026-09-17"
+  },
+  "https://amap-ml.github.io/Code2World": {
+    "status": 200,
+    "resolved_url": "https://amap-ml.github.io/Code2World/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/AdrianLutu/VQPP": {
+    "status": 200,
+    "resolved_url": "https://github.com/AdrianLutu/VQPP",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/CSU-JPG/MIND": {
+    "status": 200,
+    "resolved_url": "https://github.com/CSU-JPG/MIND",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/szegedai/world-model-verification": {
+    "status": 200,
+    "resolved_url": "https://github.com/szegedai/world-model-verification",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/liuzhan22/JAEGER": {
+    "status": 200,
+    "resolved_url": "https://github.com/liuzhan22/JAEGER",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/LiuJunhua02/TwiFF": {
+    "status": 200,
+    "resolved_url": "https://github.com/LiuJunhua02/TwiFF",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/qiujihao19/LongVideo-R1": {
+    "status": 200,
+    "resolved_url": "https://github.com/qiujihao19/LongVideo-R1",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/EricTan7/VideoVeritas": {
+    "status": 200,
+    "resolved_url": "https://github.com/EricTan7/VideoVeritas",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Little-Fridge/AD-MIR": {
+    "status": 200,
+    "resolved_url": "https://github.com/Little-Fridge/AD-MIR",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/iSEE-Laboratory/Refer-Agent": {
+    "status": 200,
+    "resolved_url": "https://github.com/iSEE-Laboratory/Refer-Agent",
+    "checked_on": "2026-09-17"
+  },
+  "https://vatsalag99.github.io/memstream": {
+    "status": 200,
+    "resolved_url": "https://vatsalag99.github.io/memstream/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/lingcco/EventMemAgent": {
+    "status": 200,
+    "resolved_url": "https://github.com/lingcco/EventMemAgent",
+    "checked_on": "2026-09-17"
+  },
+  "https://sparsevideounderstanding.github.io": {
+    "status": 200,
+    "resolved_url": "https://sparsevideounderstanding.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://microsoft.github.io/CoPE": {
+    "status": 200,
+    "resolved_url": "https://microsoft.github.io/CoPE/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/junbo-zou/VideoBrain": {
+    "status": 200,
+    "resolved_url": "https://github.com/junbo-zou/VideoBrain",
+    "checked_on": "2026-09-17"
+  },
+  "https://solaris-wm.github.io": {
+    "status": 200,
+    "resolved_url": "https://solaris-wm.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://nova-plan.github.io": {
+    "status": 200,
+    "resolved_url": "https://nova-plan.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://maverickren.github.io/VideoWorld2.github.io": {
+    "status": 200,
+    "resolved_url": "https://maverickren.github.io/VideoWorld2.github.io/",
+    "checked_on": "2026-09-17"
+  },
+  "https://dreamdojo-world.github.io": {
+    "status": 200,
+    "resolved_url": "https://dreamdojo-world.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/jinlab-imvr/SurGo-R1": {
+    "status": 200,
+    "resolved_url": "https://github.com/jinlab-imvr/SurGo-R1",
+    "checked_on": "2026-09-17"
+  },
+  "https://ud-videoqa.github.io/UD-VideoQA/UD-VideoQA": {
+    "status": 200,
+    "resolved_url": "https://ud-videoqa.github.io/UD-VideoQA/UD-VideoQA/",
+    "checked_on": "2026-09-17"
+  },
+  "https://groolegend.github.io/EgoSound": {
+    "status": 200,
+    "resolved_url": "https://groolegend.github.io/EgoSound/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark": {
+    "status": 200,
+    "resolved_url": "https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/TIGER-AI-Lab/VisPhyWorld": {
+    "status": 200,
+    "resolved_url": "https://github.com/TIGER-AI-Lab/VisPhyWorld",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/VisionXLab/RISE-Video": {
+    "status": 200,
+    "resolved_url": "https://github.com/VisionXLab/RISE-Video",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/VisionXLab/RISE-Video": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/VisionXLab/RISE-Video",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/AIDASLab/VIRST": {
+    "status": 200,
+    "resolved_url": "https://github.com/AIDASLab/VIRST",
+    "checked_on": "2026-09-17"
+  },
+  "https://founce.github.io/VisionToM": {
+    "status": 200,
+    "resolved_url": "https://founce.github.io/VisionToM/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/haodi19/TrajSeg": {
+    "status": 200,
+    "resolved_url": "https://github.com/haodi19/TrajSeg",
+    "checked_on": "2026-09-17"
+  },
+  "https://visioncoach.github.io": {
+    "status": 200,
+    "resolved_url": "https://visioncoach.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://risys-lab.github.io/SPARROW": {
+    "status": 200,
+    "resolved_url": "https://risys-lab.github.io/SPARROW/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/RISys-Lab/SPARROW": {
+    "status": 200,
+    "resolved_url": "https://github.com/RISys-Lab/SPARROW",
+    "checked_on": "2026-09-17"
+  },
+  "https://robust-video-reason.github.io": {
+    "status": 200,
+    "resolved_url": "https://robust-video-reason.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/ostadabbas/Motion-o": {
+    "status": 200,
+    "resolved_url": "https://github.com/ostadabbas/Motion-o",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/rohithpeddi/WorldSGG": {
+    "status": 200,
+    "resolved_url": "https://github.com/rohithpeddi/WorldSGG",
+    "checked_on": "2026-09-17"
+  },
+  "https://guangstrip.github.io/SCP-Bench": {
+    "status": 200,
+    "resolved_url": "https://guangstrip.github.io/SCP-Bench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://cvlab-kaist.github.io/AgentRVOS": {
+    "status": 200,
+    "resolved_url": "https://cvlab-kaist.github.io/AgentRVOS/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Haiyang0226/Symphony": {
+    "status": 200,
+    "resolved_url": "https://github.com/Haiyang0226/Symphony",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/git-disl/A4VL": {
+    "status": 200,
+    "resolved_url": "https://github.com/git-disl/A4VL",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Haorane/VideoHV-Agent": {
+    "status": 200,
+    "resolved_url": "https://github.com/Haorane/VideoHV-Agent",
+    "checked_on": "2026-09-17"
+  },
+  "https://interlive-team.github.io/STRIDE": {
+    "status": 200,
+    "resolved_url": "https://interlive-team.github.io/STRIDE/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/wl666hhh/Think_While_Watching": {
+    "status": 200,
+    "resolved_url": "https://github.com/wanglu-cs/Think_While_Watching",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/EliSpectre/MM-Mem": {
+    "status": 200,
+    "resolved_url": "https://github.com/EliSpectre/MM-Mem",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/ostadabbas/HORNet": {
+    "status": 200,
+    "resolved_url": "https://github.com/ostadabbas/HORNet",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/JiaqiLi404/SemVID": {
+    "status": 200,
+    "resolved_url": "https://github.com/JiaqiLi404/SemVID",
+    "checked_on": "2026-09-17"
+  },
+  "https://jiaqili404.github.io/SemVID": {
+    "status": 200,
+    "resolved_url": "https://jiaqili404.github.io/SemVID/",
+    "checked_on": "2026-09-17"
+  },
+  "https://philip-mit.github.io/sole-r1": {
+    "status": 200,
+    "resolved_url": "https://philip-mit.github.io/sole-r1/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/ZixuanWang0525/CoECT": {
+    "status": 200,
+    "resolved_url": "https://github.com/ZixuanWang0525/CoECT",
+    "checked_on": "2026-09-17"
+  },
+  "https://yuyang-cloud.github.io/spiral": {
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "checked_on": "2026-09-17"
+  },
+  "https://camma-public.github.io/SurgTEMP": {
+    "status": 200,
+    "resolved_url": "https://camma-public.github.io/SurgTEMP/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/matsuolab/EC-Bench": {
+    "status": 200,
+    "resolved_url": "https://github.com/matsuolab/EC-Bench",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/sejong-rcv/Video-Oasis": {
+    "status": 200,
+    "resolved_url": "https://github.com/sejong-rcv/Video-Oasis",
+    "checked_on": "2026-09-17"
+  },
+  "https://limgeuntaekk.github.io/Video-Oasis": {
+    "status": 200,
+    "resolved_url": "https://limgeuntaekk.github.io/Video-Oasis/",
+    "checked_on": "2026-09-17"
+  },
+  "https://perceptioncomp.github.io": {
+    "status": 200,
+    "resolved_url": "https://perceptioncomp.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Aiyistan/FakeAgent": {
+    "status": 200,
+    "resolved_url": "https://github.com/Aiyistan/FakeAgent",
+    "checked_on": "2026-09-17"
+  },
+  "https://ego2web.github.io": {
+    "status": 200,
+    "resolved_url": "https://ego2web.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/PhysionLabs/Physion-Eval": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/PhysionLabs/Physion-Eval",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/nvidia/MMOU": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/nvidia/MMOU",
+    "checked_on": "2026-09-17"
+  },
+  "https://disl-lab.github.io/VAEX-Bench": {
+    "status": 200,
+    "resolved_url": "https://disl-lab.github.io/VAEX-Bench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://yuuraa.github.io/papers/choi2026egovqa": {
+    "status": 200,
+    "resolved_url": "https://yuuraa.github.io/papers/choi2026egovqa/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/LZYAndy/TennisExpert": {
+    "status": 200,
+    "resolved_url": "https://github.com/LZYAndy/TennisExpert",
+    "checked_on": "2026-09-17"
+  },
+  "https://ma-egoqa.github.io": {
+    "status": 200,
+    "resolved_url": "https://ma-egoqa.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://ropertunizar.github.io/TIMID": {
+    "status": 200,
+    "resolved_url": "https://ropertunizar.github.io/TIMID/",
+    "checked_on": "2026-09-17"
+  },
+  "https://dibschat.github.io/SPOT-Bench": {
+    "status": 200,
+    "resolved_url": "https://dibschat.github.io/SPOT-Bench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Kamino666/ESOM_OpenDef-Bench": {
+    "status": 200,
+    "resolved_url": "https://github.com/Kamino666/ESOM_OpenDef-Bench",
+    "checked_on": "2026-09-17"
+  },
+  "https://simple-stream.github.io": {
+    "status": 200,
+    "resolved_url": "https://simple-stream.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/phamtrongthang123/gazeqwen": {
+    "status": 200,
+    "resolved_url": "https://github.com/phamtrongthang123/gazeqwen",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Yuanhong-Zheng/PEARL": {
+    "status": 200,
+    "resolved_url": "https://github.com/Yuanhong-Zheng/PEARL",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/streamingvideos/CurveStream": {
+    "status": 200,
+    "resolved_url": "https://github.com/streamingvideos/CurveStream",
+    "checked_on": "2026-09-17"
+  },
+  "https://videodetective.github.io": {
+    "status": 200,
+    "resolved_url": "https://videodetective.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://FeiElysia.github.io/tempo-page": {
+    "status": 200,
+    "resolved_url": "https://feielysia.github.io/tempo-page/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Florence365/GroundVTS": {
+    "status": 200,
+    "resolved_url": "https://github.com/Florence365/GroundVTS",
+    "checked_on": "2026-09-17"
+  },
+  "https://haozheqi.github.io/adapt-token": {
+    "status": 200,
+    "resolved_url": "https://haozheqi.github.io/adapt-token/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/WanyueZhang-ai/World2VLM": {
+    "status": 200,
+    "resolved_url": "https://github.com/WanyueZhang-ai/World2VLM",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/WanyueZhang/World2VLM": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/WanyueZhang/World2VLM",
+    "checked_on": "2026-09-17"
+  },
+  "https://matrix-game-v3.github.io": {
+    "status": 200,
+    "resolved_url": "https://matrix-game-v3.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://world-action-verifier.github.io": {
+    "status": 200,
+    "resolved_url": "https://world-action-verifier.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/H-EmbodVis/HyDRA": {
+    "status": 200,
+    "resolved_url": "https://github.com/H-EmbodVis/HyDRA",
+    "checked_on": "2026-09-17"
+  },
+  "https://kj-chen666.github.io/Hybrid-Memory-in-Video-World-Models": {
+    "status": 200,
+    "resolved_url": "https://kj-chen666.github.io/Hybrid-Memory-in-Video-World-Models/",
+    "checked_on": "2026-09-17"
+  },
+  "https://mosaicmem.github.io/mosaicmem": {
+    "status": 200,
+    "resolved_url": "https://mosaicmem.github.io/mosaicmem/",
+    "checked_on": "2026-09-17"
+  },
+  "https://eva-project-page.github.io": {
+    "status": 200,
+    "resolved_url": "https://eva-project-page.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://wm2act.github.io": {
+    "status": 200,
+    "resolved_url": "https://wm2act.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/20robo/raenwm": {
+    "status": 200,
+    "resolved_url": "https://github.com/20robo/raenwm",
+    "checked_on": "2026-09-17"
+  },
+  "https://zichengduan.github.io/LiveWorld/index.html": {
+    "status": 200,
+    "resolved_url": "https://zichengduan.github.io/LiveWorld/index.html",
+    "checked_on": "2026-09-17"
+  },
+  "https://taldatech.github.io/lpwm-web": {
+    "status": 200,
+    "resolved_url": "https://taldatech.github.io/lpwm-web/",
+    "checked_on": "2026-09-17"
+  },
+  "https://francelico.github.io/persist.github.io": {
+    "status": 200,
+    "resolved_url": "https://francelico.github.io/persist.github.io/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/wwgTang-111/StreamingEval1": {
+    "status": 200,
+    "resolved_url": "https://github.com/wwgTang-111/StreamingEval1",
+    "checked_on": "2026-09-17"
+  },
+  "https://kd-tao.github.io/LVOmniBench": {
+    "status": 200,
+    "resolved_url": "https://kd-tao.github.io/LVOmniBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://buaa-colalab.github.io/SVCBench": {
+    "status": 200,
+    "resolved_url": "https://buaa-colalab.github.io/SVCBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://shandaai.github.io/wildworld-project": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://glab-caltech.github.io/STEVOBench": {
+    "status": 200,
+    "resolved_url": "https://glab-caltech.github.io/STEVOBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://ziqi-ma.github.io/blog/2026/outofsight": {
+    "status": 200,
+    "resolved_url": "https://ziqi-ma.github.io/blog/2026/outofsight/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/apple/ml-vsas-bench": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MVPBench/MVPBench": {
+    "status": 200,
+    "resolved_url": "https://github.com/Rorschach-1010/MVPBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/OpenGVLab/RIVER": {
+    "status": 200,
+    "resolved_url": "https://github.com/OpenGVLab/RIVER",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/EvolvingLMMs-Lab/Evolving-Visual-Generation": {
+    "status": 200,
+    "resolved_url": "https://github.com/EvolvingLMMs-Lab/Evolving-Visual-Generation",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/matrix-agent/awesome-agentic-world-modeling": {
+    "status": 200,
+    "resolved_url": "https://github.com/matrix-agent/awesome-agentic-world-modeling",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Isaachhh/Efficient-VWM-Survey": {
+    "status": 200,
+    "resolved_url": "https://github.com/Isaachhh/Efficient-VWM-Survey",
+    "checked_on": "2026-09-17"
+  },
+  "https://seeing-fast-and-slow.github.io": {
+    "status": 200,
+    "resolved_url": "https://seeing-fast-and-slow.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://jethrojames.github.io/FFR": {
+    "status": 200,
+    "resolved_url": "https://jethrojames.github.io/FFR/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/qizhongtan/Video-ToC": {
+    "status": 200,
+    "resolved_url": "https://github.com/qizhongtan/Video-ToC",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MKong17/IMPACT_CYCLE": {
+    "status": 200,
+    "resolved_url": "https://github.com/MKong17/IMPACT_CYCLE",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/RomGai/VideoStir": {
+    "status": 200,
+    "resolved_url": "https://github.com/RomGai/VideoStir",
+    "checked_on": "2026-09-17"
+  },
+  "https://tum-ai.github.io/surg4d": {
+    "status": 200,
+    "resolved_url": "https://tum-ai.github.io/surg4d/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Celina-love-sweet/StreamMeCo": {
+    "status": 200,
+    "resolved_url": "https://github.com/Celina-love-sweet/StreamMeCo",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/oceanflowlab/OmniVTG": {
+    "status": 200,
+    "resolved_url": "https://github.com/oceanflowlab/OmniVTG",
+    "checked_on": "2026-09-17"
+  },
+  "https://multi-world.github.io": {
+    "status": 200,
+    "resolved_url": "https://multi-world.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/CVI-SZU/SurgCoT": {
+    "status": 200,
+    "resolved_url": "https://github.com/CVI-SZU/SurgCoT",
+    "checked_on": "2026-09-17"
+  },
+  "https://rainchowz.github.io/PinpointQA": {
+    "status": 200,
+    "resolved_url": "https://rainchowz.github.io/PinpointQA/",
+    "checked_on": "2026-09-17"
+  },
+  "https://mcgrche.github.io/crashsight": {
+    "status": 200,
+    "resolved_url": "https://mcgrche.github.io/crashsight/",
+    "checked_on": "2026-09-17"
+  },
+  "https://huangshiqi128.github.io/EvoVid.io": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://steerseg.github.io": {
+    "status": 200,
+    "resolved_url": "https://steerseg.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Victor-wjw/RCoT-Seg": {
+    "status": 200,
+    "resolved_url": "https://github.com/Victor-wjw/RCoT-Seg",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/falonss703/VideoThinker": {
+    "status": 200,
+    "resolved_url": "https://github.com/falonss703/VideoThinker",
+    "checked_on": "2026-09-17"
+  },
+  "https://ddz16.github.io/crpo.github.io": {
+    "status": 200,
+    "resolved_url": "https://ddz16.github.io/crpo.github.io/",
+    "checked_on": "2026-09-17"
+  },
+  "https://cambrian-mllm.github.io": {
+    "status": 200,
+    "resolved_url": "https://cambrian-mllm.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://iandrover.github.io/2026_dynamics": {
+    "status": 200,
+    "resolved_url": "https://iandrover.github.io/2026_dynamics/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/RuipingL/EgoExoMem": {
+    "status": 200,
+    "resolved_url": "https://github.com/RuipingL/EgoExoMem",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/markus0440/SceneGraphVLM.git": {
+    "status": 200,
+    "resolved_url": "https://github.com/markus0440/SceneGraphVLM",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/lijiazheng0917/MAGIC-video": {
+    "status": 200,
+    "resolved_url": "https://github.com/lijiazheng0917/MAGIC-video",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/mikubaka88/LMM-Track4D": {
+    "status": 200,
+    "resolved_url": "https://github.com/mikubaka88/LMM-Track4D",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zhangquanchen/4DThinker": {
+    "status": 200,
+    "resolved_url": "https://github.com/zhangquanchen/4DThinker",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/wang-jh24/AgentCVR": {
+    "status": 200,
+    "resolved_url": "https://github.com/wang-jh24/AgentCVR",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zhangguanghao523/DynFrame": {
+    "status": 200,
+    "resolved_url": "https://github.com/zhangguanghao523/DynFrame",
+    "checked_on": "2026-09-17"
+  },
+  "https://evolvinglmms-lab.github.io/ParaVT": {
+    "status": 200,
+    "resolved_url": "https://evolvinglmms-lab.github.io/ParaVT/",
+    "checked_on": "2026-09-17"
+  },
+  "https://gaotiexinqu.github.io/VideoSeeker": {
+    "status": 200,
+    "resolved_url": "https://gaotiexinqu.github.io/VideoSeeker/",
+    "checked_on": "2026-09-17"
+  },
+  "https://minjoong507.github.io/projects/EvoGround": {
+    "status": 200,
+    "resolved_url": "https://minjoong507.github.io/projects/EvoGround/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Echochef/VideoSEAL": {
+    "status": 200,
+    "resolved_url": "https://github.com/Echochef/VideoSEAL",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/michalsr/ToolMerge": {
+    "status": 200,
+    "resolved_url": "https://github.com/michalsr/ToolMerge",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/KPeng9510/seeing-together.git": {
+    "status": 200,
+    "resolved_url": "https://github.com/KPeng9510/seeing-together",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/IMBALDY/MuKV": {
+    "status": 200,
+    "resolved_url": "https://github.com/IMBALDY/MuKV",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/yiliu-li/Visual-Agentic-Memory": {
+    "status": 200,
+    "resolved_url": "https://github.com/yiliu-li/Visual-Agentic-Memory",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zeyun-zhong/FlowNar": {
+    "status": 200,
+    "resolved_url": "https://github.com/zeyun-zhong/FlowNar",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/bytedance/SALMONN/tree/omni_mem": {
+    "status": 200,
+    "resolved_url": "https://github.com/bytedance/SALMONN/tree/omni_mem",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/google-deepmind/neptune": {
+    "status": 200,
+    "resolved_url": "https://github.com/google-deepmind/neptune",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/bingjunluo/ST-SimDiff": {
+    "status": 200,
+    "resolved_url": "https://github.com/bingjunluo/ST-SimDiff",
+    "checked_on": "2026-09-17"
+  },
+  "https://bernini-ai.github.io": {
+    "status": 200,
+    "resolved_url": "https://bernini-ai.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HKBU-KnowComp/PatchWorld": {
+    "status": 200,
+    "resolved_url": "https://github.com/HKBU-KnowComp/PatchWorld",
+    "checked_on": "2026-09-17"
+  },
+  "https://ssharvienkumar.github.io/SWoMo": {
+    "status": 200,
+    "resolved_url": "https://ssharvienkumar.github.io/SWoMo/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/astroseger/arc-3-agents-baseline1": {
+    "status": 200,
+    "resolved_url": "https://github.com/astroseger/arc-3-agents-baseline1",
+    "checked_on": "2026-09-17"
+  },
+  "https://Newton026.github.io/newton": {
+    "status": 200,
+    "resolved_url": "https://newton026.github.io/newton/",
+    "checked_on": "2026-09-17"
+  },
+  "https://remind-applied.github.io": {
+    "status": 200,
+    "resolved_url": "https://remind-applied.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://neuroailab.github.io/psi-website/blog.html": {
+    "status": 200,
+    "resolved_url": "https://neuroailab.github.io/psi-website/blog.html",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/santoshkumarradha/uwm-jepa": {
+    "status": 200,
+    "resolved_url": "https://github.com/santoshkumarradha/uwm-jepa",
+    "checked_on": "2026-09-17"
+  },
+  "https://nevsdev.github.io/WorldCraft": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/pku-smart-city/source_code/tree/main/RIA": {
+    "status": 200,
+    "resolved_url": "https://github.com/pku-smart-city/source_code/tree/main/RIA",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/XuYuanFei01/ResDreamer": {
+    "status": 200,
+    "resolved_url": "https://github.com/XuYuanFei01/ResDreamer",
+    "checked_on": "2026-09-17"
+  },
+  "https://dillonzchen.github.io/bison": {
+    "status": 200,
+    "resolved_url": "https://dillonzchen.github.io/bison/",
+    "checked_on": "2026-09-17"
+  },
+  "https://jjleejj85.github.io/projects/orbisim": {
+    "status": 200,
+    "resolved_url": "https://jjleejj85.github.io/projects/orbisim/",
+    "checked_on": "2026-09-17"
+  },
+  "https://can-lee.github.io/deformmaster-web": {
+    "status": 200,
+    "resolved_url": "https://can-lee.github.io/deformmaster-web/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Guang000/RC-aux": {
+    "status": 200,
+    "resolved_url": "https://github.com/Guang000/RC-aux",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HaoyunT/HaM_World": {
+    "status": 200,
+    "resolved_url": "https://github.com/HaoyunT/HaM_World",
+    "checked_on": "2026-09-17"
+  },
+  "https://peanutup.github.io/MBench-project": {
+    "status": 200,
+    "resolved_url": "https://peanutup.github.io/MBench-project/",
+    "checked_on": "2026-09-17"
+  },
+  "https://zinosii.github.io/VGenST-Bench": {
+    "status": 200,
+    "resolved_url": "https://zinosii.github.io/VGenST-Bench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/RascalGdd/SurgLQA": {
+    "status": 200,
+    "resolved_url": "https://github.com/RascalGdd/SurgLQA",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/UniX-AI-Lab/WorldReasonBench": {
+    "status": 200,
+    "resolved_url": "https://github.com/UniX-AI-Lab/WorldReasonBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://unix-ai-lab.github.io/WorldReasonBench": {
+    "status": 200,
+    "resolved_url": "https://unix-ai-lab.github.io/WorldReasonBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/cjzcjz666/toc_bench.git": {
+    "status": 200,
+    "resolved_url": "https://github.com/junzhe-c/toc_bench",
+    "checked_on": "2026-09-17"
+  },
+  "https://egomemreason.github.io": {
+    "status": 200,
+    "resolved_url": "https://egomemreason.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/SaraGhazanfari/SYNCR": {
+    "status": 200,
+    "resolved_url": "https://github.com/SaraGhazanfari/SYNCR",
+    "checked_on": "2026-09-17"
+  },
+  "https://ruixiangzhao.github.io/OmniPro": {
+    "status": 200,
+    "resolved_url": "https://ruixiangzhao.github.io/OmniPro/",
+    "checked_on": "2026-09-17"
+  },
+  "https://flarebench.github.io": {
+    "status": 200,
+    "resolved_url": "https://flarebench.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/meituan-longcat/WBench": {
+    "status": 200,
+    "resolved_url": "https://github.com/meituan-longcat/WBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://meituan-longcat.github.io/WBench": {
+    "status": 200,
+    "resolved_url": "https://meituan-longcat.github.io/WBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://pdi-bench.github.io": {
+    "status": 200,
+    "resolved_url": "https://pdi-bench.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://phyground.github.io": {
+    "status": 200,
+    "resolved_url": "https://phyground.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Lucky-Lance/OmniInteract": {
+    "status": 200,
+    "resolved_url": "https://github.com/Lucky-Lance/OmniInteract",
+    "checked_on": "2026-09-17"
+  },
+  "https://joslefaure.github.io/assets/html/finebench.html": {
+    "status": 200,
+    "resolved_url": "https://joslefaure.github.io/assets/html/finebench.html",
+    "checked_on": "2026-09-17"
+  },
+  "https://dstardust.github.io/EgoCoT": {
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/ramblr/BARISTA": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/ramblr/BARISTA",
+    "checked_on": "2026-09-17"
+  },
+  "https://ego-introspect.github.io": {
+    "status": 200,
+    "resolved_url": "https://ego-introspect.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://social-reaoning.github.io/grasp": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://chenshuang-zhang.github.io/projects/svhalluc": {
+    "status": 200,
+    "resolved_url": "https://chenshuang-zhang.github.io/projects/svhalluc/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/oyt9306/Omni-Persona": {
+    "status": 200,
+    "resolved_url": "https://github.com/oyt9306/Omni-Persona",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/liujiuming123/Awesome-Interactive-World-Model": {
+    "status": 200,
+    "resolved_url": "https://github.com/liujiuming123/Awesome-Interactive-World-Model",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/JavisVerse/Awesome-AVI": {
+    "status": 200,
+    "resolved_url": "https://github.com/JavisVerse/Awesome-AVI",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/1Pansy/Video-CARE": {
+    "status": 200,
+    "resolved_url": "https://github.com/1Pansy/Video-CARE",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/1Pansy/VideoCFR": {
+    "status": 200,
+    "resolved_url": "https://github.com/1Pansy/VideoCFR",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/oceanflowlab/TaRO": {
+    "status": 200,
+    "resolved_url": "https://github.com/oceanflowlab/TaRO",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Dmmm1997/VideoSEG-O3": {
+    "status": 200,
+    "resolved_url": "https://github.com/Dmmm1997/VideoSEG-O3",
+    "checked_on": "2026-09-17"
+  },
+  "https://VLM-as-Teacher.github.io": {
+    "status": 200,
+    "resolved_url": "https://VLM-as-Teacher.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/marinero4972/Awesome-HumanView-VideoUnderstanding": {
+    "status": 200,
+    "resolved_url": "https://github.com/marinero4972/Awesome-HumanView-VideoUnderstanding",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/NEUIR/MemoryCard": {
+    "status": 200,
+    "resolved_url": "https://github.com/NEUIR/MemoryCard",
+    "checked_on": "2026-09-17"
+  },
+  "https://xiaoqian-shen.github.io/VisReflect": {
+    "status": 200,
+    "resolved_url": "https://xiaoqian-shen.github.io/VisReflect/",
+    "checked_on": "2026-09-17"
+  },
+  "https://rova-v2.github.io": {
+    "status": 200,
+    "resolved_url": "https://rova-v2.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HKUDS/VideoAgent": {
+    "status": 200,
+    "resolved_url": "https://github.com/HKUDS/VideoAgent",
+    "checked_on": "2026-09-17"
+  },
+  "https://Ropedia.github.io/S-Agent": {
+    "status": 200,
+    "resolved_url": "https://ropedia.github.io/S-Agent/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/harryhsing/omniagent": {
+    "status": 200,
+    "resolved_url": "https://github.com/harryhsing/omniagent",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/cocowy1/UCS-Bench": {
+    "status": 200,
+    "resolved_url": "https://github.com/cocowy1/UCS-Bench",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/hktk07/CausalMem": {
+    "status": 200,
+    "resolved_url": "https://github.com/hktk07/CausalMem",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/sotayang/LiveStarPro": {
+    "status": 200,
+    "resolved_url": "https://github.com/sotayang/LiveStar",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/EIT-NLP/StreamingLLM/tree/main/AdaSR": {
+    "status": 200,
+    "resolved_url": "https://github.com/EIT-NLP/StreamingLLM/tree/main/AdaSR",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/VG-GUI-TASKER/VG-GUI-TASKER": {
+    "status": 200,
+    "resolved_url": "https://github.com/VG-GUI-TASKER/VG-GUI-TASKER",
+    "checked_on": "2026-09-17"
+  },
+  "https://vg-gui-tasker.github.io": {
+    "status": 200,
+    "resolved_url": "https://vg-gui-tasker.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/charon525/ReUnit": {
+    "status": 200,
+    "resolved_url": "https://github.com/charon525/ReUnit",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/antman9914/proplay": {
+    "status": 200,
+    "resolved_url": "https://github.com/antman9914/proplay",
+    "checked_on": "2026-09-17"
+  },
+  "https://zhuangsh0713.github.io/CausalMotion": {
+    "status": 200,
+    "resolved_url": "https://zhuangsh0713.github.io/CausalMotion/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/microsoft/LatentSpatialMemory": {
+    "status": 200,
+    "resolved_url": "https://github.com/microsoft/LatentSpatialMemory",
+    "checked_on": "2026-09-17"
+  },
+  "https://gim-world.github.io": {
+    "status": 200,
+    "resolved_url": "https://gim-world.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/yczhou001/PF-OPSD": {
+    "status": 200,
+    "resolved_url": "https://github.com/yczhou001/PF-OPSD",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/nvidia/cosmos": {
+    "status": 200,
+    "resolved_url": "https://github.com/nvidia/cosmos",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/collections/nvidia/cosmos3": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/collections/nvidia/cosmos3",
+    "checked_on": "2026-09-17"
+  },
+  "https://adawam.github.io": {
+    "status": 200,
+    "resolved_url": "https://adawam.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://jethrojames.github.io/VidPair-Halluc": {
+    "status": 200,
+    "resolved_url": "https://jethrojames.github.io/VidPair-Halluc/",
+    "checked_on": "2026-09-17"
+  },
+  "https://anya-ji.github.io/animation2code-website": {
+    "status": 200,
+    "resolved_url": "https://anya-ji.github.io/animation2code-website/",
+    "checked_on": "2026-09-17"
+  },
+  "https://apratimbh.github.io/livecookv2": {
+    "status": 200,
+    "resolved_url": "https://apratimbh.github.io/livecookv2/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/nercms-mmap/StoryVideoQA": {
+    "status": 200,
+    "resolved_url": "https://github.com/nercms-mmap/StoryVideoQA",
+    "checked_on": "2026-09-17"
+  },
+  "https://pku-value-lab.github.io/m3eval-homepage": {
+    "status": 200,
+    "resolved_url": "https://pku-value-lab.github.io/m3eval-homepage/",
+    "checked_on": "2026-09-17"
+  },
+  "https://vision-x-nyu.github.io/vstat-site": {
+    "status": 200,
+    "resolved_url": "https://vision-x-nyu.github.io/vstat-site/",
+    "checked_on": "2026-09-17"
+  },
+  "https://huiqiongli.github.io/RoboTrustBench": {
+    "status": 200,
+    "resolved_url": "https://huiqiongli.github.io/RoboTrustBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/naver-ai/ExtremeWhenBench": {
+    "status": 200,
+    "resolved_url": "https://github.com/naver-ai/ExtremeWhenBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://yizhiqianbi.github.io/physeditworld": {
+    "status": 200,
+    "resolved_url": "https://yizhiqianbi.github.io/physeditworld/",
+    "checked_on": "2026-09-17"
+  },
+  "https://robogaze-eval.github.io": {
+    "status": 200,
+    "resolved_url": "https://robogaze-eval.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zaoanguai/ARB4WM": {
+    "status": 200,
+    "resolved_url": "https://github.com/zaoanguai/ARB4WM",
+    "checked_on": "2026-09-17"
+  },
+  "https://linghuiishen.github.io/BadWorld": {
+    "status": 200,
+    "resolved_url": "https://linghuiishen.github.io/BadWorld/",
+    "checked_on": "2026-09-17"
+  },
+  "https://alibaba-damo-academy.github.io/WorldOlympiad": {
+    "status": 200,
+    "resolved_url": "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/alibaba-damo-academy/WorldOlympiad": {
+    "status": 200,
+    "resolved_url": "https://github.com/alibaba-damo-academy/WorldOlympiad",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Echo-Team-Joy-Future-Academy-JD/Echo-Memory": {
+    "status": 200,
+    "resolved_url": "https://github.com/Echo-Team-Joy-Future-Academy-JD/Echo-Memory",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MiG-NJU/OmniVideo-100K": {
+    "status": 200,
+    "resolved_url": "https://github.com/MiG-NJU/OmniVideo-100K",
+    "checked_on": "2026-09-17"
+  },
+  "https://iyttor.github.io/VidMsg": {
+    "status": 200,
+    "resolved_url": "https://iyttor.github.io/VidMsg/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/LuoRenqiang/ChronoVision": {
+    "status": 200,
+    "resolved_url": "https://github.com/LuoRenqiang/ChronoVision",
+    "checked_on": "2026-09-17"
+  },
+  "https://musebench.github.io": {
+    "status": 200,
+    "resolved_url": "https://musebench.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://fudancvl.github.io/AVI-Bench": {
+    "status": 200,
+    "resolved_url": "https://fudancvl.github.io/AVI-Bench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/THUSI-Lab/Causal-Reasoner": {
+    "status": 200,
+    "resolved_url": "https://github.com/THUSI-Lab/Causal-Reasoner",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/SalesforceAIResearch/EVQA": {
+    "status": 200,
+    "resolved_url": "https://github.com/SalesforceAIResearch/EVQA",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MCG-NKU/nku-video": {
+    "status": 200,
+    "resolved_url": "https://github.com/MCG-NKU/nku-video",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/yuzihaowashu/MEMORA": {
+    "status": 200,
+    "resolved_url": "https://github.com/yuzihaowashu/MEMORA",
+    "checked_on": "2026-09-17"
+  },
+  "https://jacobchalk.github.io/Whareformer": {
+    "status": 200,
+    "resolved_url": "https://jacobchalk.github.io/Whareformer/",
+    "checked_on": "2026-09-17"
+  },
+  "https://francescapistilli.github.io/GLEN": {
+    "status": 200,
+    "resolved_url": "https://francescapistilli.github.io/GLEN/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/CeeZh/VTS": {
+    "status": 200,
+    "resolved_url": "https://github.com/CeeZh/VTS",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/thanhnhan29/TreeSoc": {
+    "status": 200,
+    "resolved_url": "https://github.com/thanhnhan29/TreeSoc",
+    "checked_on": "2026-09-17"
+  },
+  "https://utaustin-swarmlab.github.io/VSeek": {
+    "status": 200,
+    "resolved_url": "https://utaustin-swarmlab.github.io/VSeek/",
+    "checked_on": "2026-09-17"
+  },
+  "https://stephen-gzk.github.io/VideoSearcher-website": {
+    "status": 200,
+    "resolved_url": "https://stephen-gzk.github.io/VideoSearcher-website/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Stephen-gzk/VideoSearcher": {
+    "status": 200,
+    "resolved_url": "https://github.com/Stephen-gzk/VideoSearcher",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/DMK041218/ObjectStream": {
+    "status": 200,
+    "resolved_url": "https://github.com/DMK041218/ObjectStream",
+    "checked_on": "2026-09-17"
+  },
+  "https://sitonggong.github.io/EgoServe-page": {
+    "status": 200,
+    "resolved_url": "https://sitonggong.github.io/EgoServe-page/",
+    "checked_on": "2026-09-17"
+  },
+  "https://clare-nie.github.io/Light-Omni": {
+    "status": 200,
+    "resolved_url": "https://clare-nie.github.io/Light-Omni/",
+    "checked_on": "2026-09-17"
+  },
+  "https://fawnliu.github.io/project/guideme": {
+    "status": 200,
+    "resolved_url": "https://fawnliu.github.io/project/guideme/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zhangce01/LENS": {
+    "status": 200,
+    "resolved_url": "https://github.com/zhangce01/LENS",
+    "checked_on": "2026-09-17"
+  },
+  "https://zhangce01.github.io/LENS": {
+    "status": 200,
+    "resolved_url": "https://zhangce01.github.io/LENS/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Heisenberg10110/PCA": {
+    "status": 200,
+    "resolved_url": "https://github.com/Heisenberg10110/PCA",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/TenMinutes209/ScanFocus": {
+    "status": 200,
+    "resolved_url": "https://github.com/TenMinutes209/ScanFocus",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/hktk07/QCA": {
+    "status": 200,
+    "resolved_url": "https://github.com/hktk07/QCA",
+    "checked_on": "2026-09-17"
+  },
+  "https://dart-vtg.github.io": {
+    "status": 200,
+    "resolved_url": "https://dart-vtg.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/kimberlyii/Omni-Prune": {
+    "status": 200,
+    "resolved_url": "https://github.com/kimberlyii/Omni-Prune",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MAC-AutoML/OmniScope": {
+    "status": 200,
+    "resolved_url": "https://github.com/MAC-AutoML/OmniScope",
+    "checked_on": "2026-09-17"
+  },
+  "https://opencof.github.io": {
+    "status": 200,
+    "resolved_url": "https://opencof.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Pengjie-W/DeltaV": {
+    "status": 200,
+    "resolved_url": "https://github.com/Pengjie-W/DeltaV",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/NIMI-research/Tycho": {
+    "status": 200,
+    "resolved_url": "https://github.com/NIMI-research/Tycho",
+    "checked_on": "2026-09-17"
+  },
+  "https://agentic-real2sim.github.io": {
+    "status": 200,
+    "resolved_url": "https://agentic-real2sim.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/JaviMaligno/code-world-models": {
+    "status": 200,
+    "resolved_url": "https://github.com/JaviMaligno/code-world-models",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/quome-cloud/openworld": {
+    "status": 200,
+    "resolved_url": "https://github.com/quome-cloud/openworld",
+    "checked_on": "2026-09-17"
+  },
+  "https://iapple233.github.io/PhysAgent": {
+    "status": 200,
+    "resolved_url": "https://iapple233.github.io/PhysAgent/",
+    "checked_on": "2026-09-17"
+  },
+  "https://phi-zero.github.io": {
+    "status": 200,
+    "resolved_url": "https://phi-zero.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://jimntu.github.io/stateplay_page": {
+    "status": 200,
+    "resolved_url": "https://jimntu.github.io/stateplay_page/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HKBU-KnowComp/Temporal-Distance-JEPA": {
+    "status": 200,
+    "resolved_url": "https://github.com/HKBU-KnowComp/Temporal-Distance-JEPA",
+    "checked_on": "2026-09-17"
+  },
+  "https://gawon1224.github.io/ACID": {
+    "status": 200,
+    "resolved_url": "https://gawon1224.github.io/ACID/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MCG-NJU/VIABench": {
+    "status": 200,
+    "resolved_url": "https://github.com/MCG-NJU/VIABench",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/JaeLee18/accuracy-without-grounding": {
+    "status": 200,
+    "resolved_url": "https://github.com/JaeLee18/accuracy-without-grounding",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Zhang-Zhiyan/DAR": {
+    "status": 200,
+    "resolved_url": "https://github.com/Zhang-Zhiyan/DAR",
+    "checked_on": "2026-09-17"
+  },
+  "https://ogmenrobotics.github.io/K9Bench": {
+    "status": 200,
+    "resolved_url": "https://ogmenrobotics.github.io/K9Bench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/shunya-kato/LongEgoRefer": {
+    "status": 200,
+    "resolved_url": "https://github.com/shunya-kato/LongEgoRefer",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/Venn2024/MedStreamBench": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/Venn2024/MedStreamBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://electronicarts.github.io/AutoWorldModelBench": {
+    "status": 200,
+    "resolved_url": "https://electronicarts.github.io/AutoWorldModelBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://open-gigaai.github.io/giga-world-1": {
+    "status": 200,
+    "resolved_url": "https://open-gigaai.github.io/giga-world-1/",
+    "checked_on": "2026-09-17"
+  },
+  "https://visual-prompt-engineering.github.io": {
+    "status": 200,
+    "resolved_url": "https://visual-prompt-engineering.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HKUST-KnowComp/PACE": {
+    "status": 200,
+    "resolved_url": "https://github.com/HKUST-KnowComp/PACE",
+    "checked_on": "2026-09-17"
+  },
+  "https://orarl.github.io": {
+    "status": 200,
+    "resolved_url": "https://orarl.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://trilarflagz.github.io/AdaThinkV": {
+    "status": 200,
+    "resolved_url": "https://trilarflagz.github.io/AdaThinkV/",
+    "checked_on": "2026-09-17"
+  },
+  "https://dualtransparency.github.io/R4DSG": {
+    "status": 200,
+    "resolved_url": "https://dualtransparency.github.io/R4DSG/",
+    "checked_on": "2026-09-17"
+  },
+  "https://choi-yeeun.github.io/MERIT": {
+    "status": 200,
+    "resolved_url": "https://choi-yeeun.github.io/MERIT/",
+    "checked_on": "2026-09-17"
+  },
+  "https://buaa-colalab.github.io/TRACE": {
+    "status": 200,
+    "resolved_url": "https://buaa-colalab.github.io/TRACE/",
+    "checked_on": "2026-09-17"
+  },
+  "https://fyycs.github.io/medclaw": {
+    "status": 200,
+    "resolved_url": "https://fyycs.github.io/medclaw/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MICLAB-BUPT/VTO": {
+    "status": 200,
+    "resolved_url": "https://github.com/MICLAB-BUPT/VTO",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Alibaba-VELLDEPTH/MetaVideoAgent": {
+    "status": 200,
+    "resolved_url": "https://github.com/Alibaba-VELLDEPTH/MetaVideoAgent",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Osilly/Vision-DeepResearch": {
+    "status": 200,
+    "resolved_url": "https://github.com/Osilly/Vision-DeepResearch",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/AK-DREAM/EcoFrame": {
+    "status": 200,
+    "resolved_url": "https://github.com/AK-DREAM/EcoFrame",
+    "checked_on": "2026-09-17"
+  },
+  "https://unix-ai-lab.github.io/StreamOPD": {
+    "status": 200,
+    "resolved_url": "https://unix-ai-lab.github.io/StreamOPD/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/tusu-code/20260121-icml2026-2.git": {
+    "status": 200,
+    "resolved_url": "https://github.com/tusu-code/20260121",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/oceanflowlab/ID-VTG": {
+    "status": 200,
+    "resolved_url": "https://github.com/oceanflowlab/ID-VTG",
+    "checked_on": "2026-09-17"
+  },
+  "https://zhangbo135.github.io/EviSelect": {
+    "status": 200,
+    "resolved_url": "https://zhangbo135.github.io/EviSelect/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/SunVictor23/MaP": {
+    "status": 200,
+    "resolved_url": "https://github.com/SunVictor23/MaP",
+    "checked_on": "2026-09-17"
+  },
+  "https://physmind.github.io": {
+    "status": 200,
+    "resolved_url": "https://physmind.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://mirros-lab.github.io/code-as-world": {
+    "status": 200,
+    "resolved_url": "https://mirros-lab.github.io/code-as-world/",
+    "checked_on": "2026-09-17"
+  },
+  "https://omni-clap.github.io": {
+    "status": 200,
+    "resolved_url": "https://omni-clap.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://visinf.github.io/cefito": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://lat-dyn-reason.github.io": {
+    "status": 200,
+    "resolved_url": "https://lat-dyn-reason.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://nevsnev.github.io/Worldcycle": {
+    "status": 200,
+    "resolved_url": "https://nevsnev.github.io/Worldcycle/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Zarand3r/world-model-invariants": {
+    "status": 200,
+    "resolved_url": "https://github.com/Zarand3r/world-model-invariants",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/moshwm-anon/-moshwm-anon.github.io": {
+    "status": 200,
+    "resolved_url": "https://github.com/moshwm-anon/-moshwm-anon.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/odysseyml/calibench": {
+    "status": 200,
+    "resolved_url": "https://github.com/odysseyml/calibench",
+    "checked_on": "2026-09-17"
+  },
+  "https://alaya-lab.github.io/MASS": {
+    "status": 200,
+    "resolved_url": "https://alaya-lab.github.io/MASS/",
+    "checked_on": "2026-09-17"
+  },
+  "https://culturalmoment-benchmark.github.io": {
+    "status": 200,
+    "resolved_url": "https://culturalmoment-benchmark.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://hexuan21.github.io/VGI-Bench": {
+    "status": 200,
+    "resolved_url": "https://hexuan21.github.io/VGI-Bench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/nec-labs-ma/CAViAR": {
+    "status": 200,
+    "resolved_url": "https://github.com/nec-labs-ma/CAViAR",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/KurbanIntelligenceLab/CARVE": {
+    "status": 200,
+    "resolved_url": "https://github.com/KurbanIntelligenceLab/CARVE",
+    "checked_on": "2026-09-17"
+  },
+  "https://ma-labo.github.io/naru": {
+    "status": 200,
+    "resolved_url": "https://ma-labo.github.io/naru/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HongjieZhou0329/RSVideo": {
+    "status": 200,
+    "resolved_url": "https://github.com/HongjieZhou0329/RSVideo",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/AMAP-ML/R2MBench": {
+    "status": 200,
+    "resolved_url": "https://github.com/AMAP-ML/R2MBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/AtongWang/world-model-simulators": {
+    "status": 200,
+    "resolved_url": "https://github.com/AtongWang/world-model-simulators",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/kxding/PlayWorld": {
+    "status": 200,
+    "resolved_url": "https://github.com/hku-sail/PlayWorld",
+    "checked_on": "2026-09-17"
+  },
+  "https://kxding.github.io/project/PlayWorld": {
+    "status": 200,
+    "resolved_url": "https://kxding.github.io/project/PlayWorld/",
+    "checked_on": "2026-09-17"
+  },
+  "https://WorldExam.github.io": {
+    "status": 200,
+    "resolved_url": "https://WorldExam.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://bomiaowang.github.io/DVBench": {
+    "status": 200,
+    "resolved_url": "https://bomiaowang.github.io/DVBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://xianyunsun.github.io/OmniAssistBench": {
+    "status": 200,
+    "resolved_url": "https://xianyunsun.github.io/OmniAssistBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/ASU-Suo-Lab/Inter-3D-VQA": {
+    "status": 200,
+    "resolved_url": "https://github.com/ASU-Suo-Lab/Inter-3D-VQA",
+    "checked_on": "2026-09-17"
+  },
+  "https://utaustin-swarmlab.github.io/CrossView": {
+    "status": 200,
+    "resolved_url": "https://utaustin-swarmlab.github.io/CrossView/",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/nvidia/PhysicalAI-Traffic-Anomaly-Reasoning": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/nvidia/PhysicalAI-Traffic-Anomaly-Reasoning",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/KaiShinozakiConefrey/Take-85": {
+    "status": 200,
+    "resolved_url": "https://github.com/KaiShinozakiConefrey/Take-85",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/koenv759/VanillaSFT": {
+    "status": 200,
+    "resolved_url": "https://github.com/koenv759/VanillaSFT",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zhaozhipeng1997/SAFE_public": {
+    "status": 200,
+    "resolved_url": "https://github.com/zhaozhipeng1997/SAFE_public",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/xiaozhang79/CamVLM": {
+    "status": 200,
+    "resolved_url": "https://github.com/xiaozhang79/CamVLM",
+    "checked_on": "2026-09-17"
+  },
+  "https://huiyuiui.github.io/ReactVAU": {
+    "status": 200,
+    "resolved_url": "https://huiyuiui.github.io/ReactVAU/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/CURRENTF/ShallowStream": {
+    "status": 200,
+    "resolved_url": "https://github.com/CURRENTF/ShallowStream",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/adfh917k/VideoMM": {
+    "status": 200,
+    "resolved_url": "https://github.com/adfh917k/VideoMM",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/codeprakhar25/omp-keyframe-sampling": {
+    "status": 200,
+    "resolved_url": "https://github.com/codeprakhar25/omp-keyframe-sampling",
+    "checked_on": "2026-09-17"
+  },
+  "https://czzzzh.github.io/PhysStream": {
+    "status": 200,
+    "resolved_url": "https://czzzzh.github.io/PhysStream/",
+    "checked_on": "2026-09-17"
+  },
+  "https://boyuan-an.github.io/GALATEA": {
+    "status": 200,
+    "resolved_url": "https://boyuan-an.github.io/GALATEA/",
+    "checked_on": "2026-09-17"
+  },
+  "https://alaya-lab.github.io/pwm": {
+    "status": 200,
+    "resolved_url": "https://alaya-lab.github.io/pwm/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/AlayaLab/pwm": {
+    "status": 200,
+    "resolved_url": "https://github.com/AlayaLab/pwm",
+    "checked_on": "2026-09-17"
+  },
+  "https://pardistaghavi.github.io/actionsplice-website": {
+    "status": 200,
+    "resolved_url": "https://pardistaghavi.github.io/actionsplice-website/",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/wesfggfd/VidHalLoc": {
+    "error": "HTTP Error 401: Unauthorized",
+    "checked_on": "2026-09-17"
+  },
+  "https://principiabench.github.io": {
+    "status": 200,
+    "resolved_url": "https://principiabench.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://LPA-CWM.github.io": {
+    "status": 200,
+    "resolved_url": "https://LPA-CWM.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/YuhuaJiang2002/sampling-headroom-is-not-selection-gain": {
+    "status": 200,
+    "resolved_url": "https://github.com/YuhuaJiang2002/sampling-headroom-is-not-selection-gain",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/rdharini2001/Robot_World_Model": {
+    "status": 200,
+    "resolved_url": "https://github.com/rdharini2001/Robot_World_Model",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/qyx1121/MDrama_SAGA": {
+    "status": 200,
+    "resolved_url": "https://github.com/qyx1121/MDrama_SAGA",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/gulucaptain/MiniMax-H3-Reason": {
+    "status": 200,
+    "resolved_url": "https://github.com/gulucaptain/MiniMax-H3-Reason",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Shidu-Ren/ICM-Bench": {
+    "status": 200,
+    "resolved_url": "https://github.com/Shidu-Ren/ICM-Bench",
+    "checked_on": "2026-09-17"
+  },
+  "https://3dagentworld.github.io/EmbodiedWM": {
+    "status": 200,
+    "resolved_url": "https://3dagentworld.github.io/EmbodiedWM/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/momentslab/awesome-efficient-videollm": {
+    "status": 200,
+    "resolved_url": "https://github.com/momentslab/awesome-efficient-videollm",
+    "checked_on": "2026-09-17"
+  },
+  "https://aim-uofa.github.io/OmniJigsaw": {
+    "status": 200,
+    "resolved_url": "https://aim-uofa.github.io/OmniJigsaw/",
+    "checked_on": "2026-09-17"
+  },
+  "https://avere-iclr.github.io": {
+    "status": 200,
+    "resolved_url": "https://avere-iclr.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://dyn-bench.github.io": {
+    "status": 200,
+    "resolved_url": "https://dyn-bench.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS": {
+    "status": 200,
+    "resolved_url": "https://github.com/EIT-NLP/StreamingLLM/tree/main/TaYS",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Fanziyang-v/FlashVID": {
+    "status": 200,
+    "resolved_url": "https://github.com/Fanziyang-v/FlashVID",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/collections/zhangyuelin/r2vlm": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/collections/zhangyuelin/r2vlm",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Emo-gml/EmoTrans": {
+    "error": "HTTP Error 404: Not Found",
+    "checked_on": "2026-09-17"
+  },
+  "https://merrin-benchmark.github.io": {
+    "status": 200,
+    "resolved_url": "https://merrin-benchmark.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/CausalSpatial/CausalSpatial": {
+    "status": 200,
+    "resolved_url": "https://github.com/CausalSpatial/CausalSpatial",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Raphoo/linear-mech-vlms": {
+    "status": 200,
+    "resolved_url": "https://github.com/Raphoo/linear-mech-vlms",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Simula/HEDGE#videohedge": {
+    "status": 200,
+    "resolved_url": "https://github.com/Simula/HEDGE#videohedge",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/apple/ml-NarrativeTrack": {
+    "status": 200,
+    "resolved_url": "https://github.com/apple-aiml-research/ml-narrativetrack",
+    "checked_on": "2026-09-17"
+  },
+  "https://mingrui-wu.github.io/openbench": {
+    "status": 200,
+    "resolved_url": "https://mingrui-wu.github.io/openbench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MAC-AutoML/SocialOmni": {
+    "status": 200,
+    "resolved_url": "https://github.com/MAC-AutoML/SocialOmni",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/alexisty/SocialOmni": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/alexisty/SocialOmni",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Lucky-Lance/PhoStream": {
+    "status": 200,
+    "resolved_url": "https://github.com/Lucky-Lance/PhoStream",
+    "checked_on": "2026-09-17"
+  },
+  "https://whynotgit2025.github.io/TennisVAR": {
+    "status": 200,
+    "resolved_url": "https://whynotgit2025.github.io/TennisVAR/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Hectormxy/CineCap.git": {
+    "status": 200,
+    "resolved_url": "https://github.com/Hectormxy/CineCap",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Lee-zixu/R-3": {
+    "status": 200,
+    "resolved_url": "https://github.com/Lee-zixu/R-3",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Muk-00/CoReVAD": {
+    "status": 200,
+    "resolved_url": "https://github.com/Muk-00/CoReVAD",
+    "checked_on": "2026-09-17"
+  },
+  "https://gridvad.github.io": {
+    "status": 200,
+    "resolved_url": "https://gridvad.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/mbzuai-oryx/CoVR-R": {
+    "status": 200,
+    "resolved_url": "https://github.com/mbzuai-oryx/CoVR-R",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Multimodal-Intelligence-Lab-MIL/MARS": {
+    "status": 200,
+    "resolved_url": "https://github.com/Multimodal-Intelligence-Lab-MIL/MARS",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/zxzhao0/SABER-LLM": {
+    "status": 200,
+    "resolved_url": "https://github.com/zxzhao0/SABER-LLM",
+    "checked_on": "2026-09-17"
+  },
+  "https://xavierjiezou.github.io/ARGUS": {
+    "status": 200,
+    "resolved_url": "https://xavierjiezou.github.io/ARGUS/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/williamw99/SafeGuard": {
+    "status": 200,
+    "resolved_url": "https://github.com/williamw99/SafeGuard",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Ryougetsu3606/MyEgo": {
+    "status": 200,
+    "resolved_url": "https://github.com/Ryougetsu3606/MyEgo",
+    "checked_on": "2026-09-17"
+  },
+  "https://zhenjiemao.github.io/ReRe": {
+    "status": 200,
+    "resolved_url": "https://zhenjiemao.github.io/ReRe/",
+    "checked_on": "2026-09-17"
+  },
+  "https://suhzhang.github.io/GeoSR": {
+    "status": 200,
+    "resolved_url": "https://suhzhang.github.io/GeoSR/",
+    "checked_on": "2026-09-17"
+  },
+  "https://trace-reasoning.github.io": {
+    "status": 200,
+    "resolved_url": "https://trace-reasoning.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MKDehdashti/Qwen2-vl-audio": {
+    "status": 200,
+    "resolved_url": "https://github.com/MKDehdashti/Qwen2-vl-audio",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/MayaKD/qwen2-vl-audio": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/MayaKD/qwen2-vl-audio",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Sunghun95/Q-TriM": {
+    "status": 200,
+    "resolved_url": "https://github.com/Sunghun95/Q-TriM",
+    "checked_on": "2026-09-17"
+  },
+  "https://motimotion.github.io": {
+    "status": 200,
+    "resolved_url": "https://motimotion.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://omniweaving.github.io": {
+    "status": 200,
+    "resolved_url": "https://omniweaving.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Tencent-Hunyuan/OmniWeaving": {
+    "status": 200,
+    "resolved_url": "https://github.com/Tencent-Hunyuan/OmniWeaving",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/tencent/HY-OmniWeaving": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/tencent/HY-OmniWeaving",
+    "checked_on": "2026-09-17"
+  },
+  "https://egoman-project.github.io": {
+    "status": 200,
+    "resolved_url": "https://egoman-project.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/robbyant/lingbot-world": {
+    "status": 200,
+    "resolved_url": "https://github.com/robbyant/lingbot-world",
+    "checked_on": "2026-09-17"
+  },
+  "https://minar09.github.io/snfbench": {
+    "status": 200,
+    "resolved_url": "https://minar09.github.io/snfbench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/Catherine-R-He/EntityBench": {
+    "status": 200,
+    "resolved_url": "https://github.com/Catherine-R-He/EntityBench",
+    "checked_on": "2026-09-17"
+  },
+  "https://catherine-r-he.github.io/EntityBench": {
+    "status": 200,
+    "resolved_url": "https://catherine-r-he.github.io/EntityBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://bimilab.github.io/paper-GenPD": {
+    "status": 200,
+    "resolved_url": "https://bimilab.github.io/paper-GenPD/",
+    "checked_on": "2026-09-17"
+  },
+  "https://3dlg-hcvc.github.io/revsi": {
+    "status": 200,
+    "resolved_url": "https://3dlg-hcvc.github.io/revsi/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/xieyc99/SpatiaLQA": {
+    "status": 200,
+    "resolved_url": "https://github.com/xieyc99/SpatiaLQA",
+    "checked_on": "2026-09-17"
+  },
+  "https://vidfm-3d-probe.github.io": {
+    "status": 200,
+    "resolved_url": "https://vidfm-3d-probe.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/facebook/ego-1k": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/facebook/ego-1k",
+    "checked_on": "2026-09-17"
+  },
+  "https://activityforensics.github.io": {
+    "status": 200,
+    "resolved_url": "https://activityforensics.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/th-nesh/Frame2Freq": {
+    "status": 200,
+    "resolved_url": "https://github.com/th-nesh/Frame2Freq",
+    "checked_on": "2026-09-17"
+  },
+  "https://tyroneli.github.io/AOT": {
+    "status": 200,
+    "resolved_url": "https://tyroneli.github.io/AOT/",
+    "checked_on": "2026-09-17"
+  },
+  "https://autogaze.github.io": {
+    "error": "<urlopen error _ssl.c:1112: The handshake operation timed out>",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/HumanMLLM/SWIM": {
+    "status": 200,
+    "resolved_url": "https://github.com/HumanMLLM/SWIM",
+    "checked_on": "2026-09-17"
+  },
+  "https://zhangyl4.github.io/publications/weavetime": {
+    "status": 200,
+    "resolved_url": "https://zhangyl4.github.io/publications/weavetime/",
+    "checked_on": "2026-09-17"
+  },
+  "https://spatial-stack.github.io": {
+    "status": 200,
+    "resolved_url": "https://spatial-stack.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://xiac20.github.io/SimRecon": {
+    "status": 200,
+    "resolved_url": "https://xiac20.github.io/SimRecon/",
+    "checked_on": "2026-09-17"
+  },
+  "https://goal-force.github.io": {
+    "status": 200,
+    "resolved_url": "https://goal-force.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://dit4dit.github.io": {
+    "status": 200,
+    "resolved_url": "https://dit4dit.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://robbyant-research.github.io/Zero-WAM": {
+    "status": 200,
+    "resolved_url": "https://robbyant-research.github.io/Zero-WAM/",
+    "checked_on": "2026-09-17"
+  },
+  "https://genception.github.io": {
+    "status": 200,
+    "resolved_url": "https://genception.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://worldbench.github.io/awesome-agentic-world-model": {
+    "status": 200,
+    "resolved_url": "https://worldbench.github.io/awesome-agentic-world-model/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/worldbench/awesome-agentic-world-model": {
+    "status": 200,
+    "resolved_url": "https://github.com/worldbench/awesome-agentic-world-model",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/NVlabs/4D-RGPT": {
+    "status": 200,
+    "resolved_url": "https://github.com/NVlabs/4D-RGPT",
+    "checked_on": "2026-09-17"
+  },
+  "https://huggingface.co/datasets/nvidia/R4D-Bench": {
+    "status": 200,
+    "resolved_url": "https://huggingface.co/datasets/nvidia/R4D-Bench",
+    "checked_on": "2026-09-17"
+  },
+  "https://eureka-maggie.github.io/ROMA_show": {
+    "status": 200,
+    "resolved_url": "https://eureka-maggie.github.io/ROMA_show/",
+    "checked_on": "2026-09-17"
+  },
+  "https://pku-epic.github.io/LDA": {
+    "status": 200,
+    "resolved_url": "https://pku-epic.github.io/LDA/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/facebookresearch/eb_jepa": {
+    "status": 200,
+    "resolved_url": "https://github.com/facebookresearch/eb_jepa",
+    "checked_on": "2026-09-17"
+  },
+  "https://robot-robustness.github.io/RoboTwin2.0-Plus": {
+    "status": 200,
+    "resolved_url": "https://robot-robustness.github.io/RoboTwin2.0-Plus/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/DAGroup-PKU/PhysisForcing": {
+    "status": 200,
+    "resolved_url": "https://github.com/DAGroup-PKU/PhysisForcing",
+    "checked_on": "2026-09-17"
+  },
+  "https://dagroup-pku.github.io/PhysisForcing.github.io/#": {
+    "status": 200,
+    "resolved_url": "https://dagroup-pku.github.io/PhysisForcing.github.io/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/robbyant/lingbot-world-v2": {
+    "status": 200,
+    "resolved_url": "https://github.com/robbyant/lingbot-world-v2",
+    "checked_on": "2026-09-17"
+  },
+  "https://open-gigaai.github.io/giga-world-policy": {
+    "status": 200,
+    "resolved_url": "https://open-gigaai.github.io/giga-world-policy/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/amap-cvlab/ABot-Manipulation": {
+    "status": 200,
+    "resolved_url": "https://github.com/amap-cvlab/ABot-Manipulation",
+    "checked_on": "2026-09-17"
+  },
+  "https://flow-wam.github.io": {
+    "status": 200,
+    "resolved_url": "https://flow-wam.github.io",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/MBZUAI-IFM/WR-Arena": {
+    "status": 200,
+    "resolved_url": "https://github.com/MBZUAI-IFM/WR-Arena",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/google-deepmind/physics-iq-benchmark": {
+    "status": 200,
+    "resolved_url": "https://github.com/google-deepmind/physics-iq-benchmark",
+    "checked_on": "2026-09-17"
+  },
+  "https://hanxjing.github.io/OSCBench": {
+    "status": 200,
+    "resolved_url": "https://hanxjing.github.io/OSCBench/",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/hukcc/Awesome-Video-Hallucination": {
+    "status": 200,
+    "resolved_url": "https://github.com/hukcc/Awesome-Video-Hallucination",
+    "checked_on": "2026-09-17"
+  },
+  "https://github.com/XiaoMi/xiaomi-mimo-vl-miloco": {
+    "status": 200,
+    "resolved_url": "https://github.com/XiaoMi/xiaomi-mimo-vl-miloco",
+    "checked_on": "2026-09-17"
+  }
+}

@@ -1,5 +1,15 @@
 # Research Log — 2026-09-17
 
+## Nine-Month Expansion
+
+The [2026 research map](review-2026/README.md) supersedes the selective scope below for **2025-12-18–2026-09-17**. It adds **1,153 arXiv papers** across ten chapters, bringing first-public coverage in that window to **1,195 papers**, plus **16 separately dated ACL proceedings entries**. Video-MMMU was also added as a historical benchmark: its first preprint is January 2025, despite its ACL 2026 publication. The bibliography now holds **1,373 arXiv records**.
+
+Eight fully paginated arXiv searches returned 2,476 unique candidates; proceedings and secondary lists broadened the primary metadata pool to 4,462. Shortlisted papers received abstract or targeted excerpt screening, not full-text review. [Searches](review-2026/searches.json), [screening decisions](review-2026/screening.jsonl), [monthly coverage](review-2026/coverage.json), [official venue evidence](review-2026/venue-evidence.json), and [resource checks](review-2026/resource-checks.json) record scope and limits. Counts in the earlier sections below describe their own historical passes.
+
+The expansion preserves original tables and anchors, refreshes source-verified titles and venues, and adds generated topical indexes. Reasoning mechanisms remain separate from training, perception, and interaction. Executable-world entries distinguish supplied rules, inferred dynamics, persistent state, and rendering; the expanded [lineage](world-models.md) includes SWoMo, VideoCoCo, PhysMind, Code as Worlds, and Programmable World Model alongside the existing Code World Model case study.
+
+Identity corrections include **StreamingEval**: the ACL Findings title says “Framework,” while the arXiv title says “Protocol”; matching abstracts establish one work. **Video-MMMU** similarly changes “Multi-Discipline” to “Multidisciplinary” in proceedings. These are not new papers. Venue updates use official CVPR/ACL records where matched; author-only claims are not promoted to independently verified proceedings.
+
 ## Review Scope
 
 The first update added **36 papers / 37 rows** (VBVR appears as both a resource and benchmark), retaining English tables and date order. Coverage is selective; experiments were not reproduced.

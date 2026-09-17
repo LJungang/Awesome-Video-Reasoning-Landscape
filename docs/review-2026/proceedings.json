@@ -1,0 +1,394 @@
+{
+  "checked_on": "2026-09-17",
+  "papers": [
+    {
+      "title": "VALU: A Benchmark for Video Anomaly Temporal Localization and Understanding at Multiple Semantic Levels",
+      "source": "https://aclanthology.org/2026.acl-long.56/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "benchmarks",
+      "focus": "Anomaly semantics and temporal localization",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "DART: Disambiguation-Aware Reasoning for Video-guided Machine Translation",
+      "source": "https://aclanthology.org/2026.acl-long.352/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "language",
+      "focus": "Translation bridge; selective visual disambiguation",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "KCVR: Knowledge-Centric Video Reconstruction for Structured Pedagogical Summarization via Dynamic Graph Planning",
+      "source": "https://aclanthology.org/2026.acl-long.414/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "structured",
+      "focus": "Video-grounded prerequisite graphs; EduStruct",
+      "review_level": "abstract",
+      "resources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/mark1001-ljj/video_sum",
+          "source": "official proceedings abstract"
+        }
+      ]
+    },
+    {
+      "title": "From Form to Logic: Masked Reconstruction and Reasoning Distillation for Short Video Fake News Detection",
+      "source": "https://aclanthology.org/2026.acl-long.579/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "language",
+      "focus": "Misinformation; reasoning distillation",
+      "review_level": "abstract",
+      "resources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/SeinCore/PCDD",
+          "source": "official proceedings abstract"
+        }
+      ]
+    },
+    {
+      "title": "Vista-LLM: Decoupled Query-Guided Visual Token Pruning for Efficient Long-Video Large Language Models",
+      "source": "https://aclanthology.org/2026.acl-long.601/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "perception",
+      "focus": "Supporting method; query-guided token pruning",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "SAGE: Synergistic Adaptive Gating of Experts for Hateful Video Detection",
+      "source": "https://aclanthology.org/2026.acl-long.817/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "perception",
+      "focus": "Supporting method; modality-specific expert arbitration",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "From Detection to Understanding: Multi-Turn Reasoning for Video Misinformation Analysis",
+      "source": "https://aclanthology.org/2026.acl-long.1716/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "benchmarks",
+      "focus": "MisVideoQA; evidence and misinformation reasoning",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "HowToNarrate: A General-Domain Benchmark for Synchronized Video Narration with External Knowledge",
+      "source": "https://aclanthology.org/2026.acl-long.1815/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "benchmarks",
+      "focus": "Knowledge-grounded synchronized narration",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "Black-Box Membership Inference Attacks for Video Training Data in Multimodal Large Language Models",
+      "source": "https://aclanthology.org/2026.acl-long.1820/",
+      "venue": "ACL 2026",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "benchmarks",
+      "focus": "Supporting diagnostic; temporal memorization",
+      "review_level": "abstract",
+      "resources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jinruiwang258/VideoMIA",
+          "source": "official proceedings abstract"
+        }
+      ]
+    },
+    {
+      "title": "MoPrune: Scene-Guided Motion-Aware Token Pruning for Efficient Video Large Language Models",
+      "source": "https://aclanthology.org/2026.findings-acl.344/",
+      "venue": "ACL 2026 (Findings)",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "perception",
+      "focus": "Supporting method; scene and motion-aware pruning",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "EgoMemory: Memory-Augmented Personalized Retrieval for Long-Context Egocentric Video",
+      "source": "https://aclanthology.org/2026.findings-acl.362/",
+      "venue": "ACL 2026 (Findings)",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "benchmarks",
+      "focus": "Personalized episodic memory; EgoRetriever",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "LEAF: Towards Lightweight Explainable Hateful Video Detection via Self-Grounding CoT Guided Stage-Wise Distillation",
+      "source": "https://aclanthology.org/2026.findings-acl.604/",
+      "venue": "ACL 2026 (Findings)",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "language",
+      "focus": "Grounded explanations; hateful-video distillation",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "PedagogyBench: A Cognitive-Driven Benchmark for Multimodal Instructional Video Understanding",
+      "source": "https://aclanthology.org/2026.findings-acl.614/",
+      "venue": "ACL 2026 (Findings)",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "benchmarks",
+      "focus": "Instructional logic; visual shortcut controls",
+      "review_level": "abstract",
+      "resources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Shallcom/PedagogyBench",
+          "source": "official proceedings abstract"
+        }
+      ]
+    },
+    {
+      "title": "LongInsightBench: A Comprehensive Benchmark for Evaluating Omni-Modal Models on Human-Centric Long-Video Understanding.",
+      "source": "https://aclanthology.org/2026.findings-acl.965/",
+      "venue": "ACL 2026 (Findings)",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "benchmarks",
+      "focus": "Long audio-video; localization and causality",
+      "review_level": "abstract",
+      "resources": []
+    },
+    {
+      "title": "CSI: An Investigative Multi-Agent Framework for Explainable Short Video Fake News Detection",
+      "source": "https://aclanthology.org/2026.findings-acl.1274/",
+      "venue": "ACL 2026 (Findings)",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "agents",
+      "focus": "Misinformation; retrieval and collaborative evidence review",
+      "review_level": "abstract",
+      "resources": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/VFCenter/CSI",
+          "source": "official proceedings abstract"
+        }
+      ]
+    },
+    {
+      "title": "From What Is Said to Why It Is Framed: Intent-Aware News Video Understanding",
+      "source": "https://aclanthology.org/2026.findings-acl.1945/",
+      "venue": "ACL 2026 (Findings)",
+      "publication": "2026-07",
+      "date_basis": "first located proceedings publication; earlier preprint not resolved",
+      "branch": "language",
+      "focus": "Communicative intent as an intermediate condition",
+      "review_level": "abstract",
+      "resources": []
+    }
+  ],
+  "screening": [
+    {
+      "source": "https://aclanthology.org/2026.acl-long.56/",
+      "title": "VALU: A Benchmark for Video Anomaly Temporal Localization and Understanding at Multiple Semantic Levels",
+      "decision": "included",
+      "reason": "Anomaly semantics and temporal localization",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.244/",
+      "title": "DPDV: Dual-Pathway and Dual-View Representation Learning for Bridging Information Asymmetry in Text-Video Retrieval",
+      "decision": "not-added",
+      "reason": "Retrieval representation without a distinct reasoning contribution",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.352/",
+      "title": "DART: Disambiguation-Aware Reasoning for Video-guided Machine Translation",
+      "decision": "included",
+      "reason": "Translation bridge; selective visual disambiguation",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.414/",
+      "title": "KCVR: Knowledge-Centric Video Reconstruction for Structured Pedagogical Summarization via Dynamic Graph Planning",
+      "decision": "included",
+      "reason": "Video-grounded prerequisite graphs; EduStruct",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.579/",
+      "title": "From Form to Logic: Masked Reconstruction and Reasoning Distillation for Short Video Fake News Detection",
+      "decision": "included",
+      "reason": "Misinformation; reasoning distillation",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.601/",
+      "title": "Vista-LLM: Decoupled Query-Guided Visual Token Pruning for Efficient Long-Video Large Language Models",
+      "decision": "included",
+      "reason": "Supporting method; query-guided token pruning",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.817/",
+      "title": "SAGE: Synergistic Adaptive Gating of Experts for Hateful Video Detection",
+      "decision": "included",
+      "reason": "Supporting method; modality-specific expert arbitration",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.1281/",
+      "title": "Video-MMMU: Evaluating Knowledge Acquisition from Multidisciplinary Professional Videos",
+      "decision": "not-added",
+      "reason": "Earlier preprint: arXiv 2501.13826, first public 2025-01-23; retained as historical context",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.1716/",
+      "title": "From Detection to Understanding: Multi-Turn Reasoning for Video Misinformation Analysis",
+      "decision": "included",
+      "reason": "MisVideoQA; evidence and misinformation reasoning",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.1815/",
+      "title": "HowToNarrate: A General-Domain Benchmark for Synchronized Video Narration with External Knowledge",
+      "decision": "included",
+      "reason": "Knowledge-grounded synchronized narration",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-long.1820/",
+      "title": "Black-Box Membership Inference Attacks for Video Training Data in Multimodal Large Language Models",
+      "decision": "included",
+      "reason": "Supporting diagnostic; temporal memorization",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.acl-industry.139/",
+      "title": "RADAR: Risk-Aware Distilled Adaptive Routing for Efficient Short-Form Video Platform Ecosystem Governance",
+      "decision": "not-added",
+      "reason": "Moderation routing efficiency without a distinct video reasoning contribution",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.295/",
+      "title": "StreamingEval: A Unified Evaluation Framework towards Realistic Streaming Video Understanding",
+      "decision": "not-added",
+      "reason": "Same work as arXiv 2603.21493; title changed from Protocol to Framework",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.344/",
+      "title": "MoPrune: Scene-Guided Motion-Aware Token Pruning for Efficient Video Large Language Models",
+      "decision": "included",
+      "reason": "Supporting method; scene and motion-aware pruning",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.362/",
+      "title": "EgoMemory: Memory-Augmented Personalized Retrieval for Long-Context Egocentric Video",
+      "decision": "included",
+      "reason": "Personalized episodic memory; EgoRetriever",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.604/",
+      "title": "LEAF: Towards Lightweight Explainable Hateful Video Detection via Self-Grounding CoT Guided Stage-Wise Distillation",
+      "decision": "included",
+      "reason": "Grounded explanations; hateful-video distillation",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.614/",
+      "title": "PedagogyBench: A Cognitive-Driven Benchmark for Multimodal Instructional Video Understanding",
+      "decision": "included",
+      "reason": "Instructional logic; visual shortcut controls",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.805/",
+      "title": "mPresenter: An Agentic Framework for Generating Multilingual Presentation Videos from Scientific Papers",
+      "decision": "not-added",
+      "reason": "Presentation production; outside the reasoning and world-model scope",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.965/",
+      "title": "LongInsightBench: A Comprehensive Benchmark for Evaluating Omni-Modal Models on Human-Centric Long-Video Understanding.",
+      "decision": "included",
+      "reason": "Long audio-video; localization and causality",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.1274/",
+      "title": "CSI: An Investigative Multi-Agent Framework for Explainable Short Video Fake News Detection",
+      "decision": "included",
+      "reason": "Misinformation; retrieval and collaborative evidence review",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.1805/",
+      "title": "A2O: LLM-based Agentic Learning of Action-to-Object Features for Video Action Recognition",
+      "decision": "not-added",
+      "reason": "Action-recognition feature learning; outside the core reasoning scope",
+      "review_level": "abstract"
+    },
+    {
+      "source": "https://aclanthology.org/2026.findings-acl.1945/",
+      "title": "From What Is Said to Why It Is Framed: Intent-Aware News Video Understanding",
+      "decision": "included",
+      "reason": "Communicative intent as an intermediate condition",
+      "review_level": "abstract"
+    }
+  ],
+  "resource_checks": {
+    "https://github.com/mark1001-ljj/video_sum": {
+      "status": 200,
+      "resolved_url": "https://github.com/mark1001-ljj/video_sum",
+      "checked_on": "2026-09-17"
+    },
+    "https://github.com/VFCenter/CSI": {
+      "status": 200,
+      "resolved_url": "https://github.com/VFCenter/CSI",
+      "checked_on": "2026-09-17"
+    },
+    "https://github.com/Shallcom/PedagogyBench": {
+      "status": 200,
+      "resolved_url": "https://github.com/Shallcom/PedagogyBench",
+      "checked_on": "2026-09-17"
+    },
+    "https://github.com/SeinCore/PCDD": {
+      "status": 200,
+      "resolved_url": "https://github.com/SeinCore/PCDD",
+      "checked_on": "2026-09-17"
+    },
+    "https://github.com/jinruiwang258/VideoMIA": {
+      "status": 200,
+      "resolved_url": "https://github.com/jinruiwang258/VideoMIA",
+      "checked_on": "2026-09-17"
+    }
+  }
+}
