@@ -130,6 +130,9 @@
         },
         "task_evidence": {
           "type": "object"
+        },
+        "name_evidence": {
+          "type": "object"
         }
       },
       "required": [

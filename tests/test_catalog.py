@@ -6,6 +6,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
@@ -44,6 +45,38 @@ def readme(data):
 
 
 class CatalogTests(unittest.TestCase):
+    def test_catalog_language_pipelines_and_benchmark_names_are_complete(self):
+        data = catalog.load(ROOT / 'data/papers.json')
+        for identity, paper in data['papers'].items():
+            for place in paper['placements']:
+                if place['section'] == 'language' or 'language' in place.get('tasks', []):
+                    self.assertIn('text', paper['input_modalities'], identity)
+                if data['sections'][place['section']].get('table') == 'benchmark':
+                    self.assertTrue(place.get('name'), identity)
+                    if place.get('name_evidence', {}).get('kind') == 'descriptive':
+                        self.assertTrue(place['name'].endswith('(study)'), identity)
+        for identity, name in {'2512.16978': 'LongShOTBench', '2601.01547': 'EscherVerse',
+                               '2602.11244': 'REVEAL', '2604.22226': 'SportsTime',
+                               '2606.03920': 'VSTAT', '2606.04098': 'EVID-Bench'}.items():
+            place = next(p for p in data['papers'][identity]['placements'] if 'tasks' in p)
+            self.assertEqual(place['name'], name)
+
+    def test_formula_images_are_self_contained_and_linked_with_sources(self):
+        notes = (ROOT / 'docs/modeling.md').read_text()
+        for identity in ['reasoning-loop', 'world-interface']:
+            self.assertIn(f'../assets/math/{identity}.svg', notes)
+            self.assertIn(f'../assets/math/{identity}.tex', notes)
+            svg = (ROOT / f'assets/math/{identity}.svg').read_text()
+            root = ET.fromstring(svg)
+            self.assertEqual(root.tag, '{http://www.w3.org/2000/svg}svg')
+            self.assertTrue(root.findall('.//{http://www.w3.org/2000/svg}path'))
+            for element in root.iter():
+                self.assertNotIn(element.tag.split('}')[-1], {'script', 'foreignObject', 'image'})
+                self.assertNotIn('data-mjx-error', element.attrib)
+        source = (ROOT / 'README.md').read_text()
+        self.assertIn('(docs/modeling.md)', source)
+        self.assertNotIn('```math', source)
+
     def test_historical_benchmark_columns_and_task_round_trip(self):
         data = fixture()
         data['sections']['benchmarks'] = {'group': 'engines', 'title': 'Benchmarks',

@@ -18,4 +18,9 @@ jobs:
           python-version: '3.12'
       - run: python3 scripts/check_catalog.py
       - run: python3 -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --prefix tools/math --ignore-scripts
+      - run: npm run check --prefix tools/math
       - run: git diff --check

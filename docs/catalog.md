@@ -56,6 +56,7 @@ A resource contains `kind`, `label`, and `url`. Kinds are `code`, `data`, `proje
 
 - Label the system or benchmark interface, including supported optional inputs; store scope and primary-source evidence under `provenance.input_modalities`.
 - Sampled frames from an observed clip are Video. A standalone reference image is Image. Speech waveforms are Audio; supplied transcripts are Text.
+- LLM/MLLM pipelines include Text for questions, fixed instructions, system prompts, and tool instructions. Describe the complete model pipeline, even if a video encoder or query-free memory component does not itself consume text. An external LLM judge alone does not establish a Text input to the evaluated generator.
 - Generated videos, inferred graphs, internal code, training-only signals, and task names are not input labels. A controller's output action is not an Action input to that controller.
 - Leave unsupported modalities unassigned. `[]` means unrecorded or not applicable, including surveys without one evaluated interface. A partially annotated record is not an exhaustive capability claim.
 
@@ -74,7 +75,7 @@ Set a section's `table` to `benchmark` to retain the original columns: **Name, P
 - Include both only when both families are evaluated. Use `[]` for unresolved or inapplicable cases, such as a latent-control diagnostic without a language or visual-generation reasoning track.
 - Generated benchmark data, a VLM judge, and a coding agent's rendered output do not establish a generation-model reasoning track. Record the actual evaluation target in `task_evidence`.
 
-Keep the official short name in `name`; do not invent an acronym. Task badges have a separate palette in `BENCHMARK_TASKS` in the converter: `language` uses `#AEC6DF`, `vision` uses `#C3E6CB`. They are not input-modality IDs.
+Find the official benchmark name in the abstract, full paper, or project page; it may differ from the proposed method's name or the paper's title. Record source evidence in `name_evidence` with `kind: "author-named"`. An unnamed diagnostic study can use a short descriptive `name` ending in `(study)`, with `kind: "descriptive"`; do not invent an official acronym. Task badges have a separate palette in `BENCHMARK_TASKS` in the converter: `language` uses `#AEC6DF`, `vision` uses `#C3E6CB`. They are not input-modality IDs.
 
 <a id="reverse-import"></a>
 
