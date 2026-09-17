@@ -43,10 +43,10 @@ Preserve the existing record's resources and evidence when editing it; the examp
 | `venue` | Plain-text venue, including track qualifiers; otherwise `arXiv` or `Unverified`. The generator adds backticks |
 | `input_modalities` | Verified input IDs from the top-level `modalities` registry; `[]` renders `N/A` |
 | `resources` | Typed resource objects; an empty list renders `N/A` |
-| `placements` | One or more `{section, focus}` objects; optional `name` for an alias. `focus` is retained as scope metadata, not displayed as a modality |
+| `placements` | One or more `{section, focus}` objects; `name` supplies the benchmark Name column. Benchmark placements also have `tasks` and optional `task_evidence`. `focus` remains hidden scope metadata |
 | `provenance` | Source URLs, review depth, venue evidence, BibTeX, aliases, and notes; retained through reverse imports |
 
-A resource contains `kind`, `label`, and `url`. Kinds are `code`, `data`, `project`, `weights`, `paper`, and `other`. Optional `evidence` stores verification details. Optional `badges` contains `{alt, url}` objects, such as GitHub stars. The generator styles GitHub, Hugging Face, ModelScope, and arXiv links by platform and purpose: datasets, checkpoints, and code remain distinct. GitHub weights links use ModelZoo. Other links display `kind: label`. URLs must percent-encode spaces, pipes, and parentheses.
+A resource contains `kind`, `label`, and `url`. Kinds are `code`, `data`, `project`, `weights`, `paper`, and `other`. Optional `evidence` stores verification details; optional `badges` stores additional `{alt, url}` images. GitHub repository links automatically display a GitHub badge and a separate Stars badge linking to `/stargazers`; do not store these generated stars in JSON. Project pages use a house badge. Hugging Face and ModelScope distinguish datasets from checkpoints. Branded badges use `resource:kind` alt text and preserve the descriptive `label` in JSON. Other links display `kind: label`. URLs must percent-encode spaces, pipes, and parentheses.
 
 <a id="input-modalities"></a>
 
@@ -63,7 +63,18 @@ Badges use shared Markdown references to keep the README compact. The importer v
 
 `focus` accepts concise inline Markdown; titles, names, venue names, and link labels are plain text. Do not place raw HTML or line breaks in catalog fields. Entities protect pipes and brackets during conversion. Dates sort newest first, using full precision when known and the stable ID as a tie-breaker.
 
-The `groups` and `sections` objects define order, stable anchors, titles, and descriptions. To add a branch, add a section with an existing `group` (or define a new group); rendering creates a collapsible table with its paper count. Keep anchors outside `<details>` and blank lines around tables so GitHub renders them correctly. The generated region is bounded by `catalog:start` and `catalog:end`; introductory prose, formulas, the evaluation guide, and related resources live outside it.
+The `groups` and `sections` objects define order, stable anchors, titles, and descriptions. To add a branch, add a section with an existing `group` (or define a new group). Sections use `<details open>`: expanded by default, with no paper-count summaries. Keep anchors outside `<details>` and blank lines around tables so GitHub renders them correctly. The generated region is bounded by `catalog:start` and `catalog:end`; introductory prose, formulas, the evaluation guide, and related resources live outside it.
+
+## Benchmark Tables
+
+Set a section's `table` to `benchmark` to retain the original columns: **Name, Paper, Link, Task, Time, Venue**. Ordinary sections keep **Input modalities**; benchmark tables instead show the evaluated model family in **Task**.
+
+- `tasks: ["language"]`: reasoning by language models, including multimodal LMs and coding agents.
+- `tasks: ["vision"]`: reasoning by image/video generation models.
+- Include both only when both families are evaluated. Use `[]` for unresolved or inapplicable cases, such as a latent-control diagnostic without a language or visual-generation reasoning track.
+- Generated benchmark data, a VLM judge, and a coding agent's rendered output do not establish a generation-model reasoning track. Record the actual evaluation target in `task_evidence`.
+
+Keep the official short name in `name`; do not invent an acronym. Task badges have a separate palette in `BENCHMARK_TASKS` in the converter: `language` uses `#AEC6DF`, `vision` uses `#C3E6CB`. They are not input-modality IDs.
 
 <a id="reverse-import"></a>
 
@@ -87,7 +98,7 @@ python3 scripts/catalog.py render --data /tmp/papers-import.json --output /tmp/R
 
 After reviewing the imported candidate, copy it to `data/papers.json`, render, and run `python3 scripts/check_catalog.py`. That repository check also validates local links, Markdown structure, math macros, and archived review consistency. `scripts/build_review.py` remains a compatibility alias for render/check.
 
-Reverse import updates visible paper fields, input modalities, and section membership. The existing JSON preserves precise dates when the displayed month is unchanged, placement `focus`, resource evidence, BibTeX, and other non-rendered fields. Changing the displayed month stores month precision until primary metadata supplies more detail. Changing date basis also resets precision. A README alone cannot recover metadata it never displayed.
+Reverse import updates visible paper fields, ordinary-table input modalities, benchmark names/tasks, and section membership. The existing JSON preserves precise dates, hidden inputs for benchmark-only records, placement `focus`, task evidence, branded resource labels, resource evidence, and BibTeX. A new benchmark-only row starts with empty input modalities. Changing the displayed month or date basis resets date precision. A README alone cannot recover metadata it never displayed.
 
 All cross-lists must agree on title, URL, date, venue, resources, and input modalities; inconsistent edits fail. Keep Venue in backticks and retain badge reference definitions. Missing sections, malformed rows, duplicate IDs/URLs, and unexpected removals fail before writing. For a deliberate removal, pass `--allow-removals`; removing the last placement removes that paper record. A new row needs a stable `paper` comment. Normal contributors should add it in JSON instead.
 

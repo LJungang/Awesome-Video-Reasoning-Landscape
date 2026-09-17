@@ -21,14 +21,17 @@ PAPER = re.compile(r'<!-- paper:([A-Za-z0-9_.:-]+) -->')
 LINK = re.compile(r'(?<!!)\[([^\]]*)\]\((https?://[^\s)]+)\)')
 IMAGE = re.compile(r'!\[([^\]]*)\]\((https?://[^\s)]+)\)')
 HEADER = '| **Paper** | **Resources** | **Input modalities** | **Time** | **Venue** |'
+BENCHMARK_HEADER = '| **Name** | **Paper** | **Link** | **Task** | **Time** | **Venue** |'
+BENCHMARK_TASKS = {'language': ('AEC6DF', 'Reasoning by language models, including multimodal LMs'),
+                   'vision': ('C3E6CB', 'Reasoning by visual generation models')}
+LINKED_IMAGE = re.compile(r'\[!\[([^\]]*)\]\((https?://[^\s)]+)\)\]\((https?://[^\s)]+)\)')
 KINDS = {'code', 'data', 'project', 'weights', 'paper', 'other'}
 MODALITY_IMAGE = re.compile(r'!\[([^\]]+)\]\[mod-([a-z0-9-]+)\]')
 RESOURCE_LINK = re.compile(r'\[!\[([^\]]+)\]\[(res-[a-z0-9-]+)\]\]\((https?://[^\s)]+)\)')
 REFERENCE = re.compile(r'^\[([^\]]+)\]: (https?://\S+)$', re.M)
 # Platform and purpose are independent: a Hugging Face dataset is not a checkpoint.
 RESOURCE_STYLES = {
-    'github': ('181717', 'github', {'code': 'Code', 'weights': 'ModelZoo', 'data': 'Data',
-                                  'project': 'Project', 'paper': 'Paper', 'other': 'Resources'}),
+    'github': ('181717', 'github', dict.fromkeys(sorted(KINDS), 'GitHub')),
     'hf': ('9C276A', 'huggingface', {'code': 'Code', 'weights': 'Checkpoints', 'data': 'Datasets',
                                   'project': 'Project', 'paper': 'Paper', 'other': 'Resources'}),
     'modelscope': ('624AFF', None, {'code': 'Code', 'weights': 'Checkpoints', 'data': 'Datasets',
@@ -119,6 +122,8 @@ def validate(data):
             raise CatalogError(f'invalid or duplicate anchor: {item["anchor"]}')
         anchors.add(item['anchor'])
     for key, section in sections.items():
+        if section.get('table', 'papers') not in {'papers', 'benchmark'}:
+            raise CatalogError(f'unknown table layout in {key}')
         if section['group'] not in groups:
             raise CatalogError(f'unknown group in section {key}')
     urls = set()
@@ -156,6 +161,8 @@ def validate(data):
                 raise CatalogError(f'{identity}: dataset is not a weights resource')
             for badge in resource.get('badges', []):
                 check_url(badge['url'])
+                if badge['url'].startswith('https://img.shields.io/github/stars/'):
+                    raise CatalogError(f'{identity}: GitHub Stars are generated; omit stored star badges')
         seen = set()
         if not paper['placements']:
             raise CatalogError(f'{identity}: at least one placement is required')
@@ -164,6 +171,12 @@ def validate(data):
             if section not in sections or section in seen:
                 raise CatalogError(f'{identity}: unknown/duplicate section {section}')
             seen.add(section)
+            if sections[section].get('table') == 'benchmark':
+                tasks = placement.get('tasks')
+                if not isinstance(tasks, list) or any(not isinstance(t, str) or t not in BENCHMARK_TASKS for t in tasks) or len(tasks) != len(set(tasks)):
+                    raise CatalogError(f'{identity}: benchmark tasks must be unique language/vision values')
+            if not isinstance(placement.get('name', ''), str) or '\n' in placement.get('name', ''):
+                raise CatalogError(f'{identity}: name must be a single line')
             if not isinstance(placement.get('focus', ''), str) or '\n' in placement.get('focus', ''):
                 raise CatalogError(f'{identity}: focus must be a single line')
             if 'badges' in placement:
@@ -187,12 +200,35 @@ def resource_style(resource):
                 'modelscope.cn': 'modelscope', 'modelscope.ai': 'modelscope', 'arxiv.org': 'arxiv'}.get(host)
     if platform and resource['kind'] in RESOURCE_STYLES[platform][2]:
         return f'res-{platform}-{resource["kind"]}'
+    if resource['kind'] == 'project':
+        return 'res-project'
     return None
+
+
+def github_repo(url):
+    parsed = urlsplit(url)
+    if parsed.hostname not in {'github.com', 'www.github.com'}:
+        return None
+    parts = parsed.path.strip('/').split('/')
+    if len(parts) < 2 or not all(re.fullmatch(r'[A-Za-z0-9_.-]+', p) for p in parts[:2]):
+        return None
+    return '/'.join([parts[0], parts[1].removesuffix('.git')])
+
+
+def stars_cell(url):
+    repo = github_repo(url)
+    if not repo:
+        return ''
+    return (f'[![Stars](https://img.shields.io/github/stars/{repo}?style=flat-square&color=E0E0E0&label=Stars)]'
+            f'(https://github.com/{repo}/stargazers)')
 
 
 def badge_references(data):
     refs = {f'mod-{key}': f'https://img.shields.io/badge/{quote(info["label"], safe="")}-{info["color"]}?style=flat-square'
             for key, info in data['modalities'].items()}
+    refs.update({f'task-{key}': f'https://img.shields.io/badge/{key}-{info[0]}?style=flat-square'
+                 for key, info in BENCHMARK_TASKS.items()})
+    refs['res-project'] = 'https://img.shields.io/badge/%F0%9F%8F%A0-Project_Page-527A9B?style=flat-square'
     for platform, (color, logo, purposes) in RESOURCE_STYLES.items():
         for kind, label in purposes.items():
             caption = f'ModelScope-{label}' if platform == 'modelscope' else label
@@ -210,35 +246,45 @@ def resources_cell(resources):
     for resource in resources:
         label = f'{resource["kind"]}: {resource["label"]}'
         style = resource_style(resource)
-        link_label = f'![{text_cell(label)}][{style}]' if style else text_cell(label)
+        link_label = f'![resource:{resource["kind"]}][{style}]' if style else text_cell(label)
         part = f'[{link_label}]({resource["url"]})'
+        stars = stars_cell(resource['url'])
+        if stars:
+            part += ' ' + stars
         badges = ' '.join(badge_cell(badge) for badge in resource.get('badges', []))
         parts.append(part + (' ' + badges if badges else ''))
     return '<br>'.join(parts) or '`N/A`'
 
 
-def row(identity, paper, placement, modalities):
+def row(identity, paper, placement, modalities, benchmark=False):
     name = placement.get('name', '')
     title = (f'**{text_cell(name)}** · ' if name else '') + f'[{text_cell(paper["title"])}]({paper["url"]})'
     title += f' <!-- paper:{identity} -->'
     inputs = ' '.join(modality_cell(key, modalities[key]) for key in paper['input_modalities'])
     month = paper['date'][:7] + (' (proc.)' if paper['date_basis'] == 'proceedings' else '')
+    if benchmark:
+        title = f'[{text_cell(paper["title"])}]({paper["url"]}) <!-- paper:{identity} -->'
+        tasks = ' '.join(f'![{t}][task-{t}]' for t in placement['tasks']) or '`N/A`'
+        return f'| {text_cell(name) if name else "`N/A`"} | {title} | {resources_cell(paper["resources"])} | {tasks} | {month} | `{paper["venue"]}` |'
     return f'| {title} | {resources_cell(paper["resources"])} | {inputs or "`N/A`"} | {month} | `{paper["venue"]}` |'
 
 
 def render_block(data):
     validate(data)
-    count = sum(len(paper['placements']) for paper in data['papers'].values())
     lines = [START, '<!-- Generated from data/papers.json by scripts/catalog.py. -->', '',
-             f'**{len(data["papers"]):,} papers · {count:,} catalog rows.** '
              '`Time` is the first-public month; `(proc.)` marks a proceedings date with an unresolved earlier preprint. '
              '`N/A` means unrecorded or not applicable.', '',
-             '<details>', '<summary><strong>Input modalities & colors</strong></summary>', '',
+             '<details open>', '<summary><strong>Input modalities & benchmark tasks</strong></summary>', '',
              'Badges describe supplied inputs, including optional conditioning. They exclude outputs, internal representations, '
              'and task names. Lists cover verified inputs and may be incomplete.', '',
              '| Modality | Input | Color |', '| :--- | :--- | :--- |']
     for key, info in data['modalities'].items():
         lines.append(f'| {modality_cell(key, info)} | {text_cell(info["description"])} | `#{info["color"]}` |')
+    lines += ['', 'Benchmark **Task** identifies the evaluated model family, not its input modality. '
+              'Both badges indicate evaluation of both families; `N/A` means unspecified or outside these families.', '',
+              '| Task | Evaluated reasoning | Color |', '| :--- | :--- | :--- |']
+    for task, (color, description) in BENCHMARK_TASKS.items():
+        lines.append(f'| ![{task}][task-{task}] | {description} | `#{color}` |')
     lines += ['', '</details>', '']
     for group, info in data['groups'].items():
         lines += ['', f'<a id="{info["anchor"]}"></a>', '', f'### {info["title"]}', '']
@@ -247,11 +293,13 @@ def render_block(data):
                 continue
             items = [(identity, paper, place) for identity, paper in data['papers'].items()
                      for place in paper['placements'] if place['section'] == section]
-            lines += ['', f'<a id="{config["anchor"]}"></a>', '', '<details>',
-                      f'<summary><strong>{html.escape(config["title"])}</strong> · {len(items):,} papers</summary>', '',
-                      config['description'], '', f'<!-- section:{section} -->', HEADER, '| :--- | :--- | :--- | :--- | :--- |']
+            benchmark = config.get('table') == 'benchmark'
+            lines += ['', f'<a id="{config["anchor"]}"></a>', '', '<details open>',
+                      f'<summary><strong>{html.escape(config["title"])}</strong></summary>', '',
+                      config['description'], '', f'<!-- section:{section} -->', BENCHMARK_HEADER if benchmark else HEADER,
+                      '| ' + ' :--- |' * (6 if benchmark else 5)]
             items.sort(key=lambda item: (item[1]['date'], item[0]), reverse=True)
-            lines.extend(row(*item, data['modalities']) for item in items)
+            lines.extend(row(*item, data['modalities'], benchmark=benchmark) for item in items)
             lines += ['', '</details>', '']
     lines += [f'[{key}]: {url}' for key, url in badge_references(data).items()]
     return '\n'.join(lines) + '\n\n' + END
@@ -277,18 +325,30 @@ def parse_badges(cell):
     return badges, IMAGE.sub('', cell).strip().removesuffix('<br>').strip()
 
 
-def parse_resources(cell, references):
+def parse_resources(cell, references, base_resources=()):
     if cell == '`N/A`':
         return []
     result = []
     for part in cell.split('<br>'):
+        # Stars are derived from the repository URL, not a second resource.
+        stars = LINKED_IMAGE.search(part)
+        if stars:
+            primary = RESOURCE_LINK.match(part) or LINK.match(part)
+            primary_url = primary.groups()[-1] if primary else ''
+            if stars[0] != stars_cell(primary_url):
+                raise CatalogError('Stars badge must link to the resource repository stargazers')
+            part = part[:stars.start()] + part[stars.end():]
         decorated = RESOURCE_LINK.match(part)
         if decorated:
-            label, style, url = decorated.groups()
-            kind = html.unescape(label).split(': ', 1)[0]
+            alt, style, url = decorated.groups()
+            if not alt.startswith('resource:'):
+                raise CatalogError('resource badge alt must be resource:kind')
+            kind = alt.removeprefix('resource:')
             if style != resource_style({'kind': kind, 'url': url}) or style not in references:
                 raise CatalogError('resource badge must match its platform and purpose')
-            part = f'[{label}]({url})' + part[decorated.end():]
+            old = next((r for r in base_resources if (r['kind'], r['url']) == (kind, url)), None)
+            label = old['label'] if old else ('GitHub' if github_repo(url) else kind.title())
+            part = f'[{text_cell(kind + ": " + label)}]({url})' + part[decorated.end():]
         badges, text = parse_badges(part)
         match = LINK.fullmatch(text)
         if not match or ': ' not in html.unescape(match[1]):
@@ -335,12 +395,22 @@ def import_readme(source, base, allow_removals=False):
                 raise CatalogError(f'unknown/duplicate section marker: {section}')
             sections.add(section)
             continue
-        if not line.startswith('|') or not section or line == HEADER or re.fullmatch(r'\|[ :|\-]+', line):
+        if not line.startswith('|') or not section or line in {HEADER, BENCHMARK_HEADER} or re.fullmatch(r'\|[ :|\-]+', line):
             continue
         cells = [part.strip() for part in re.split(r'(?<!\\)\|', line)[1:-1]]
         ids = PAPER.findall(line)
-        if len(cells) != 5 or len(ids) != 1:
-            raise CatalogError(f'{section}: expected five cells and one paper ID marker')
+        benchmark = base['sections'][section].get('table') == 'benchmark'
+        if len(cells) != (6 if benchmark else 5) or len(ids) != 1:
+            raise CatalogError(f'{section}: unexpected cells or missing paper ID marker')
+        benchmark_name = ''
+        tasks = []
+        if benchmark:
+            benchmark_name = html.unescape(cells.pop(0))
+            benchmark_name = '' if benchmark_name == '`N/A`' else benchmark_name
+            tasks = re.findall(r'!\[(language|vision)\]\[task-\1\]', cells[2])
+            remaining = re.sub(r'!\[(language|vision)\]\[task-\1\]', '', cells[2]).strip()
+            if (remaining and remaining != '`N/A`') or (tasks and remaining) or len(tasks) != len(set(tasks)):
+                raise CatalogError('benchmark Task accepts only language/vision badges or N/A')
         identity = ids[0]
         title_cell = PAPER.sub('', cells[0]).strip()
         title = LINK.search(title_cell)
@@ -351,7 +421,9 @@ def import_readme(source, base, allow_removals=False):
             raise CatalogError(f'{identity}: invalid short-name prefix')
         if title_cell[title.end():].strip():
             raise CatalogError(f'{identity}: unexpected text after paper link')
-        name = html.unescape(prefix[2:-4]) if prefix else ''
+        name = benchmark_name if benchmark else (html.unescape(prefix[2:-4]) if prefix else '')
+        if benchmark and prefix:
+            raise CatalogError('benchmark names belong in the Name column')
         month = re.fullmatch(r'(\d{4}-\d{2})( \(proc\.\))?', cells[3])
         if not month:
             raise CatalogError(f'{identity}: Time must be YYYY-MM, optionally followed by (proc.)')
@@ -360,15 +432,18 @@ def import_readme(source, base, allow_removals=False):
             raise CatalogError(f'{identity}: Venue must be wrapped in backticks')
         record = {'title': html.unescape(title[1]), 'url': title[2], 'date': month[1],
                   'date_basis': 'proceedings' if month[2] else 'first-public',
-                  'venue': venue[1], 'resources': parse_resources(cells[1], references),
-                  'input_modalities': parse_modalities(cells[2], base)}
-        if identity in found and found[identity] != record:
+                  'venue': venue[1], 'resources': parse_resources(cells[1], references, base['papers'].get(identity, {}).get('resources', []))}
+        if not benchmark:
+            record['input_modalities'] = parse_modalities(cells[2], base)
+        if identity in found and any(found[identity][k] != record[k] for k in found[identity].keys() & record.keys()):
             raise CatalogError(f'{identity}: conflicting cross-list fields; edit JSON or all copies consistently')
-        found[identity] = record
+        found.setdefault(identity, {}).update(record)
         key = (identity, section)
         if key in placements:
             raise CatalogError(f'{identity}: duplicate row in {section}')
         placements[key] = {'section': section, 'name': name}
+        if benchmark:
+            placements[key]['tasks'] = tasks
     if sections != set(base['sections']):
         raise CatalogError('missing section markers; refusing a partial README import')
     old_keys = {(key, p['section']) for key, paper in base['papers'].items() for p in paper['placements']}
@@ -382,8 +457,9 @@ def import_readme(source, base, allow_removals=False):
             continue
         record = copy.deepcopy(base['papers'].get(identity, {}))
         visible = found[identity]
-        for field in ['title', 'url', 'venue', 'date_basis', 'input_modalities']:
+        for field in ['title', 'url', 'venue', 'date_basis']:
             record[field] = visible[field]
+        record['input_modalities'] = visible.get('input_modalities', record.get('input_modalities', []))
         if record.get('date', '')[:7] != visible['date'] or base['papers'].get(identity, {}).get('date_basis') != visible['date_basis']:
             record['date'] = visible['date']
         old_resources = {(r['kind'], r['url']): r for r in record.get('resources', [])}

@@ -13,7 +13,7 @@
    git diff --check
    ```
 
-3. Review the JSON and README diff, then include both in your commit or pull request. The generator handles sorting, counts, resource badges, modality colors, and collapsible tables.
+3. Review the JSON and README diff, then include both in your commit or pull request. The generator handles sorting, resource badges, colors, and tables that are expanded by default.
 
 Do not hand-edit generated rows for routine contributions. If you intentionally edit README tables, keep their paper/section ID comments and import the changes:
 
@@ -38,9 +38,10 @@ The repository's [AGENTS.md](AGENTS.md) points compatible agents to this workflo
 - Use the current primary-source title and first-public date. Keep month-only precision if that is all the source establishes; do not infer a date from an arXiv prefix. Use `date_basis: "proceedings"` when an earlier preprint remains unresolved.
 - Confirm venues from proceedings or explicit author acceptance, retaining track/Findings/workshop qualifiers. Otherwise use `arXiv` or `Unverified` as appropriate.
 - Set `input_modalities` from verified inputs, using the [shared vocabulary and colors](docs/catalog.md#input-modalities). Text, Video, Audio, and Image describe inputs; tasks, generated outputs, and internal states do not belong in this column. Use `[]` when unsupported or not applicable.
-- Keep code, data, projects, and weights in typed `resources`. Weights use `kind: "weights"`; datasets are not checkpoints. Platform badges are automatic; preserve resource star badges and meaningful cross-lists. Store Venue as plain text; the generator adds backticks.
+- Preserve benchmark columns: **Name, Paper, Link, Task, Time, Venue**. In a benchmark placement, set `name` and `tasks`: `language` for language-model reasoning, `vision` for visual-generation reasoning, both when both are evaluated. This is separate from input modalities; a VLM judge or synthetic test video does not determine Task. Retain evidence in `task_evidence`.
+- Keep code, data, projects, and weights in typed `resources`. Weights use `kind: "weights"`; datasets are not checkpoints. GitHub and linked Stars badges, house icons for project pages, and other platform badges are automatic. Do not duplicate generated stars in `badges`. Store Venue as plain text; the generator adds backticks.
 - Record primary evidence and review depth in `provenance`. Distinguish author reports, proposed capabilities, and reproduced results. A reachable URL does not establish reproducibility.
 
-Use concise English, avoid dated editing logs in the README, and preserve stable anchors and folding. Formula changes need separate MathJax/GitHub checks: use fenced `math` and supported macros such as `\mathrm`; GitHub currently blocks `\operatorname`.
+Use concise English, omit editing logs and paper-count summaries, and keep sections expanded with `<details open>`. Preserve stable anchors. Formula changes need separate MathJax/GitHub checks: use fenced `math` and supported macros such as `\mathrm`; GitHub currently blocks `\operatorname`.
 
 When changing conversion code, also run `python3 -m unittest discover -s tests -v`. The tests exercise round-trip preservation, imports, conflicts, removals, and the complete repository catalog.
