@@ -29,13 +29,24 @@
       "additionalProperties": {
         "$ref": "#/$defs/paper"
       }
+    },
+    "modalities": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/modality"
+      }
     }
   },
   "required": [
     "schema_version",
     "groups",
     "sections",
-    "papers"
+    "papers",
+    "modalities"
   ],
   "additionalProperties": false,
   "$defs": {
@@ -106,12 +117,6 @@
         },
         "name": {
           "type": "string"
-        },
-        "badges": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/badge"
-          }
         }
       },
       "required": [
@@ -159,6 +164,14 @@
         },
         "provenance": {
           "type": "object"
+        },
+        "input_modalities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          }
         }
       },
       "required": [
@@ -168,7 +181,8 @@
         "date_basis",
         "venue",
         "resources",
-        "placements"
+        "placements",
+        "input_modalities"
       ],
       "additionalProperties": false
     },
@@ -213,6 +227,29 @@
         "title",
         "anchor",
         "group",
+        "description"
+      ],
+      "additionalProperties": false
+    },
+    "modality": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^[0-9A-F]{6}$"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "label",
+        "color",
         "description"
       ],
       "additionalProperties": false

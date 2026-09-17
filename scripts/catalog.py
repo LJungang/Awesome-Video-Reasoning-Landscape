@@ -9,7 +9,7 @@ from pathlib import Path
 import re
 import sys
 import tempfile
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA = ROOT / 'data/papers.json'
@@ -20,8 +20,21 @@ SECTION = re.compile(r'^<!-- section:([a-z0-9-]+) -->$')
 PAPER = re.compile(r'<!-- paper:([A-Za-z0-9_.:-]+) -->')
 LINK = re.compile(r'(?<!!)\[([^\]]*)\]\((https?://[^\s)]+)\)')
 IMAGE = re.compile(r'!\[([^\]]*)\]\((https?://[^\s)]+)\)')
-HEADER = '| **Paper** | **Resources** | **Focus / scope** | **Time** | **Venue** |'
+HEADER = '| **Paper** | **Resources** | **Input modalities** | **Time** | **Venue** |'
 KINDS = {'code', 'data', 'project', 'weights', 'paper', 'other'}
+MODALITY_IMAGE = re.compile(r'!\[([^\]]+)\]\[mod-([a-z0-9-]+)\]')
+RESOURCE_LINK = re.compile(r'\[!\[([^\]]+)\]\[(res-[a-z0-9-]+)\]\]\((https?://[^\s)]+)\)')
+REFERENCE = re.compile(r'^\[([^\]]+)\]: (https?://\S+)$', re.M)
+# Platform and purpose are independent: a Hugging Face dataset is not a checkpoint.
+RESOURCE_STYLES = {
+    'github': ('181717', 'github', {'code': 'Code', 'weights': 'ModelZoo', 'data': 'Data',
+                                  'project': 'Project', 'paper': 'Paper', 'other': 'Resources'}),
+    'hf': ('9C276A', 'huggingface', {'code': 'Code', 'weights': 'Checkpoints', 'data': 'Datasets',
+                                  'project': 'Project', 'paper': 'Paper', 'other': 'Resources'}),
+    'modelscope': ('624AFF', None, {'code': 'Code', 'weights': 'Checkpoints', 'data': 'Datasets',
+                                  'project': 'Project', 'paper': 'Paper', 'other': 'Resources'}),
+    'arxiv': ('b31b1b', 'arxiv', {'paper': 'arXiv'}),
+}
 
 
 class CatalogError(ValueError):
@@ -82,6 +95,20 @@ def validate(data):
     if data.get('schema_version') != 1:
         raise CatalogError('schema_version must be 1')
     groups, sections, papers = data['groups'], data['sections'], data['papers']
+    modalities = data['modalities']
+    labels, colors = set(), set()
+    tasks = {'language', 'vision', 'streaming', 'grounding', 'reasoning', 'qa', 'planning', 'generation', 'spatial'}
+    for key, info in modalities.items():
+        if not re.fullmatch(r'[a-z0-9-]+', key) or key in tasks or info['label'].lower() in tasks:
+            raise CatalogError(f'input modality required, not a task/representation label: {key}')
+        if not re.fullmatch(r'[A-Za-z0-9]+(?: [A-Za-z0-9]+)*', info['label']) or info['label'] in labels:
+            raise CatalogError(f'invalid/duplicate modality label: {key}')
+        if not re.fullmatch(r'[0-9A-F]{6}', info['color']) or info['color'] in colors:
+            raise CatalogError(f'modality colors must be distinct uppercase hex values: {key}')
+        if not isinstance(info['description'], str) or not info['description'].strip():
+            raise CatalogError(f'modality description required: {key}')
+        labels.add(info['label'])
+        colors.add(info['color'])
     if set(groups) & set(sections):
         raise CatalogError('group and section IDs must be distinct')
     anchors = set()
@@ -101,6 +128,11 @@ def validate(data):
         for field in ['title', 'venue']:
             if not isinstance(paper[field], str) or not paper[field].strip() or '\n' in paper[field]:
                 raise CatalogError(f'{identity}: {field} must be a nonempty single line')
+        if re.search(r'[`|<>]|&(?:#\d+|\w+);', paper['venue']):
+            raise CatalogError(f'{identity}: venue must be plain text without Markdown/HTML delimiters')
+        inputs = paper['input_modalities']
+        if not isinstance(inputs, list) or any(not isinstance(m, str) or m not in modalities for m in inputs) or len(inputs) != len(set(inputs)):
+            raise CatalogError(f'{identity}: input_modalities must contain unique registered modality IDs')
         check_url(paper['url'])
         if paper['url'] in urls:
             raise CatalogError(f'duplicate primary URL: {paper["url"]}')
@@ -134,8 +166,8 @@ def validate(data):
             seen.add(section)
             if not isinstance(placement.get('focus', ''), str) or '\n' in placement.get('focus', ''):
                 raise CatalogError(f'{identity}: focus must be a single line')
-            for badge in placement.get('badges', []):
-                check_url(badge['url'])
+            if 'badges' in placement:
+                raise CatalogError(f'{identity}: use paper input_modalities; placement badges mix tasks with inputs')
 
 
 def text_cell(value):
@@ -145,9 +177,28 @@ def text_cell(value):
     return text
 
 
-def focus_cell(value):
-    # Focus supports inline Markdown. Pipes are entities so table splitting is unambiguous.
-    return html.escape(value, quote=False).replace('|', '&#124;')
+def modality_cell(identity, info):
+    return f'![{info["label"]}][mod-{identity}]'
+
+
+def resource_style(resource):
+    host = (urlsplit(resource['url']).hostname or '').removeprefix('www.')
+    platform = {'github.com': 'github', 'huggingface.co': 'hf', 'hf.co': 'hf',
+                'modelscope.cn': 'modelscope', 'modelscope.ai': 'modelscope', 'arxiv.org': 'arxiv'}.get(host)
+    if platform and resource['kind'] in RESOURCE_STYLES[platform][2]:
+        return f'res-{platform}-{resource["kind"]}'
+    return None
+
+
+def badge_references(data):
+    refs = {f'mod-{key}': f'https://img.shields.io/badge/{quote(info["label"], safe="")}-{info["color"]}?style=flat-square'
+            for key, info in data['modalities'].items()}
+    for platform, (color, logo, purposes) in RESOURCE_STYLES.items():
+        for kind, label in purposes.items():
+            caption = f'ModelScope-{label}' if platform == 'modelscope' else label
+            refs[f'res-{platform}-{kind}'] = (f'https://img.shields.io/badge/{caption}-{color}?style=flat-square'
+                                            + (f'&logo={logo}' + ('&logoColor=white' if platform == 'github' else '') if logo else ''))
+    return refs
 
 
 def badge_cell(badge):
@@ -158,46 +209,51 @@ def resources_cell(resources):
     parts = []
     for resource in resources:
         label = f'{resource["kind"]}: {resource["label"]}'
-        part = f'[{text_cell(label)}]({resource["url"]})'
+        style = resource_style(resource)
+        link_label = f'![{text_cell(label)}][{style}]' if style else text_cell(label)
+        part = f'[{link_label}]({resource["url"]})'
         badges = ' '.join(badge_cell(badge) for badge in resource.get('badges', []))
         parts.append(part + (' ' + badges if badges else ''))
     return '<br>'.join(parts) or '`N/A`'
 
 
-def row(identity, paper, placement):
+def row(identity, paper, placement, modalities):
     name = placement.get('name', '')
     title = (f'**{text_cell(name)}** · ' if name else '') + f'[{text_cell(paper["title"])}]({paper["url"]})'
     title += f' <!-- paper:{identity} -->'
-    focus = focus_cell(placement.get('focus', ''))
-    badges = ' '.join(badge_cell(badge) for badge in placement.get('badges', []))
-    if badges:
-        focus += ('<br>' if focus else '') + badges
+    inputs = ' '.join(modality_cell(key, modalities[key]) for key in paper['input_modalities'])
     month = paper['date'][:7] + (' (proc.)' if paper['date_basis'] == 'proceedings' else '')
-    return f'| {title} | {resources_cell(paper["resources"])} | {focus or "`N/A`"} | {month} | {text_cell(paper["venue"])} |'
+    return f'| {title} | {resources_cell(paper["resources"])} | {inputs or "`N/A`"} | {month} | `{paper["venue"]}` |'
 
 
 def render_block(data):
     validate(data)
     count = sum(len(paper['placements']) for paper in data['papers'].values())
     lines = [START, '<!-- Generated from data/papers.json by scripts/catalog.py. -->', '',
-             f'**{len(data["papers"]):,} papers · {count:,} catalog rows.** Cross-listed rows share one paper ID. '
+             f'**{len(data["papers"]):,} papers · {count:,} catalog rows.** '
              '`Time` is the first-public month; `(proc.)` marks a proceedings date with an unresolved earlier preprint. '
-             '`N/A` means no recorded resource or scope detail. [Contribute via JSON](CONTRIBUTING.md).', '',
-             '| Chapter | Papers |', '| :--- | ---: |']
-    for section, config in data['sections'].items():
-        n = sum(any(p['section'] == section for p in paper['placements']) for paper in data['papers'].values())
-        lines.append(f'| [{text_cell(config["title"])}](#{config["anchor"]}) | {n} |')
+             '`N/A` means unrecorded or not applicable.', '',
+             '<details>', '<summary><strong>Input modalities & colors</strong></summary>', '',
+             'Badges describe supplied inputs, including optional conditioning. They exclude outputs, internal representations, '
+             'and task names. Lists cover verified inputs and may be incomplete.', '',
+             '| Modality | Input | Color |', '| :--- | :--- | :--- |']
+    for key, info in data['modalities'].items():
+        lines.append(f'| {modality_cell(key, info)} | {text_cell(info["description"])} | `#{info["color"]}` |')
+    lines += ['', '</details>', '']
     for group, info in data['groups'].items():
         lines += ['', f'<a id="{info["anchor"]}"></a>', '', f'### {info["title"]}', '']
         for section, config in data['sections'].items():
             if config['group'] != group:
                 continue
-            lines += ['', f'<a id="{config["anchor"]}"></a>', '', f'#### {config["title"]}', '', config['description'], '',
-                      f'<!-- section:{section} -->', HEADER, '| :--- | :--- | :--- | :--- | :--- |']
             items = [(identity, paper, place) for identity, paper in data['papers'].items()
                      for place in paper['placements'] if place['section'] == section]
+            lines += ['', f'<a id="{config["anchor"]}"></a>', '', '<details>',
+                      f'<summary><strong>{html.escape(config["title"])}</strong> · {len(items):,} papers</summary>', '',
+                      config['description'], '', f'<!-- section:{section} -->', HEADER, '| :--- | :--- | :--- | :--- | :--- |']
             items.sort(key=lambda item: (item[1]['date'], item[0]), reverse=True)
-            lines.extend(row(*item) for item in items)
+            lines.extend(row(*item, data['modalities']) for item in items)
+            lines += ['', '</details>', '']
+    lines += [f'[{key}]: {url}' for key, url in badge_references(data).items()]
     return '\n'.join(lines) + '\n\n' + END
 
 
@@ -221,17 +277,38 @@ def parse_badges(cell):
     return badges, IMAGE.sub('', cell).strip().removesuffix('<br>').strip()
 
 
-def parse_resources(cell):
+def parse_resources(cell, references):
     if cell == '`N/A`':
         return []
     result = []
     for part in cell.split('<br>'):
+        decorated = RESOURCE_LINK.match(part)
+        if decorated:
+            label, style, url = decorated.groups()
+            kind = html.unescape(label).split(': ', 1)[0]
+            if style != resource_style({'kind': kind, 'url': url}) or style not in references:
+                raise CatalogError('resource badge must match its platform and purpose')
+            part = f'[{label}]({url})' + part[decorated.end():]
         badges, text = parse_badges(part)
         match = LINK.fullmatch(text)
         if not match or ': ' not in html.unescape(match[1]):
             raise CatalogError('resource must be [kind: label](URL), optionally followed by badges')
         kind, label = html.unescape(match[1]).split(': ', 1)
         result.append({'kind': kind, 'label': label, 'url': match[2], 'badges': badges})
+    return result
+
+
+def parse_modalities(cell, data):
+    if cell == '`N/A`':
+        return []
+    matches = MODALITY_IMAGE.findall(cell)
+    if not matches or MODALITY_IMAGE.sub('', cell).strip():
+        raise CatalogError('Input modalities accepts registered badges only; tasks belong in JSON focus')
+    result = []
+    for label, identity in matches:
+        if identity not in data['modalities'] or label != data['modalities'][identity]['label'] or identity in result:
+            raise CatalogError(f'unknown, mislabeled, or duplicate input modality: {identity}')
+        result.append(identity)
     return result
 
 
@@ -244,6 +321,10 @@ def import_readme(source, base, allow_removals=False):
     """Import visible fields; preserve finer dates, provenance, and extra fields from base."""
     validate(base)
     _, block, _ = split_readme(source)
+    definitions = REFERENCE.findall(block)
+    references = dict(definitions)
+    if len(references) != len(definitions) or references != badge_references(base):
+        raise CatalogError('badge definitions must match the central registry; edit JSON for modality/color changes')
     found, placements, sections = {}, {}, set()
     section = None
     for line in block.splitlines():
@@ -274,18 +355,20 @@ def import_readme(source, base, allow_removals=False):
         month = re.fullmatch(r'(\d{4}-\d{2})( \(proc\.\))?', cells[3])
         if not month:
             raise CatalogError(f'{identity}: Time must be YYYY-MM, optionally followed by (proc.)')
-        badges, focus = parse_badges(cells[2])
-        focus = '' if focus == '`N/A`' else html.unescape(focus)
+        venue = re.fullmatch(r'`([^`]+)`', cells[4])
+        if not venue:
+            raise CatalogError(f'{identity}: Venue must be wrapped in backticks')
         record = {'title': html.unescape(title[1]), 'url': title[2], 'date': month[1],
                   'date_basis': 'proceedings' if month[2] else 'first-public',
-                  'venue': html.unescape(cells[4]), 'resources': parse_resources(cells[1])}
+                  'venue': venue[1], 'resources': parse_resources(cells[1], references),
+                  'input_modalities': parse_modalities(cells[2], base)}
         if identity in found and found[identity] != record:
             raise CatalogError(f'{identity}: conflicting cross-list fields; edit JSON or all copies consistently')
         found[identity] = record
         key = (identity, section)
         if key in placements:
             raise CatalogError(f'{identity}: duplicate row in {section}')
-        placements[key] = {'section': section, 'name': name, 'focus': focus, 'badges': badges}
+        placements[key] = {'section': section, 'name': name}
     if sections != set(base['sections']):
         raise CatalogError('missing section markers; refusing a partial README import')
     old_keys = {(key, p['section']) for key, paper in base['papers'].items() for p in paper['placements']}
@@ -299,7 +382,7 @@ def import_readme(source, base, allow_removals=False):
             continue
         record = copy.deepcopy(base['papers'].get(identity, {}))
         visible = found[identity]
-        for field in ['title', 'url', 'venue', 'date_basis']:
+        for field in ['title', 'url', 'venue', 'date_basis', 'input_modalities']:
             record[field] = visible[field]
         if record.get('date', '')[:7] != visible['date'] or base['papers'].get(identity, {}).get('date_basis') != visible['date_basis']:
             record['date'] = visible['date']

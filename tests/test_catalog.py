@@ -15,6 +15,10 @@ import catalog
 def fixture():
     return {
         'schema_version': 1,
+        'modalities': {
+            'text': {'label': 'Text', 'color': 'AEC6DF', 'description': 'Questions or instructions'},
+            'video': {'label': 'Video', 'color': 'C3E6CB', 'description': 'Observed clips'},
+        },
         'groups': {'engines': {'title': 'Engines', 'anchor': 'engines'}},
         'sections': {
             'language': {'group': 'engines', 'title': 'Language', 'anchor': 'language', 'description': 'Words.'},
@@ -23,11 +27,11 @@ def fixture():
         'papers': {'2601.00001': {
             'title': 'A [test] | B & C_*', 'url': 'https://arxiv.org/abs/2601.00001',
             'date': '2026-01-02T12:34:56Z', 'date_basis': 'first-public', 'venue': 'arXiv',
+            'input_modalities': ['text', 'video'],
             'resources': [{'kind': 'code', 'label': 'Code [A] | B', 'url': 'https://example.org/code?a=1&b=2',
                            'badges': [{'alt': 'Stars', 'url': 'https://example.org/badge.svg'}],
                            'evidence': {'checked_on': '2026-01-03', 'source': 'author'}}],
-            'placements': [{'section': 'language', 'focus': '**Grounding** | visual evidence', 'name': 'A [bench]',
-                            'badges': [{'alt': 'Video', 'url': 'https://example.org/video.svg'}]},
+            'placements': [{'section': 'language', 'focus': '**Grounding** | visual evidence', 'name': 'A [bench]'},
                            {'section': 'visual', 'focus': 'Visual bridge'}],
             'provenance': {'bibtex': '@article{x, title={A {Protected} Title}}', 'private_note': {'depth': 'abstract'}},
         }},
@@ -68,11 +72,12 @@ class CatalogTests(unittest.TestCase):
     def test_readme_edits_update_shared_fields_and_preserve_evidence(self):
         data = fixture()
         source = readme(data).replace(catalog.text_cell(data['papers']['2601.00001']['title']), 'New title')
-        source = source.replace('**Grounding** &#124; visual evidence', 'Updated scope')
+        source = source.replace('![Text][mod-text] ![Video][mod-video]', '![Video][mod-video]')
         result = catalog.import_readme(source, data)
         paper = result['papers']['2601.00001']
         self.assertEqual(paper['title'], 'New title')
-        self.assertEqual(paper['placements'][0]['focus'], 'Updated scope')
+        self.assertEqual(paper['placements'][0]['focus'], '**Grounding** | visual evidence')
+        self.assertEqual(paper['input_modalities'], ['video'])
         self.assertEqual(paper['provenance'], data['papers']['2601.00001']['provenance'])
         self.assertEqual(paper['date'], '2026-01-02T12:34:56Z')
         self.assertEqual(paper['resources'], data['papers']['2601.00001']['resources'])
@@ -82,6 +87,62 @@ class CatalogTests(unittest.TestCase):
         source = readme(data).replace(catalog.text_cell(data['papers']['2601.00001']['title']), 'Only one copy changed', 1)
         with self.assertRaisesRegex(catalog.CatalogError, 'conflicting cross-list'):
             catalog.import_readme(source, data)
+
+    def test_input_badges_reject_tasks_unknown_labels_and_color_drift(self):
+        data = fixture()
+        source = readme(data)
+        for replacement in ['Streaming', '![Video][mod-unknown]', '![Grounding][mod-video]']:
+            with self.subTest(replacement=replacement), self.assertRaises(catalog.CatalogError):
+                catalog.import_readme(source.replace('![Video][mod-video]', replacement), data)
+        with self.assertRaisesRegex(catalog.CatalogError, 'central registry'):
+            catalog.import_readme(source.replace('Video-C3E6CB', 'Video-FFFFFF'), data)
+        data['modalities']['streaming'] = {'label': 'Streaming', 'color': 'FFFFFF', 'description': 'A task'}
+        with self.assertRaisesRegex(catalog.CatalogError, 'not a task'):
+            catalog.validate(data)
+
+    def test_modality_conflicts_duplicates_and_palette_collisions_rejected(self):
+        data = fixture()
+        source = readme(data).replace('![Text][mod-text] ![Video][mod-video]', '![Text][mod-text]', 1)
+        with self.assertRaisesRegex(catalog.CatalogError, 'conflicting cross-list'):
+            catalog.import_readme(source, data)
+        data['papers']['2601.00001']['input_modalities'].append('video')
+        with self.assertRaisesRegex(catalog.CatalogError, 'unique registered'):
+            catalog.validate(data)
+        data = fixture()
+        data['modalities']['video']['color'] = data['modalities']['text']['color']
+        with self.assertRaisesRegex(catalog.CatalogError, 'distinct'):
+            catalog.validate(data)
+
+    def test_resources_decorate_platform_and_purpose_without_losing_metadata(self):
+        data = fixture()
+        paper = data['papers']['2601.00001']
+        paper['resources'] += [
+            {'kind': 'code', 'label': 'Code [A] | B', 'url': 'https://github.com/example/code',
+             'badges': [{'alt': 'Stars', 'url': 'https://example.org/stars.svg'}], 'evidence': {'source': 'author'}},
+            {'kind': 'weights', 'label': 'Models', 'url': 'https://github.com/example/models'},
+            {'kind': 'weights', 'label': 'HF', 'url': 'https://huggingface.co/example/checkpoint'},
+            {'kind': 'data', 'label': 'HF', 'url': 'https://huggingface.co/datasets/example/data'},
+            {'kind': 'weights', 'label': 'MS', 'url': 'https://modelscope.cn/models/example/model'},
+            {'kind': 'paper', 'label': 'Preprint', 'url': 'https://arxiv.org/abs/2601.00001'},
+        ]
+        source = readme(data)
+        for style in ['github-code', 'github-weights', 'hf-weights', 'hf-data', 'modelscope-weights', 'arxiv-paper']:
+            self.assertIn(f'][res-{style}]](', source)
+        self.assertEqual(catalog.import_readme(source, data), data)
+        with self.assertRaisesRegex(catalog.CatalogError, 'platform and purpose'):
+            catalog.import_readme(source.replace('[res-hf-data]](', '[res-hf-weights]]('), data)
+
+    def test_folding_preserves_tables_and_venue_code(self):
+        data = fixture()
+        data['papers']['2601.00001']['venue'] = 'CVPR 2026 (Workshop)'
+        source = readme(data)
+        self.assertEqual(source.count('<details>'), len(data['sections']) + 1)
+        self.assertEqual(source.count('<details>'), source.count('</details>'))
+        self.assertIn('| `CVPR 2026 (Workshop)` |', source)
+        self.assertNotIn('**Grounding**', source)
+        self.assertEqual(catalog.import_readme(source, data), data)
+        with self.assertRaisesRegex(catalog.CatalogError, 'wrapped in backticks'):
+            catalog.import_readme(source.replace('`CVPR 2026 (Workshop)`', 'CVPR 2026 (Workshop)'), data)
 
     def test_truncation_and_unexpected_removal_rejected(self):
         data = fixture()
