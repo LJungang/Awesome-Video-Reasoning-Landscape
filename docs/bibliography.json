@@ -2,6 +2,12 @@
   "checked_on": "2026-09-17",
   "source": "arXiv Atom API; author statements are not independent venue verification",
   "papers": {
+    "2402.12275": {
+      "title": "WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment",
+      "first_public": "2024-02-19T16:39:18Z",
+      "updated": "2024-09-20T18:56:41Z",
+      "source": "https://arxiv.org/abs/2402.12275v3"
+    },
     "2405.03690": {
       "title": "How Good is my Video LMM? Complex Video Reasoning and Robustness Evaluation Suite for Video-LMMs",
       "first_public": "2024-05-06T17:59:45Z",
@@ -15,6 +21,12 @@
       "updated": "2024-05-17T02:18:16Z",
       "source": "https://arxiv.org/abs/2405.09713v2",
       "author_comment": "CVPR"
+    },
+    "2405.15383": {
+      "title": "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "first_public": "2024-05-24T09:31:26Z",
+      "updated": "2024-10-30T14:19:57Z",
+      "source": "https://arxiv.org/abs/2405.15383v2"
     },
     "2406.11303": {
       "title": "VideoVista: A Versatile Benchmark for Video Understanding and Reasoning",
@@ -1248,6 +1260,12 @@
       "updated": "2026-07-02T06:54:56Z",
       "source": "https://arxiv.org/abs/2605.23216v2"
     },
+    "2606.01869": {
+      "title": "WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis",
+      "first_public": "2026-06-01T08:17:49Z",
+      "updated": "2026-06-08T11:47:41Z",
+      "source": "https://arxiv.org/abs/2606.01869v2"
+    },
     "2606.03301": {
       "title": "SagaQA: A Multi-hop Reasoning Benchmark for Long-form Narrative Understanding in TV Series",
       "first_public": "2026-06-02T08:14:01Z",
@@ -1302,6 +1320,12 @@
       "updated": "2026-07-21T17:57:50Z",
       "source": "https://arxiv.org/abs/2607.19339v1"
     },
+    "2607.25236": {
+      "title": "VisualPatchWorld: Code World Models as Latent Structured Representations for Planning",
+      "first_public": "2026-07-28T03:23:47Z",
+      "updated": "2026-07-28T03:23:47Z",
+      "source": "https://arxiv.org/abs/2607.25236v1"
+    },
     "2608.02392": {
       "title": "GROVE: Growing and Reasoning over Temporally Stratified Memory from Streaming Video Experience",
       "first_public": "2026-08-03T15:35:28Z",
@@ -1319,6 +1343,12 @@
       "first_public": "2026-08-23T08:12:08Z",
       "updated": "2026-08-23T08:12:08Z",
       "source": "https://arxiv.org/abs/2608.22279v1"
+    },
+    "2608.25927": {
+      "title": "Code World Model: Coding Agent as World Brain",
+      "first_public": "2026-08-26T15:37:33Z",
+      "updated": "2026-08-26T15:37:33Z",
+      "source": "https://arxiv.org/abs/2608.25927v1"
     },
     "2608.26105": {
       "title": "VBVR-Pro: A Scalable and Verifiable Suite for Native Visual Reasoning",
@@ -1361,6 +1391,12 @@
       "first_public": "2026-09-10T08:40:58Z",
       "updated": "2026-09-10T08:40:58Z",
       "source": "https://arxiv.org/abs/2609.11242v1"
+    },
+    "2609.11499": {
+      "title": "Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs",
+      "first_public": "2026-09-10T13:05:06Z",
+      "updated": "2026-09-13T02:25:35Z",
+      "source": "https://arxiv.org/abs/2609.11499v2"
     },
     "2609.12658": {
       "title": "ProactiveBench: Can Streaming Video Models Really Interact Like Humans?",

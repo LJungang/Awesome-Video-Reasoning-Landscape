@@ -14,34 +14,42 @@
 
 ## 🗺️ Overview
 
-This Awesome list systematically curates and tracks the latest progress in **Video Reasoning**, covering diverse modalities, tasks, and modeling paradigms. Rather than focusing on a single line of research, we organize the landscape from multiple complementary perspectives. We retain four historical entry points and add an emerging structured/latent branch. These are overlapping views, not mutually exclusive classes: CoT/CoF describe reasoning representations, interleaving describes an inference procedure, and streaming describes an observation and interaction setting:
+This survey studies how models **reason over video evidence**, **reason through generated visual trajectories**, and **construct world models that support prediction and action**. Its organizing question is: *what state does a system maintain, how does it advance or revise that state, and what evidence verifies the result?*
 
-- 🗒️ **CoT-based Video Reasoning** — language-centric, chain-of-thought reasoning with Video-LMMs
-- 🕹️ **CoF-based Video Reasoning** — vision-centric reasoning grounded in world models or video generation
-- 🌈 **Interleaved Video Reasoning** — iterative reasoning that acquires visual/audio evidence or alternates language and generation; unified models are listed separately as enabling foundations
-- 🔁 **Streaming Video Reasoning** — continuous, low-latency reasoning over long or unbounded video streams with online perception and incremental state updates
-- 🧩 **Structured and Latent Video Reasoning** — explicit event/scene graphs, spatial code, and continuous latent reasoning states
+We separate two levels that are often mixed together:
 
-We additionally maintain a dedicated **Benchmark** section that summarizes datasets, evaluation settings, and standardized tasks to support fair comparison across paradigms.
+| Level | Research branches | Organizing question |
+| :--- | :--- | :--- |
+| **Reasoning representations and mechanisms** | Text CoT; visual trajectories / CoF; structured and latent states; executable and hybrid world models | Where are intermediate states represented, and what performs a transition or reasoning step? |
+| **Orchestration and interaction** | Interleaved evidence/tool/generation loops; streaming memory and response policies | How are those mechanisms composed, and when can observations and actions be used? |
+
+These are complementary axes. A streaming agent can reason in text, retrieve a scene graph, execute a program, and verify a generated rollout. A video generator may serve as a candidate simulator, a reasoning medium, or a renderer of state maintained elsewhere; its role must be established from the method rather than its name.
+
+The historical CoT, CoF, Interleaved, and Streaming catalogs remain accessible below. The [taxonomy](#taxonomy-and-modeling), [world-model perspective](#world-model-perspective), and [benchmark guide](#benchmark-selection-guide) connect the catalogs into a survey. [Code World Model](https://arxiv.org/abs/2608.25927) motivates the executable/hybrid branch: executable state evolution and learned visual realization can be separate components of one video-world system.
 
 > [!Note]
 > This repository aims to provide a structured, up-to-date, and open-source overview of the evolving landscape of video reasoning.
 > **Contributions and PRs are warmly welcome — preferably in reverse chronological order (newest first)** to keep the list fresh and easy to browse.
 
-> **Literature review: 2026-09-17.** This is a selective update, not an exhaustive census. New entries were checked against primary abstracts and linked author resources; see the [research notes](docs/research-notes.md) for evidence, scope, and corrections. `Time` means first public paper date, not acceptance date.
+> **Literature review: 2026-09-17.** This is a selective update, not an exhaustive census. Evidence depth is recorded in the [research notes](docs/research-notes.md): most catalog additions were checked at metadata/abstract level; the [Code World Model case study](docs/world-models.md) also examines its method, experiments, limitations, and author repository. `Time` means first public paper date, not acceptance date.
 
 ## 📖 Contents
 
 - [📑 Task Definition](#task-definition)
 - [🧭 Taxonomy and Modeling](#taxonomy-and-modeling)
-- [😎 Paradigms](#paradigms)
-  - [🗒️ CoT-based Video Reasoning](#cot-based-video-reasoning)
-  - [🕹️ CoF-based Video Reasoning](#cof-based-video-reasoning)
-  - [🌈 Interleaved Video Reasoning](#interleaved-video-reasoning)
-  - [🧩 Structured and Latent Video Reasoning](#structured-and-latent-video-reasoning)
-  - [🔁 Streaming Video Reasoning](#streaming-video-reasoning)
+- [🌐 From Video Reasoning to World Modeling](#world-model-perspective)
+- [😎 Research Map and Catalog](#paradigms)
+  - [Reasoning Representations and Mechanisms](#reasoning-mechanisms)
+    - [🗒️ CoT-based Video Reasoning](#cot-based-video-reasoning)
+    - [🕹️ CoF-based Video Reasoning](#cof-based-video-reasoning)
+    - [🧩 Structured and Latent Video Reasoning](#structured-and-latent-video-reasoning)
+    - [🧠 Executable and Hybrid World Models](#executable-world-models)
+  - [Orchestration and Interaction](#orchestration-and-interaction)
+    - [🌈 Interleaved Video Reasoning](#interleaved-video-reasoning)
+    - [🔁 Streaming Video Reasoning](#streaming-video-reasoning)
 - [✨️ Benchmarks](#benchmarks)
 - [🔬 Evaluation and Open Problems](#evaluation-and-open-problems)
+- [🔭 Research Agenda](#research-agenda)
 - [📚 Adjacent Foundations](#adjacent-foundations)
 - [✈ Related Surveys and Lists](#related-surveys)
 - [🤝 Contributing](#contributing)
@@ -52,13 +60,14 @@ We additionally maintain a dedicated **Benchmark** section that summarizes datas
 
 ## 📑 Task Definition
 
-Video reasoning uses temporally related observations to infer relations, explanations, future states, or actions that are not directly given by a single observation. **Reasoning over video** takes video as evidence; **reasoning through video** uses generated frames or visual latent states as intermediate computation. A model may do both. Describing a frame, generating a plausible clip, or producing a long explanation alone does not establish temporal or causal reasoning ability.
+Video reasoning uses temporally related observations to infer relations, explanations, future states, or actions that are not directly given by a single observation. **Reasoning over video** takes video as evidence; **reasoning through video** uses generated frames or visual latent states as intermediate computation. A system may also **reason by constructing a model**: infer or specify a state-transition mechanism, execute it under candidate actions, and compare its consequences with observations. These roles can coexist, but generated observations are not new empirical evidence. Describing a frame, generating a plausible clip, or producing a long explanation alone does not establish temporal or causal reasoning ability.
 
 | Task family | Inputs and required outputs | Representative evaluation |
 | :--- | :--- | :--- |
 | Temporal and compositional reasoning | Ordered observations + query → event ordering, counting, state changes, or multi-hop answer | TOMATO, VideoReasonBench, MINERVA |
 | Grounded explanation and causal inference | Video + question → answer with temporal spans, boxes/tracks, or an evidence chain | V-STaR, CaST-Bench, BlackSwanSuite; observational evidence alone does not identify intervention effects |
 | Spatial and embodied reasoning | Egocentric/multi-view observations → spatial relations, persistent object states, navigation decisions | VSI-Bench, GameplayQA |
+| Executable world modeling | Observations, interaction traces, or rules → a revisable transition model and action-conditioned consequences | Code World Model for the video interface; WorldCoder / GIF-MCTS as planning foundations with different input settings |
 | Prediction and generative reasoning | Partial observation + goal/rules → future event, visual trajectory, or action plan | Video-as-Answer, VBVR-Bench, MME-CoF-Pro |
 | Long-horizon and cross-video reasoning | Long/multiple videos + query → evidence-linked answer across distant events | SagaQA, GameplayQA, MINERVA-Cultural |
 | Streaming and proactive interaction | Only observations available so far + request/history → timed answer, action, or silence | RTV-Bench, EgoSAT, ProactiveBench, StreamArena |
@@ -83,7 +92,8 @@ Here $`k`$ indexes inference steps, while $`t`$ indexes observed stream time. An
 
 | Axis | Modeling choices | What to record when comparing methods |
 | :--- | :--- | :--- |
-| Reasoning representation | Text CoT; generated frame trajectories (CoF); event/scene graphs; spatial code; continuous latents | Whether intermediate states are observed, predicted, or generated, and how they are grounded |
+| Reasoning representation | Text CoT; generated trajectories (CoF); graphs/spatial code; continuous latents; executable programs and runtime state | Distinguish descriptions of a state from mechanisms that can advance it; record grounding and uncertainty |
+| World-model role | Retrospective description; predictive dynamics; executable transition model; learned visual renderer; planner/verifier | What state is sufficient for the task, who updates it, and which component determines outcomes |
 | Evidence acquisition | Fixed frame sampling; adaptive zoom/crop; tool use; temporal retrieval; cross-video/web search | Query availability, number/resolution of frames, audio/subtitles, external data and tool budget |
 | Memory and temporal state | Full context; KV cache; compressed tokens; hierarchical event memory; recurrent latent state | Update cost, evidence loss, duration scaling, and whether raw history remains accessible |
 | Learning signal | Supervised answers/traces; outcome RL; evidence/process rewards; distillation; inference-only search | Teacher inputs, verifier reliability, training data overlap, reward and compute costs |
@@ -93,15 +103,47 @@ Here $`k`$ indexes inference steps, while $`t`$ indexes observed stream time. An
 
 **Training versus inference.** RL is an optimization method, not a separate reasoning representation. Likewise, tool use need not require joint training, and a unified understanding/generation architecture need not perform an interleaved reasoning loop. A useful conceptual objective combines task success, evidence fidelity, and resource cost, but papers instantiate these terms differently; no common loss or leaderboard is implied.
 
-See [Evaluation and Open Problems](#evaluation-and-open-problems) for the limits of current evidence and [research notes](docs/research-notes.md) for the rationale behind the new branches.
+See the [world-model perspective](#world-model-perspective) for the dynamics/rendering distinction and [research notes](docs/research-notes.md) for the evidence behind these branches.
+
+<a id="world-model-perspective"></a>
+
+## 🌐 From Video Reasoning to World Modeling
+
+A useful progression of **research questions**, rather than a ranking of models, is: what happened; what state explains it; what would happen under an action; and what executable mechanism can reproduce or revise those consequences? A scene graph can summarize relations without modeling dynamics. A generated rollout can be plausible without obeying an action. Executable code can obey its own rules while those rules remain wrong for the observed environment.
+
+| World-model role | Representative work | What the evidence establishes / leaves open |
+| :--- | :--- | :--- |
+| Describe and retain state | [GraphThinker](https://arxiv.org/abs/2602.17555), [Spatial Code](https://arxiv.org/abs/2603.05591) | Structured grounding for reasoning; not by itself an executable simulator |
+| Predict or search visual consequences | [Future-L1](https://arxiv.org/abs/2606.05769), [Temporal Backtracking Search](https://arxiv.org/abs/2606.13861) | Latent prediction or generated-trajectory search; test action fidelity and accumulated error |
+| Maintain state and condition a renderer | [StateAgent](https://arxiv.org/abs/2609.03673), [Code World Model](https://arxiv.org/abs/2608.25927) | Both expose state between segments; Code World Model additionally uses executable mechanisms and proxy-video compilation |
+| Build and revise transition programs | [WorldCoder](https://arxiv.org/abs/2402.12275), [GIF-MCTS](https://arxiv.org/abs/2405.15383), [VisualPatchWorld](https://arxiv.org/abs/2607.25236) | Planning through programs; transfer to rich video evidence and uncertainty must be established separately |
+| Construct a visual world representation | [Recursive Code World Models](https://arxiv.org/abs/2609.11499) | Recursive image-to-scene construction; visual reconstruction does not establish action-conditioned temporal dynamics |
+
+A **hybrid interface** separates a task-level executable state from its visual realization. The following is survey notation inspired by [Code World Model, Sections 3.1–3.2](https://arxiv.org/html/2608.25927v1#S3); it is not a universal model or a claim that inferred state is complete:
+
+```math
+\begin{aligned}
+s_{t+1} &= F_{p_t}(s_t, u_t), \\
+c_{t+1} &= \mathrm{Compile}(s_{t+1}), \\
+\widehat{x}_{t+1} &\sim G_{\theta}(\cdot \mid c_{t+1}, v_t, q).
+\end{aligned}
+```
+
+Here $`p_t`$ is a revisable program, $`u_t`$ a world action, $`s_t`$ executable state, $`c_t`$ the compiled visual condition, and $`v_t`$ retained visual context; $`q`$ supplies semantic intent to the renderer. The deterministic transition is a useful special case; stochastic dynamics require an explicit noise model or distribution. Program execution does not certify that the program matches reality. When state is inferred from video, multiple hidden states and rules may explain the same observation; keep that uncertainty rather than treating one reconstruction as ground truth.
+
+This decomposition exposes three separate checks: **does the program implement the intended rule; does that rule explain the environment; and does the generated video respect the executed state?** Visual quality alone answers none of them. The [extended perspective](docs/world-models.md) develops the connections, evidence limits, and testable research directions.
 
 <a id="paradigms"></a>
 
-## 😎 Paradigms
+## 😎 Research Map and Catalog
+
+<a id="reasoning-mechanisms"></a>
+
+### Reasoning Representations and Mechanisms
 
 <a id="cot-based-video-reasoning"></a>
 
-### 🗒️ CoT-based Video Reasoning
+#### 🗒️ CoT-based Video Reasoning
 
 Language-led reasoning, including grounded traces, reward learning, distillation, and efficient inference. Cross-links to tool-interleaved methods are retained when the same work also contributes CoT training.
 
@@ -214,9 +256,9 @@ Language-led reasoning, including grounded traces, reward learning, distillation
 
 <a id="cof-based-video-reasoning"></a>
 
-### 🕹️ CoF-based Video Reasoning
+#### 🕹️ CoF-based Video Reasoning
 
-Generated video is used as a candidate solution or intermediate trajectory. This includes rollout verification/search and generation control; a visually plausible rollout is not sufficient evidence of correct reasoning.
+Generated video is used as a candidate solution or intermediate trajectory. This includes rollout verification/search and generation control; [executable/hybrid systems](#executable-world-models) separately expose who maintains and advances world state; a visually plausible rollout is not sufficient evidence of correct reasoning.
 
 | **Title**                                                                                                                             |                                                                              **Code / Resources**                                                                              |                    **Checkpoint**                    | **Time** | **Venue** |
 | :------------------------------------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------: | :------------: | :-------------: |
@@ -236,9 +278,45 @@ Generated video is used as a candidate solution or intermediate trajectory. This
 | [Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark](https://arxiv.org/abs/2510.26802) | [GitHub](https://github.com/ZiyuGuo99/MME-CoF) ![](https://img.shields.io/github/stars/ZiyuGuo99/MME-CoF?style=flat-square&color=E0E0E0&label=Stars)<br>[Data](https://huggingface.co/datasets/ZiyuG/MME-CoF) | `N/A` | 2025-10 | `arXiv` |
 | [VChain : Chain-of-Visual-Thought for Reasoning in Video Generation](https://arxiv.org/abs/2510.05094)                                         |            [GitHub](https://github.com/Eyeline-Labs/VChain) ![](https://img.shields.io/github/stars/Eyeline-Labs/VChain?style=flat-square&color=E0E0E0&label=Stars)            |                          `N/A`                          |    2025-10    |    `ACL 2026 (Findings)`    |
 
+<a id="structured-and-latent-video-reasoning"></a>
+
+#### 🧩 Structured and Latent Video Reasoning
+
+This emerging branch tracks explicit temporal/spatial representations and continuous latent computation. Scene graphs encode observed relations; predictive latents may encode unobserved futures. Neither automatically implies a simulator, causal identification, or interpretable reasoning. Earlier related methods include [Video-of-Thought](https://arxiv.org/abs/2501.03230), [STEP](https://arxiv.org/abs/2412.00161), and [ST-Think](https://arxiv.org/abs/2503.12542) in the CoT catalog.
+
+| **Title** | **Model & Code / Data** | **Checkpoint** | **Input Modalities** | **Time** | **Venue** |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| [Graph it first! Enabling Reasoning on Long-form Egocentric Videos through Scene Graphs](https://arxiv.org/abs/2606.25842) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-06 | `arXiv` |
+| [VideoLatent: Video-Language Learning via Latent Self-Forcing](https://arxiv.org/abs/2606.22870) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-06 | `arXiv` |
+| [Imagine Before You Predict: Interleaved Latent Visual Reasoning for Video Event Prediction](https://arxiv.org/abs/2606.05769) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-06 | `arXiv` |
+| [Thinking with Spatial Code for Physical-World Video Reasoning](https://arxiv.org/abs/2603.05591) | [GitHub](https://github.com/Beckschen/spatialcode) | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-03 | `arXiv` |
+| [GraphThinker: Reinforcing Temporally Grounded Video Reasoning with Event Graph Thinking](https://arxiv.org/abs/2602.17555) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-02 | `arXiv` |
+
+<a id="executable-world-models"></a>
+
+#### 🧠 Executable and Hybrid World Models
+
+An executable world model supplies transition mechanisms, not just a textual description or spatial record. Hybrid systems couple those mechanisms to learned perception or rendering. The scope column distinguishes **direct video-world systems**, **bridges from visual evidence**, and **planning foundations**; including a foundation does not imply it was evaluated on video reasoning. Latent in VisualPatchWorld means a structured intermediate program, not necessarily a continuous neural latent.
+
+| **Title** | **Code / Resources** | **Checkpoint** | **Scope / Role** | **Time** | **Venue** |
+| :--- | :---: | :---: | :--- | :---: | :---: |
+| [Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499) | `N/A` | `N/A` | Bridge: single-image → executable 3D scene; reconstruction, not demonstrated temporal dynamics | 2026-09 | `arXiv` |
+| [Code World Model: Coding Agent as World Brain](https://arxiv.org/abs/2608.25927) | [Project](https://buaacyw.github.io/cwm/)<br>[GitHub](https://github.com/buaacyw/code-world-model)<br>[Inference examples](https://huggingface.co/datasets/NTU-yiwen/code-world-model-inference-examples-40) | [LoRA adapter](https://huggingface.co/NTU-yiwen/awm-minimax-h3-new1344-lora-checkpoints) | Direct: executable state → proxy video → learned video rendering | 2026-08 | `arXiv` |
+| [VisualPatchWorld: Code World Models as Latent Structured Representations for Planning](https://arxiv.org/abs/2607.25236) | [GitHub](https://github.com/HKBU-KnowComp/VisualPatchWorld/) | `N/A` | Bridge: induced dynamics programs + visual state estimates for planning | 2026-07 | `arXiv` |
+| [Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search](https://arxiv.org/abs/2405.15383) | `N/A` | `N/A` | Foundation: text/transition traces → Python dynamics for model-based RL | 2024-05 | `arXiv` |
+| [WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment](https://arxiv.org/abs/2402.12275) | `N/A` | `N/A` | Foundation: interaction → Python world model + planning | 2024-02 | `arXiv` |
+
+**Code World Model in context.** Its coding agent maintains executable world state and rules; code performs frequent updates; a deterministic compiler converts selected state into a coarse proxy video; the video model realizes appearance and motion. This goes beyond tool calling because the program is a persistent transition mechanism. It differs from [Spatial Code](https://arxiv.org/abs/2603.05591), whose explicit spatial variables support video QA, and from [CollabVR](https://arxiv.org/abs/2605.08735), whose VLM checks and steers generated clips. The paper's current evidence is qualitative proxy-following in simple interactive worlds, not a demonstration of complete autonomous world construction or real-time video generation. See the [case study and comparison](docs/world-models.md).
+
+<a id="orchestration-and-interaction"></a>
+
+### Orchestration and Interaction
+
+The following branches compose the mechanisms above under different evidence and timing constraints. They are not additional, mutually exclusive reasoning representations.
+
 <a id="interleaved-video-reasoning"></a>
 
-### 🌈 Interleaved Video Reasoning
+#### 🌈 Interleaved Video Reasoning
 
 This section includes repeated evidence acquisition, native tool calling, and language–generation feedback loops. Agentic processing of a complete video file is still offline unless future-frame access is explicitly restricted.
 
@@ -257,7 +335,7 @@ This section includes repeated evidence acquisition, native tool calling, and la
 | [Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning](https://arxiv.org/abs/2508.04416) | [GitHub](https://github.com/zhang9302002/ThinkingWithVideos) ![](https://img.shields.io/github/stars/zhang9302002/ThinkingWithVideos?style=flat-square&color=E0E0E0&label=Stars)<br>[Data](https://huggingface.co/datasets/zhang9302002/MultiTaskVideoReasoning) | `N/A` | 2025-08 | `arXiv` |
 | [ViTCoT: Video-Text Interleaved Chain-of-Thought for Boosting Video Understanding in Large Language Models](https://arxiv.org/abs/2507.09876) | [GitHub](https://github.com/BRZ911/ViTCoT) ![](https://img.shields.io/github/stars/BRZ911/ViTCoT?style=flat-square&color=E0E0E0&label=Stars)<br>[Data](https://huggingface.co/datasets/BRZ911/ViTCoT) | `N/A` | 2025-07 | `ACM-MM 2025` |
 
-#### Unified understanding and generation foundations
+##### Unified understanding and generation foundations
 
 These architectures support both understanding and generation; that capability alone does not demonstrate iterative video reasoning.
 
@@ -266,23 +344,9 @@ These architectures support both understanding and generation; that capability a
 | [JavisGPT: A Unified Multi-modal LLM for Sounding-Video Comprehension and Generation](https://javisverse.github.io/JavisGPT-page/)                              |             [GitHub](https://github.com/JavisVerse/JavisGPT) ![](https://img.shields.io/github/stars/JavisVerse/JavisGPT?style=flat-square&color=E0E0E0&label=Stars)             |                                      `N/A`                                      |    2025-11    | `NeurIPS 2025 (Spotlight)` |
 | [VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation](https://arxiv.org/abs/2409.04429)                                          |              [GitHub](https://github.com/mit-han-lab/vila-u) ![](https://img.shields.io/github/stars/mit-han-lab/vila-u?style=flat-square&color=E0E0E0&label=Stars)              |       [Hugging Face](https://huggingface.co/collections/mit-han-lab/vila-u-7b)       |    2024-09    |        `ICLR 2025`        |
 
-<a id="structured-and-latent-video-reasoning"></a>
-
-### 🧩 Structured and Latent Video Reasoning
-
-This emerging branch tracks explicit temporal/spatial representations and continuous latent computation. Scene graphs encode observed relations; predictive latents may encode unobserved futures. Neither automatically implies a simulator, causal identification, or interpretable reasoning. Earlier related methods include [Video-of-Thought](https://arxiv.org/abs/2501.03230), [STEP](https://arxiv.org/abs/2412.00161), and [ST-Think](https://arxiv.org/abs/2503.12542) in the CoT catalog.
-
-| **Title** | **Model & Code / Data** | **Checkpoint** | **Input Modalities** | **Time** | **Venue** |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| [Graph it first! Enabling Reasoning on Long-form Egocentric Videos through Scene Graphs](https://arxiv.org/abs/2606.25842) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-06 | `arXiv` |
-| [VideoLatent: Video-Language Learning via Latent Self-Forcing](https://arxiv.org/abs/2606.22870) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-06 | `arXiv` |
-| [Imagine Before You Predict: Interleaved Latent Visual Reasoning for Video Event Prediction](https://arxiv.org/abs/2606.05769) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-06 | `arXiv` |
-| [Thinking with Spatial Code for Physical-World Video Reasoning](https://arxiv.org/abs/2603.05591) | [GitHub](https://github.com/Beckschen/spatialcode) | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-03 | `arXiv` |
-| [GraphThinker: Reinforcing Temporally Grounded Video Reasoning with Event Graph Thinking](https://arxiv.org/abs/2602.17555) | `N/A` | `N/A` | ![Text](https://img.shields.io/badge/Text-AEC6DF?style=flat-square) ![Video](https://img.shields.io/badge/Video-C3E6CB?style=flat-square) | 2026-02 | `arXiv` |
-
 <a id="streaming-video-reasoning"></a>
 
-### 🔁 Streaming Video Reasoning
+#### 🔁 Streaming Video Reasoning
 
 Online methods update state from arriving observations. Compare query-aware versus query-agnostic memory, bounded versus growing storage, and reactive versus proactive response policies separately. “Streaming generation” alone does not establish online video understanding.
 
@@ -404,6 +468,14 @@ Historical `Language` / `Vision` badges describe answer-oriented / generative ev
 |    SOK-Bench    | [SOK-Bench: A Situated Video Reasoning Benchmark with Aligned Open-World Knowledge](https://arxiv.org/abs/2405.09713)                                                                                         |                                                                         [GitHub](https://github.com/csbobby/SOK-Bench) ![](https://img.shields.io/github/stars/csbobby/SOK-Bench?style=flat-square&color=E0E0E0&label=Stars)                                                                         |                                       ![Language](https://img.shields.io/badge/Language-AEC6DF?style=flat-square)                                       |    2024-05    |       `CVPR 2024`       |
 |     CVRR-ES     | [How Good is my Video LMM? Complex Video Reasoning and Robustness Evaluation Suite for Video-LMMs](https://arxiv.org/abs/2405.03690)                                                                          |                                                        [GitHub](https://github.com/mbzuai-oryx/CVRR-Evaluation-Suite/) ![](https://img.shields.io/github/stars/mbzuai-oryx/CVRR-Evaluation-Suite?style=flat-square&color=E0E0E0&label=Stars)                                                        |                                       ![Language](https://img.shields.io/badge/Language-AEC6DF?style=flat-square)                                       |    2024-05    |         `arXiv`         |
 
+### Related executable-world evaluation
+
+This is a **bridge benchmark**, not an additional video-QA benchmark. It evaluates generated executable 3D worlds and hidden behavior, informing how to assess systems whose visible video may conceal incorrect state transitions.
+
+| **Name** | **Paper** | **Link** | **Task** | **Time** | **Venue** |
+| :--- | :--- | :--- | :--- | :---: | :---: |
+| WorldCoder-Bench | [WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis](https://arxiv.org/abs/2606.01869) | `N/A` | Bridge: generated 3D programs; runtime state and behavioral contracts | 2026-06 | `arXiv` |
+
 <a id="evaluation-and-open-problems"></a>
 
 ## 🔬 Evaluation and Open Problems
@@ -416,6 +488,23 @@ The 2026 additions suggest several active directions; they do not establish a si
 - **Generative verification:** distinguish realism, intermediate rule adherence, and final goal success. Prefer deterministic task checks where available; calibrate VLM judges against human labels and test sensitivity to rendering and prompt style.
 - **Causal streaming:** disallow unseen future frames and whole-video preprocessing; record query arrival, first response, completion, and memory update times. Proactive systems also need silence, false-trigger, missed-event, and interruption metrics.
 - **Generalization and uncertainty:** separate video/scene/task families across train and test, disclose privileged teacher evidence, evaluate cultural/language shifts and unanswerable queries, and report variance rather than treating author-reported scores as directly comparable.
+
+<a id="research-agenda"></a>
+
+## 🔭 Research Agenda
+
+The following are testable directions suggested by the literature, not established conclusions or forecasts that code will replace neural world models. A useful next survey update should ask whether new evidence resolves these gaps.
+
+| Open question | Motivating connection | Experiment that would make progress measurable |
+| :--- | :--- | :--- |
+| Can visual evidence induce the right executable rules? | Spatial Code / GraphThinker → WorldCoder / VisualPatchWorld | Infer dynamics from held-out video and action traces; test novel actions, hidden states, and competing explanations, with matched priors |
+| Who determines the authoritative state? | StateAgent / Code World Model → generated visual observations | Deliberately create conflicts between executed state and rendered events; measure detection, correction, and persistence rather than silently feeding hallucinated events back as truth |
+| How much structure should the visual interface expose? | Code World Model's proxy bandwidth ↔ learned visual flexibility | Hold the generator fixed; vary proxy detail and measure state compliance, motion freedom, identity consistency, and total latency |
+| When should an agent revise a rule rather than its state estimate? | Persistent code ↔ interleaved evidence seeking | Introduce unseen dynamics and sensor errors separately; measure local repair, regression failures, and recovery on held-out interactions |
+| Can correct simulation improve video reasoning and planning? | Temporal Backtracking Search / CollabVR ↔ executable rollout verification | Match tools and search budgets; measure grounded answers, action success, and model exploitation on the planner's query distribution |
+| Can the full loop operate online? | Streaming memory ↔ agent, executor, and visual generator | Separate world-update, reasoning, and rendering clocks; measure action-to-visible-result latency, stale-state errors, and interruption recovery |
+
+A proposed evaluation suite should report **state/dynamics fidelity, visual fidelity to state, task success, and end-to-end cost separately**. Long-horizon off-screen consequences, rare-rule transitions, counterfactual actions, and recovery after state/render disagreement are especially informative. Existing QA, generation, and executable-world benchmarks cover different slices; they should not be collapsed into one score without a justified protocol.
 
 <a id="adjacent-foundations"></a>
 

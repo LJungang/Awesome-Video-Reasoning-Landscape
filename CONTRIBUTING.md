@@ -6,7 +6,11 @@ This repository is an English-language, curated survey of video reasoning. Keep 
 
 Include a primary paper or technical report with a clear connection to reasoning **over** videos or **through** generated visual trajectories. Explain the contribution beyond generic recognition, captioning, or visual quality. General-purpose architectures and image-only benchmarks may be retained as explicitly labeled foundations, rather than counted as dedicated video-reasoning methods or benchmarks.
 
-Use the dominant mechanism for placement: language-led reasoning under CoT, generated visual trajectories under CoF, iterative evidence/tool/generation loops under Interleaved, explicit graphs or continuous reasoning states under Structured and Latent, and causal online processing under Streaming. These axes overlap. Cross-list only when a work contributes to both sections; reuse the same paper title, first-public date, and venue. A method that introduces a benchmark may appear in both catalogs.
+Organize the catalog at two levels. Under **Reasoning Representations and Mechanisms**, place language-led reasoning under CoT, generated visual trajectories under CoF, explicit graphs or continuous reasoning states under Structured and Latent, and persistent transition programs or code/learned-model combinations under Executable and Hybrid World Models. Under **Orchestration and Interaction**, place iterative evidence/tool/generation loops under Interleaved and causal online processing under Streaming. These levels are complementary; do not present all branches as mutually exclusive paradigms.
+
+For executable/hybrid entries, state whether the work is a **direct video-world system**, a **bridge from visual evidence**, or a **planning foundation**. Distinguish static scene construction, state description, executable dynamics, learned execution prediction, and visual rendering. Record where state comes from and whether video generation determines transitions or realizes externally specified state. Bridge benchmarks must be visibly separated from direct video benchmarks.
+
+Cross-list only when a work contributes to both sections; reuse the same paper title, first-public date, and venue. A method that introduces a benchmark may appear in both catalogs. For perspective sections, distinguish paper-supported findings, author-proposed capabilities, and the survey's own testable research agenda. See the [world-model case study](docs/world-models.md) for an example.
 
 ## Table format
 
@@ -45,4 +49,4 @@ python3 scripts/check_catalog.py
 git diff --check
 ```
 
-The script checks Markdown table shape, reverse chronological order, local links/anchors, duplicate identities within a table, cross-list metadata consistency, known first-public dates, and checkpoint/data separation. External availability and scientific accuracy require a separate source review. Inspect the rendered Markdown when changing layout or equations.
+The script checks Markdown table shape, reverse chronological order, local links/anchors, duplicate identities within a table, cross-list metadata consistency, known first-public dates, and checkpoint/data separation. External availability and scientific accuracy require a separate source review. Inspect the rendered Markdown when changing layout or equations. Use GitHub's fenced `math` blocks and supported macros; `\operatorname` is currently blocked by GitHub, so use an appropriate supported alternative such as `\mathrm`. The static check flags known unsupported macros but cannot replace MathJax or published-page verification. Preserve established explicit anchors when restructuring sections.

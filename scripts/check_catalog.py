@@ -31,8 +31,26 @@ def visible_title(cell):
     return ' '.join(html.unescape(match[1]).split()) if match else ''
 
 
-for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', ROOT / 'docs/research-notes.md']:
+for path in [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md', *sorted((ROOT / 'docs').glob('*.md'))]:
     source = path.read_text()
+    # GitHub's math-renderer macro restrictions, checked 2026-09-17.
+    # Parse math before removing fenced examples from the Markdown checks below.
+    forbidden = {
+        'DeclareMathOperator', 'DeclarePairedDelimiters', 'renewtagform',
+        'newtagform', 'colorbox', 'fcolorbox', 'hphantom', 'vphantom',
+        'phantom', 'operatorname', 'Newextarrow', 'definecolor',
+        'mathchoice', 'unicode', 'mmlToken',
+    }
+    expressions = list(re.finditer(r'^```math\n(.*?)^```', source, re.S | re.M))
+    expressions += list(re.finditer(r'\$`([^`\n]+)`\$', source))
+    for expression in expressions:
+        macros = set(re.findall(r'\\([A-Za-z]+)', expression[1]))
+        blocked = sorted(macros & forbidden)
+        if blocked:
+            fail(path, source[:expression.start()].count('\n') + 1,
+                 f'GitHub blocks these math macros: {", ".join(blocked)}')
+    if any(ord(c) < 32 and c not in '\n\t' for c in source):
+        fail(path, 1, 'unexpected control character (possibly an escaped TeX command)')
     # Ignore comments and fenced examples; neither is rendered catalog content.
     source = re.sub(r'<!--.*?-->', lambda m: '\n' * m[0].count('\n'), source, flags=re.S)
     source = re.sub(r'^```.*?^```[^\n]*', lambda m: '\n' * m[0].count('\n'), source, flags=re.S | re.M)
