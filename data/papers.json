@@ -977,8 +977,14 @@
       "url": "https://arxiv.org/abs/2501.04336",
       "date": "2025-01-08T08:15:29Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "CVPR 2025",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/OoDBag/VideoMindPalace"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -1399,6 +1405,16 @@
           "kind": "weights",
           "label": "Hugging Face",
           "url": "https://huggingface.co/yzy666/StreamingChat_8B"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/yzy666/SVBench"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://sotayang.github.io/SVBench/"
         }
       ],
       "placements": [
@@ -1748,7 +1764,18 @@
       "date": "2025-03-16T15:24:11Z",
       "date_basis": "first-public",
       "venue": "NeurIPS 2025",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/openinterx/Ego-ST-bench"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/openinterx/ST-R1-mcq"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -2601,6 +2628,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -2642,8 +2670,7 @@
       },
       "input_modalities": [
         "text",
-        "video",
-        "audio"
+        "video"
       ]
     },
     "2504.16082": {
@@ -3247,7 +3274,7 @@
       "url": "https://arxiv.org/abs/2505.14640",
       "date": "2025-05-20T17:26:32Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "TMLR 2026",
       "resources": [
         {
           "kind": "code",
@@ -3370,6 +3397,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -3674,7 +3702,7 @@
       "url": "https://arxiv.org/abs/2505.23359",
       "date": "2025-05-29T11:33:43Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICLR 2026",
       "resources": [
         {
           "kind": "code",
@@ -3907,7 +3935,7 @@
       "url": "https://arxiv.org/abs/2506.01274",
       "date": "2025-06-02T03:08:07Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2026 (Findings)",
       "resources": [],
       "placements": [
         {
@@ -4172,6 +4200,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -4192,6 +4221,11 @@
           "kind": "data",
           "label": "Hugging Face",
           "url": "https://huggingface.co/datasets/video-reasoning/morse-500"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://morse-500.github.io/"
         }
       ],
       "placements": [
@@ -4222,7 +4256,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2506.06097": {
@@ -4230,8 +4265,14 @@
       "url": "https://arxiv.org/abs/2506.06097",
       "date": "2025-06-06T13:58:31Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "AAAI 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/SpXace/VideoChat-A1"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -4371,6 +4412,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -4509,7 +4551,7 @@
       "url": "https://arxiv.org/abs/2506.13654",
       "date": "2025-06-16T16:17:08Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "TPAMI 2026",
       "resources": [
         {
           "kind": "code",
@@ -4581,7 +4623,13 @@
       "date": "2025-06-20T17:59:59Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/alexzyqi/VLN-Ego"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -4791,6 +4839,21 @@
           "kind": "code",
           "label": "GitHub",
           "url": "https://github.com/Kwai-Keye/Keye"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Kwai-Keye/Keye-VL-8B-Preview"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://kwai-keye.github.io/"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Kwai-Keye"
         }
       ],
       "placements": [
@@ -4815,6 +4878,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -4867,6 +4931,16 @@
           "kind": "weights",
           "label": "Hugging Face",
           "url": "https://huggingface.co/mengwei0427/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://streamvln.github.io/"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/cywan/StreamVLN-Trajectory-Data"
         }
       ],
       "placements": [
@@ -4890,7 +4964,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2507.06485": {
@@ -5040,7 +5115,18 @@
       "date": "2025-07-14T17:59:46Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/standardgalactic/EmbRACE-3K"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://mxllc.github.io/EmbRACE-3K/"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -5299,6 +5385,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -5516,7 +5603,18 @@
       "date": "2025-08-15T15:34:56Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/SitongGong/Veason-R1"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/SitongGong/Veason-R1"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -5713,7 +5811,7 @@
       "url": "https://arxiv.org/abs/2509.21100",
       "date": "2025-09-25T12:46:46Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "NeurIPS 2025",
       "resources": [
         {
           "kind": "code",
@@ -5789,7 +5887,18 @@
       "date": "2025-09-28T17:59:43Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://framemind.github.io"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://arxiv.org/abs/2509.24008"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -5811,6 +5920,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -5917,7 +6027,9 @@
           "author_comment": "ACL 2026 (Findings Paper), ICCV 2025 Workshop Outstanding Paper Award, Project page: https://eyeline-labs.github.io/VChain"
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2510.08559": {
       "title": "SciVideoBench: Benchmarking Scientific Video Reasoning in Large Multimodal Models",
@@ -6011,7 +6123,7 @@
       "url": "https://arxiv.org/abs/2510.20579",
       "date": "2025-10-23T14:05:56Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "code",
@@ -6174,7 +6286,10 @@
           "author_comment": "Project Page: https://video-cof.github.io"
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2511.04570": {
       "title": "Thinking with Video: Video Generation as a Promising Multimodal Reasoning Paradigm",
@@ -6214,7 +6329,10 @@
           "author_comment": "34 pages, 17 figures"
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2511.05299": {
       "title": "LiveStar: Live Streaming Assistant for Real-World Online Video Understanding",
@@ -6267,7 +6385,23 @@
       "date": "2025-11-17T07:00:42Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/bofang98/ViSS-R1"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/1Xinyaozxy/ViSS-R1-PretextGRPO"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/1Xinyaozxy/ViSS-R1"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -6299,8 +6433,19 @@
       "url": "https://arxiv.org/abs/2511.13190",
       "date": "2025-11-17T09:53:41Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "AAAI 2026",
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://arxiv.org/abs/2511.13190"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37899"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -6331,7 +6476,7 @@
       "url": "https://arxiv.org/abs/2511.13704",
       "date": "2025-11-17T18:52:44Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "resources": [
         {
           "kind": "code",
@@ -6369,8 +6514,8 @@
         }
       },
       "input_modalities": [
-        "video",
-        "image"
+        "image",
+        "text"
       ]
     },
     "2511.13853": {
@@ -6407,7 +6552,11 @@
           "author_comment": "10 pages"
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text",
+        "video"
+      ]
     },
     "2511.14210": {
       "title": "Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution",
@@ -6436,7 +6585,10 @@
         }
       },
       "input_modalities": [
-        "text"
+        "audio",
+        "image",
+        "text",
+        "video"
       ]
     },
     "2511.14446": {
@@ -6519,7 +6671,10 @@
           "source_title": "Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks"
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2511.15578": {
       "title": "AVATAAR: Agentic Video Answering via Temporal Adaptive Alignment and Reasoning",
@@ -6554,8 +6709,7 @@
       },
       "input_modalities": [
         "text",
-        "video",
-        "audio"
+        "video"
       ]
     },
     "2511.16077": {
@@ -6608,6 +6762,11 @@
           "kind": "code",
           "label": "GitHub",
           "url": "https://github.com/yangluo7/V-ReasonBench"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://oahzxl.github.io/VReasonBench/"
         }
       ],
       "placements": [
@@ -6639,7 +6798,8 @@
         }
       },
       "input_modalities": [
-        "video"
+        "image",
+        "text"
       ]
     },
     "2511.16669": {
@@ -6681,7 +6841,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2511.17490": {
@@ -6689,7 +6850,7 @@
       "url": "https://arxiv.org/abs/2511.17490",
       "date": "2025-11-21T18:47:09Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "resources": [
         {
           "kind": "code",
@@ -6827,7 +6988,10 @@
           "source": "https://arxiv.org/abs/2511.22974v1"
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2511.23477": {
       "title": "Video-CoM: Interactive Video Reasoning via Chain of Manipulations",
@@ -7035,8 +7199,7 @@
         }
       },
       "input_modalities": [
-        "text",
-        "image"
+        "text"
       ]
     },
     "2512.01989": {
@@ -7092,12 +7255,27 @@
       "url": "https://arxiv.org/abs/2512.02231",
       "date": "2025-12-01T21:57:26Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2026 (Findings)",
       "resources": [
         {
           "kind": "code",
           "label": "GitHub",
           "url": "https://github.com/plnguyen2908/AV-SpeakerBench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/plnguyen2908/AV-SpeakerBench"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://plnguyen2908.github.io/AV-SpeakerBench-project-page/"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://plnguyen2908.github.io/AV-SpeakerBench-project-page/#leaderboard"
         }
       ],
       "placements": [
@@ -7131,8 +7309,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2512.02425": {
@@ -7220,6 +7399,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -7263,6 +7443,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -7406,6 +7587,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -7415,7 +7597,13 @@
       "date": "2025-12-09T04:13:31Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MMCOT/MM-CoT"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -7502,6 +7690,11 @@
           "kind": "data",
           "label": "Hugging Face",
           "url": "https://huggingface.co/datasets/ZefanCai/Video-Reasoning-Clean"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://zefan-cai.github.io/MMGR.github.io/"
         }
       ],
       "placements": [
@@ -7525,7 +7718,9 @@
           "author_comment": "EMNLP 2026"
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2512.16250": {
       "title": "AMUSE: Audio-Visual Benchmark and Alignment Framework for Agentic Multi-Speaker Understanding",
@@ -7623,7 +7818,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2512.16918": {
       "title": "AdaTooler-V: Adaptive Tool-Use for Images and Videos",
@@ -7640,6 +7838,26 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/AdaTooler-V/AdaTooler-V-7B"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/AdaTooler-V/AdaTooler-V-SFT-model"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/AdaTooler-V/AdaTooler-V-train-data"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/AdaTooler-V/AdaTooler-V-eval"
         }
       ],
       "placements": [
@@ -7692,8 +7910,24 @@
       "url": "https://arxiv.org/abs/2512.16978",
       "date": "2025-12-18T18:59:27Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "NeurIPS 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/mbzuai-oryx/LongShOT"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/MBZUAI/longshot-bench"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://longshot.cvmbzuai.com/"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -7744,6 +7978,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -7822,7 +8057,7 @@
       "url": "https://arxiv.org/abs/2512.17229",
       "date": "2025-12-19T04:29:07Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICLR 2026",
       "resources": [],
       "placements": [
         {
@@ -7906,7 +8141,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2512.17661": {
@@ -7915,7 +8151,23 @@
       "date": "2025-12-19T15:04:24Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/thu-ml/vidar"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://embodiedfoundation.github.io/vidar_anypos"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Xiang-cd/vidar"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -7938,7 +8190,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2512.18477": {
       "title": "STORM: Search-Guided Generative World Models for Robotic Manipulation",
@@ -7970,7 +8225,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2512.18619": {
       "title": "ChronoDreamer: Action-Conditioned World Model as an Online Simulator for Robotic Planning",
@@ -8009,7 +8267,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "text",
+        "video"
       ]
     },
     "2512.18671": {
@@ -8107,7 +8366,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2512.19683": {
@@ -8125,6 +8385,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/mingrui-wu/OSI-Bench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/HarmlessSR07/OSI-Bench"
         }
       ],
       "placements": [
@@ -8172,7 +8442,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2512.19949": {
@@ -8353,7 +8623,13 @@
       "date": "2025-12-24T18:59:36Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/JiaerXia/Streamo"
+        }
+      ],
       "placements": [
         {
           "section": "streaming",
@@ -8453,7 +8729,9 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2512.21887": {
       "title": "Aerial World Model for Long-horizon Visual Generation and Navigation in 3D Space",
@@ -8695,7 +8973,8 @@
         }
       },
       "input_modalities": [
-        "image"
+        "image",
+        "text"
       ]
     },
     "2512.23044": {
@@ -8745,6 +9024,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -8862,8 +9142,9 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2512.24097": {
@@ -8980,6 +9261,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/facebook/jepa-wms"
         }
       ],
       "placements": [
@@ -9005,14 +9291,16 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2512.24766": {
       "title": "Dream2Flow: Bridging Video Generation and Open-World Manipulation with 3D Object Flow",
       "url": "https://arxiv.org/abs/2512.24766",
       "date": "2025-12-31T10:25:24Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICRA 2026",
       "resources": [
         {
           "kind": "project",
@@ -9055,7 +9343,8 @@
         }
       },
       "input_modalities": [
-        "image"
+        "image",
+        "text"
       ]
     },
     "2512.24952": {
@@ -9073,6 +9362,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Monosail/VIPER"
         }
       ],
       "placements": [
@@ -9129,7 +9423,8 @@
         }
       },
       "input_modalities": [
-        "video"
+        "image",
+        "text"
       ]
     },
     "2601.00138": {
@@ -9229,7 +9524,7 @@
       "url": "https://arxiv.org/abs/2601.01075",
       "date": "2026-01-03T05:22:27Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "project",
@@ -9331,7 +9626,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.01513": {
@@ -9387,7 +9683,7 @@
       "url": "https://arxiv.org/abs/2601.01528",
       "date": "2026-01-04T13:36:21Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICLR 2026",
       "resources": [
         {
           "kind": "project",
@@ -9397,6 +9693,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/youngzhou1999/DrivingGen"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/yangzhou99/DrivingGen"
         }
       ],
       "placements": [
@@ -9431,7 +9737,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2601.01547": {
       "title": "Vision-language models lag human performance on physical dynamics and intent reasoning",
@@ -9439,7 +9748,33 @@
       "date": "2026-01-04T14:42:39Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Grady10086/EscherVerse"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Gradygu3u/EscherVerse-Data"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Gradygu3u/Escher-8b-instruct"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Gradygu3u/Escher-Bench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Gradygu3u/Escher-sft"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -9484,7 +9819,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.01618": {
@@ -9492,7 +9828,7 @@
       "url": "https://arxiv.org/abs/2601.01618",
       "date": "2026-01-04T17:53:42Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "resources": [
         {
           "kind": "project",
@@ -9527,7 +9863,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2601.01705": {
       "title": "Explicit World Models for Reliable Human-Robot Collaboration",
@@ -9668,7 +10007,7 @@
       "url": "https://arxiv.org/abs/2601.02771",
       "date": "2026-01-06T07:05:35Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "AAAI 2026 (Oral)",
       "resources": [
         {
           "kind": "code",
@@ -9912,7 +10251,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.04073": {
@@ -10004,7 +10344,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2601.04575": {
       "title": "Scaling Behavior Cloning Improves Causal Reasoning: An Open Model for Real-Time Video Game Playing",
@@ -10192,8 +10535,7 @@
         }
       },
       "input_modalities": [
-        "video",
-        "action"
+        "video"
       ]
     },
     "2601.05495": {
@@ -10434,7 +10776,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.06559": {
@@ -10482,7 +10825,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.06573": {
@@ -10637,7 +10981,13 @@
       "date": "2026-01-12T18:57:34Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/irom-princeton/awesome-robotics-video-world-model-papers"
+        }
+      ],
       "placements": [
         {
           "section": "surveys",
@@ -10764,8 +11114,7 @@
       },
       "input_modalities": [
         "text",
-        "video",
-        "image"
+        "video"
       ]
     },
     "2601.08955": {
@@ -10808,7 +11157,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2601.09350": {
       "title": "See More, Store Less: Memory-Efficient Resolution for Video Moment Retrieval",
@@ -10848,7 +11199,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.09430": {
@@ -10857,7 +11209,13 @@
       "date": "2026-01-14T12:24:47Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/ruiz-nju/Video-MSR"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -10897,7 +11255,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.10010": {
@@ -11091,7 +11450,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "audio",
+        "video"
       ]
     },
     "2601.10553": {
@@ -11100,7 +11460,23 @@
       "date": "2026-01-15T16:18:00Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/facebookresearch/WMReward"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://facebookresearch.github.io/WMReward/"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://www.youtube.com/watch?v=NQzKR3xqU10"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -11139,8 +11515,9 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
-        "image"
+        "video"
       ]
     },
     "2601.10611": {
@@ -11189,6 +11566,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -11198,7 +11576,7 @@
       "url": "https://arxiv.org/abs/2601.10649",
       "date": "2026-01-15T18:15:06Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2026",
       "resources": [
         {
           "kind": "code",
@@ -11260,7 +11638,7 @@
       "url": "https://arxiv.org/abs/2601.11359",
       "date": "2026-01-16T15:14:04Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICASSP2026",
       "resources": [],
       "placements": [
         {
@@ -11305,7 +11683,7 @@
       "url": "https://arxiv.org/abs/2601.12626",
       "date": "2026-01-18T23:48:38Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICLR 2026",
       "resources": [
         {
           "kind": "code",
@@ -11360,7 +11738,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.13304": {
@@ -11378,6 +11757,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Mwxinnn/CausalSpatial"
         }
       ],
       "placements": [
@@ -11525,7 +11909,6 @@
         }
       },
       "input_modalities": [
-        "text",
         "video"
       ]
     },
@@ -11585,7 +11968,13 @@
       "date": "2026-01-21T11:32:24Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://arxiv.org/pdf/2601.14895v2"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -11617,6 +12006,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -11670,6 +12060,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -11679,7 +12070,7 @@
       "url": "https://arxiv.org/abs/2601.15115",
       "date": "2026-01-21T15:52:26Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICASSP 2026",
       "resources": [
         {
           "kind": "code",
@@ -11723,7 +12114,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2601.15282": {
@@ -11750,6 +12142,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/DAGroup-PKU/RoVid-X"
         }
       ],
       "placements": [
@@ -11959,7 +12356,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2601.16007": {
@@ -12045,7 +12442,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2601.16210": {
       "title": "PyraTok: Language-Aligned Pyramidal Tokenizer for Video Understanding and Generation",
@@ -12222,7 +12622,7 @@
       "url": "https://arxiv.org/abs/2601.18100",
       "date": "2026-01-26T03:21:35Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2025",
       "resources": [],
       "placements": [
         {
@@ -12491,7 +12891,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2601.19686": {
       "title": "Video-KTR: Reinforcing Video Reasoning via Key Token Attribution",
@@ -13069,7 +13471,7 @@
       "url": "https://arxiv.org/abs/2601.22959",
       "date": "2026-01-30T13:20:04Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICASSP 2026",
       "resources": [],
       "placements": [
         {
@@ -13195,7 +13597,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.00096": {
@@ -13236,6 +13639,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -13245,7 +13649,18 @@
       "date": "2026-01-30T04:45:43Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/wuhang03/CamReasoner"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/LaurentWu/CamReasoner-7B"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -13276,7 +13691,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.00190": {
@@ -13325,7 +13741,7 @@
       "url": "https://arxiv.org/abs/2602.00288",
       "date": "2026-01-30T20:21:46Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "EMNLP 2026",
       "resources": [
         {
           "kind": "project",
@@ -13335,6 +13751,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Baiqi-Li/TimeBlind"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/BaiqiL/TimeBlind"
         }
       ],
       "placements": [
@@ -13544,7 +13970,28 @@
       "date": "2026-02-02T03:12:16Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/trillion-labs/gWorld"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/trillionlabs/gWorld-8B"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/trillionlabs/gWorld-32B"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://trillionlabs-gworld.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "executable",
@@ -13576,6 +14023,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -13724,7 +14172,7 @@
         }
       },
       "input_modalities": [
-        "action"
+        "video"
       ]
     },
     "2602.02341": {
@@ -13865,8 +14313,8 @@
         }
       },
       "input_modalities": [
-        "text",
-        "action"
+        "image",
+        "text"
       ]
     },
     "2602.02994": {
@@ -13918,7 +14366,28 @@
       "date": "2026-02-03T09:56:20Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/zzh-thu-22/GuardReasoner-Omni"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/zhu-thu-22/GuardReasoner-Omni-3B"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/zhu-thu-22/GuardReasoner-Omni-7B"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/zhu-thu-22/GuardReasoner-Omni-data"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -13950,7 +14419,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2602.03589": {
@@ -14102,7 +14573,9 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "image",
+        "video"
       ]
     },
     "2602.03707": {
@@ -14158,7 +14631,7 @@
       "url": "https://arxiv.org/abs/2602.04094",
       "date": "2026-02-04T00:08:35Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "code",
@@ -14244,7 +14717,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.05829": {
@@ -14252,7 +14726,7 @@
       "url": "https://arxiv.org/abs/2602.05829",
       "date": "2026-02-05T16:19:41Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "CVPR 2026 (Findings)",
       "resources": [],
       "placements": [
         {
@@ -14286,6 +14760,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -14338,7 +14813,7 @@
       "url": "https://arxiv.org/abs/2602.05903",
       "date": "2026-02-05T17:18:22Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "Accepted at ICLR 2026",
       "resources": [
         {
           "kind": "code",
@@ -14475,7 +14950,18 @@
       "date": "2026-02-05T19:04:41Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/yfqiu-nlp/swirl"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/cohort-rlwm/Liquid_V1_7B-pico-aurora-multiturn-iter1-sft_grpo_fdp-vidgen-option-1"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -14506,7 +14992,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.06139": {
@@ -14573,7 +15060,18 @@
       "date": "2026-02-06T08:57:55Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://showlab.github.io/World-VLA-Loop/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/showlab/World-VLA-Loop"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -14605,7 +15103,9 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "text",
+        "video"
       ]
     },
     "2602.06949": {
@@ -14681,14 +15181,16 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2602.07054": {
       "title": "AVERE: Improving Audiovisual Emotion Reasoning with Preference Optimization",
       "url": "https://arxiv.org/abs/2602.07054",
       "date": "2026-02-04T18:24:25Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICLR 2026",
       "resources": [
         {
           "kind": "project",
@@ -14732,8 +15234,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2602.07082": {
@@ -14881,8 +15384,34 @@
       "url": "https://arxiv.org/abs/2602.07801",
       "date": "2026-02-08T03:45:50Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ICML 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Kwai-Keye/VideoTemp-o3"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://liuwq-bit.github.io/VideoTemp-o3"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Kwai-Keye/VideoTemp-o3"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Kwai-Keye/VideoTemp-o3"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Kwai-Keye/VideoTemp-Bench"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -14926,7 +15455,7 @@
       "url": "https://arxiv.org/abs/2602.08024",
       "date": "2026-02-08T15:56:46Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICLR 2026 (Oral)",
       "resources": [
         {
           "kind": "code",
@@ -15124,6 +15653,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -15282,7 +15812,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.08971": {
@@ -15291,7 +15822,23 @@
       "date": "2026-02-09T18:09:20Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/worldarena/WorldArena"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/spaces/WorldArena/WorldArena"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://worldarena.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -15330,7 +15877,9 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "text",
+        "video"
       ]
     },
     "2602.09600": {
@@ -15339,7 +15888,28 @@
       "date": "2026-02-10T09:51:07Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/NTUYWANG103/Hand2World"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://drive.google.com/drive/folders/1J37kycnFz8jvkyN0Wkm9vrsXmHjqBms-"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://hand2world.github.io"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/NTUYWANG103/ViDiHand"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -15372,7 +15942,7 @@
       },
       "input_modalities": [
         "image",
-        "action"
+        "video"
       ]
     },
     "2602.09765": {
@@ -15413,6 +15983,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -15484,8 +16055,14 @@
       "url": "https://arxiv.org/abs/2602.09878",
       "date": "2026-02-10T15:19:17Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ICML 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Mercerai/MVISTA-4D"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -15509,7 +16086,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2602.10095": {
       "title": "Causality in Video Diffusers is Separable from Denoising",
@@ -15517,7 +16097,13 @@
       "date": "2026-02-10T18:57:21Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bai_Causality_in_Video_Diffusers_is_Separable_from_Denoising_CVPR_2026_paper.pdf"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -15547,7 +16133,10 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2602.10098": {
       "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
@@ -15555,7 +16144,23 @@
       "date": "2026-02-10T18:58:01Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/ginwind/VLA-JEPA"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://ginwind.github.io/VLA-JEPA/"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/ginwind/VLA-JEPA"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -15578,7 +16183,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2602.10102": {
       "title": "VideoWorld 2: Learning Transferable Knowledge from Real-world Videos",
@@ -15694,7 +16302,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "video"
       ]
     },
     "2602.10159": {
@@ -15754,7 +16363,7 @@
       "url": "https://arxiv.org/abs/2602.10480",
       "date": "2026-02-11T03:36:18Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "COLM 2026",
       "resources": [
         {
           "kind": "code",
@@ -15815,6 +16424,21 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/models/Liu-Junhua/TwiFF-7B"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Liu-Junhua/TwiFF-2.7M"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Liu-Junhua/TwiFF-Bench"
         }
       ],
       "placements": [
@@ -15865,7 +16489,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.10717": {
@@ -15897,7 +16522,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2602.11021": {
       "title": "ContactGaussian-WM: Learning Physics-Grounded World Model from Videos",
@@ -15946,7 +16574,18 @@
       "date": "2026-02-11T17:43:36Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/OpenDriveLab/RISE"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://opendrivelab.com/RISE/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -15970,7 +16609,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2602.11244": {
       "title": "Stress Tests REVEAL Fragile Temporal and Visual Grounding in Video-Language Models",
@@ -16059,7 +16700,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2602.11389": {
       "title": "Causal-JEPA: Learning World Models through Object-Level Latent Masking",
@@ -16118,7 +16761,7 @@
         }
       },
       "input_modalities": [
-        "image"
+        "video"
       ]
     },
     "2602.11455": {
@@ -16159,7 +16802,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2602.11730": {
@@ -16168,7 +16813,23 @@
       "date": "2026-02-12T08:53:32Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/XiaowZhang00/stvg-r1"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/XiaowenZhang/stvg-r1-model-7b"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://stvg-r1.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -16201,7 +16862,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.11832": {
@@ -16233,7 +16895,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2602.12063": {
       "title": "VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model",
@@ -16241,7 +16906,23 @@
       "date": "2026-02-12T15:21:47Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Robert-gyj/Ctrl-World"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/yjguo/Ctrl-World"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://sites.google.com/view/vlaw-arxiv"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -16273,7 +16954,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "text",
+        "video"
       ]
     },
     "2602.12099": {
@@ -16316,7 +16998,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2602.12215": {
       "title": "LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data Ingestion",
@@ -16469,7 +17154,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2602.13313": {
@@ -16574,6 +17259,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Chenwei-1999/SparseVideoUnderstanding"
         }
       ],
       "placements": [
@@ -16668,7 +17358,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "text",
+        "video"
       ]
     },
     "2602.14122": {
@@ -16686,6 +17377,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/groolegend/EgoSound"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/grooLegend/EgoSound"
         }
       ],
       "placements": [
@@ -16735,6 +17436,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -16865,7 +17567,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2602.16412": {
       "title": "ReMoRa: Multimodal Large Language Model based on Refined Motion Representation for Long-Video Understanding",
@@ -17031,6 +17735,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/funzon3/VQPP"
         }
       ],
       "placements": [
@@ -17072,8 +17781,7 @@
         }
       },
       "input_modalities": [
-        "text",
-        "video"
+        "text"
       ]
     },
     "2602.17869": {
@@ -17134,6 +17842,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/vatsalag99/MemStream"
         }
       ],
       "placements": [
@@ -17237,7 +17950,7 @@
       "url": "https://arxiv.org/abs/2602.18527",
       "date": "2026-02-20T04:06:07Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "code",
@@ -17335,7 +18048,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2602.18702": {
       "title": "Think with Grounding: Curriculum Reinforced Reasoning with Video Grounding for Long Video Understanding",
@@ -17343,7 +18058,13 @@
       "date": "2026-02-21T03:16:23Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/hlchen23/Video-TwG"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -17421,7 +18142,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2602.18977": {
       "title": "Frame2Freq: Spectral Adapters for Fine-Grained Video Understanding",
@@ -17478,8 +18202,7 @@
         }
       },
       "input_modalities": [
-        "video",
-        "image"
+        "video"
       ]
     },
     "2602.19117": {
@@ -17525,6 +18248,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -17533,7 +18257,7 @@
       "url": "https://arxiv.org/abs/2602.19146",
       "date": "2026-02-22T12:20:28Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "EACL 2026 (Findings)",
       "resources": [],
       "placements": [
         {
@@ -17568,6 +18292,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -17577,7 +18302,13 @@
       "date": "2026-02-22T22:08:16Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://vid2sid.github.io"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -17608,7 +18339,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.19571": {
@@ -17842,6 +18574,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -18030,6 +18763,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -18080,7 +18814,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.21835": {
@@ -18246,7 +18981,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2602.22452": {
       "title": "CWM: Contrastive World Models for Action Feasibility Learning in Embodied Agent Pipelines",
@@ -18277,7 +19014,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2602.22779": {
       "title": "TrajTok: Learning Trajectory Tokens enables better Video Understanding",
@@ -18463,7 +19202,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2602.23152": {
@@ -18503,7 +19243,7 @@
       "url": "https://arxiv.org/abs/2602.23294",
       "date": "2026-02-26T18:04:09Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [
         {
           "kind": "code",
@@ -18554,7 +19294,7 @@
       "url": "https://arxiv.org/abs/2602.23553",
       "date": "2026-02-26T23:28:13Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "NeuS 2026",
       "resources": [],
       "placements": [
         {
@@ -18642,7 +19382,13 @@
       "date": "2026-02-27T09:07:08Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/GeWu-Lab/APPO"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -18724,7 +19470,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.00550": {
@@ -18774,7 +19521,6 @@
         }
       },
       "input_modalities": [
-        "text",
         "video"
       ]
     },
@@ -19129,7 +19875,13 @@
       "date": "2026-03-03T09:04:28Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/NM512/r2dreamer"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -19152,7 +19904,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2603.02872": {
       "title": "Think-as-You-See: Streaming Chain-of-Thought Reasoning for Large Vision-Language Models",
@@ -19207,7 +19961,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.02888": {
@@ -19311,6 +20066,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/francelico/PERSIST"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/PERSIST-team"
         }
       ],
       "placements": [
@@ -19389,7 +20154,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2603.03985": {
       "title": "RIVER: A Real-Time Interaction Benchmark for Video LLMs",
@@ -19457,7 +20224,18 @@
       "date": "2026-03-04T16:50:07Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Gigi-G/ViterbiPlanNet"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://gigi-g.github.io/ViterbiPlanNet/"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -19497,7 +20275,6 @@
         }
       },
       "input_modalities": [
-        "text",
         "video"
       ]
     },
@@ -19696,8 +20473,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2603.05438": {
@@ -19706,7 +20484,18 @@
       "date": "2026-03-05T18:00:02Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://kdwonn.github.io/CompACT"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/kdwonn/CompACT"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -19744,7 +20533,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "image"
       ]
     },
     "2603.05591": {
@@ -19869,7 +20659,23 @@
       "date": "2026-03-05T21:43:02Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Danielxu0208/MultiHaystack"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/DanielXu0208/MultiHaystack_Full"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://danielxu0208.github.io/MultiHaystack.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -19912,6 +20718,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -19953,6 +20760,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -19962,7 +20770,18 @@
       "date": "2026-03-06T15:48:25Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://vcai.mpi-inf.mpg.de/projects/PSIVG/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MarkHershey/PSIVG"
+        }
+      ],
       "placements": [
         {
           "section": "executable",
@@ -19992,7 +20811,9 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2603.06561": {
       "title": "EgoReasoner: Learning Egocentric 4D Reasoning via Task-Adaptive Structured Thinking",
@@ -20044,7 +20865,18 @@
       "date": "2026-03-06T18:58:36Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://aperezr20.github.io/sureon/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/aperezr20/sureon"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -20134,7 +20966,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.06732": {
@@ -20143,7 +20976,18 @@
       "date": "2026-03-06T04:10:50Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/TTingHan-HDU/HERO"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/hdu-txs/DataSets-of-TSGV_OV"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -20180,6 +21024,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -20330,7 +21175,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2603.07758": {
       "title": "AR2-4FV: Anchored Referring and Re-identification for Long-Term Grounding in Fixed-View Videos",
@@ -20368,7 +21216,10 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2603.08403": {
       "title": "SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents",
@@ -20376,7 +21227,13 @@
       "date": "2026-03-09T14:00:36Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://yuyang-cloud.github.io/spiral"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -20408,7 +21265,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "image",
+        "text"
       ]
     },
     "2603.08620": {
@@ -20456,6 +21314,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -20506,7 +21365,9 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2603.09241": {
       "title": "RAE-NWM: Navigation World Model in Dense Visual Representation Space",
@@ -20556,7 +21417,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "image"
       ]
     },
     "2603.09731": {
@@ -20565,7 +21427,23 @@
       "date": "2026-03-10T14:33:44Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/JackYu6/EXPLORE-Bench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/pengfei2025/EXPLORE-Dataset"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://jackyu6.github.io/EXPLORE-Page/"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -20622,6 +21500,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/ropertunizar/TIMID"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/nereagallego/TIMID-data"
         }
       ],
       "placements": [
@@ -20663,7 +21551,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.09827": {
@@ -20734,7 +21623,23 @@
       "date": "2026-03-10T19:17:22Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/limenlp/ExeVRM"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/lime-nlp/ExeVRM-8B"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/lime-nlp/ExeVR-53K"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -20765,7 +21670,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.10422": {
@@ -20808,7 +21714,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2603.10448": {
       "title": "DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable Robot Control",
@@ -20850,7 +21759,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2603.10652": {
       "title": "Are Video Reasoning Models Ready to Go Outside?",
@@ -21023,6 +21935,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/iLearn-Lab/ACL26-OSCBench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/XianjingHan/OSCBench_Dataset"
         }
       ],
       "placements": [
@@ -21078,7 +22000,7 @@
       "url": "https://arxiv.org/abs/2603.11896",
       "date": "2026-03-12T13:13:50Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [
         {
           "kind": "code",
@@ -21088,6 +22010,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/papers/2603.11896"
         }
       ],
       "placements": [
@@ -21375,7 +22302,18 @@
       "date": "2026-03-13T01:33:48Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/wm-planner/structvla"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://wm-planner.github.io/structvla/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -21398,14 +22336,17 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2603.12703": {
       "title": "SVCBench: A Streaming Video Counting Benchmark for Spatial-Temporal State Maintenance",
       "url": "https://arxiv.org/abs/2603.12703",
       "date": "2026-03-13T06:28:46Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [
         {
           "kind": "project",
@@ -21415,6 +22356,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/buaa-colalab/SVCBench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/buaaplay/SVCBench"
         }
       ],
       "placements": [
@@ -21530,7 +22481,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.12938": {
@@ -21702,7 +22654,6 @@
         }
       },
       "input_modalities": [
-        "text",
         "video"
       ]
     },
@@ -21730,6 +22681,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/glab-caltech/STEVOBench"
         }
       ],
       "placements": [
@@ -21764,7 +22720,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2603.13374": {
       "title": "Geometry-Aware Semantic Reasoning for Training Free Video Anomaly Detection",
@@ -21805,7 +22764,6 @@
         }
       },
       "input_modalities": [
-        "text",
         "video"
       ]
     },
@@ -22209,8 +23167,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2603.14468": {
@@ -22272,7 +23231,33 @@
       "date": "2026-03-15T17:02:40Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/facebookresearch/vjepa2"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/facebook/vjepa2-vith-fpc64-256"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/facebook/vjepa2-vitg-fpc64-256"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/facebook/vjepa2-vitg-fpc64-384"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -22295,14 +23280,17 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "video"
+      ]
     },
     "2603.14659": {
       "title": "VisionCoach: Reinforcing Grounded Video Reasoning via Visual-Perception Prompting",
       "url": "https://arxiv.org/abs/2603.14659",
       "date": "2026-03-15T23:32:02Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [
         {
           "kind": "project",
@@ -22361,7 +23349,13 @@
       "date": "2026-03-16T02:09:48Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/MVX-bench/MVX-Bench"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -22443,7 +23437,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.14953": {
@@ -22589,7 +23584,38 @@
       "date": "2026-03-16T17:53:28Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/10-OASIS-01/PRIMO-R1"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/10-OASIS-01/primo-r1-website"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/LeonOverload/PRIMO-R1-7B"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/LeonOverload/primo-bench-json"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/LeonOverload/primo-sft-json"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/LeonOverload/primo-video-media"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -22677,7 +23703,7 @@
       "url": "https://arxiv.org/abs/2603.16432",
       "date": "2026-03-17T12:10:56Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [],
       "placements": [
         {
@@ -22719,7 +23745,6 @@
         }
       },
       "input_modalities": [
-        "text",
         "video"
       ]
     },
@@ -22791,8 +23816,8 @@
         }
       },
       "input_modalities": [
-        "text",
-        "audio"
+        "audio",
+        "video"
       ]
     },
     "2603.16860": {
@@ -22835,8 +23860,7 @@
         }
       },
       "input_modalities": [
-        "text",
-        "action"
+        "image"
       ]
     },
     "2603.16870": {
@@ -22845,7 +23869,23 @@
       "date": "2026-03-17T17:59:55Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/OpenSenseNova/Demystifying_Video_Reasoning"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://www.wruisi.com/demystifying_video_reasoning/"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Video-Reason/VBVR-Dataset"
+        }
+      ],
       "placements": [
         {
           "section": "visual",
@@ -22879,6 +23919,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -22923,7 +23964,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2603.17307": {
       "title": "Symphony: A Cognitively-Inspired Multi-Agent System for Long-Video Understanding",
@@ -23040,7 +24084,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.17693": {
@@ -23049,7 +24094,13 @@
       "date": "2026-03-18T13:10:47Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/jiangsongtao/Synthetic-Video"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -23134,14 +24185,17 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2603.17840": {
       "title": "Video Understanding: From Geometry and Semantics to Unified Models",
       "url": "https://arxiv.org/abs/2603.17840",
       "date": "2026-03-18T15:31:47Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "Machine Intelligence Research 2026",
       "resources": [],
       "placements": [
         {
@@ -23292,7 +24346,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.18558": {
@@ -23301,7 +24356,13 @@
       "date": "2026-03-19T07:11:53Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/DanBenAmi/HiMu"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -23384,7 +24445,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2603.18850": {
@@ -23500,8 +24561,19 @@
       "url": "https://arxiv.org/abs/2603.19054",
       "date": "2026-03-19T15:47:50Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ECCV 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/air-embodied-brain/Em-Garde"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/fredzheng/Em-Garde-7B"
+        }
+      ],
       "placements": [
         {
           "section": "streaming",
@@ -23610,7 +24682,23 @@
       "date": "2026-03-13T19:48:14Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/lucas-maes/le-wm"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://le-wm.github.io"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/collections/quentinll/lewm"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -23633,7 +24721,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2603.19481": {
       "title": "Narrative Aligned Long Form Video Question Answering",
@@ -23780,7 +24870,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2603.19610": {
       "title": "ParallelVLM: Lossless Video-LLM Acceleration with Visual Alignment Aware Parallel Speculative Decoding",
@@ -23983,12 +25075,22 @@
       "url": "https://arxiv.org/abs/2603.20194",
       "date": "2026-03-20T17:59:56Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [
         {
           "kind": "project",
           "label": "Project",
           "url": "https://video-reasoning-coherence.github.io/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/yqi19/MME-CoF-Pro"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/yqi19/mme-cof-pro"
         }
       ],
       "placements": [
@@ -24033,7 +25135,8 @@
         }
       },
       "input_modalities": [
-        "video"
+        "image",
+        "text"
       ]
     },
     "2603.20422": {
@@ -24321,7 +25424,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.22120": {
@@ -24371,7 +25475,13 @@
       "date": "2026-03-23T17:10:29Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/AMAP-ML/Omni-WorldBench"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -24403,7 +25513,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2603.22285": {
       "title": "VideoDetective: Clue Hunting via both Extrinsic Query and Intrinsic Relevance for Long Video Understanding",
@@ -24463,7 +25576,13 @@
       "date": "2026-03-20T11:47:20Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/ftoschi14/M2AD-From-Instructions-to-Assistance"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -24502,7 +25621,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.22529": {
@@ -24581,7 +25701,7 @@
       "url": "https://arxiv.org/abs/2603.22706",
       "date": "2026-03-24T01:59:06Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ACM FSE Companion 2026",
       "resources": [],
       "placements": [
         {
@@ -24628,8 +25748,8 @@
         }
       },
       "input_modalities": [
-        "text",
-        "video"
+        "image",
+        "text"
       ]
     },
     "2603.22756": {
@@ -24637,7 +25757,7 @@
       "url": "https://arxiv.org/abs/2603.22756",
       "date": "2026-03-24T03:33:07Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "Accepted at IJCNN 2026",
       "resources": [
         {
           "kind": "code",
@@ -24647,6 +25767,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://drive.google.com/drive/folders/1geVRGz6SFT8726R0tpljdwf3kJxvFFza?usp=sharing"
         }
       ],
       "placements": [
@@ -24730,7 +25855,9 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2603.22918": {
       "title": "EVA: Efficient Reinforcement Learning for End-to-End Video Agent",
@@ -24788,7 +25915,13 @@
       "date": "2026-03-24T13:32:52Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MICV-yonsei/ViKey"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -24936,7 +26069,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.23497": {
@@ -24985,7 +26119,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "text",
+        "video"
       ]
     },
     "2603.23864": {
@@ -25039,7 +26174,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.24329": {
@@ -25146,6 +26282,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/midbee/IntelligentVBench"
         }
       ],
       "placements": [
@@ -25172,7 +26313,11 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text",
+        "video"
+      ]
     },
     "2603.24484": {
       "title": "Video-Only ToM: Enhancing Theory of Mind in Multimodal Large Language Models",
@@ -25228,7 +26373,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.24558": {
@@ -25237,7 +26383,18 @@
       "date": "2026-03-25T17:38:54Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/likanchuan09171/LensWalk"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://likanchuan09171.github.io/LensWalk/"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -25430,7 +26587,7 @@
       "url": "https://arxiv.org/abs/2603.25423",
       "date": "2026-03-26T13:15:33Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "WWW 2026",
       "resources": [
         {
           "kind": "code",
@@ -25487,7 +26644,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "audio",
+        "text",
+        "video"
       ]
     },
     "2603.25467": {
@@ -25550,8 +26709,24 @@
       "url": "https://arxiv.org/abs/2603.25685",
       "date": "2026-03-26T17:36:08Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ECCV 2026",
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://jaibardhan.com/persistworld/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Jai2500/PersistWorld"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/jaibrdhn/persistworld"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -25636,14 +26811,17 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2603.25733": {
       "title": "SlotVTG: Object-Centric Adapter for Generalizable Video Temporal Grounding",
       "url": "https://arxiv.org/abs/2603.25733",
       "date": "2026-03-26T17:59:31Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "GRAIL-V workshop at CVPR 2026",
       "resources": [],
       "placements": [
         {
@@ -25789,7 +26967,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2603.25942": {
       "title": "Reinforcing Structured Chain-of-Thought for Video Understanding",
@@ -25847,7 +27027,13 @@
       "date": "2026-03-26T23:47:49Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/AmirhoseinCh/PiJEPA"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -26222,7 +27408,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.27593": {
@@ -26240,6 +27427,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/interlive-team/STRIDE"
         }
       ],
       "placements": [
@@ -26321,8 +27513,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2603.27866": {
@@ -26364,7 +27557,8 @@
         }
       },
       "input_modalities": [
-        "video"
+        "image",
+        "text"
       ]
     },
     "2603.27967": {
@@ -26373,7 +27567,28 @@
       "date": "2026-03-30T02:42:25Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://cross-view-relations.github.io"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/cross-view-relations/cross-view-relations"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Jaehwisong/XVR"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Jaehwisong/Qwen3-VL-2B-XVR"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -26411,6 +27626,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -26524,6 +27740,21 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Philip-MIT/sole-r1-model"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Philip-MIT/SOLE-R1-8B"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Philip-MIT/sole_training_data"
         }
       ],
       "placements": [
@@ -26676,7 +27907,13 @@
       "date": "2026-03-31T05:29:22Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://dreamvu.ai/"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -26715,7 +27952,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2603.29616": {
@@ -26723,7 +27961,7 @@
       "url": "https://arxiv.org/abs/2603.29616",
       "date": "2026-03-31T11:37:42Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [
         {
           "kind": "code",
@@ -26874,6 +28112,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/CAMMA-public/SurgTEMP"
         }
       ],
       "placements": [
@@ -26951,7 +28194,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2604.00677": {
       "title": "CL-VISTA: Benchmarking Continual Learning in Video Large Language Models",
@@ -27012,7 +28258,13 @@
       "date": "2026-04-01T09:52:57Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/edsonroteia/tta-vid"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -27099,7 +28351,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.01002": {
@@ -27149,7 +28402,7 @@
       "url": "https://arxiv.org/abs/2604.01460",
       "date": "2026-04-01T23:15:34Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "COLM 2026",
       "resources": [],
       "placements": [
         {
@@ -27425,6 +28678,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Florence123/GroundVTS"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Florence123/Grounding-FT-70K"
         }
       ],
       "placements": [
@@ -27602,15 +28865,24 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2604.02891": {
       "title": "Progressive Video Condensation with MLLM Agent for Long-form Video Understanding",
       "url": "https://arxiv.org/abs/2604.02891",
       "date": "2026-04-03T09:00:38Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ICME 2026",
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://arxiv.org/abs/2604.02891"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -27698,7 +28970,13 @@
       "date": "2026-04-03T13:52:57Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Fanlinfeng23/STEAR"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -27743,7 +29021,13 @@
       "date": "2026-04-04T12:10:09Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://vidnumteam.github.io"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -27785,7 +29069,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.03819": {
@@ -27840,7 +29125,9 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2604.03995": {
       "title": "A Systematic Study of Cross-Modal Typographic Attacks on Audio-Visual Reasoning",
@@ -27848,7 +29135,13 @@
       "date": "2026-04-05T06:32:08Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/cskyl/MLLM-Typography"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -27895,8 +29188,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2604.04184": {
@@ -28097,7 +29391,28 @@
       "date": "2026-04-06T04:56:49Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/gouba2333/BoxComm"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://gouba2333.github.io/BoxComm/"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/gouba2333/BoxComm-Dataset"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/gouba2333/BoxComm"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -28136,7 +29451,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2604.05015": {
@@ -28145,7 +29460,23 @@
       "date": "2026-04-06T17:59:56Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://video-mme-v2.netlify.app/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MME-Benchmarks/Video-MME-v2"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -28237,6 +29568,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -28339,7 +29671,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.06687": {
@@ -28414,7 +29747,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2604.07634": {
       "title": "VSAS-Bench: Real-Time Evaluation of Visual Streaming Assistant Models",
@@ -28591,7 +29926,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.07966": {
@@ -28600,7 +29936,13 @@
       "date": "2026-04-09T08:29:29Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Cai_Lighting-grounded_Video_Generation_CVPR_2026_supplemental.pdf"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -28640,7 +29982,7 @@
         }
       },
       "input_modalities": [
-        "image"
+        "text"
       ]
     },
     "2604.07990": {
@@ -28649,7 +29991,23 @@
       "date": "2026-04-09T08:59:33Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://wangyunnan.github.io/SceneScribe-1M"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/wangyunnan/SceneScribe-1M"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/AnonymousCVPR2026/SceneScribe-1M"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -28695,7 +30053,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2604.07991": {
@@ -28704,7 +30062,23 @@
       "date": "2026-04-09T08:59:40Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Thelegendzz/MotionScape"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/thelegendzz/MotionScape"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://doi.org/10.5281/zenodo.21954342"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -28735,7 +30109,11 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text",
+        "video"
+      ]
     },
     "2604.08014": {
       "title": "Bridging Time and Space: Decoupled Spatio-Temporal Alignment for Video Grounding",
@@ -28847,6 +30225,21 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/FeiElysia/Tempo"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/spaces/Vision-CAIR/Tempo"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/collections/Vision-CAIR/tempo"
         }
       ],
       "placements": [
@@ -28935,8 +30328,8 @@
         }
       },
       "input_modalities": [
-        "text",
-        "audio"
+        "audio",
+        "video"
       ]
     },
     "2604.08342": {
@@ -29049,7 +30442,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.08503": {
@@ -29105,7 +30499,38 @@
       "date": "2026-04-09T17:57:09Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/jbistanbul/universalvtg"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://vision.cs.utexas.edu/projects/universalvtg/"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://universalvtg.vision.cs.utexas.edu/"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://utexas.box.com/s/vm52tyvfqxhrnmnswm4kbe8cr1fkke6e"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://utexas.box.com/s/uue77d6wpgyeu1u8dqgon1eyxe2dupvo"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://utexas.box.com/s/l9zm74v2wkljjaz35nmf9idhysjr5bc1"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -29189,7 +30614,18 @@
       "date": "2026-04-10T05:10:15Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://tg-paradigms.github.io/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Aestine/TG-Paradigms"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -29283,7 +30719,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.08995": {
@@ -29326,7 +30763,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2604.09000": {
       "title": "StreamMeCo: Long-Term Agent Memory Compression for Efficient Streaming Video Understanding",
@@ -29383,6 +30822,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "video"
       ]
     },
@@ -29416,7 +30856,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2604.09580": {
       "title": "OOWM: Structuring Embodied Reasoning and Planning via Object-Oriented Programmatic World Modeling",
@@ -29455,6 +30898,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -29510,7 +30954,10 @@
         }
       },
       "input_modalities": [
-        "text"
+        "audio",
+        "image",
+        "text",
+        "video"
       ]
     },
     "2604.10024": {
@@ -29638,7 +31085,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2604.10695": {
       "title": "Retrieving to Recover: Towards Incomplete Audio-Visual Question Answering via Semantic-consistent Purification",
@@ -29646,7 +31096,13 @@
       "date": "2026-04-12T15:43:30Z",
       "date_basis": "first-public",
       "venue": "ACL 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/AoKoo233/Incomplete_AVQA"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -29685,8 +31141,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2604.10916": {
@@ -29746,7 +31203,18 @@
       "date": "2026-04-13T08:40:10Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/video-db/gemini-reasoning-eval"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://videodb.io"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -29779,6 +31247,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -29857,7 +31326,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2604.11751": {
       "title": "Grounded World Model for Semantically Generalizable Planning",
@@ -29865,7 +31337,23 @@
       "date": "2026-04-13T17:25:41Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/QuanyiLi/gwm-wiser"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Shady0057/GWM"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Shady0057/WISER"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -29888,7 +31376,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2604.12148": {
       "title": "ViLL-E: Video LLM Embeddings for Retrieval",
@@ -29987,6 +31478,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -30146,8 +31638,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2604.14149": {
@@ -30382,7 +31875,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2604.16592": {
       "title": "Human Cognition in Machines: A Unified Perspective of World Models",
@@ -30454,8 +31949,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2604.16893": {
@@ -30464,7 +31960,13 @@
       "date": "2026-04-18T07:56:32Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/cyuQ1n/EasyVideoR1"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -30565,7 +32067,7 @@
       "url": "https://arxiv.org/abs/2604.17298",
       "date": "2026-04-19T07:28:39Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICASSP 2026",
       "resources": [],
       "placements": [
         {
@@ -30591,7 +32093,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2604.17375": {
       "title": "When Text Hijacks Vision: Benchmarking and Mitigating Text Overlay-Induced Hallucination in Vision Language Models",
@@ -30654,8 +32158,19 @@
       "url": "https://arxiv.org/abs/2604.17422",
       "date": "2026-04-19T13:04:18Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ACM MM 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/shaoguangwang/Q_Gate"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://shaoguangwang.github.io/qgate/"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -30701,7 +32216,13 @@
       "date": "2026-04-19T13:17:34Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/ZhijiangTang/Long-CODE"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -30732,7 +32253,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2604.17749": {
       "title": "Ego-InBetween: Generating Object State Transitions in Ego-Centric Videos",
@@ -30778,6 +32302,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -30931,7 +32456,13 @@
       "date": "2026-04-20T13:33:50Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/homothetic/Geo3DPruner"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -31111,7 +32642,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2604.19193": {
       "title": "How Far Are Video Models from True Multimodal Reasoning?",
@@ -31158,7 +32692,12 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "audio",
+        "image",
+        "text",
+        "video"
+      ]
     },
     "2604.20136": {
       "title": "IMPACT-CYCLE: A Contract-Based Multi-Agent System for Claim-Level Supervisory Correction of Long-Video Semantic Memory",
@@ -31275,7 +32814,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.20460": {
@@ -31329,7 +32869,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.20473": {
@@ -31416,7 +32957,11 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "audio",
+        "image",
+        "text"
+      ]
     },
     "2604.20937": {
       "title": "Sink-Token-Aware Pruning for Fine-Grained Video Understanding in Efficient Video LLMs",
@@ -31467,8 +33012,14 @@
       "url": "https://arxiv.org/abs/2604.21444",
       "date": "2026-04-23T09:04:32Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ICME 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/SYSUzzz/HiCrew"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -31796,6 +33347,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -31847,7 +33399,13 @@
       "date": "2026-04-25T15:10:25Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Emo-gml/EmoTrans"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -31886,7 +33444,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.23724": {
@@ -31927,7 +33486,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.24002": {
@@ -32070,7 +33630,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2604.24317": {
@@ -32296,8 +33857,24 @@
       "url": "https://arxiv.org/abs/2604.26182",
       "date": "2026-04-28T23:59:19Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ECCV 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/alexnwang/lifted-world-model"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/alexnwang/LiftedWorldModel"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://www.alexn.wang/lwm/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -32321,7 +33898,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "state"
+      ]
     },
     "2604.26934": {
       "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
@@ -32380,6 +33960,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -32421,7 +34002,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2604.28185": {
@@ -32641,7 +34224,13 @@
       "date": "2026-05-02T11:28:20Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://aaparcedo.github.io/VISTA/"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -32922,8 +34511,19 @@
       "url": "https://arxiv.org/abs/2605.03650",
       "date": "2026-05-05T11:29:43Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ICML 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/LiZhYun/ICML2026-RethinkingOCL"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://magenta-sherbet-85b101.netlify.app/"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -32946,15 +34546,38 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.03941": {
       "title": "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
       "url": "https://arxiv.org/abs/2605.03941",
       "date": "2026-05-05T16:30:03Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ICML 2026",
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://iworld-bench.com/"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/EmbodiedCity/iWorld-Bench-Dataset"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/EmbodiedCity/iWorld-Bench"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/spaces/EmbodiedCity/iWorld-Bench"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -32987,7 +34610,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.04045": {
       "title": "Audio-Visual Intelligence in Large Foundation Models",
@@ -33037,7 +34662,18 @@
       "date": "2026-05-06T05:48:56Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/LiamZhao326/From-Priors-to-Perception"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Liam328/PriorPair"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -33081,7 +34717,18 @@
       "date": "2026-05-06T13:01:52Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MiliLab/VTAgent"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/loptr/VTAgent"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -33112,7 +34759,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.05138": {
@@ -33291,7 +34939,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.05951": {
@@ -33334,7 +34983,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "state"
+      ]
     },
     "2605.05997": {
       "title": "4DThinker: Thinking with 4D Imagery for Dynamic Spatial Understanding",
@@ -33396,7 +35047,18 @@
       "date": "2026-05-07T12:13:15Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Koreyoshi01/VISD"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://lkyyy111.github.io/VISD"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -33486,7 +35148,18 @@
       "date": "2026-05-07T15:05:26Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://hskalin.github.io/semantic-wm/"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/Nilaksh404/semantic-wm"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -33518,7 +35191,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "video"
       ]
     },
     "2605.07061": {
@@ -33527,7 +35201,28 @@
       "date": "2026-05-08T00:14:07Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://zijuncui.com/AV-Phys/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/ZijunCui02/AV-Phys-Bench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/ZijunCui/AV-Phys-Bench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/ZijunCui/AV-Phys-Bench-Sample"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -33575,8 +35270,7 @@
         }
       },
       "input_modalities": [
-        "text",
-        "audio"
+        "text"
       ]
     },
     "2605.07278": {
@@ -33594,6 +35288,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/biubiu116/RC-aux"
         }
       ],
       "placements": [
@@ -33618,7 +35317,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2605.07299": {
       "title": "EgoPro-Bench: Benchmarking Personalized Proactive Interaction in Egocentric Video Streams",
@@ -33980,7 +35681,18 @@
       "date": "2026-05-05T06:48:39Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/AMAAI-Lab/Karma-MV"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/amaai-lab/Karma-MV"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -34025,8 +35737,7 @@
       },
       "input_modalities": [
         "text",
-        "video",
-        "audio"
+        "video"
       ]
     },
     "2605.08271": {
@@ -34114,7 +35825,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.08412": {
       "title": "SYNCR: A Cross-Video Reasoning Benchmark with Synthetic Grounding",
@@ -34187,7 +35900,28 @@
       "date": "2026-05-09T00:00:47Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://xavihart.github.io/ACWM-Phys/"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/t1an/ACWM-Phys"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/models/t1an/ACWM-Phys-checkpoints"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/xavihart/ACWM-Phys-dev"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -34227,7 +35961,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "video"
       ]
     },
     "2605.08735": {
@@ -34411,7 +36146,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.09449": {
@@ -34516,7 +36252,18 @@
       "date": "2026-05-10T15:18:08Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/IsmaelElsharkawi/SoccerExplainability"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/IsmaelElsharkawi/SoccerLensDataset"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -34614,7 +36361,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.09874": {
       "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
@@ -34631,6 +36380,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Ziyang412/EgoMemReason"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Ted412/EgoMemReason"
         }
       ],
       "placements": [
@@ -34749,7 +36508,13 @@
       "date": "2026-05-11T02:50:27Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://anon7f3c2a.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -34781,8 +36546,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2605.09996": {
@@ -34841,6 +36607,8 @@
         }
       },
       "input_modalities": [
+        "audio",
+        "image",
         "text"
       ]
     },
@@ -34882,7 +36650,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.10228": {
@@ -34955,7 +36724,13 @@
       "date": "2026-05-11T10:43:59Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/BoxueYang/EvoStreaming"
+        }
+      ],
       "placements": [
         {
           "section": "streaming",
@@ -34987,7 +36762,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.10404": {
@@ -35129,7 +36905,13 @@
       "date": "2026-05-11T15:57:46Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://www.github.com/mohammad2012191/GridProbe"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -35161,7 +36943,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.10806": {
@@ -35213,7 +36996,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2605.11367": {
       "title": "3D-Belief: Embodied Belief Inference via Generative 3D World Modeling",
@@ -35221,7 +37007,23 @@
       "date": "2026-05-12T00:42:27Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/3D-Belief/3d-belief"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/SCAI-JHU/3d-belief"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://3d-belief.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -35244,7 +37046,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2605.11477": {
       "title": "LDDR: Linear-DPP-Based Dynamic-Resolution Frame Sampling for Video MLLMs",
@@ -35411,6 +37215,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/CewEhao/VideoSEAL_8B"
         }
       ],
       "placements": [
@@ -35490,6 +37299,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -35543,7 +37353,13 @@
       "date": "2026-05-13T10:53:15Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Bibiriosimon/Ego2World-Benchmark-Code-Space"
+        }
+      ],
       "placements": [
         {
           "section": "executable",
@@ -35575,6 +37391,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -35637,7 +37454,13 @@
       "date": "2026-05-13T16:14:44Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/anonymousneurips/IMAVB"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -35682,7 +37505,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "audio",
+        "text",
+        "video"
       ]
     },
     "2605.13803": {
@@ -35734,6 +37559,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -35987,7 +37813,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.15199": {
       "title": "EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation",
@@ -36046,7 +37874,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2605.15342": {
       "title": "Minerva-Ego: Spatiotemporal Hints for Egocentric Video Understanding",
@@ -36158,6 +37989,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -36167,7 +37999,13 @@
       "date": "2026-05-14T23:10:04Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/santoshpaidi/IA-JEPA"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -36194,7 +38032,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.15618": {
       "title": "Latent Video Prediction Learns Better World Models",
@@ -36226,7 +38066,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.15764": {
       "title": "GRASP: Learning to Ground Social Reasoning in Multi-Person Non-Verbal Interactions",
@@ -36319,7 +38161,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2605.16079": {
       "title": "VideoSeeker: Incentivizing Instance-level Video Understanding via Native Agentic Tool Invocation",
@@ -36456,7 +38300,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "state"
+      ]
     },
     "2605.16481": {
       "title": "Visual Agentic Memory: Enabling Online Long Video Understanding via Online Indexing, Hierarchical Memory, and Agentic Retrieval",
@@ -36551,7 +38397,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.16713": {
       "title": "GeoWorld-VLM: Geometry from World Models for Vision-Language Models",
@@ -36559,7 +38407,13 @@
       "date": "2026-05-15T23:52:11Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Harvard-AI-and-Robotics-Lab/GeoWorld-VLM"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -36590,6 +38444,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -36636,7 +38491,13 @@
       "date": "2026-05-16T16:15:59Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/yansikuan/Pyravid"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -36730,6 +38591,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -36773,7 +38635,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2605.17912": {
       "title": "WorldArena 2.0: Extending Embodied World Model Benchmarking on Modality, Functionality and Platform",
@@ -36979,8 +38843,8 @@
         }
       },
       "input_modalities": [
-        "text",
-        "video"
+        "image",
+        "text"
       ]
     },
     "2605.18018": {
@@ -37037,7 +38901,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.18396": {
@@ -37055,6 +38920,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/CUTEPKQ/NEWTON"
         }
       ],
       "placements": [
@@ -37269,7 +39139,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.19223": {
@@ -37361,6 +39232,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -37463,7 +39335,18 @@
       "date": "2026-05-19T05:28:54Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/positionprivacy/PRISM"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/posprivacy/PRISM"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -37552,7 +39435,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.19506": {
@@ -37866,7 +39750,13 @@
       "date": "2026-05-20T07:05:49Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://log2r.github.io/Demo-JEPA/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -37889,7 +39779,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.21443": {
       "title": "TempGlitch: Evaluating Vision-Language Models for Temporal Glitch Detection in Gameplay Videos",
@@ -37936,7 +39828,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2605.21625": {
@@ -38002,7 +39894,7 @@
       "url": "https://arxiv.org/abs/2605.21852",
       "date": "2026-05-21T00:57:39Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026 (Spotlight)",
       "resources": [],
       "placements": [
         {
@@ -38045,6 +39937,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -38110,7 +40003,13 @@
       "date": "2026-05-21T03:00:35Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/HuangShiqi128/EvoVid"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -38155,7 +40054,13 @@
       "date": "2026-05-21T04:03:25Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/zelion2003/Foresee-to-Ground"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -38255,7 +40160,13 @@
       "date": "2026-05-21T05:18:57Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/yfanDai/LatentOmni"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -38290,8 +40201,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2605.22158": {
@@ -38299,7 +40211,7 @@
       "url": "https://arxiv.org/abs/2605.22158",
       "date": "2026-05-21T08:27:15Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICLR 2026",
       "resources": [
         {
           "kind": "code",
@@ -38456,7 +40368,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2605.22446": {
@@ -38488,7 +40402,12 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "action",
+        "image",
+        "state",
+        "text"
+      ]
     },
     "2605.22570": {
       "title": "VGenST-Bench: A Benchmark for Spatio-Temporal Reasoning via Active Video Synthesis",
@@ -38539,7 +40458,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2605.22818": {
       "title": "MotiMotion: Motion-Controlled Video Generation with Visual Reasoning",
@@ -38599,7 +40521,7 @@
       "url": "https://arxiv.org/abs/2605.22819",
       "date": "2026-05-21T17:59:45Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ECCV 2026",
       "resources": [
         {
           "kind": "project",
@@ -38859,7 +40781,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2605.23699": {
       "title": "CRONOS: Benchmarking Counterfactual Physical Consistency in Video Models",
@@ -38867,7 +40791,23 @@
       "date": "2026-05-22T14:51:22Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://genintel.github.io/CRONOS/"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/GenIntel/CRONOS-benchmark"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/genintel/CRONOS-benchmark"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -38899,7 +40839,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2605.23826": {
       "title": "Decomposing Queries into Tool Calls for Long-Video Keyframe Retrieval",
@@ -38956,7 +40898,7 @@
       "url": "https://arxiv.org/abs/2605.24004",
       "date": "2026-05-19T06:23:14Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ITSC 2026",
       "resources": [
         {
           "kind": "code",
@@ -39001,8 +40943,7 @@
         }
       },
       "input_modalities": [
-        "text",
-        "action"
+        "text"
       ]
     },
     "2605.24322": {
@@ -39037,7 +40978,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.24375": {
       "title": "Distilling Game Code World Model Generation into Lightweight Large Language Models",
@@ -39109,7 +41052,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2605.25313": {
       "title": "UWM-JEPA: Predictive World Models That Imagine in Belief Space",
@@ -39316,7 +41261,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2605.26014": {
       "title": "STORM: Internalized Modeling for Spatial-Temporal Reasoning in Video-Language Models",
@@ -39455,7 +41403,13 @@
       "date": "2026-05-26T02:46:15Z",
       "date_basis": "first-public",
       "venue": "CVPR 2026",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://gaozzzz.github.io/MedVCR/"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -39494,7 +41448,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2605.26485": {
@@ -39555,8 +41509,8 @@
         }
       },
       "input_modalities": [
-        "text",
-        "audio"
+        "audio",
+        "video"
       ]
     },
     "2605.26584": {
@@ -39598,7 +41552,7 @@
         }
       },
       "input_modalities": [
-        "text",
+        "audio",
         "video"
       ]
     },
@@ -39700,7 +41654,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2605.27318": {
       "title": "Q-GeoMem: Question-Guided Geometric Memory for Video Spatial Reasoning",
@@ -39741,7 +41697,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.27589": {
@@ -39792,7 +41749,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "image",
+        "text"
       ]
     },
     "2605.27817": {
@@ -39842,7 +41800,13 @@
       "date": "2026-05-27T03:08:12Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/tamaki-lab/EgoCross-Reflective-Dialogue"
+        }
+      ],
       "placements": [
         {
           "section": "language",
@@ -39884,7 +41848,7 @@
       "url": "https://arxiv.org/abs/2605.27920",
       "date": "2026-05-27T03:47:05Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "AAAI 2026",
       "resources": [],
       "placements": [
         {
@@ -39964,7 +41928,7 @@
       },
       "input_modalities": [
         "text",
-        "audio"
+        "video"
       ]
     },
     "2605.29339": {
@@ -40012,7 +41976,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.29360": {
@@ -40061,8 +42026,9 @@
         }
       },
       "input_modalities": [
+        "action",
         "text",
-        "action"
+        "video"
       ]
     },
     "2605.29585": {
@@ -40111,6 +42077,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -40165,6 +42132,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -40217,7 +42185,18 @@
       "date": "2026-05-28T20:18:22Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/pvwm/physically-viable-world-models"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://pvwm.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "surveys",
@@ -40299,7 +42278,18 @@
       "date": "2026-05-29T09:38:43Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://arxiv.org/abs/2605.31069"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://ar5iv.labs.arxiv.org/html/2605.31069"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -40330,7 +42320,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "video"
       ]
     },
     "2605.31529": {
@@ -40338,8 +42329,29 @@
       "url": "https://arxiv.org/abs/2605.31529",
       "date": "2026-05-29T16:43:06Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "ECCV 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/texaser/svi-bench"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/MVP-Group/SVI-Bench"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://svi-bench.github.io/"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://svi-bench.github.io/svi_bench_extended.pdf"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -40379,7 +42391,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2605.31598": {
@@ -40494,7 +42507,18 @@
       "date": "2026-05-29T18:57:57Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/CMU-IntentLab/StressDream"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://stressdream.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -40527,7 +42551,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2606.00439": {
@@ -40576,7 +42600,9 @@
           }
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2606.00616": {
       "title": "Pause and Think: A Dataset and Benchmark for Video-Grounded Assistive Action Suggestion",
@@ -40627,7 +42653,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.00620": {
@@ -40635,7 +42662,7 @@
       "url": "https://arxiv.org/abs/2606.00620",
       "date": "2026-05-30T08:51:28Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "code",
@@ -40645,6 +42672,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://zeyun-zhong.github.io/FlowNar/"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/zeyun-zhong/FlowNar-Data"
         }
       ],
       "placements": [
@@ -40678,7 +42715,7 @@
         }
       },
       "input_modalities": [
-        "text"
+        "video"
       ]
     },
     "2606.00793": {
@@ -40696,6 +42733,21 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/study-overflow/MBench"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/spaces/study-overflow/MBench_Leaderboard"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/studyOverflow/MBench-Data"
         }
       ],
       "placements": [
@@ -40740,7 +42792,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.00910": {
@@ -40824,7 +42877,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.01104": {
@@ -41052,8 +43106,7 @@
       },
       "input_modalities": [
         "text",
-        "video",
-        "state"
+        "video"
       ]
     },
     "2606.01600": {
@@ -41061,7 +43114,7 @@
       "url": "https://arxiv.org/abs/2606.01600",
       "date": "2026-06-01T02:56:09Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "EMNLP 2026 (Findings)",
       "resources": [
         {
           "kind": "project",
@@ -41114,6 +43167,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -41224,7 +43278,13 @@
       "date": "2026-06-01T11:12:28Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/whunextgen/ClinicalskillQA"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -41270,6 +43330,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -41387,7 +43448,7 @@
       "url": "https://arxiv.org/abs/2606.02436",
       "date": "2026-06-01T16:08:43Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "SIGGRAPH Asia 2026",
       "resources": [
         {
           "kind": "project",
@@ -41423,7 +43484,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2606.02443": {
       "title": "PaSBench-Video: A Streaming Video Benchmark for Proactive Safety Warning",
@@ -41431,7 +43494,13 @@
       "date": "2026-06-01T16:14:01Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/beingbetter11643/PaSBench-Video"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -41635,7 +43704,18 @@
       "date": "2026-06-01T17:56:35Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/HaowenHou/AdaCodec"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://HaowenHou.github.io/AdaCodec-Page/"
+        }
+      ],
       "placements": [
         {
           "section": "perception",
@@ -41767,6 +43847,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3"
         }
       ],
       "placements": [
@@ -41802,9 +43887,11 @@
         }
       },
       "input_modalities": [
-        "text",
+        "action",
         "audio",
-        "image"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2606.03301": {
@@ -41855,7 +43942,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.03603": {
@@ -41907,6 +43995,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -42198,7 +44287,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.05008": {
@@ -42216,6 +44306,16 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/PKU-VaLuE-Lab/m3eval"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/PKU-VaLuE-Lab/m3eval"
         }
       ],
       "placements": [
@@ -42351,7 +44451,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2606.05677": {
       "title": "LongSpace: Exploring Long-Horizon Spatial Memory from Perception to Recall in Video",
@@ -42466,6 +44568,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -42519,7 +44622,18 @@
       "date": "2026-06-04T06:53:19Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/OpenGVLab/Future-L1"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/Eurayka/Future-L1-50K"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -42589,7 +44703,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2606.05833": {
       "title": "Learning Geometric Representations from Videos for Spatial Intelligent Multimodal Large Language Models",
@@ -42597,7 +44714,23 @@
       "date": "2026-06-04T08:11:12Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/WHB139426/GeoVR-MLLM"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/WHB139426/GeoVR"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/spaces/WHB139426/GeoVR"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -42683,8 +44816,8 @@
         }
       },
       "input_modalities": [
-        "text",
-        "video"
+        "image",
+        "text"
       ]
     },
     "2606.05966": {
@@ -42739,7 +44872,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2606.05979": {
@@ -42747,8 +44882,34 @@
       "url": "https://arxiv.org/abs/2606.05979",
       "date": "2026-06-04T10:23:01Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
-      "resources": [],
+      "venue": "CoRL 2026",
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/SJTU-DENG-Lab/WLA"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/collections/SJTU-DENG-Lab/wla"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/SJTU-DENG-Lab/LIBERO_LeRobot"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/SJTU-DENG-Lab/RoboTwin-LeRobot"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/SJTU-DENG-Lab/RMBench-LeRobot"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -42782,8 +44943,9 @@
         }
       },
       "input_modalities": [
-        "text",
-        "video"
+        "image",
+        "state",
+        "text"
       ]
     },
     "2606.06338": {
@@ -42791,7 +44953,7 @@
       "url": "https://arxiv.org/abs/2606.06338",
       "date": "2026-06-04T16:12:43Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "IJCV 2026",
       "resources": [
         {
           "kind": "code",
@@ -42801,6 +44963,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/ZQFive/StoryVideoQA"
         }
       ],
       "placements": [
@@ -42973,7 +45140,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.06832": {
@@ -43099,7 +45267,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2606.07433": {
       "title": "Watch, Remember, Reason: Human-View Video Understanding with MLLMs",
@@ -43292,7 +45463,7 @@
       "url": "https://arxiv.org/abs/2606.07643",
       "date": "2026-06-01T19:12:09Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "project",
@@ -43345,8 +45516,9 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
-        "audio"
+        "video"
       ]
     },
     "2606.07687": {
@@ -43379,7 +45551,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2606.08239": {
       "title": "When No Answer Is Correct: Diagnosing Absent Answer Detection for MLLMs in Video Understanding",
@@ -43516,7 +45690,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "state",
+        "text",
+        "video"
       ]
     },
     "2606.08572": {
@@ -43525,7 +45701,33 @@
       "date": "2026-06-07T11:03:33Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/NJU-LINK/OmniCap-IF"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/NJU-LINK/OmniCaptioner-IF-7B"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/NJU-LINK/OmniCaptioner-IF-3B"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/NJU-LINK/OmniCap-IF-54K"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/NJU-LINK/OmniCap-IF"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -43700,7 +45902,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.09186": {
@@ -43750,7 +45953,7 @@
       "url": "https://arxiv.org/abs/2606.09248",
       "date": "2026-06-08T09:21:01Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "code",
@@ -43807,7 +46010,18 @@
       "date": "2026-06-08T13:12:56Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/BAAI-Humanoid/Omega-EVA"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://baai-humanoid.github.io/Omega-EVA/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -43841,8 +46055,9 @@
         }
       },
       "input_modalities": [
-        "text",
-        "action"
+        "action",
+        "image",
+        "text"
       ]
     },
     "2606.09547": {
@@ -43951,6 +46166,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -43983,7 +46199,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2606.09803": {
       "title": "Echo-Memory: A Controlled Study of Memory in Action World Models",
@@ -44043,8 +46261,9 @@
         }
       },
       "input_modalities": [
-        "text",
-        "action"
+        "action",
+        "image",
+        "text"
       ]
     },
     "2606.09828": {
@@ -44088,7 +46307,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image",
+        "text"
+      ]
     },
     "2606.10620": {
       "title": "Can Image Models Imagine Time? ImageTime: A Novel Benchmark for Probing Visual World Modeling Through Spatiotemporal Consistency",
@@ -44142,7 +46364,8 @@
         }
       },
       "input_modalities": [
-        "image"
+        "image",
+        "text"
       ]
     },
     "2606.11129": {
@@ -44202,7 +46425,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2606.11209": {
       "title": "ProcessThinker: Enhancing Multi-modal Large Language Models Reasoning via Rollout-based Process Reward",
@@ -44250,7 +46475,7 @@
       "url": "https://arxiv.org/abs/2606.11683",
       "date": "2026-06-10T05:52:14Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "project",
@@ -44293,7 +46518,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.11838": {
@@ -44302,7 +46528,13 @@
       "date": "2026-06-10T09:18:14Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/KU-AGI/SG-PVR"
+        }
+      ],
       "placements": [
         {
           "section": "structured",
@@ -44335,7 +46567,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.11913": {
@@ -44419,6 +46652,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text"
       ]
     },
@@ -44481,7 +46715,33 @@
       "date": "2026-06-10T15:17:08Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/OpenGVLab/InternVideo"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/yanziang/InternVideo3-8B-Instruct"
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/yanziang/InternVideo3_Dataset"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/shepnerd/vidify"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://arxiv.org/abs/2606.12195"
+        }
+      ],
       "placements": [
         {
           "section": "agents",
@@ -44504,7 +46764,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2606.12300": {
       "title": "Natural-Language Temporal Grounding in Hour-Long Videos is a Search Problem: A Benchmark and Empirical Decomposition",
@@ -44602,7 +46865,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2606.12780": {
       "title": "ProPlay: Procedural World Models for Self-Evolving LLM Agents",
@@ -44683,7 +46948,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2606.13141": {
       "title": "Rethinking RAG in Long Videos: What to Retrieve and How to Use It?",
@@ -44774,7 +47041,10 @@
         }
       },
       "input_modalities": [
-        "text"
+        "audio",
+        "image",
+        "text",
+        "video"
       ]
     },
     "2606.13817": {
@@ -45027,8 +47297,7 @@
         }
       },
       "input_modalities": [
-        "text",
-        "audio"
+        "video"
       ]
     },
     "2606.14723": {
@@ -45109,7 +47378,7 @@
       "url": "https://arxiv.org/abs/2606.15200",
       "date": "2026-06-13T08:50:49Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "code",
@@ -45119,6 +47388,11 @@
             "source": "primary abstract or author comment",
             "checked_on": "2026-09-17"
           }
+        },
+        {
+          "kind": "data",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/datasets/cocowy1/UCS-Bench"
         }
       ],
       "placements": [
@@ -45327,7 +47601,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "image"
+      ]
     },
     "2606.16519": {
       "title": "BadWorld: Adversarial Attacks on World Models",
@@ -45386,7 +47662,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "image"
       ]
     },
     "2606.16533": {
@@ -45395,7 +47672,28 @@
       "date": "2026-06-15T10:37:42Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/DAXIAORobotics/kairos"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/collections/kairos-agi/kairos30"
+        },
+        {
+          "kind": "weights",
+          "label": "ModelScope",
+          "url": "https://modelscope.cn/collections/kairos-team/kairos30"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://kairos.acerobotics.com"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
@@ -45467,7 +47765,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2606.17279": {
       "title": "Training LLMs with Reinforcement Learning over Digital Twin Representations for Reasoning-Intensive Surgical VideoQA",
@@ -45811,7 +48111,8 @@
         }
       },
       "input_modalities": [
-        "action"
+        "action",
+        "image"
       ]
     },
     "2606.19341": {
@@ -45819,7 +48120,7 @@
       "url": "https://arxiv.org/abs/2606.19341",
       "date": "2026-06-17T17:59:56Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "ICML 2026",
       "resources": [
         {
           "kind": "code",
@@ -45864,6 +48165,7 @@
         }
       },
       "input_modalities": [
+        "audio",
         "text",
         "video"
       ]
@@ -46024,7 +48326,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2606.20545": {
@@ -46033,7 +48337,28 @@
       "date": "2026-06-18T17:55:15Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/JinPLu/WRBench"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://jinplu.github.io/WRBench"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/collections/WRBench/wrbench-current-world-models-lack-a-persistent-state-core-6a365c717251293c9fc2cc26"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/spaces/WRBench/wrbench-leaderboard"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -46072,7 +48397,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text"
+      ]
     },
     "2606.20561": {
       "title": "TimeProVe: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living",
@@ -46264,7 +48591,9 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "video"
+      ]
     },
     "2606.22804": {
       "title": "CoVStream: Edge-Cloud Collaboration for Understanding of Long Video Streams",
@@ -46305,6 +48634,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -46414,7 +48744,23 @@
       "date": "2026-06-22T07:45:34Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/alibaba-damo-academy/RynnVLA-002"
+        },
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/Robbyant/lingbot-va"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/collections/robbyant/lingbot-va"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -46444,7 +48790,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2606.23061": {
       "title": "MotionHalluc: Diagnosing Kinematic Hallucinations in Fine-Grained Motion Reasoning",
@@ -46492,7 +48841,8 @@
         }
       },
       "input_modalities": [
-        "text"
+        "text",
+        "video"
       ]
     },
     "2606.23280": {
@@ -46501,7 +48851,13 @@
       "date": "2026-06-22T12:57:17Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://yy12136.github.io/CRWM/"
+        }
+      ],
       "placements": [
         {
           "section": "worlds",
