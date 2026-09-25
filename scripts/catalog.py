@@ -157,8 +157,12 @@ def validate(data):
             resource_keys.add(key)
             if not resource['label'] or '\n' in resource['label']:
                 raise CatalogError(f'{identity}: resource label required')
-            if resource['kind'] == 'weights' and '/datasets/' in resource['url']:
-                raise CatalogError(f'{identity}: dataset is not a weights resource')
+            if resource['kind'] == 'weights':
+                path = urlsplit(resource['url']).path.lower()
+                if '/datasets/' in path:
+                    raise CatalogError(f'{identity}: dataset is not a weights resource')
+                if urlsplit(resource['url']).hostname in {'huggingface.co', 'hf.co'} and path.startswith('/spaces/'):
+                    raise CatalogError(f'{identity}: Hugging Face Space is not a weights resource')
             for badge in resource.get('badges', []):
                 check_url(badge['url'])
                 if badge['url'].startswith('https://img.shields.io/github/stars/'):
@@ -274,7 +278,7 @@ def render_block(data):
     lines = [START, '<!-- Generated from data/papers.json by scripts/catalog.py. -->', '',
              '`Time` is the first-public month; `(proc.)` marks a proceedings date with an unresolved earlier preprint. '
              '`N/A` means unrecorded or not applicable.', '',
-             '<details open>', '<summary><strong>Input modalities & benchmark tasks</strong></summary>', '',
+             '<details>', '<summary><strong>Input modalities & benchmark tasks</strong></summary>', '',
              'Badges describe supplied inputs, including optional conditioning. They exclude outputs, internal representations, '
              'and task names. Lists cover verified inputs and may be incomplete.', '',
              '| Modality | Input | Color |', '| :--- | :--- | :--- |']

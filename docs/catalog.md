@@ -46,7 +46,7 @@ Preserve the existing record's resources and evidence when editing it; the examp
 | `placements` | One or more `{section, focus}` objects; `name` supplies the benchmark Name column. Benchmark placements also have `tasks` and optional `task_evidence`. `focus` remains hidden scope metadata |
 | `provenance` | Source URLs, review depth, venue evidence, BibTeX, aliases, and notes; retained through reverse imports |
 
-A resource contains `kind`, `label`, and `url`. Kinds are `code`, `data`, `project`, `weights`, `paper`, and `other`. Optional `evidence` stores verification details; optional `badges` stores additional `{alt, url}` images. GitHub repository links automatically display a GitHub badge and a separate Stars badge linking to `/stargazers`; do not store these generated stars in JSON. Project pages use a house badge. Hugging Face and ModelScope distinguish datasets from checkpoints. Branded badges use `resource:kind` alt text and preserve the descriptive `label` in JSON. Other links display `kind: label`. URLs must percent-encode spaces, pipes, and parentheses.
+A resource contains `kind`, `label`, and `url`. Kinds are `code`, `data`, `project`, `weights`, `paper`, and `other`. Optional `evidence` stores verification details; optional `badges` stores additional `{alt, url}` images. GitHub repository links automatically display a GitHub badge and a separate Stars badge linking to `/stargazers`; do not store these generated stars in JSON. Project pages use a house badge. Hugging Face and ModelScope distinguish datasets from checkpoints; a Hugging Face Space is a project/demo or leaderboard, not weights. Branded badges use `resource:kind` alt text and preserve the descriptive `label` in JSON. Other links display `kind: label`. URLs must percent-encode spaces, pipes, and parentheses.
 
 <a id="input-modalities"></a>
 
@@ -64,7 +64,7 @@ Badges use shared Markdown references to keep the README compact. The importer v
 
 `focus` accepts concise inline Markdown; titles, names, venue names, and link labels are plain text. Do not place raw HTML or line breaks in catalog fields. Entities protect pipes and brackets during conversion. Dates sort newest first, using full precision when known and the stable ID as a tie-breaker.
 
-The `groups` and `sections` objects define order, stable anchors, titles, and descriptions. To add a branch, add a section with an existing `group` (or define a new group). Sections use `<details open>`: expanded by default, with no paper-count summaries. Keep anchors outside `<details>` and blank lines around tables so GitHub renders them correctly. The generated region is bounded by `catalog:start` and `catalog:end`; introductory prose, formulas, the evaluation guide, and related resources live outside it.
+The `groups` and `sections` objects define order, stable anchors, titles, and descriptions. To add a branch, add a section with an existing `group` (or define a new group). Paper sections use `<details open>`: expanded by default, with no paper-count summaries. The input/task legend is collapsed so the catalog begins with papers. Keep anchors outside `<details>` and blank lines around tables so GitHub renders them correctly. The generated region is bounded by `catalog:start` and `catalog:end`; introductory prose, formulas, the evaluation guide, and related resources live outside it.
 
 ## Benchmark Tables
 

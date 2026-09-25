@@ -22,7 +22,7 @@ Run from the repository root. Read [CONTRIBUTING.md](../../../CONTRIBUTING.md) f
 ## Update and verify
 
 1. Edit **only `data/papers.json`** for paper data. Each paper owns shared citation/resources and a list of placements. Read the schema reference for optional fields or a new section. Older bibliography/review JSON files are frozen evidence, not sources to synchronize by hand.
-2. Verify resource purpose before assigning `kind`; datasets are not weights. Resource badges are automatic: GitHub plus Stars linking to `/stargazers`, a house icon for project pages, and typed Hugging Face/ModelScope badges. Do not store generated star badges in JSON. Store plain-text Venue; rendering adds backticks. Use the shared input palette and the separate benchmark Task palette; never mix the two vocabularies.
+2. Verify resource purpose before assigning `kind`; datasets and Hugging Face Spaces are not weights. Label Spaces as projects/demos or leaderboards according to their purpose. Resource badges are automatic: GitHub plus Stars linking to `/stargazers`, a house icon for project pages, and typed Hugging Face/ModelScope badges. Do not store generated star badges in JSON. Store plain-text Venue; rendering adds backticks. Use the shared input palette and the separate benchmark Task palette; never mix the two vocabularies.
 3. Run:
 
    ```sh
@@ -31,7 +31,7 @@ Run from the repository root. Read [CONTRIBUTING.md](../../../CONTRIBUTING.md) f
    git diff --check
    ```
 
-4. Review retained citations, benchmark names/tasks, inputs, dates, and narrative/formulas. Keep the README focused on research routes and comparisons; use consistent chapter emoji and stable anchors. Omit editing logs and paper-count summaries. Use `<details open>` and blank table boundaries. If conversion code changed, run `python3 -m unittest discover -s tests -v`. Equations live in [Modeling Notes](../../../docs/modeling.md) with editable `assets/math/*.tex` and checked-in SVGs: run `npm ci --prefix tools/math`, `npm run render --prefix tools/math`, and `npm run check --prefix tools/math`, then inspect the images and published links. Do not equate the presence of GitHub math markup with successful client rendering.
+4. Review retained citations, benchmark names/tasks, inputs, dates, and narrative/formulas. Keep the README focused on research routes and comparisons; use consistent chapter emoji and stable anchors. Omit editing logs and paper-count summaries. Use `<details open>` for paper sections, keep the input/task legend collapsed, and retain blank table boundaries. If conversion code changed, run `python3 -m unittest discover -s tests -v`. Equations live in [Modeling Notes](../../../docs/modeling.md) with editable `assets/math/*.tex` and checked-in SVGs: run `npm ci --prefix tools/math`, `npm run render --prefix tools/math`, and `npm run check --prefix tools/math`, then inspect the images and published links. Do not equate the presence of GitHub math markup with successful client rendering.
 5. Report additions/corrections, validation, and unresolved sources. Commit/merge/push only when the user has authorized those actions in the active task; the skill itself grants no publishing permission.
 
 ## Intentional README edits

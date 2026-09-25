@@ -15829,7 +15829,7 @@
           "url": "https://github.com/worldarena/WorldArena"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/WorldArena/WorldArena"
         },
@@ -30232,7 +30232,7 @@
           "url": "https://github.com/FeiElysia/Tempo"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/Vision-CAIR/Tempo"
         },
@@ -34573,7 +34573,7 @@
           "url": "https://github.com/EmbodiedCity/iWorld-Bench"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/EmbodiedCity/iWorld-Bench"
         }
@@ -42740,7 +42740,7 @@
           "url": "https://github.com/study-overflow/MBench"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/study-overflow/MBench_Leaderboard"
         },
@@ -44726,7 +44726,7 @@
           "url": "https://huggingface.co/WHB139426/GeoVR"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/WHB139426/GeoVR"
         }
@@ -48354,7 +48354,7 @@
           "url": "https://huggingface.co/collections/WRBench/wrbench-current-world-models-lack-a-persistent-state-core-6a365c717251293c9fc2cc26"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/WRBench/wrbench-leaderboard"
         }
@@ -49873,7 +49873,7 @@
           "url": "https://memobench-team.github.io"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/tonyc54/MemoBench_Leaderboard"
         }
@@ -54682,7 +54682,7 @@
           "url": "https://huggingface.co/datasets/nvidia/AV-Skills"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/nvidia/audio-visual-flamingo"
         }
@@ -61276,7 +61276,7 @@
           "url": "https://huggingface.co/datasets/jocelynd/playworld-bench"
         },
         {
-          "kind": "weights",
+          "kind": "project",
           "label": "Hugging Face",
           "url": "https://huggingface.co/spaces/jocelynd/PlayWorld-Leaderboard"
         }

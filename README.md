@@ -13,70 +13,15 @@
 
 ## 🗺️ At a Glance
 
-A curated survey of **reasoning over videos**, **reasoning through visual generation**, and **building worlds for prediction and action**.
+A curated survey of **reasoning over videos**, **reasoning through visual generation**, and **world models for prediction and action**.
 
-The landscape has two complementary views: **reasoning engines**—text, frames, structured/latent states, and programs—and **interaction loops**—interleaving and streaming. A system can combine several engines within one loop.
-
-Browse the [Paper Atlas](#paradigms), choose a [benchmark](#benchmark-selection-guide), or [contribute a paper](CONTRIBUTING.md).
-
-<details open>
-<summary><strong>📖 Contents</strong></summary>
-
-- [🧭 Start Here](#task-definition)
-- [📚 Paper Atlas](#paradigms)
-  - [🧠 Reasoning Engines](#reasoning-mechanisms)
-    - [🗒️ Grounded Reasoning](#cot-based-video-reasoning)
-    - [🎞️ Thinking in Visual Futures](#cof-based-video-reasoning)
-    - [🧩 Stateful Intelligence](#structured-and-latent-video-reasoning)
-    - [💻 Executable Worlds](#executable-world-models)
-  - [🔄 Interaction Loops](#orchestration-and-interaction)
-    - [🛠️ Active Video Agents](#interleaved-video-reasoning)
-    - [🔁 Unified Understanding & Generation](#unified-understanding-generation)
-    - [📡 Always-On Intelligence](#streaming-video-reasoning)
-  - [🔎 Evidence & Action](#evidence-and-action)
-    - [🔎 Evidence at Scale](#evidence-at-scale)
-    - [🌍 World Models for Action](#world-models-for-action)
-  - [🧪 Benchmark Hub](#benchmarks)
-    - [🧪 Beyond Answer Accuracy](#benchmark-atlas)
-    - [🌉 Beyond Video QA](#beyond-video-qa)
-    - [📚 Proceedings Supplement](#proceedings-supplement)
-  - [🧱 Foundations & Bridges](#supporting-foundations)
-    - [🧱 Adjacent Foundations](#adjacent-foundations)
-  - [🗺️ Perspectives & Roadmaps](#survey-roadmaps)
-    - [🧭 Perspectives & Roadmaps](#survey-perspectives)
-- [🎯 Choose Your Benchmark](#benchmark-selection-guide)
-- [🔬 Evaluation Playbook](#evaluation-and-open-problems)
-- [🔭 Next Frontiers](#research-agenda)
-- [📐 Modeling Notes](docs/modeling.md)
-- [✈️ Further Reading](#related-surveys)
-- [🤝 Contributing](#contributing)
-- [🌟 Star History](#star-history)
-- [♥️ Contributors](#contributors)
-
-</details>
+Explore the [Paper Atlas](#paradigms), [Benchmark Hub](#benchmarks), and [World Models for Action](#world-models-for-action). For comparisons, see [Choose Your Benchmark](#benchmark-selection-guide) and [Modeling Notes](docs/modeling.md).
 
 <a id="task-definition"></a>
 <a id="taxonomy-and-modeling"></a>
 <a id="world-model-perspective"></a>
 
-<details open>
-<summary><strong>🧭 Start Here: Choose Your Research Track</strong></summary>
-
-| Your question | Read | Compare on |
-| :--- | :--- | :--- |
-| Can a model answer from the right video evidence? | [Grounded Reasoning](#cot-based-video-reasoning) · [Stateful Intelligence](#structured-and-latent-video-reasoning) | CaST-Bench, SagaQA: answer correctness **and** evidence localization |
-| Does generating a visual trajectory help solve a problem? | [Thinking in Visual Futures](#cof-based-video-reasoning) | VBVR-Pro, MME-CoF-Pro: intermediate rule validity and final success |
-| Can a model construct and execute a consistent world? | [Executable Worlds](#executable-world-models) | WorldCoder-Bench: runtime state, physical constraints, and interaction contracts |
-| Can an assistant search, remember, and respond at the right time? | [Active Video Agents](#interleaved-video-reasoning) · [Always-On Intelligence](#streaming-video-reasoning) | StreamArena, ProactiveBench: observed-prefix access, memory, and response timing |
-| Do imagined futures improve action selection? | [World Models for Action](#world-models-for-action) | WorldArena: rollout fidelity and downstream decision utility |
-
-**Mechanisms and access.** Language traces, generated frames, structured memory, and executable programs are different intermediate representations. Tool use and streaming describe how a system accesses evidence; either can wrap several representations. RL and distillation describe training, not a separate reasoning mechanism.
-
-**Read world-model claims by component.** [GraphThinker](https://arxiv.org/abs/2602.17555) organizes observed state; [Code World Model](https://arxiv.org/abs/2608.25927) separates executable state from learned rendering; [Code-as-World](https://arxiv.org/abs/2608.27549) searches for executable explanations of observations. Evaluate state estimation, transition rules, and rendering separately—one score cannot establish all three.
-
-For a comparison protocol, use [Choose Your Benchmark](#benchmark-selection-guide) and the [Evaluation Playbook](#evaluation-and-open-problems). [Modeling Notes](docs/modeling.md) defines the evidence loop and hybrid world interface; [Worlds as Programs](docs/world-models.md) examines their scientific limits.
-
-</details>
+The atlas groups **reasoning engines** by their intermediate representation—language, generated frames, structured or latent state, and programs—and **interaction loops** by how they obtain evidence. Tool use and streaming can combine several engines; reinforcement learning and distillation describe training. Supporting foundations and surveys have their own sections.
 
 <a id="paradigms"></a>
 
@@ -87,7 +32,7 @@ For a comparison protocol, use [Choose Your Benchmark](#benchmark-selection-guid
 
 `Time` is the first-public month; `(proc.)` marks a proceedings date with an unresolved earlier preprint. `N/A` means unrecorded or not applicable.
 
-<details open>
+<details>
 <summary><strong>Input modalities & benchmark tasks</strong></summary>
 
 Badges describe supplied inputs, including optional conditioning. They exclude outputs, internal representations, and task names. Lists cover verified inputs and may be incomplete.
@@ -456,7 +401,7 @@ Graphs, tracks, spatial maps, and latent reasoning states. Observed memory and i
 | [Reason, Then Re-reason: Cross-view Revisiting Improves Spatial Reasoning](https://arxiv.org/abs/2606.11683) <!-- paper:2606.11683 --> | [![resource:project][res-project]](https://zhenjiemao.github.io/ReRe) | ![Text][mod-text] ![Video][mod-video] | 2026-06 | `ICML 2026` |
 | [MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism](https://arxiv.org/abs/2606.07512) <!-- paper:2606.07512 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-06 | `arXiv` |
 | [MemoryCard: Topic-Aware Multi-Modal Clue Compression for Long-Video Question Answering](https://arxiv.org/abs/2606.05917) <!-- paper:2606.05917 --> | [![resource:code][res-github-code]](https://github.com/NEUIR/MemoryCard) [![Stars](https://img.shields.io/github/stars/NEUIR/MemoryCard?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/NEUIR/MemoryCard/stargazers) | ![Image][mod-image] ![Text][mod-text] | 2026-06 | `arXiv` |
-| [Learning Geometric Representations from Videos for Spatial Intelligent Multimodal Large Language Models](https://arxiv.org/abs/2606.05833) <!-- paper:2606.05833 --> | [![resource:code][res-github-code]](https://github.com/WHB139426/GeoVR-MLLM) [![Stars](https://img.shields.io/github/stars/WHB139426/GeoVR-MLLM?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/WHB139426/GeoVR-MLLM/stargazers)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/WHB139426/GeoVR)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/WHB139426/GeoVR) | ![Text][mod-text] ![Video][mod-video] | 2026-06 | `arXiv` |
+| [Learning Geometric Representations from Videos for Spatial Intelligent Multimodal Large Language Models](https://arxiv.org/abs/2606.05833) <!-- paper:2606.05833 --> | [![resource:code][res-github-code]](https://github.com/WHB139426/GeoVR-MLLM) [![Stars](https://img.shields.io/github/stars/WHB139426/GeoVR-MLLM?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/WHB139426/GeoVR-MLLM/stargazers)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/WHB139426/GeoVR)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/WHB139426/GeoVR) | ![Text][mod-text] ![Video][mod-video] | 2026-06 | `arXiv` |
 | [Imagine Before You Predict: Interleaved Latent Visual Reasoning for Video Event Prediction](https://arxiv.org/abs/2606.05769) <!-- paper:2606.05769 --> | [![resource:code][res-github-code]](https://github.com/OpenGVLab/Future-L1) [![Stars](https://img.shields.io/github/stars/OpenGVLab/Future-L1?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/OpenGVLab/Future-L1/stargazers)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/Eurayka/Future-L1-50K) | ![Text][mod-text] ![Video][mod-video] | 2026-06 | `arXiv` |
 | [GOPAgen: Motion-Aware and Efficient Agentic Long-Video Understanding with Structural Memory and Hierarchical Reasoning](https://arxiv.org/abs/2606.06532) <!-- paper:2606.06532 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-06 | `arXiv` |
 | [Reasmory: 3D Reconstruction as Explicit Memory for VLMs Spatial Reasoning](https://arxiv.org/abs/2606.00963) <!-- paper:2606.00963 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-05 | `arXiv` |
@@ -874,7 +819,7 @@ Frame selection, token compression, temporal grounding, and audio-visual represe
 | [OmniScope: Modality-Decoupled Token Compression for Omnimodal Large Language Models](https://arxiv.org/abs/2607.23193) <!-- paper:2607.23193 --> | [![resource:code][res-github-code]](https://github.com/MAC-AutoML/OmniScope) [![Stars](https://img.shields.io/github/stars/MAC-AutoML/OmniScope?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/MAC-AutoML/OmniScope/stargazers) | ![Audio][mod-audio] ![Image][mod-image] ![Text][mod-text] ![Video][mod-video] | 2026-07 | `ACMMM 2026` |
 | [PCA: Persistence-Aware Compression and Aggregation for Fast Video Large Language Models](https://arxiv.org/abs/2607.22726) <!-- paper:2607.22726 --> | [![resource:code][res-github-code]](https://github.com/Heisenberg10110/PCA) [![Stars](https://img.shields.io/github/stars/Heisenberg10110/PCA?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/Heisenberg10110/PCA/stargazers) | ![Text][mod-text] ![Video][mod-video] | 2026-07 | `ACM MM 2026` |
 | [TimeLens2: Generalist Video Temporal Grounding with Multimodal LLMs](https://arxiv.org/abs/2607.17423) <!-- paper:2607.17423 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-07 | `arXiv` |
-| [Audio-Visual Flamingo: Open Audio-Visual Intelligence for Long and Complex Videos](https://arxiv.org/abs/2607.16107) <!-- paper:2607.16107 --> | [![resource:code][res-github-code]](https://github.com/NVIDIA/audio-flamingo) [![Stars](https://img.shields.io/github/stars/NVIDIA/audio-flamingo?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/NVIDIA/audio-flamingo/stargazers)<br>[![resource:project][res-project]](https://avflamingo.pages.dev/)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/nvidia/nemotron-labs-audio-visual-flamingo-hf)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/nvidia/AV-Skills)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/nvidia/audio-visual-flamingo) | ![Audio][mod-audio] ![Image][mod-image] ![Text][mod-text] ![Video][mod-video] | 2026-07 | `arXiv` |
+| [Audio-Visual Flamingo: Open Audio-Visual Intelligence for Long and Complex Videos](https://arxiv.org/abs/2607.16107) <!-- paper:2607.16107 --> | [![resource:code][res-github-code]](https://github.com/NVIDIA/audio-flamingo) [![Stars](https://img.shields.io/github/stars/NVIDIA/audio-flamingo?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/NVIDIA/audio-flamingo/stargazers)<br>[![resource:project][res-project]](https://avflamingo.pages.dev/)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/nvidia/nemotron-labs-audio-visual-flamingo-hf)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/nvidia/AV-Skills)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/nvidia/audio-visual-flamingo) | ![Audio][mod-audio] ![Image][mod-image] ![Text][mod-text] ![Video][mod-video] | 2026-07 | `arXiv` |
 | [Modularized Dynamic-Granularity Video LLM for Multi-Event Long Video Understanding](https://arxiv.org/abs/2607.15778) <!-- paper:2607.15778 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-07 | `arXiv` |
 | [Efficient Frame Selection for Long Videos at Test Time with Attention-Based MLLM Selectors](https://arxiv.org/abs/2607.15689) <!-- paper:2607.15689 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-07 | `arXiv` |
 | [GMoT: Gated Motion-Aware Tokenization for Fine-Grained Micro-Gesture Video Reasoning with Multimodal LLMs](https://arxiv.org/abs/2607.16322) <!-- paper:2607.16322 --> | [![resource:code][res-github-code]](https://github.com/timwang2001/GMoT) [![Stars](https://img.shields.io/github/stars/timwang2001/GMoT?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/timwang2001/GMoT/stargazers) | ![Text][mod-text] ![Video][mod-video] | 2026-07 | `ACM MM 2026` |
@@ -919,7 +864,7 @@ Frame selection, token compression, temporal grounding, and audio-visual represe
 | [How Should Video LLMs Output Time? An Analysis of Efficient Temporal Grounding Paradigms](https://arxiv.org/abs/2604.08966) <!-- paper:2604.08966 --> | [![resource:project][res-project]](https://tg-paradigms.github.io/)<br>[![resource:code][res-github-code]](https://github.com/Aestine/TG-Paradigms) [![Stars](https://img.shields.io/github/stars/Aestine/TG-Paradigms?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/Aestine/TG-Paradigms/stargazers) | ![Text][mod-text] ![Video][mod-video] | 2026-04 | `arXiv` |
 | [InstrAct: Towards Action-Centric Understanding in Instructional Videos](https://arxiv.org/abs/2604.08762) <!-- paper:2604.08762 --> | `N/A` | ![Video][mod-video] | 2026-04 | `arXiv` |
 | [UniversalVTG: A Universal and Lightweight Foundation Model for Video Temporal Grounding](https://arxiv.org/abs/2604.08522) <!-- paper:2604.08522 --> | [![resource:code][res-github-code]](https://github.com/jbistanbul/universalvtg) [![Stars](https://img.shields.io/github/stars/jbistanbul/universalvtg?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/jbistanbul/universalvtg/stargazers)<br>[![resource:project][res-project]](https://vision.cs.utexas.edu/projects/universalvtg/)<br>[![resource:project][res-project]](https://universalvtg.vision.cs.utexas.edu/)<br>[![resource:project][res-project]](https://utexas.box.com/s/vm52tyvfqxhrnmnswm4kbe8cr1fkke6e)<br>[![resource:project][res-project]](https://utexas.box.com/s/uue77d6wpgyeu1u8dqgon1eyxe2dupvo)<br>[![resource:project][res-project]](https://utexas.box.com/s/l9zm74v2wkljjaz35nmf9idhysjr5bc1) | ![Text][mod-text] ![Video][mod-video] | 2026-04 | `arXiv` |
-| [Small Vision-Language Models are Smart Compressors for Long Video Understanding](https://arxiv.org/abs/2604.08120) <!-- paper:2604.08120 --> | [![resource:project][res-project]](https://FeiElysia.github.io/tempo-page)<br>[![resource:code][res-github-code]](https://github.com/FeiElysia/Tempo) [![Stars](https://img.shields.io/github/stars/FeiElysia/Tempo?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/FeiElysia/Tempo/stargazers)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/Vision-CAIR/Tempo)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/collections/Vision-CAIR/tempo) | ![Text][mod-text] ![Video][mod-video] | 2026-04 | `arXiv` |
+| [Small Vision-Language Models are Smart Compressors for Long Video Understanding](https://arxiv.org/abs/2604.08120) <!-- paper:2604.08120 --> | [![resource:project][res-project]](https://FeiElysia.github.io/tempo-page)<br>[![resource:code][res-github-code]](https://github.com/FeiElysia/Tempo) [![Stars](https://img.shields.io/github/stars/FeiElysia/Tempo?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/FeiElysia/Tempo/stargazers)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/Vision-CAIR/Tempo)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/collections/Vision-CAIR/tempo) | ![Text][mod-text] ![Video][mod-video] | 2026-04 | `arXiv` |
 | [AdaSpark: Adaptive Sparsity for Efficient Long-Video Understanding](https://arxiv.org/abs/2604.08077) <!-- paper:2604.08077 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-04 | `CVPR 2026` |
 | [Bridging Time and Space: Decoupled Spatio-Temporal Alignment for Video Grounding](https://arxiv.org/abs/2604.08014) <!-- paper:2604.08014 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-04 | `arXiv` |
 | [A Paradigm Shift: Fully End-to-End Training for Temporal Sentence Grounding in Videos](https://arxiv.org/abs/2604.02860) <!-- paper:2604.02860 --> | `N/A` | ![Text][mod-text] ![Video][mod-video] | 2026-04 | `arXiv` |
@@ -1262,7 +1207,7 @@ Benchmarks, datasets, and diagnostics for video understanding and generation. Ta
 | PersonaShot | [PersonaShot: Benchmarking Person-Centric Narrative Continuity in Multi-Shot Video Generation](https://arxiv.org/abs/2608.16717) <!-- paper:2608.16717 --> | `N/A` | ![vision][task-vision] | 2026-08 | `arXiv` |
 | CARVE | [Counterfactual Sensitivity Is Not Repairability: Auditing Replay Probes for Video Evidence](https://arxiv.org/abs/2608.15685) <!-- paper:2608.15685 --> | [![resource:code][res-github-code]](https://github.com/KurbanIntelligenceLab/CARVE) [![Stars](https://img.shields.io/github/stars/KurbanIntelligenceLab/CARVE?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/KurbanIntelligenceLab/CARVE/stargazers) | ![language][task-language] | 2026-08 | `arXiv` |
 | CrossView | [CrossView: Can Vision-Language Models Reason Across Cameras?](https://arxiv.org/abs/2608.15539) <!-- paper:2608.15539 --> | [![resource:project][res-project]](https://utaustin-swarmlab.github.io/CrossView)<br>[![resource:code][res-github-code]](https://github.com/UTAustin-SwarmLab/CrossView) [![Stars](https://img.shields.io/github/stars/UTAustin-SwarmLab/CrossView?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/UTAustin-SwarmLab/CrossView/stargazers)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/SWARM-Lab/CrossView) | ![language][task-language] | 2026-08 | `ECCV 2026` |
-| PlayWorld | [PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552) <!-- paper:2608.13552 --> | [![resource:code][res-github-code]](https://github.com/kxding/PlayWorld) [![Stars](https://img.shields.io/github/stars/kxding/PlayWorld?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/kxding/PlayWorld/stargazers)<br>[![resource:project][res-project]](https://kxding.github.io/project/PlayWorld)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/jocelynd/playworld-bench)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/jocelynd/PlayWorld-Leaderboard) | ![vision][task-vision] | 2026-08 | `arXiv` |
+| PlayWorld | [PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552) <!-- paper:2608.13552 --> | [![resource:code][res-github-code]](https://github.com/kxding/PlayWorld) [![Stars](https://img.shields.io/github/stars/kxding/PlayWorld?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/kxding/PlayWorld/stargazers)<br>[![resource:project][res-project]](https://kxding.github.io/project/PlayWorld)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/jocelynd/playworld-bench)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/jocelynd/PlayWorld-Leaderboard) | ![vision][task-vision] | 2026-08 | `arXiv` |
 | NARU | [NARU: A Benchmark for NARrative Evolution and Cultural Nuance Understanding in Japanese Extreme Long Video](https://arxiv.org/abs/2608.13210) <!-- paper:2608.13210 --> | [![resource:project][res-project]](https://ma-labo.github.io/naru) | ![language][task-language] | 2026-08 | `arXiv` |
 | EgoMonth | [EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory](https://arxiv.org/abs/2608.13113) <!-- paper:2608.13113 --> | `N/A` | ![language][task-language] | 2026-08 | `arXiv` |
 | H2R-Bench | [H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models](https://arxiv.org/abs/2608.13049) <!-- paper:2608.13049 --> | [![resource:project][res-project]](https://rongdingyi.github.io/H2R-Bench/)<br>[![resource:code][res-github-code]](https://github.com/Rongdingyi/H2R-Bench) [![Stars](https://img.shields.io/github/stars/Rongdingyi/H2R-Bench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/Rongdingyi/H2R-Bench/stargazers) | ![vision][task-vision] | 2026-08 | `arXiv` |
@@ -1325,7 +1270,7 @@ Benchmarks, datasets, and diagnostics for video understanding and generation. Ta
 | Animation2Code | [Animation2Code: Evaluating Temporal Visual Reasoning in Video-to-Code Generation](https://arxiv.org/abs/2606.28593) <!-- paper:2606.28593 --> | [![resource:project][res-project]](https://anya-ji.github.io/animation2code-website) | ![language][task-language] | 2026-06 | `arXiv` |
 | HumanMoveVQA | [HumanMoveVQA: Can Video MLLMs reason about human movement in videos?](https://arxiv.org/abs/2606.27999) <!-- paper:2606.27999 --> | `N/A` | ![language][task-language] | 2026-06 | `arXiv` |
 | Video-MME-Logical | [Video-MME-Logical: A Controlled Diagnostic Benchmark for Video Temporal-Logical Reasoning](https://arxiv.org/abs/2606.27828) <!-- paper:2606.27828 --> | `N/A` | ![language][task-language] | 2026-06 | `arXiv` |
-| MemoBench | [MemoBench: Benchmarking World Modeling in Dynamically Changing Environments](https://arxiv.org/abs/2606.27537) <!-- paper:2606.27537 --> | [![resource:code][res-github-code]](https://github.com/MemoBench-Team/MemoBench) [![Stars](https://img.shields.io/github/stars/MemoBench-Team/MemoBench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/MemoBench-Team/MemoBench/stargazers)<br>[![resource:project][res-project]](https://memobench-team.github.io)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/tonyc54/MemoBench_Leaderboard) | ![vision][task-vision] | 2026-06 | `arXiv` |
+| MemoBench | [MemoBench: Benchmarking World Modeling in Dynamically Changing Environments](https://arxiv.org/abs/2606.27537) <!-- paper:2606.27537 --> | [![resource:code][res-github-code]](https://github.com/MemoBench-Team/MemoBench) [![Stars](https://img.shields.io/github/stars/MemoBench-Team/MemoBench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/MemoBench-Team/MemoBench/stargazers)<br>[![resource:project][res-project]](https://memobench-team.github.io)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/tonyc54/MemoBench_Leaderboard) | ![vision][task-vision] | 2026-06 | `arXiv` |
 | HarmVideoBench | [HarmVideoBench: Benchmarking Harmful Video Understanding in Large Multimodal Models](https://arxiv.org/abs/2606.27187) <!-- paper:2606.27187 --> | `N/A` | ![language][task-language] | 2026-06 | `arXiv` |
 | PhysEditWorld | [PhysEditWorld: A Large-Scale Dataset Toward Physics-Editable World Models](https://arxiv.org/abs/2606.26694) <!-- paper:2606.26694 --> | [![resource:project][res-project]](https://yizhiqianbi.github.io/physeditworld) | ![vision][task-vision] | 2026-06 | `arXiv` |
 | EG-VQA | [EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence](https://arxiv.org/abs/2606.24797) <!-- paper:2606.24797 --> | `N/A` | ![language][task-language] | 2026-06 | `arXiv` |
@@ -1336,7 +1281,7 @@ Benchmarks, datasets, and diagnostics for video understanding and generation. Ta
 | RoboGaze | [RoboGaze: Evaluating Robot World Models via Structured Vision-Language Analysis](https://arxiv.org/abs/2606.28385) <!-- paper:2606.28385 --> | [![resource:project][res-project]](https://robogaze-eval.github.io) | ![vision][task-vision] | 2026-06 | `arXiv` |
 | Video-MME CoT audit (study) | [Chains That See, Answers That Don't: A Multi-Aspect Evaluation Recipe for Forced Chain-of-Thought on Video-MME](https://arxiv.org/abs/2606.22862) <!-- paper:2606.22862 --> | `N/A` | ![language][task-language] | 2026-06 | `arXiv` |
 | Reference-free physics assessment (study) | [Reference-Free Assessment of Physical Consistency in World Model-based Video Generation](https://arxiv.org/abs/2606.22363) <!-- paper:2606.22363 --> | `N/A` | ![vision][task-vision] | 2026-06 | `arXiv` |
-| WRBench | [Current World Models Lack a Persistent State Core](https://arxiv.org/abs/2606.20545) <!-- paper:2606.20545 --> | [![resource:code][res-github-code]](https://github.com/JinPLu/WRBench) [![Stars](https://img.shields.io/github/stars/JinPLu/WRBench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/JinPLu/WRBench/stargazers)<br>[![resource:project][res-project]](https://jinplu.github.io/WRBench)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/collections/WRBench/wrbench-current-world-models-lack-a-persistent-state-core-6a365c717251293c9fc2cc26)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/WRBench/wrbench-leaderboard) | ![vision][task-vision] | 2026-06 | `arXiv` |
+| WRBench | [Current World Models Lack a Persistent State Core](https://arxiv.org/abs/2606.20545) <!-- paper:2606.20545 --> | [![resource:code][res-github-code]](https://github.com/JinPLu/WRBench) [![Stars](https://img.shields.io/github/stars/JinPLu/WRBench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/JinPLu/WRBench/stargazers)<br>[![resource:project][res-project]](https://jinplu.github.io/WRBench)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/collections/WRBench/wrbench-current-world-models-lack-a-persistent-state-core-6a365c717251293c9fc2cc26)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/WRBench/wrbench-leaderboard) | ![vision][task-vision] | 2026-06 | `arXiv` |
 | NEST | [NEST: Narrative Event Structures in Time for Long Video Understanding](https://arxiv.org/abs/2606.19706) <!-- paper:2606.19706 --> | `N/A` | ![language][task-language] | 2026-06 | `arXiv` |
 | Physics-IQ Verified | [Physics-IQ Verified](https://arxiv.org/abs/2606.18943) <!-- paper:2606.18943 --> | [![resource:code][res-github-code]](https://github.com/google-deepmind/physics-iq-benchmark) [![Stars](https://img.shields.io/github/stars/google-deepmind/physics-iq-benchmark?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/google-deepmind/physics-iq-benchmark/stargazers) | ![vision][task-vision] | 2026-06 | `arXiv` |
 | Video memory-budget audit (study) | [How Well Can Your Video Model Remember? Measuring Memory-Budget Trade-offs in Long Video Understanding](https://arxiv.org/abs/2606.20726) <!-- paper:2606.20726 --> | `N/A` | ![language][task-language] | 2026-06 | `arXiv` |
@@ -1373,7 +1318,7 @@ Benchmarks, datasets, and diagnostics for video understanding and generation. Ta
 | Token Predictors Are Not Planners | [Token Predictors Are Not Planners: Building Physically Grounded Causal Reasoners](https://arxiv.org/abs/2606.01810) <!-- paper:2606.01810 --> | [![resource:code][res-github-code]](https://github.com/THUSI-Lab/Causal-Reasoner) [![Stars](https://img.shields.io/github/stars/THUSI-Lab/Causal-Reasoner?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/THUSI-Lab/Causal-Reasoner/stargazers) | ![language][task-language] | 2026-06 | `arXiv` |
 | RoboTrustBench | [RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation](https://arxiv.org/abs/2606.01600) <!-- paper:2606.01600 --> | [![resource:project][res-project]](https://huiqiongli.github.io/RoboTrustBench) | ![vision][task-vision] | 2026-06 | `EMNLP 2026 (Findings)` |
 | SVHalluc | [SVHalluc: Benchmarking Speech-Vision Hallucination in Audio-Visual Large Language Models](https://arxiv.org/abs/2606.02642) <!-- paper:2606.02642 --> | [![resource:project][res-project]](https://chenshuang-zhang.github.io/projects/svhalluc) | ![language][task-language] | 2026-05 | `CVPR 2026` |
-| MBench | [MBench: A Comprehensive Benchmark on Memory Capability for Video World Models](https://arxiv.org/abs/2606.00793) <!-- paper:2606.00793 --> | [![resource:project][res-project]](https://peanutup.github.io/MBench-project)<br>[![resource:code][res-github-code]](https://github.com/study-overflow/MBench) [![Stars](https://img.shields.io/github/stars/study-overflow/MBench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/study-overflow/MBench/stargazers)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/study-overflow/MBench_Leaderboard)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/studyOverflow/MBench-Data) | ![vision][task-vision] | 2026-05 | `arXiv` |
+| MBench | [MBench: A Comprehensive Benchmark on Memory Capability for Video World Models](https://arxiv.org/abs/2606.00793) <!-- paper:2606.00793 --> | [![resource:project][res-project]](https://peanutup.github.io/MBench-project)<br>[![resource:code][res-github-code]](https://github.com/study-overflow/MBench) [![Stars](https://img.shields.io/github/stars/study-overflow/MBench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/study-overflow/MBench/stargazers)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/study-overflow/MBench_Leaderboard)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/studyOverflow/MBench-Data) | ![vision][task-vision] | 2026-05 | `arXiv` |
 | Pause and Think | [Pause and Think: A Dataset and Benchmark for Video-Grounded Assistive Action Suggestion](https://arxiv.org/abs/2606.00616) <!-- paper:2606.00616 --> | `N/A` | ![language][task-language] | 2026-05 | `arXiv` |
 | SVI-Bench | [SVI-Bench: A Dynamic Microworld for Strategic Video Intelligence](https://arxiv.org/abs/2605.31529) <!-- paper:2605.31529 --> | [![resource:code][res-github-code]](https://github.com/texaser/svi-bench) [![Stars](https://img.shields.io/github/stars/texaser/svi-bench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/texaser/svi-bench/stargazers)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/MVP-Group/SVI-Bench)<br>[![resource:project][res-project]](https://svi-bench.github.io/)<br>[![resource:project][res-project]](https://svi-bench.github.io/svi_bench_extended.pdf) | ![language][task-language] | 2026-05 | `ECCV 2026` |
 | YoCausal | [YoCausal: How Far is Video Generation from World Model? A Causality Perspective](https://arxiv.org/abs/2605.30346) <!-- paper:2605.30346 --> | `N/A` | ![vision][task-vision] | 2026-05 | `arXiv` |
@@ -1426,7 +1371,7 @@ Benchmarks, datasets, and diagnostics for video understanding and generation. Ta
 | TraceAV-Bench | [TraceAV-Bench: Benchmarking Multi-Hop Trajectory Reasoning over Long Audio-Visual Videos](https://arxiv.org/abs/2605.07593) <!-- paper:2605.07593 --> | `N/A` | ![language][task-language] | 2026-05 | `arXiv` |
 | EgoPro-Bench | [EgoPro-Bench: Benchmarking Personalized Proactive Interaction in Egocentric Video Streams](https://arxiv.org/abs/2605.07299) <!-- paper:2605.07299 --> | `N/A` | ![language][task-language] | 2026-05 | `arXiv` |
 | AV-Phys Bench | [Do Joint Audio-Video Generation Models Understand Physics?](https://arxiv.org/abs/2605.07061) <!-- paper:2605.07061 --> | [![resource:project][res-project]](https://zijuncui.com/AV-Phys/)<br>[![resource:code][res-github-code]](https://github.com/ZijunCui02/AV-Phys-Bench) [![Stars](https://img.shields.io/github/stars/ZijunCui02/AV-Phys-Bench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/ZijunCui02/AV-Phys-Bench/stargazers)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/ZijunCui/AV-Phys-Bench)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/ZijunCui/AV-Phys-Bench-Sample) | ![vision][task-vision] | 2026-05 | `arXiv` |
-| iWorld-Bench | [iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework](https://arxiv.org/abs/2605.03941) <!-- paper:2605.03941 --> | [![resource:project][res-project]](https://iworld-bench.com/)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/EmbodiedCity/iWorld-Bench-Dataset)<br>[![resource:code][res-github-code]](https://github.com/EmbodiedCity/iWorld-Bench) [![Stars](https://img.shields.io/github/stars/EmbodiedCity/iWorld-Bench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/EmbodiedCity/iWorld-Bench/stargazers)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/EmbodiedCity/iWorld-Bench) | ![vision][task-vision] | 2026-05 | `ICML 2026` |
+| iWorld-Bench | [iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework](https://arxiv.org/abs/2605.03941) <!-- paper:2605.03941 --> | [![resource:project][res-project]](https://iworld-bench.com/)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/EmbodiedCity/iWorld-Bench-Dataset)<br>[![resource:code][res-github-code]](https://github.com/EmbodiedCity/iWorld-Bench) [![Stars](https://img.shields.io/github/stars/EmbodiedCity/iWorld-Bench?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/EmbodiedCity/iWorld-Bench/stargazers)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/EmbodiedCity/iWorld-Bench) | ![vision][task-vision] | 2026-05 | `ICML 2026` |
 | KARMA-MV | [KARMA-MV: A Benchmark for Causal Question Answering on Music Videos](https://arxiv.org/abs/2605.08175) <!-- paper:2605.08175 --> | [![resource:code][res-github-code]](https://github.com/AMAAI-Lab/Karma-MV) [![Stars](https://img.shields.io/github/stars/AMAAI-Lab/Karma-MV?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/AMAAI-Lab/Karma-MV/stargazers)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/amaai-lab/Karma-MV) | ![language][task-language] | 2026-05 | `arXiv` |
 | VISTA | [VISTA: Video Interaction Spatio-Temporal Analysis Benchmark](https://arxiv.org/abs/2605.01391) <!-- paper:2605.01391 --> | [![resource:project][res-project]](https://aaparcedo.github.io/VISTA/) | ![language][task-language] | 2026-05 | `arXiv` |
 | FCMBench-Video | [FCMBench-Video: Benchmarking Document Video Intelligence](https://arxiv.org/abs/2604.25186) <!-- paper:2604.25186 --> | `N/A` | ![language][task-language] | 2026-04 | `arXiv` |
@@ -1528,7 +1473,7 @@ Benchmarks, datasets, and diagnostics for video understanding and generation. Ta
 | REVEAL | [Stress Tests REVEAL Fragile Temporal and Visual Grounding in Video-Language Models](https://arxiv.org/abs/2602.11244) <!-- paper:2602.11244 --> | `N/A` | ![language][task-language] | 2026-02 | `arXiv` |
 | TwiFF-Bench | [TwiFF (Think With Future Frames): A Large-Scale Dataset for Dynamic Visual Reasoning](https://arxiv.org/abs/2602.10675) <!-- paper:2602.10675 --> | [![resource:code][res-github-code]](https://github.com/LiuJunhua02/TwiFF) [![Stars](https://img.shields.io/github/stars/LiuJunhua02/TwiFF?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/LiuJunhua02/TwiFF/stargazers)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/models/Liu-Junhua/TwiFF-7B)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/Liu-Junhua/TwiFF-2.7M)<br>[![resource:data][res-hf-data]](https://huggingface.co/datasets/Liu-Junhua/TwiFF-Bench) | ![language][task-language] ![vision][task-vision] | 2026-02 | `arXiv` |
 | Beyond Closed-Pool Video Retrieval | [Beyond Closed-Pool Video Retrieval: A Benchmark and Agent Framework for Real-World Video Search and Moment Localization](https://arxiv.org/abs/2602.10159) <!-- paper:2602.10159 --> | `N/A` | ![language][task-language] | 2026-02 | `arXiv` |
-| WorldArena | [WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models](https://arxiv.org/abs/2602.08971) <!-- paper:2602.08971 --> | [![resource:code][res-github-code]](https://github.com/worldarena/WorldArena) [![Stars](https://img.shields.io/github/stars/worldarena/WorldArena?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/worldarena/WorldArena/stargazers)<br>[![resource:weights][res-hf-weights]](https://huggingface.co/spaces/WorldArena/WorldArena)<br>[![resource:project][res-project]](https://worldarena.github.io/) | ![vision][task-vision] | 2026-02 | `arXiv` |
+| WorldArena | [WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models](https://arxiv.org/abs/2602.08971) <!-- paper:2602.08971 --> | [![resource:code][res-github-code]](https://github.com/worldarena/WorldArena) [![Stars](https://img.shields.io/github/stars/worldarena/WorldArena?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/worldarena/WorldArena/stargazers)<br>[![resource:project][res-hf-project]](https://huggingface.co/spaces/WorldArena/WorldArena)<br>[![resource:project][res-project]](https://worldarena.github.io/) | ![vision][task-vision] | 2026-02 | `arXiv` |
 | E-VAds | [E-VAds: An E-commerce Short Videos Understanding Benchmark for MLLMs](https://arxiv.org/abs/2602.08355) <!-- paper:2602.08355 --> | [![resource:code][res-github-code]](https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark) [![Stars](https://img.shields.io/github/stars/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/TaobaoTmall-AlgorithmProducts/E-VAds_Benchmark/stargazers) | ![language][task-language] | 2026-02 | `arXiv` |
 | VisPhyBench | [VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction](https://arxiv.org/abs/2602.13294) <!-- paper:2602.13294 --> | [![resource:code][res-github-code]](https://github.com/TIGER-AI-Lab/VisPhyWorld) [![Stars](https://img.shields.io/github/stars/TIGER-AI-Lab/VisPhyWorld?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/TIGER-AI-Lab/VisPhyWorld/stargazers) | ![language][task-language] | 2026-02 | `arXiv` |
 | MIND | [MIND: Benchmarking Memory Consistency and Action Control in World Models](https://arxiv.org/abs/2602.08025) <!-- paper:2602.08025 --> | [![resource:code][res-github-code]](https://github.com/CSU-JPG/MIND) [![Stars](https://img.shields.io/github/stars/CSU-JPG/MIND?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/CSU-JPG/MIND/stargazers) | ![vision][task-vision] | 2026-02 | `arXiv` |
@@ -1828,6 +1773,8 @@ Surveys, theses, and perspectives on video reasoning, spatial intelligence, mult
 
 Report **state fidelity, visual fidelity, task success, and cost** separately. See the [extended agenda](docs/world-models.md) for experiments and evidence limits.
 
+[GraphThinker](https://arxiv.org/abs/2602.17555) organizes observed state; [Code World Model](https://arxiv.org/abs/2608.25927) separates executable state from learned rendering; [Code-as-World](https://arxiv.org/abs/2608.27549) searches for executable explanations. Evaluate state estimation, transition rules, and rendering separately.
+
 </details>
 
 <a id="related-surveys"></a>
@@ -1855,15 +1802,6 @@ Report **state fidelity, visual fidelity, task success, and cost** separately. S
 
 </details>
 
-<a id="contributing"></a>
-
-<details open>
-<summary><strong>🤝 Contributing</strong></summary>
-
-Edit [data/papers.json](data/papers.json), run `python3 scripts/catalog.py render`, then `python3 scripts/check_catalog.py`. See [CONTRIBUTING.md](CONTRIBUTING.md) for the short workflow, [schema and reverse import](docs/catalog.md), and the [agent skill](.agents/skills/update-video-survey/SKILL.md) for paper URLs or BibTeX input.
-
-</details>
-
 <a id="star-history"></a>
 
 <details open>
@@ -1883,5 +1821,15 @@ Edit [data/papers.json](data/papers.json), run `python3 scripts/catalog.py rende
 </a>
 
 </details>
+
+<a id="contributing"></a>
+
+## 🤝 Add Papers with an Agent
+
+From this repository, give your coding agent a paper URL, DOI, arXiv ID, BibTeX entry, or `.bib` file and paste:
+
+> Add these papers to the Video Reasoning Landscape: `<paper links, IDs, BibTeX, or .bib path>`. Follow `AGENTS.md` and `.agents/skills/update-video-survey/SKILL.md`. Check for existing entries, verify primary metadata and research scope, update `data/papers.json`, run `python3 scripts/catalog.py render`, `python3 scripts/check_catalog.py`, and `git diff --check`. Summarize the changes and any unresolved evidence.
+
+For manual edits, see [CONTRIBUTING.md](CONTRIBUTING.md). The agent updates the catalog source; README tables are generated from it.
 
 <!-- markdownlint-enable MD033 -->

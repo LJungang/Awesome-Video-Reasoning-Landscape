@@ -45,12 +45,10 @@ def readme(data):
 
 
 class CatalogTests(unittest.TestCase):
-    def test_catalog_language_pipelines_and_benchmark_names_are_complete(self):
+    def test_catalog_benchmark_names_are_complete(self):
         data = catalog.load(ROOT / 'data/papers.json')
         for identity, paper in data['papers'].items():
             for place in paper['placements']:
-                if place['section'] == 'language' or 'language' in place.get('tasks', []):
-                    self.assertIn('text', paper['input_modalities'], identity)
                 if data['sections'][place['section']].get('table') == 'benchmark':
                     self.assertTrue(place.get('name'), identity)
                     if place.get('name_evidence', {}).get('kind') == 'descriptive':
@@ -97,6 +95,18 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(result['placements'][-1]['task_evidence'], {'source': 'abstract'})
         with self.assertRaisesRegex(catalog.CatalogError, 'Task accepts only'):
             catalog.import_readme(source.replace('![vision][task-vision]', '![Video][mod-video]'), data)
+
+    def test_benchmark_task_does_not_infer_supplied_text(self):
+        data = fixture()
+        data['sections']['benchmarks'] = {'group': 'engines', 'title': 'Benchmarks',
+                                         'anchor': 'benchmarks', 'description': 'Evaluation.', 'table': 'benchmark'}
+        paper = data['papers']['2601.00001']
+        paper['input_modalities'] = ['video']
+        paper['placements'] = [{'section': 'benchmarks', 'name': 'Video-only interface', 'tasks': ['language']}]
+        source = readme(data)
+        self.assertEqual(catalog.import_readme(source, data), data)
+        self.assertIn('![language][task-language]', source)
+        self.assertNotIn('![Text][mod-text] ![Video][mod-video]', source)
 
     def test_benchmark_only_import_preserves_hidden_inputs_and_new_rows(self):
         data = fixture()
@@ -213,11 +223,13 @@ class CatalogTests(unittest.TestCase):
             {'kind': 'weights', 'label': 'Models', 'url': 'https://github.com/example/models'},
             {'kind': 'weights', 'label': 'HF', 'url': 'https://huggingface.co/example/checkpoint'},
             {'kind': 'data', 'label': 'HF', 'url': 'https://huggingface.co/datasets/example/data'},
+            {'kind': 'project', 'label': 'Demo', 'url': 'https://huggingface.co/spaces/example/demo'},
             {'kind': 'weights', 'label': 'MS', 'url': 'https://modelscope.cn/models/example/model'},
             {'kind': 'paper', 'label': 'Preprint', 'url': 'https://arxiv.org/abs/2601.00001'},
         ]
         source = readme(data)
-        for style in ['github-code', 'github-weights', 'hf-weights', 'hf-data', 'modelscope-weights', 'arxiv-paper']:
+        for style in ['github-code', 'github-weights', 'hf-weights', 'hf-data', 'hf-project',
+                      'modelscope-weights', 'arxiv-paper']:
             self.assertIn(f'][res-{style}]](', source)
         self.assertEqual(catalog.import_readme(source, data), data)
         with self.assertRaisesRegex(catalog.CatalogError, 'platform and purpose'):
@@ -227,9 +239,10 @@ class CatalogTests(unittest.TestCase):
         data = fixture()
         data['papers']['2601.00001']['venue'] = 'CVPR 2026 (Workshop)'
         source = readme(data)
-        self.assertEqual(source.count('<details open>'), len(data['sections']) + 1)
-        self.assertEqual(source.count('<details open>'), source.count('</details>'))
-        self.assertNotIn('<details>', source)
+        self.assertEqual(source.count('<details open>'), len(data['sections']))
+        self.assertEqual(source.count('<details>'), 1)
+        self.assertEqual(source.count('<details open>') + source.count('<details>'), source.count('</details>'))
+        self.assertIn('<details>\n<summary><strong>Input modalities & benchmark tasks</strong></summary>', source)
         self.assertNotRegex(source, r'\d[\d,]* papers|catalog rows')
         self.assertIn('| `CVPR 2026 (Workshop)` |', source)
         self.assertNotIn('**Grounding**', source)
@@ -266,7 +279,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(result['papers']['paper:new']['date_basis'], 'proceedings')
         self.assertNotIn('provenance', result['papers']['paper:new'])
 
-    def test_duplicate_json_keys_and_dataset_weights_rejected(self):
+    def test_duplicate_json_keys_and_non_checkpoint_weights_rejected(self):
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / 'duplicate.json'
             path.write_text('{"papers": {}, "papers": {}}')
@@ -276,6 +289,10 @@ class CatalogTests(unittest.TestCase):
         data['papers']['2601.00001']['resources'] = [
             {'kind': 'weights', 'label': 'Wrong', 'url': 'https://huggingface.co/datasets/example/data'}]
         with self.assertRaisesRegex(catalog.CatalogError, 'dataset'):
+            catalog.validate(data)
+        data['papers']['2601.00001']['resources'] = [
+            {'kind': 'weights', 'label': 'Wrong', 'url': 'https://huggingface.co/spaces/example/leaderboard'}]
+        with self.assertRaisesRegex(catalog.CatalogError, 'Space'):
             catalog.validate(data)
 
     def test_failed_cli_import_does_not_overwrite_destination(self):
