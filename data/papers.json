@@ -299,7 +299,7 @@
       "url": "https://arxiv.org/abs/2405.15383",
       "date": "2024-05-24T09:31:26Z",
       "date_basis": "first-public",
-      "venue": "arXiv",
+      "venue": "NeurIPS 2024",
       "resources": [],
       "placements": [
         {
@@ -1147,6 +1147,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -1323,6 +1324,11 @@
           "kind": "weights",
           "label": "Hugging Face",
           "url": "https://huggingface.co/collections/ruili0/temporal-preference-optimization"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://ruili33.github.io/tpo_website/"
         }
       ],
       "placements": [
@@ -1361,6 +1367,11 @@
           "kind": "code",
           "label": "GitHub",
           "url": "https://github.com/lwpyh/CoS_codes"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://lwpyh.github.io/CoS/"
         }
       ],
       "placements": [
@@ -6259,6 +6270,11 @@
           "kind": "data",
           "label": "Data",
           "url": "https://huggingface.co/datasets/ZiyuG/MME-CoF"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://video-cof.github.io"
         }
       ],
       "placements": [
@@ -13232,7 +13248,10 @@
           ]
         }
       },
-      "input_modalities": []
+      "input_modalities": [
+        "text",
+        "video"
+      ]
     },
     "2601.21666": {
       "title": "SONIC-O1: A Real-World Benchmark for Evaluating Multimodal Large Language Models on Audio-Video Understanding",
@@ -13855,7 +13874,9 @@
         }
       },
       "input_modalities": [
-        "text"
+        "image",
+        "text",
+        "video"
       ]
     },
     "2602.00683": {
@@ -16102,6 +16123,11 @@
           "kind": "project",
           "label": "Project",
           "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bai_Causality_in_Video_Diffusers_is_Separable_from_Denoising_CVPR_2026_paper.pdf"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Bai_Causality_in_Video_CVPR_2026_supplemental.pdf"
         }
       ],
       "placements": [
@@ -28793,7 +28819,18 @@
       "date": "2026-04-02T23:33:58Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/facebookresearch/voxelcodebench"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://dl.fbaipublicfiles.com/voxelcodebench/VoxelCode.zip"
+        }
+      ],
       "placements": [
         {
           "section": "benchmarks",
@@ -29199,7 +29236,23 @@
       "date": "2026-04-05T16:53:46Z",
       "date_basis": "first-public",
       "venue": "arXiv",
-      "resources": [],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/aurateam2026/AURA"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/aurateam/AURA/"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://aurateam2026.github.io/"
+        }
+      ],
       "placements": [
         {
           "section": "streaming",
@@ -38592,7 +38645,6 @@
       },
       "input_modalities": [
         "audio",
-        "text",
         "video"
       ]
     },
@@ -39885,6 +39937,7 @@
         }
       },
       "input_modalities": [
+        "image",
         "text",
         "video"
       ]
@@ -56008,7 +56061,6 @@
       },
       "input_modalities": [
         "audio",
-        "image",
         "text",
         "video"
       ]
@@ -69241,6 +69293,16 @@
           "kind": "code",
           "label": "GitHub",
           "url": "https://github.com/JavisVerse/JavisGPT"
+        },
+        {
+          "kind": "weights",
+          "label": "Hugging Face",
+          "url": "https://huggingface.co/collections/JavisVerse/javisgpt"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://javisverse.github.io/JavisGPT-page/"
         }
       ],
       "placements": [
