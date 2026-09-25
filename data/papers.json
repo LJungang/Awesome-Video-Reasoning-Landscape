@@ -16120,13 +16120,13 @@
       "venue": "CVPR 2026",
       "resources": [
         {
-          "kind": "project",
-          "label": "Project",
+          "kind": "paper",
+          "label": "CVPR paper",
           "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bai_Causality_in_Video_Diffusers_is_Separable_from_Denoising_CVPR_2026_paper.pdf"
         },
         {
-          "kind": "project",
-          "label": "Project",
+          "kind": "other",
+          "label": "Supplementary material",
           "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Bai_Causality_in_Video_CVPR_2026_supplemental.pdf"
         }
       ],
@@ -28826,8 +28826,8 @@
           "url": "https://github.com/facebookresearch/voxelcodebench"
         },
         {
-          "kind": "project",
-          "label": "Project",
+          "kind": "other",
+          "label": "VoxelCode archive",
           "url": "https://dl.fbaipublicfiles.com/voxelcodebench/VoxelCode.zip"
         }
       ],
@@ -29991,8 +29991,8 @@
       "venue": "CVPR 2026",
       "resources": [
         {
-          "kind": "project",
-          "label": "Project",
+          "kind": "other",
+          "label": "Supplementary material",
           "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Cai_Lighting-grounded_Video_Generation_CVPR_2026_supplemental.pdf"
         }
       ],
@@ -42400,8 +42400,8 @@
           "url": "https://svi-bench.github.io/"
         },
         {
-          "kind": "project",
-          "label": "Project",
+          "kind": "other",
+          "label": "Extended PDF",
           "url": "https://svi-bench.github.io/svi_bench_extended.pdf"
         }
       ],
@@ -67818,8 +67818,8 @@
           "url": "https://huggingface.co/nvidia/Cosmos3-Nano"
         },
         {
-          "kind": "project",
-          "label": "Project",
+          "kind": "paper",
+          "label": "Technical report",
           "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf"
         }
       ],
