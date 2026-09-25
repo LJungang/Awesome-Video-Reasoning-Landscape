@@ -8458,6 +8458,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -11925,6 +11926,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -12372,6 +12374,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -17180,6 +17183,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -19547,6 +19551,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -22790,6 +22795,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -23771,6 +23777,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -23842,8 +23849,9 @@
         }
       },
       "input_modalities": [
-        "audio",
-        "video"
+        "text",
+        "video",
+        "audio"
       ]
     },
     "2603.16860": {
@@ -24471,6 +24479,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -29504,6 +29513,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -30381,8 +30391,9 @@
         }
       },
       "input_modalities": [
-        "audio",
-        "video"
+        "text",
+        "video",
+        "audio"
       ]
     },
     "2604.08342": {
@@ -38644,8 +38655,9 @@
         }
       },
       "input_modalities": [
-        "audio",
-        "video"
+        "text",
+        "video",
+        "audio"
       ]
     },
     "2605.17537": {
@@ -39880,6 +39892,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -41501,6 +41514,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -41562,8 +41576,9 @@
         }
       },
       "input_modalities": [
-        "audio",
-        "video"
+        "text",
+        "video",
+        "audio"
       ]
     },
     "2605.26584": {
@@ -47350,7 +47365,9 @@
         }
       },
       "input_modalities": [
-        "video"
+        "text",
+        "video",
+        "audio"
       ]
     },
     "2606.14723": {
@@ -57620,6 +57637,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "video"
       ]
     },
@@ -60613,6 +60631,7 @@
         }
       },
       "input_modalities": [
+        "text",
         "state"
       ]
     },
@@ -65075,8 +65094,9 @@
         }
       },
       "input_modalities": [
-        "audio",
-        "video"
+        "text",
+        "video",
+        "audio"
       ]
     },
     "2609.00291": {
