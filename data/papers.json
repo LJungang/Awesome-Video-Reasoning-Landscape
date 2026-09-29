@@ -3,104 +3,95 @@
   "schema_version": 1,
   "groups": {
     "engines": {
-      "title": "🧠 Reasoning Engines",
+      "title": "🧠 Reasoning Paradigms",
       "anchor": "reasoning-mechanisms"
     },
     "interaction": {
-      "title": "🔄 Interaction Loops",
+      "title": "🤖 Agentic & Interactive Reasoning",
       "anchor": "orchestration-and-interaction"
     },
     "support": {
-      "title": "🔎 Evidence & Action",
+      "title": "🌍 Perception & World Models",
       "anchor": "evidence-and-action"
     },
     "evaluation": {
-      "title": "🧪 Benchmark Hub",
+      "title": "🧪 Benchmarks & Evaluation",
       "anchor": "benchmarks"
     },
     "foundations-group": {
-      "title": "🧱 Foundations & Bridges",
+      "title": "🧱 Adjacent Foundations",
       "anchor": "supporting-foundations"
     },
     "roadmaps": {
-      "title": "🗺️ Perspectives & Roadmaps",
+      "title": "🧭 Surveys & Position Papers",
       "anchor": "survey-roadmaps"
     }
   },
   "sections": {
     "language": {
-      "title": "🗒️ Grounded Reasoning",
+      "title": "💬 Textual Chain-of-Thought & RL Post-Training",
       "anchor": "cot-based-video-reasoning",
       "group": "engines",
-      "description": "Language-led inference, evidence-linked training, distillation, and reliability."
+      "description": "Language-space reasoning traces, RL with verifiable rewards, distillation, and reliability. Longer traces are not necessarily better grounded."
     },
     "visual": {
-      "title": "🎞️ Thinking in Visual Futures",
+      "title": "🎞️ Chain-of-Frames: Reasoning via Generation",
       "anchor": "cof-based-video-reasoning",
       "group": "engines",
       "description": "Generated frames and visual updates as intermediate computation, including image-based bridges. Scene time and diffusion steps are distinct."
     },
     "structured": {
-      "title": "🧩 Stateful Intelligence",
+      "title": "🧩 Structured & Latent Reasoning",
       "anchor": "structured-and-latent-video-reasoning",
       "group": "engines",
       "description": "Graphs, tracks, spatial maps, and latent reasoning states. Observed memory and imagined state play different roles."
     },
     "executable": {
-      "title": "💻 Executable Worlds",
+      "title": "💻 Code World Models",
       "anchor": "executable-world-models",
       "group": "engines",
       "description": "Executable state, transitions, simulators, and learned rendering. Includes direct video systems and adjacent visual/planning foundations; see the [case study](docs/world-models.md)."
     },
     "agents": {
-      "title": "🛠️ Active Video Agents",
+      "title": "🛠️ Thinking with Videos: Agentic Tool Use",
       "anchor": "interleaved-video-reasoning",
       "group": "interaction",
-      "description": "Tool use, evidence search, reflection, and agent coordination. Full-recording retrieval remains an offline access setting."
+      "description": "Tool calling, evidence search, zoom/clip re-inspection, reflection, and multi-agent coordination. Full-recording retrieval remains an offline access setting."
     },
     "unified": {
-      "title": "🔁 Unified Understanding & Generation",
+      "title": "🔁 Unified Multimodal Models",
       "anchor": "unified-understanding-generation",
       "group": "interaction",
       "description": "Architectures combining understanding and generation; iterative reasoning requires separate evidence."
     },
     "streaming": {
-      "title": "📡 Always-On Intelligence",
+      "title": "📡 Streaming & Proactive Reasoning",
       "anchor": "streaming-video-reasoning",
       "group": "interaction",
       "description": "Observed-prefix reasoning, persistent memory, response timing, and proactive interaction."
     },
     "perception": {
-      "title": "🔎 Evidence at Scale",
+      "title": "🔎 Long-Video Perception & Token Efficiency",
       "anchor": "evidence-at-scale",
       "group": "support",
       "description": "Frame selection, token compression, temporal grounding, and audio-visual representations supporting reasoning."
     },
     "worlds": {
-      "title": "🌍 World Models for Action",
+      "title": "🌍 Predictive World Models for Action",
       "anchor": "world-models-for-action",
       "group": "support",
       "description": "Visual prediction, latent dynamics, physical priors, and planning from imagined futures. Evaluate rendering, action sensitivity, and decision utility separately."
     },
     "benchmarks": {
-      "title": "🧪 Beyond Answer Accuracy",
+      "title": "📋 Benchmarks, Datasets & Diagnostics",
       "anchor": "benchmark-atlas",
       "group": "evaluation",
-      "description": "Benchmarks, datasets, and diagnostics for video understanding and generation. Task identifies the evaluated model family. Names ending in “(study)” are descriptive labels for unnamed diagnostics.",
-      "table": "benchmark"
-    },
-    "bridge-benchmarks": {
-      "title": "🌉 Beyond Video QA",
-      "anchor": "beyond-video-qa",
-      "group": "evaluation",
-      "description": "Executable-world and visual bridge evaluations beyond video QA.",
-      "table": "benchmark"
-    },
-    "proceedings": {
-      "title": "📚 Proceedings Supplement",
-      "anchor": "proceedings-supplement",
-      "group": "evaluation",
-      "description": "Papers with an unresolved earlier preprint date; `Time` uses the proceedings month, marked `(proc.)`."
+      "description": "Benchmarks, datasets, and diagnostics for video understanding, generation, and executable-world or visual bridge evaluation. Task identifies the evaluated model family. Names ending in “(study)” are descriptive labels for unnamed diagnostics.",
+      "table": "benchmark",
+      "aliases": [
+        "beyond-video-qa",
+        "proceedings-supplement"
+      ]
     },
     "foundations": {
       "title": "🧱 Adjacent Foundations",
@@ -109,7 +100,7 @@
       "description": "Adjacent methods with distinct input and evaluation settings."
     },
     "surveys": {
-      "title": "🧭 Perspectives & Roadmaps",
+      "title": "🧭 Surveys, Theses & Perspectives",
       "anchor": "survey-perspectives",
       "group": "roadmaps",
       "description": "Surveys, theses, and perspectives on video reasoning, spatial intelligence, multimodal interaction, and world modeling."
@@ -672,7 +663,7 @@
       ],
       "placements": [
         {
-          "section": "bridge-benchmarks",
+          "section": "benchmarks",
           "focus": "**Image-based** spatial reasoning and viewpoint robustness; complementary to video-based VSI-Bench.",
           "name": "3DSRBench",
           "tasks": [
@@ -43296,7 +43287,7 @@
       "resources": [],
       "placements": [
         {
-          "section": "bridge-benchmarks",
+          "section": "benchmarks",
           "focus": "Bridge: generated 3D programs; runtime state and behavioral contracts",
           "name": "WorldCoder-Bench",
           "tasks": [
@@ -68751,8 +68742,23 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
-          "focus": "MisVideoQA; evidence and misinformation reasoning"
+          "section": "benchmarks",
+          "focus": "MisVideoQA; evidence and misinformation reasoning",
+          "name": "MisVideoQA",
+          "tasks": [
+            "language"
+          ],
+          "task_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.1716/",
+            "basis": "Evaluated model family checked against the official proceedings abstract: language.",
+            "excerpt": "Experimental results show that state-of-the-art multimodal large language models perform poorly on MisVideoQA"
+          },
+          "name_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.1716/",
+            "kind": "author-named",
+            "basis": "Name identified in the official proceedings abstract.",
+            "excerpt": "We address these limitations with MisVideoQA, a multi-turn benchmark designed to assess comprehensive understanding and reasoning in video misinformation analysis."
+          }
         }
       ],
       "provenance": {
@@ -68782,8 +68788,23 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
-          "focus": "Knowledge-grounded synchronized narration"
+          "section": "benchmarks",
+          "focus": "Knowledge-grounded synchronized narration",
+          "name": "HowToNarrate",
+          "tasks": [
+            "language"
+          ],
+          "task_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.1815/",
+            "basis": "Evaluated model family checked against the official proceedings abstract: language.",
+            "excerpt": "We systematically benchmark current Multimodal LLMs (MLLMs) on these abilities."
+          },
+          "name_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.1815/",
+            "kind": "author-named",
+            "basis": "Name identified in the official proceedings abstract.",
+            "excerpt": "We present HowToNarrate, the first general-domain benchmark for Synchronized Video Narration."
+          }
         }
       ],
       "provenance": {
@@ -68822,8 +68843,23 @@
       ],
       "placements": [
         {
-          "section": "proceedings",
-          "focus": "Supporting diagnostic; temporal memorization"
+          "section": "benchmarks",
+          "focus": "Supporting diagnostic; temporal memorization",
+          "name": "VideoMIA",
+          "tasks": [
+            "language"
+          ],
+          "task_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.1820/",
+            "basis": "Evaluated model family checked against the official proceedings abstract: language.",
+            "excerpt": "The results across ten MLLMs and four benchmarks demonstrate that our method consistently achieves superior performance"
+          },
+          "name_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.1820/",
+            "kind": "author-named",
+            "basis": "Name identified in the official proceedings abstract.",
+            "excerpt": "we propose a black-box MIA framework, named VideoMIA, that can provide reliable evidence of specific video data usage for training MLLMs."
+          }
         }
       ],
       "provenance": {
@@ -68854,7 +68890,7 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "language",
           "focus": "Translation bridge; selective visual disambiguation"
         }
       ],
@@ -68894,7 +68930,7 @@
       ],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "structured",
           "focus": "Video-grounded prerequisite graphs; EduStruct"
         }
       ],
@@ -68919,8 +68955,23 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
-          "focus": "Anomaly semantics and temporal localization"
+          "section": "benchmarks",
+          "focus": "Anomaly semantics and temporal localization",
+          "name": "VALU",
+          "tasks": [
+            "language"
+          ],
+          "task_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.56/",
+            "basis": "Evaluated model family checked against the official proceedings abstract: language.",
+            "excerpt": "hope that both VALU and insights will advance research in VAU and the development of Video-LLMs."
+          },
+          "name_evidence": {
+            "source": "https://aclanthology.org/2026.acl-long.56/",
+            "kind": "author-named",
+            "basis": "Name identified in the official proceedings abstract.",
+            "excerpt": "we introduce VALU, a new benchmark that explicitly defines anomalies across five semantic levels"
+          }
         }
       ],
       "provenance": {
@@ -68961,7 +69012,7 @@
       ],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "language",
           "focus": "Misinformation; reasoning distillation"
         }
       ],
@@ -68987,7 +69038,7 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "perception",
           "focus": "Supporting method; query-guided token pruning"
         }
       ],
@@ -69026,7 +69077,7 @@
       ],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "perception",
           "focus": "Supporting method; modality-specific expert arbitration"
         }
       ],
@@ -69061,7 +69112,7 @@
       ],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "agents",
           "focus": "Misinformation; retrieval and collaborative evidence review"
         }
       ],
@@ -69083,7 +69134,7 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "language",
           "focus": "Communicative intent as an intermediate condition"
         }
       ],
@@ -69117,7 +69168,7 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "perception",
           "focus": "Supporting method; scene and motion-aware pruning"
         }
       ],
@@ -69151,8 +69202,23 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
-          "focus": "Personalized episodic memory; EgoRetriever"
+          "section": "benchmarks",
+          "focus": "Personalized episodic memory; EgoRetriever",
+          "name": "EgoMemory",
+          "tasks": [
+            "language"
+          ],
+          "task_evidence": {
+            "source": "https://aclanthology.org/2026.findings-acl.362/",
+            "basis": "Evaluated model family checked against the official proceedings abstract: language.",
+            "excerpt": "we present EgoRetriever, a novel, training-free retrieval framework that combines Multimodal Large Language Models with reflective Chain-of-Thought prompting."
+          },
+          "name_evidence": {
+            "source": "https://aclanthology.org/2026.findings-acl.362/",
+            "kind": "author-named",
+            "basis": "Name identified in the official proceedings abstract.",
+            "excerpt": "we introduce EgoMemory, a benchmark derived from Ego4D"
+          }
         }
       ],
       "provenance": {
@@ -69185,7 +69251,7 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
+          "section": "language",
           "focus": "Grounded explanations; hateful-video distillation"
         }
       ],
@@ -69226,8 +69292,23 @@
       ],
       "placements": [
         {
-          "section": "proceedings",
-          "focus": "Instructional logic; visual shortcut controls"
+          "section": "benchmarks",
+          "focus": "Instructional logic; visual shortcut controls",
+          "name": "PedagogyBench",
+          "tasks": [
+            "language"
+          ],
+          "task_evidence": {
+            "source": "https://aclanthology.org/2026.findings-acl.614/",
+            "basis": "Evaluated model family checked against the official proceedings abstract: language.",
+            "excerpt": "Experiments on 12 multimodal large language models reveal a clear generative gap"
+          },
+          "name_evidence": {
+            "source": "https://aclanthology.org/2026.findings-acl.614/",
+            "kind": "author-named",
+            "basis": "Name identified in the official proceedings abstract.",
+            "excerpt": "we present PedagogyBench, a multimodal benchmark for instructional video understanding grounded in pedagogical cognition."
+          }
         }
       ],
       "provenance": {
@@ -69258,8 +69339,23 @@
       "resources": [],
       "placements": [
         {
-          "section": "proceedings",
-          "focus": "Long audio-video; localization and causality"
+          "section": "benchmarks",
+          "focus": "Long audio-video; localization and causality",
+          "name": "LongInsightBench",
+          "tasks": [
+            "language"
+          ],
+          "task_evidence": {
+            "source": "https://aclanthology.org/2026.findings-acl.965/",
+            "basis": "Evaluated model family checked against the official proceedings abstract: language.",
+            "excerpt": "shows that Omni-modal models(OLMs) still face challenge in tasks requiring precise temporal localization"
+          },
+          "name_evidence": {
+            "source": "https://aclanthology.org/2026.findings-acl.965/",
+            "kind": "author-named",
+            "basis": "Name identified in the official proceedings abstract.",
+            "excerpt": "We introduce LongInsightBench, the first benchmark designed to assess models’ ability to understand long videos"
+          }
         }
       ],
       "provenance": {

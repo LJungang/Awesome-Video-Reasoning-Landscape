@@ -2,7 +2,7 @@
 
 [data/papers.json](../data/papers.json) is the only live paper-data source. [papers.schema.json](../data/papers.schema.json) documents its shape; the Python converter also checks dates, identities, URLs, duplicate placements, and weights/data distinctions. It uses Python 3.10+ and the standard library.
 
-`papers` is keyed by stable ID. Each record renders once per `placements` entry, identified in Markdown by `<!-- paper:ID -->` and the enclosing `<!-- section:ID -->`. Shared citation fields prevent cross-list drift. Every cataloged paper appears in the main README; historical source snapshots remain available under `docs/`.
+`papers` is keyed by stable ID. Each record renders once per `placements` entry, identified in Markdown by its arXiv link (or `<!-- paper:ID -->` for other IDs) and the enclosing `<!-- section:ID -->`. Badge definitions precede the tables, and `render` warns when the README nears GitHub's 512 KiB display limit, beyond which GitHub truncates the page. Shared citation fields prevent cross-list drift. Every cataloged paper appears in the main README; historical source snapshots remain available under `docs/`.
 
 <a id="paper-fields"></a>
 
@@ -46,7 +46,7 @@ Preserve the existing record's resources and evidence when editing it; the examp
 | `placements` | One or more `{section, focus}` objects; `name` supplies the benchmark Name column. Benchmark placements also have `tasks` and optional `task_evidence`. `focus` remains hidden scope metadata |
 | `provenance` | Source URLs, review depth, venue evidence, BibTeX, aliases, and notes; retained through reverse imports |
 
-A resource contains `kind`, `label`, and `url`. Kinds are `code`, `data`, `project`, `weights`, `paper`, and `other`. Optional `evidence` stores verification details; optional `badges` stores additional `{alt, url}` images. GitHub repository links automatically display a GitHub badge and a separate Stars badge linking to `/stargazers`; do not store these generated stars in JSON. Project pages use a house badge. Hugging Face and ModelScope distinguish datasets from checkpoints; a Hugging Face Space is a project/demo or leaderboard, not weights. Branded badges use `resource:kind` alt text and preserve the descriptive `label` in JSON. Other links display `kind: label`. URLs must percent-encode spaces, pipes, and parentheses.
+A resource contains `kind`, `label`, and `url`. Kinds are `code`, `data`, `project`, `weights`, `paper`, and `other`. Optional `evidence` stores verification details; optional `badges` stores additional `{alt, url}` images. GitHub repository links automatically display one GitHub badge with the live star count, linking to the resource; do not store these generated stars in JSON. Project pages use a house badge. Hugging Face and ModelScope distinguish datasets from checkpoints; a Hugging Face Space is a project/demo or leaderboard, not weights. Branded badges use `resource:kind` alt text and preserve the descriptive `label` in JSON. Other links display `kind: label`. URLs must percent-encode spaces, pipes, and parentheses.
 
 <a id="input-modalities"></a>
 
@@ -64,7 +64,7 @@ Badges use shared Markdown references to keep the README compact. The importer v
 
 `focus` accepts concise inline Markdown; titles, names, venue names, and link labels are plain text. Do not place raw HTML or line breaks in catalog fields. Entities protect pipes and brackets during conversion. Dates sort newest first, using full precision when known and the stable ID as a tie-breaker.
 
-The `groups` and `sections` objects define order, stable anchors, titles, and descriptions. To add a branch, add a section with an existing `group` (or define a new group). Paper sections use `<details open>`: expanded by default, with no paper-count summaries. The input/task legend is collapsed so the catalog begins with papers. Keep anchors outside `<details>` and blank lines around tables so GitHub renders them correctly. The generated region is bounded by `catalog:start` and `catalog:end`; introductory prose, formulas, the evaluation guide, and related resources live outside it.
+The `groups` and `sections` objects define order, stable anchors, titles, and descriptions. An optional section `aliases` list keeps the anchors of merged sections working. To add a branch, add a section with an existing `group` (or define a new group). Paper sections use `<details open>`: expanded by default, with no paper-count summaries. The input/task legend is collapsed so the catalog begins with papers. Keep anchors outside `<details>` and blank lines around tables so GitHub renders them correctly. The generated region is bounded by `catalog:start` and `catalog:end`; introductory prose, formulas, the evaluation guide, and related resources live outside it.
 
 ## Benchmark Tables
 
@@ -101,6 +101,6 @@ After reviewing the imported candidate, copy it to `data/papers.json`, render, a
 
 Reverse import updates visible paper fields, ordinary-table input modalities, benchmark names/tasks, and section membership. The existing JSON preserves precise dates, hidden inputs for benchmark-only records, placement `focus`, task evidence, branded resource labels, resource evidence, and BibTeX. A new benchmark-only row starts with empty input modalities. Changing the displayed month or date basis resets date precision. A README alone cannot recover metadata it never displayed.
 
-All cross-lists must agree on title, URL, date, venue, resources, and input modalities; inconsistent edits fail. Keep Venue in backticks and retain badge reference definitions. Missing sections, malformed rows, duplicate IDs/URLs, and unexpected removals fail before writing. For a deliberate removal, pass `--allow-removals`; removing the last placement removes that paper record. A new row needs a stable `paper` comment. Normal contributors should add it in JSON instead.
+All cross-lists must agree on title, URL, date, venue, resources, and input modalities; inconsistent edits fail. Keep Venue in backticks and retain badge reference definitions. Missing sections, malformed rows, duplicate IDs/URLs, and unexpected removals fail before writing. For a deliberate removal, pass `--allow-removals`; removing the last placement removes that paper record. A new row is identified by its arXiv link or, for other sources, a stable `paper` comment. Normal contributors should add it in JSON instead.
 
 The converter writes atomically after validation. `check` is read-only. It does not fetch sources or certify scientific claims; the [agent skill](../.agents/skills/update-video-survey/SKILL.md) and [contributor rules](../CONTRIBUTING.md) cover evidence review.

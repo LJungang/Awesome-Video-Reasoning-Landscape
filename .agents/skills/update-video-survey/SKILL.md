@@ -22,7 +22,7 @@ Run from the repository root. Read [CONTRIBUTING.md](../../../CONTRIBUTING.md) f
 ## Update and verify
 
 1. Edit **only `data/papers.json`** for paper data. Each paper owns shared citation/resources and a list of placements. Read the schema reference for optional fields or a new section. Older bibliography/review JSON files are frozen evidence, not sources to synchronize by hand.
-2. Verify resource purpose before assigning `kind`; datasets and Hugging Face Spaces are not weights. Label Spaces as projects/demos or leaderboards according to their purpose. Resource badges are automatic: GitHub plus Stars linking to `/stargazers`, a house icon for project pages, and typed Hugging Face/ModelScope badges. Do not store generated star badges in JSON. Store plain-text Venue; rendering adds backticks. Use the shared input palette and the separate benchmark Task palette; never mix the two vocabularies.
+2. Verify resource purpose before assigning `kind`; datasets and Hugging Face Spaces are not weights. Label Spaces as projects/demos or leaderboards according to their purpose. Resource badges are automatic: one GitHub badge with the live star count, a house icon for project pages, and typed Hugging Face/ModelScope badges. Do not store generated star badges in JSON. Store plain-text Venue; rendering adds backticks. Use the shared input palette and the separate benchmark Task palette; never mix the two vocabularies.
 3. Run:
 
    ```sh
@@ -36,7 +36,7 @@ Run from the repository root. Read [CONTRIBUTING.md](../../../CONTRIBUTING.md) f
 
 ## Intentional README edits
 
-JSON editing is the normal path. To import an edited README, retain `catalog`, `section`, and `paper` comments, then use:
+JSON editing is the normal path. To import an edited README, retain `catalog`, `section`, and (for non-arXiv IDs) `paper` comments, then use:
 
 ```sh
 python3 scripts/catalog.py import-readme --output /tmp/papers-import.json

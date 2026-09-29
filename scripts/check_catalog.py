@@ -16,7 +16,7 @@ DATE = re.compile(r'^\d{4}-(0[1-9]|1[0-2])$')
 errors = []
 records = {}
 locations = defaultdict(list)
-from catalog import load, render_readme, import_readme, CatalogError
+from catalog import load, render_readme, import_readme, CatalogError, README_LIMIT
 live = load(ROOT / 'data/papers.json')
 metadata = {key: {'first_public': paper['date']} for key, paper in live['papers'].items()}
 counts = {'tables': 0, 'rows': 0}
@@ -221,6 +221,8 @@ if coverage['primary_query_unique'] != sum(bool(set(row['queries']) & set(query_
 
 try:
     readme = (ROOT / 'README.md').read_text()
+    if len(readme.encode()) > README_LIMIT:
+        fail(ROOT / 'README.md', 1, f'{len(readme.encode()):,} bytes; GitHub truncates long READMEs and drops badge definitions')
     if readme != render_readme(live, readme):
         fail(ROOT / 'README.md', 1, 'catalog is stale; run scripts/catalog.py render')
     if import_readme(readme, live) != live:

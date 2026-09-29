@@ -18,17 +18,20 @@ START = '<!-- catalog:start -->'
 END = '<!-- catalog:end -->'
 SECTION = re.compile(r'^<!-- section:([a-z0-9-]+) -->$')
 PAPER = re.compile(r'<!-- paper:([A-Za-z0-9_.:-]+) -->')
+ARXIV = re.compile(r'arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})(?:v\d+)?(?:\.pdf)?$')
 LINK = re.compile(r'(?<!!)\[([^\]]*)\]\((https?://[^\s)]+)\)')
 IMAGE = re.compile(r'!\[([^\]]*)\]\((https?://[^\s)]+)\)')
 HEADER = '| **Paper** | **Resources** | **Input modalities** | **Time** | **Venue** |'
 BENCHMARK_HEADER = '| **Name** | **Paper** | **Link** | **Task** | **Time** | **Venue** |'
 BENCHMARK_TASKS = {'language': ('AEC6DF', 'Reasoning by language models, including multimodal LMs'),
                    'vision': ('C3E6CB', 'Reasoning by visual generation models')}
-LINKED_IMAGE = re.compile(r'\[!\[([^\]]*)\]\((https?://[^\s)]+)\)\]\((https?://[^\s)]+)\)')
 KINDS = {'code', 'data', 'project', 'weights', 'paper', 'other'}
 MODALITY_IMAGE = re.compile(r'!\[([^\]]+)\]\[mod-([a-z0-9-]+)\]')
 RESOURCE_LINK = re.compile(r'\[!\[([^\]]+)\]\[(res-[a-z0-9-]+)\]\]\((https?://[^\s)]+)\)')
 REFERENCE = re.compile(r'^\[([^\]]+)\]: (https?://\S+)$', re.M)
+GITHUB_BADGE = re.compile(r'\[!\[([^\]]+)\]\((https://img\.shields\.io/github/stars/[^\s)]+)\)\]\((https?://[^\s)]+)\)')
+# GitHub renders at most 512 KiB of a README; later reference definitions would be cut off.
+README_LIMIT = 500_000
 # Platform and purpose are independent: a Hugging Face dataset is not a checkpoint.
 RESOURCE_STYLES = {
     'github': ('181717', 'github', dict.fromkeys(sorted(KINDS), 'GitHub')),
@@ -118,9 +121,11 @@ def validate(data):
     for key, item in {**groups, **sections}.items():
         if not re.fullmatch(r'[a-z0-9-]+', key):
             raise CatalogError(f'invalid group/section ID: {key}')
-        if not re.fullmatch(r'[a-z0-9-]+', item['anchor']) or item['anchor'] in anchors:
-            raise CatalogError(f'invalid or duplicate anchor: {item["anchor"]}')
-        anchors.add(item['anchor'])
+        # Aliases keep anchors of merged sections stable for external links.
+        for anchor in [item['anchor'], *item.get('aliases', [])]:
+            if not re.fullmatch(r'[a-z0-9-]+', anchor) or anchor in anchors:
+                raise CatalogError(f'invalid or duplicate anchor: {anchor}')
+            anchors.add(anchor)
     for key, section in sections.items():
         if section.get('table', 'papers') not in {'papers', 'benchmark'}:
             raise CatalogError(f'unknown table layout in {key}')
@@ -142,7 +147,7 @@ def validate(data):
         if paper['url'] in urls:
             raise CatalogError(f'duplicate primary URL: {paper["url"]}')
         urls.add(paper['url'])
-        arxiv = re.search(r'arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})(?:v\d+)?(?:\.pdf)?$', paper['url'])
+        arxiv = ARXIV.search(paper['url'])
         if arxiv and identity != arxiv[1]:
             raise CatalogError(f'{identity}: arXiv papers must use the unversioned arXiv ID')
         check_date(paper['date'])
@@ -219,12 +224,12 @@ def github_repo(url):
     return '/'.join([parts[0], parts[1].removesuffix('.git')])
 
 
-def stars_cell(url):
+def stars_badge(url):
+    """One GitHub badge carrying the live star count; it links to the resource itself."""
     repo = github_repo(url)
     if not repo:
-        return ''
-    return (f'[![Stars](https://img.shields.io/github/stars/{repo}?style=flat-square&color=E0E0E0&label=Stars)]'
-            f'(https://github.com/{repo}/stargazers)')
+        return None
+    return f'https://img.shields.io/github/stars/{repo}?style=flat-square&logo=github&label=GitHub'
 
 
 def badge_references(data):
@@ -250,24 +255,31 @@ def resources_cell(resources):
     for resource in resources:
         label = f'{resource["kind"]}: {resource["label"]}'
         style = resource_style(resource)
-        link_label = f'![resource:{resource["kind"]}][{style}]' if style else text_cell(label)
-        part = f'[{link_label}]({resource["url"]})'
-        stars = stars_cell(resource['url'])
+        stars = stars_badge(resource['url'])
         if stars:
-            part += ' ' + stars
+            link_label = f'![resource:{resource["kind"]}]({stars})'
+        else:
+            link_label = f'![resource:{resource["kind"]}][{style}]' if style else text_cell(label)
+        part = f'[{link_label}]({resource["url"]})'
         badges = ' '.join(badge_cell(badge) for badge in resource.get('badges', []))
         parts.append(part + (' ' + badges if badges else ''))
     return '<br>'.join(parts) or '`N/A`'
 
 
+def paper_marker(identity, paper):
+    # arXiv IDs are recoverable from the link; spelling them out would only inflate the README.
+    arxiv = ARXIV.search(paper['url'])
+    return '' if arxiv and arxiv[1] == identity else f' <!-- paper:{identity} -->'
+
+
 def row(identity, paper, placement, modalities, benchmark=False):
     name = placement.get('name', '')
     title = (f'**{text_cell(name)}** · ' if name else '') + f'[{text_cell(paper["title"])}]({paper["url"]})'
-    title += f' <!-- paper:{identity} -->'
+    title += paper_marker(identity, paper)
     inputs = ' '.join(modality_cell(key, modalities[key]) for key in paper['input_modalities'])
     month = paper['date'][:7] + (' (proc.)' if paper['date_basis'] == 'proceedings' else '')
     if benchmark:
-        title = f'[{text_cell(paper["title"])}]({paper["url"]}) <!-- paper:{identity} -->'
+        title = f'[{text_cell(paper["title"])}]({paper["url"]})' + paper_marker(identity, paper)
         tasks = ' '.join(f'![{t}][task-{t}]' for t in placement['tasks']) or '`N/A`'
         return f'| {text_cell(name) if name else "`N/A`"} | {title} | {resources_cell(paper["resources"])} | {tasks} | {month} | `{paper["venue"]}` |'
     return f'| {title} | {resources_cell(paper["resources"])} | {inputs or "`N/A`"} | {month} | `{paper["venue"]}` |'
@@ -290,6 +302,8 @@ def render_block(data):
     for task, (color, description) in BENCHMARK_TASKS.items():
         lines.append(f'| ![{task}][task-{task}] | {description} | `#{color}` |')
     lines += ['', '</details>', '']
+    # Definitions precede the tables so badges survive any truncation of a long page.
+    lines += [f'[{key}]: {url}' for key, url in badge_references(data).items()] + ['']
     for group, info in data['groups'].items():
         lines += ['', f'<a id="{info["anchor"]}"></a>', '', f'### {info["title"]}', '']
         for section, config in data['sections'].items():
@@ -298,15 +312,15 @@ def render_block(data):
             items = [(identity, paper, place) for identity, paper in data['papers'].items()
                      for place in paper['placements'] if place['section'] == section]
             benchmark = config.get('table') == 'benchmark'
-            lines += ['', f'<a id="{config["anchor"]}"></a>', '', '<details open>',
+            anchors = ''.join(f'<a id="{anchor}"></a>' for anchor in [config['anchor'], *config.get('aliases', [])])
+            lines += ['', anchors, '', '<details open>',
                       f'<summary><strong>{html.escape(config["title"])}</strong></summary>', '',
                       config['description'], '', f'<!-- section:{section} -->', BENCHMARK_HEADER if benchmark else HEADER,
                       '| ' + ' :--- |' * (6 if benchmark else 5)]
             items.sort(key=lambda item: (item[1]['date'], item[0]), reverse=True)
             lines.extend(row(*item, data['modalities'], benchmark=benchmark) for item in items)
             lines += ['', '</details>', '']
-    lines += [f'[{key}]: {url}' for key, url in badge_references(data).items()]
-    return '\n'.join(lines) + '\n\n' + END
+    return '\n'.join(lines).rstrip('\n') + '\n\n' + END
 
 
 def split_readme(source):
@@ -334,21 +348,17 @@ def parse_resources(cell, references, base_resources=()):
         return []
     result = []
     for part in cell.split('<br>'):
-        # Stars are derived from the repository URL, not a second resource.
-        stars = LINKED_IMAGE.search(part)
-        if stars:
-            primary = RESOURCE_LINK.match(part) or LINK.match(part)
-            primary_url = primary.groups()[-1] if primary else ''
-            if stars[0] != stars_cell(primary_url):
-                raise CatalogError('Stars badge must link to the resource repository stargazers')
-            part = part[:stars.start()] + part[stars.end():]
-        decorated = RESOURCE_LINK.match(part)
+        # The GitHub star badge is derived from the repository URL, not stored metadata.
+        decorated = GITHUB_BADGE.match(part) or RESOURCE_LINK.match(part)
         if decorated:
             alt, style, url = decorated.groups()
             if not alt.startswith('resource:'):
                 raise CatalogError('resource badge alt must be resource:kind')
             kind = alt.removeprefix('resource:')
-            if style != resource_style({'kind': kind, 'url': url}) or style not in references:
+            if style.startswith('https://'):
+                if style != stars_badge(url):
+                    raise CatalogError('GitHub badge must show the stars of the linked repository')
+            elif style != resource_style({'kind': kind, 'url': url}) or style not in references or stars_badge(url):
                 raise CatalogError('resource badge must match its platform and purpose')
             old = next((r for r in base_resources if (r['kind'], r['url']) == (kind, url)), None)
             label = old['label'] if old else ('GitHub' if github_repo(url) else kind.title())
@@ -404,6 +414,10 @@ def import_readme(source, base, allow_removals=False):
         cells = [part.strip() for part in re.split(r'(?<!\\)\|', line)[1:-1]]
         ids = PAPER.findall(line)
         benchmark = base['sections'][section].get('table') == 'benchmark'
+        if not ids and len(cells) > 1:
+            link = LINK.search(cells[1 if benchmark else 0])
+            arxiv = ARXIV.search(link[2]) if link else None
+            ids = [arxiv[1]] if arxiv else []
         if len(cells) != (6 if benchmark else 5) or len(ids) != 1:
             raise CatalogError(f'{section}: unexpected cells or missing paper ID marker')
         benchmark_name = ''
@@ -500,7 +514,10 @@ def main():
         data = load(args.data)
         source = args.readme.read_text()
         if args.command == 'render':
-            atomic_write(args.output or args.readme, render_readme(data, source))
+            rendered = render_readme(data, source)
+            atomic_write(args.output or args.readme, rendered)
+            if len(rendered.encode()) > README_LIMIT:
+                print(f'Warning: README exceeds {README_LIMIT:,} bytes; GitHub may truncate it.', file=sys.stderr)
             print(f'Rendered {len(data["papers"]):,} papers into {args.output or args.readme}.')
         elif args.command == 'import-readme':
             result = import_readme(source, data, args.allow_removals)

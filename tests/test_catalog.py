@@ -1,6 +1,7 @@
 """Behavioral checks for conversion and contributor updates; no network calls."""
 import copy
 import json
+import re
 from pathlib import Path
 import subprocess
 import sys
@@ -132,15 +133,15 @@ class CatalogTests(unittest.TestCase):
             {'kind': 'project', 'label': 'Homepage', 'url': 'https://example.org/project'},
         ]
         source = readme(data)
-        self.assertIn('[![resource:code][res-github-code]](https://github.com/hkust-nlp/deita.git)', source)
-        self.assertIn('[![Stars](https://img.shields.io/github/stars/hkust-nlp/deita?style=flat-square&color=E0E0E0&label=Stars)](https://github.com/hkust-nlp/deita/stargazers)', source)
-        self.assertEqual(source.count('[![Stars]'), 1)
+        self.assertIn('[![resource:code](https://img.shields.io/github/stars/hkust-nlp/deita?style=flat-square&logo=github&label=GitHub)]'
+                      '(https://github.com/hkust-nlp/deita.git)', source)
+        self.assertEqual(source.count('img.shields.io/github/stars/'), 1)
+        self.assertNotIn('[res-github-code]]', source)
         self.assertIn('[![resource:project][res-project]](https://example.org/project)', source)
         self.assertIn('%F0%9F%8F%A0-Project_Page', source)
-        self.assertIn('/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white', source)
         self.assertEqual(catalog.import_readme(source, data), data)
-        with self.assertRaisesRegex(catalog.CatalogError, 'stargazers'):
-            catalog.import_readme(source.replace('/deita/stargazers', '/wrong/stargazers'), data)
+        with self.assertRaisesRegex(catalog.CatalogError, 'stars of the linked repository'):
+            catalog.import_readme(source.replace('stars/hkust-nlp/deita?', 'stars/wrong/repo?'), data)
         self.assertEqual(catalog.github_repo('https://github.com/owner/repo/tree/main/code'), 'owner/repo')
         self.assertIsNone(catalog.github_repo('https://example.org/owner/repo'))
 
@@ -160,8 +161,19 @@ class CatalogTests(unittest.TestCase):
         self.assertNotIn('catalog rows', after)
         self.assertNotIn('2 papers', after)
         visual = after.split('<!-- section:visual -->')[1]
-        self.assertLess(visual.index('paper:2602.00002'), visual.index('paper:2601.00001'))
+        self.assertLess(visual.index('abs/2602.00002)'), visual.index('abs/2601.00001)'))
         self.assertEqual(catalog.import_readme(after, data), data)
+
+    def test_merged_section_aliases_keep_anchors_and_badges_precede_tables(self):
+        data = fixture()
+        data['sections']['language']['aliases'] = ['old-language']
+        source = readme(data)
+        self.assertIn('<a id="language"></a><a id="old-language"></a>', source)
+        self.assertLess(source.index('[mod-text]: '), source.index('<!-- section:language -->'))
+        self.assertEqual(catalog.import_readme(source, data), data)
+        data['sections']['visual']['aliases'] = ['language']
+        with self.assertRaisesRegex(catalog.CatalogError, 'duplicate anchor'):
+            catalog.validate(data)
 
     def test_section_anchors_cannot_be_consumed_as_gfm_table_rows(self):
         data = fixture()
@@ -228,9 +240,10 @@ class CatalogTests(unittest.TestCase):
             {'kind': 'paper', 'label': 'Preprint', 'url': 'https://arxiv.org/abs/2601.00001'},
         ]
         source = readme(data)
-        for style in ['github-code', 'github-weights', 'hf-weights', 'hf-data', 'hf-project',
-                      'modelscope-weights', 'arxiv-paper']:
+        for style in ['hf-weights', 'hf-data', 'hf-project', 'modelscope-weights', 'arxiv-paper']:
             self.assertIn(f'][res-{style}]](', source)
+        for kind, repo in [('code', 'example/code'), ('weights', 'example/models')]:
+            self.assertIn(f'[![resource:{kind}](https://img.shields.io/github/stars/{repo}?', source)
         self.assertEqual(catalog.import_readme(source, data), data)
         with self.assertRaisesRegex(catalog.CatalogError, 'platform and purpose'):
             catalog.import_readme(source.replace('[res-hf-data]](', '[res-hf-weights]]('), data)
@@ -255,7 +268,7 @@ class CatalogTests(unittest.TestCase):
         source = readme(data)
         with self.assertRaises(catalog.CatalogError):
             catalog.import_readme(source.split(catalog.END)[0], data)
-        removed = '\n'.join(line for line in source.splitlines() if 'paper:2601.00001' not in line)
+        removed = '\n'.join(line for line in source.splitlines() if '](https://arxiv.org/abs/2601.00001)' not in line)
         with self.assertRaisesRegex(catalog.CatalogError, 'disappeared'):
             catalog.import_readme(removed, data)
         result = catalog.import_readme(removed, data, allow_removals=True)
@@ -314,7 +327,10 @@ class CatalogTests(unittest.TestCase):
         self.assertGreater(len(data['papers']), 1300)
         self.assertEqual(catalog.render_readme(data, source), source)
         self.assertEqual(catalog.import_readme(source, data), data)
-        row_ids = catalog.PAPER.findall(catalog.split_readme(source)[1])
+        # Rows omit the ID marker when the arXiv link already carries it.
+        rows = [line for line in catalog.split_readme(source)[1].splitlines() if line.startswith('| ') and '](http' in line]
+        row_ids = [(catalog.PAPER.search(line) or re.search(r'\]\(https://arxiv\.org/abs/(\d{4}\.\d{4,5})\)', line))[1]
+                   for line in rows]
         self.assertEqual(set(row_ids), set(data['papers']))
         self.assertEqual(len(row_ids), sum(len(p['placements']) for p in data['papers'].values()))
 
