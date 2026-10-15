@@ -69591,6 +69591,129 @@
           }
         }
       }
+    },
+    "2610.18615": {
+      "title": "VideoJev: System One Model for Video Understanding and Interaction",
+      "url": "https://arxiv.org/abs/2610.18615",
+      "date": "2026-10-13",
+      "date_basis": "first-public",
+      "venue": "arXiv",
+      "input_modalities": [
+        "text",
+        "video"
+      ],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MCG-NJU/VideoJev"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://mcg-nju.github.io/VideoJev/"
+        }
+      ],
+      "placements": [
+        {
+          "section": "perception",
+          "focus": "Shared candidate scoring unifies video temporal grounding and multiple-choice QA; cached/joint inference reuses video computation. This fits supporting perception, not chain-of-thought or native streaming."
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "https://arxiv.org/abs/2610.18615",
+          "https://github.com/MCG-NJU/VideoJev"
+        ],
+        "review_level": "abstract and official repository",
+        "input_modalities": {
+          "source": "https://arxiv.org/abs/2610.18615",
+          "basis": "Video observations and text queries/instructions in the reported model interface; no unsupported input modalities inferred."
+        },
+        "notes": "Author-reported design; no independent benchmark reproduction claimed."
+      }
+    },
+    "2607.14935": {
+      "title": "VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding",
+      "url": "https://arxiv.org/abs/2607.14935",
+      "date": "2026-07-16",
+      "date_basis": "first-public",
+      "venue": "arXiv",
+      "input_modalities": [
+        "text",
+        "video"
+      ],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MCG-NJU/VideoChat3"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://mcg-nju.github.io/VideoChat3/"
+        }
+      ],
+      "placements": [
+        {
+          "section": "perception",
+          "focus": "Its I3D-ViT compression and adaptive frame resolution support efficient general and long-video perception."
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "https://arxiv.org/abs/2607.14935",
+          "https://github.com/MCG-NJU/VideoChat3"
+        ],
+        "review_level": "abstract and official repository",
+        "input_modalities": {
+          "source": "https://arxiv.org/abs/2607.14935",
+          "basis": "Video observations and text queries/instructions in the reported model interface; no unsupported input modalities inferred."
+        },
+        "notes": "Author-reported design; no independent benchmark reproduction claimed."
+      }
+    },
+    "2610.01762": {
+      "title": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",
+      "url": "https://arxiv.org/abs/2610.01762",
+      "date": "2026-10-01",
+      "date_basis": "first-public",
+      "venue": "arXiv",
+      "input_modalities": [
+        "text",
+        "video"
+      ],
+      "resources": [
+        {
+          "kind": "code",
+          "label": "GitHub",
+          "url": "https://github.com/MCG-NJU/OneStreamer"
+        },
+        {
+          "kind": "project",
+          "label": "Project",
+          "url": "https://mcg-nju.github.io/OneStreamer/"
+        }
+      ],
+      "placements": [
+        {
+          "section": "streaming",
+          "focus": "It maintains prefix-grounded caption memory and learns proactive response timing, directly fitting Streaming & Proactive Reasoning."
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "https://arxiv.org/abs/2610.01762",
+          "https://github.com/MCG-NJU/OneStreamer"
+        ],
+        "review_level": "abstract and official repository",
+        "input_modalities": {
+          "source": "https://arxiv.org/abs/2610.01762",
+          "basis": "Video observations and text queries/instructions in the reported model interface; no unsupported input modalities inferred."
+        },
+        "notes": "Author-reported design; no independent benchmark reproduction claimed."
+      }
     }
   }
 }
